@@ -59254,82 +59254,81 @@ typedef ap_fixed<24, 8, AP_RND, AP_SAT> data_t;
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp" 2
-
-
-
-
-
-
-
+# 25 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]) {
-#pragma HLS INLINE off
+#pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF dim=2
+#pragma HLS ARRAY_PARTITION variable=C cyclic factor=UF dim=2
 
 
     static data_t tmp[256][64];
-
-
-    data_t col_sum[64];
-    data_t scale[64];
-
-
-    const int UF = 16;
-
-
-
-#pragma HLS ARRAY_PARTITION variable=col_sum complete
-#pragma HLS ARRAY_PARTITION variable=scale complete
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
 
 
-    for (int j = 0; j < 64; j++) {
+    const int NB = 64 / 8;
+    data_t col_sum_bank[8][NB];
+    data_t scale_bank[8][NB];
+
+
+#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=1
+#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=2
+#pragma HLS ARRAY_PARTITION variable=scale_bank complete dim=1
+#pragma HLS ARRAY_PARTITION variable=scale_bank complete dim=2
+
+
+    for (int u = 0; u < 8; u++) {
+        for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
-        col_sum[j] = (data_t)0.0;
+            col_sum_bank[u][b] = (data_t)0.0;
+        }
     }
-
-
+# 62 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
     for (int i = 0; i < 256; i++) {
-        data_t row_buf[64];
-#pragma HLS ARRAY_PARTITION variable=row_buf complete
-
         data_t row_sum = (data_t)0.0;
 
 
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-            data_t a = A[i][j];
-            row_buf[j] = a;
-            row_sum += a;
+            row_sum += A[i][j];
         }
-
 
         data_t denom = row_sum + (data_t)1.0;
 
 
-        for (int j = 0; j < 64; j++) {
+        for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=UF
+            for (int u = 0; u < 8; u++) {
+#pragma HLS UNROLL
+                const int j = b * 8 + u;
+                data_t t = A[i][j] / denom;
+                tmp[i][j] = t;
 
-
-
-            data_t t = row_buf[j] / denom;
-            tmp[i][j] = t;
-            col_sum[j] += t;
+                col_sum_bank[u][b] += t;
+            }
         }
     }
 
 
-    for (int j = 0; j < 64; j++) {
+    for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
-        scale[j] = col_sum[j] / (data_t)256;
+        for (int u = 0; u < 8; u++) {
+#pragma HLS UNROLL
+            scale_bank[u][b] = col_sum_bank[u][b] / (data_t)256;
+        }
     }
 
 
+
+
+
     for (int i = 0; i < 256; i++) {
-        for (int j = 0; j < 64; j++) {
+        for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=UF
-            C[i][j] = tmp[i][j] * scale[j];
+            for (int u = 0; u < 8; u++) {
+#pragma HLS UNROLL
+                const int j = b * 8 + u;
+                C[i][j] = tmp[i][j] * scale_bank[u][b];
+            }
         }
     }
 }

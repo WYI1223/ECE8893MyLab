@@ -6507,86 +6507,85 @@ typedef ap_fixed<24, 8, AP_RND, AP_SAT> data_t;
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "top.cpp" 2
-
-
-
-
-
-
-
+# 25 "top.cpp"
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
                 data_t C[256][64]) {
 #line 19 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/script.tcl"
 #pragma HLSDIRECTIVE TOP name=top_kernel
-# 10 "top.cpp"
+# 26 "top.cpp"
 
-#pragma HLS INLINE off
+#pragma HLS ARRAY_PARTITION variable=A cyclic factor=8 dim=2
+#pragma HLS ARRAY_PARTITION variable=C cyclic factor=8 dim=2
 
 
  static data_t tmp[256][64];
+#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=8 dim=2
 
 
-    data_t col_sum[64];
-    data_t scale[64];
+ const int NB = 64 / 8;
+    data_t col_sum_bank[8][NB];
+    data_t scale_bank[8][NB];
 
 
-    const int UF = 16;
+#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=1
+#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=2
+#pragma HLS ARRAY_PARTITION variable=scale_bank complete dim=1
+#pragma HLS ARRAY_PARTITION variable=scale_bank complete dim=2
 
 
-
-#pragma HLS ARRAY_PARTITION variable=col_sum complete
-#pragma HLS ARRAY_PARTITION variable=scale complete
-#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
-
-
- VITIS_LOOP_30_1: for (int j = 0; j < 64; j++) {
+ VITIS_LOOP_46_1: for (int u = 0; u < 8; u++) {
+        VITIS_LOOP_47_2: for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
- col_sum[j] = (data_t)0.0;
-    }
-
-
-    VITIS_LOOP_36_2: for (int i = 0; i < 256; i++) {
-        data_t row_buf[64];
-#pragma HLS ARRAY_PARTITION variable=row_buf complete
-
- data_t row_sum = (data_t)0.0;
-
-
-        VITIS_LOOP_43_3: for (int j = 0; j < 64; j++) {
-#pragma HLS PIPELINE II=1
- data_t a = A[i][j];
-            row_buf[j] = a;
-            row_sum += a;
+ col_sum_bank[u][b] = (data_t)0.0;
         }
+    }
+# 62 "top.cpp"
+    VITIS_LOOP_62_3: for (int i = 0; i < 256; i++) {
+        data_t row_sum = (data_t)0.0;
 
+
+        VITIS_LOOP_66_4: for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+ row_sum += A[i][j];
+        }
 
         data_t denom = row_sum + (data_t)1.0;
 
 
-        VITIS_LOOP_54_4: for (int j = 0; j < 64; j++) {
+        VITIS_LOOP_74_5: for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=UF
+ VITIS_LOOP_76_6: for (int u = 0; u < 8; u++) {
+#pragma HLS UNROLL
+ const int j = b * 8 + u;
+                data_t t = A[i][j] / denom;
+                tmp[i][j] = t;
 
-
-
- data_t t = row_buf[j] / denom;
-            tmp[i][j] = t;
-            col_sum[j] += t;
+                col_sum_bank[u][b] += t;
+            }
         }
     }
 
 
-    VITIS_LOOP_67_5: for (int j = 0; j < 64; j++) {
+    VITIS_LOOP_88_7: for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
- scale[j] = col_sum[j] / (data_t)256;
+ VITIS_LOOP_90_8: for (int u = 0; u < 8; u++) {
+#pragma HLS UNROLL
+ scale_bank[u][b] = col_sum_bank[u][b] / (data_t)256;
+        }
     }
 
 
-    VITIS_LOOP_73_6: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_74_7: for (int j = 0; j < 64; j++) {
+
+
+
+    VITIS_LOOP_100_9: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_101_10: for (int b = 0; b < NB; b++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=UF
- C[i][j] = tmp[i][j] * scale[j];
+ VITIS_LOOP_103_11: for (int u = 0; u < 8; u++) {
+#pragma HLS UNROLL
+ const int j = b * 8 + u;
+                C[i][j] = tmp[i][j] * scale_bank[u][b];
+            }
         }
     }
 }

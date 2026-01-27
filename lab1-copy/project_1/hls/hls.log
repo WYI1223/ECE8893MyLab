@@ -7150,3 +7150,1515 @@ INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_E
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
 INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:46; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1.1 (64-bit)
+Tool Version Limit: 2025.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(10)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.36 seconds. CPU system time: 0.14 seconds. Elapsed time: 8.08 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.5 seconds. CPU system time: 1.01 seconds. Elapsed time: 5.63 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,467 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 21,500 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,338 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,349 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,146 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25,436 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,941 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,069 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,197 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,261 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,005 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,941 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,941 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,941 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,261 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,270 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'Col_Update_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:92:19)
+INFO: [HLS 214-291] Loop 'Row_Sum_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:54:23)
+INFO: [HLS 214-291] Loop 'Norm_Acc_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:67:24)
+INFO: [HLS 214-186] Unrolling loop 'Col_Update_Loop' (top.cpp:92:19) in function 'top_kernel' completely with a factor of 64 (top.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'Calc_Scales_Loop' (top.cpp:78:23) in function 'top_kernel' completely with a factor of 64 (top.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'Row_Sum_Loop' (top.cpp:54:23) in function 'top_kernel' completely with a factor of 64 (top.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'Norm_Acc_Loop' (top.cpp:67:24) in function 'top_kernel' completely with a factor of 64 (top.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'Init_Sums_Loop' (top.cpp:38:18) in function 'top_kernel' completely with a factor of 64 (top.cpp:13:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Complete partitioning on dimension 2. (top.cpp:24:0)
+INFO: [HLS 214-248] Applying array_partition to 'col_sums': Complete partitioning on dimension 1. (top.cpp:29:9)
+INFO: [HLS 214-248] Applying array_partition to 'scales': Complete partitioning on dimension 1. (top.cpp:33:9)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 2. (top.cpp:13:0)
+INFO: [HLS 214-248] Applying array_partition to 'C': Complete partitioning on dimension 2. (top.cpp:13:0)
+INFO: [HLS 214-241] Aggregating bram variable 'C_63' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_62' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_61' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_60' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_59' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_58' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_57' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_56' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_55' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_54' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_53' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_52' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_51' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_50' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_49' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_48' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_47' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_46' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_45' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_44' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_43' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_42' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_41' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_40' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_39' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_38' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_37' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_36' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_35' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_34' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_33' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_32' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_31' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_30' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_29' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_28' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_27' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_26' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_25' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_24' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_23' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_22' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_21' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_20' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_19' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_18' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_17' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_16' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_15' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_14' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_13' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_12' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_11' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_10' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_9' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_8' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_7' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_6' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_5' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_4' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_3' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_2' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_1' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_0' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_63' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_62' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_61' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_60' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_59' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_58' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_57' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_56' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_55' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_54' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_53' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_52' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_51' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_50' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_49' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_48' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_47' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_46' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_45' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_44' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_43' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_42' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_41' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_40' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_39' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_38' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_37' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_36' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_35' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_34' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_33' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_32' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_31' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_30' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_29' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_28' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_27' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_26' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_25' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_24' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_23' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_22' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_21' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_20' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_19' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_18' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_17' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_16' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_15' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_14' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_13' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_12' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_11' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_10' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_9' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_8' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_7' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_6' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_5' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_4' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_3' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_2' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_1' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_0' with compact=bit mode in 24-bits
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 9.24 seconds. CPU system time: 0.96 seconds. Elapsed time: 14.41 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.4 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.43 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.39 seconds. CPU system time: 0 seconds. Elapsed time: 0.41 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.61 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.68 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 3.23 seconds. CPU system time: 0.05 seconds. Elapsed time: 3.31 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_Row_Processing_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Processing_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 59, loop 'Row_Processing_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.99 seconds. CPU system time: 0.14 seconds. Elapsed time: 3.15 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.46 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.55 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_Apply_Scales_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Apply_Scales_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Apply_Scales_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.25 seconds. CPU system time: 0.1 seconds. Elapsed time: 2.41 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.68 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.75 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.48 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.57 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.46 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.52 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_Row_Processing_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_Row_Processing_Loop' pipeline 'Row_Processing_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'top_kernel_Pipeline_Row_Processing_Loop' is 25520 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'sdiv_40ns_24s_40_44_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_Row_Processing_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.27 seconds. CPU system time: 0.08 seconds. Elapsed time: 2.39 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_Apply_Scales_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_Apply_Scales_Loop' pipeline 'Apply_Scales_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_24s_24s_48_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_Apply_Scales_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3.29 seconds. CPU system time: 0.28 seconds. Elapsed time: 3.65 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_23' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_24' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_25' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_26' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_27' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_28' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_29' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_30' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_31' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_32' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_33' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_34' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_35' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_36' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_37' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_38' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_39' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_40' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_41' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_42' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_43' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_44' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_45' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_46' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_47' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_48' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_49' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_50' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_51' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_52' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_53' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_54' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_55' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_56' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_57' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_58' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_59' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_60' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_61' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_62' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_63' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_23' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_24' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_25' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_26' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_27' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_28' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_29' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_30' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_31' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_32' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_33' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_34' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_35' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_36' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_37' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_38' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_39' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_40' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_41' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_42' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_43' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_44' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_45' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_46' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_47' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_48' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_49' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_50' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_51' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_52' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_53' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_54' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_55' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_56' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_57' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_58' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_59' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_60' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_61' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_62' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_63' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_43_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_44_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modecud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_45_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modedEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_46_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeeOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_47_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modefYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_48_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeg8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_49_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modehbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_50_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_51_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modejbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_52_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modekbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_33_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modelbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_34_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modemb6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_35_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modencg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_36_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeocq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_37_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modepcA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_38_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeqcK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_39_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modercU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_40_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modesc4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_41_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modetde' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_42_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeudo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_23_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modevdy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_24_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modewdI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_25_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modexdS' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_26_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeyd2' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_27_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modezec' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_28_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeAem' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_29_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeBew' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_30_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeCeG' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_31_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeDeQ' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_32_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeEe0' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_13_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeFfa' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_14_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeGfk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_15_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeHfu' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_16_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeIfE' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_17_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeJfO' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_18_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeKfY' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_19_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeLf8' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_20_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeMgi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_21_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeNgs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_22_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeOgC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_3_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modePgM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeQgW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_5_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeRg6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_6_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeShg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_7_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeThq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_8_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeUhA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_9_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeVhK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_10_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeWhU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_11_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeXh4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_12_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeYie' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeZio' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_0_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode0iy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_1_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode1iI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_2_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode2iS' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.01 seconds. CPU system time: 0.21 seconds. Elapsed time: 2.28 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.86 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.43 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 4 seconds. CPU system time: 0.21 seconds. Elapsed time: 4.39 seconds; current allocated memory: 0.000 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.22 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:01:00; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:46; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:47; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1.1 (64-bit)
+Tool Version Limit: 2025.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(10)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.39 seconds. CPU system time: 0.12 seconds. Elapsed time: 8.12 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.42 seconds. CPU system time: 1.02 seconds. Elapsed time: 5.6 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,467 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 21,500 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,338 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,349 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,146 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,308 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,877 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,005 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,325 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,010 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,754 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,690 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,690 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,690 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,694 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,703 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'Col_Update_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:105:19)
+INFO: [HLS 214-291] Loop 'Row_Sum_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:67:23)
+INFO: [HLS 214-291] Loop 'Norm_Acc_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:78:24)
+INFO: [HLS 214-186] Unrolling loop 'Col_Update_Loop' (top.cpp:105:19) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Calc_Scales_Loop' (top.cpp:92:23) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Row_Sum_Loop' (top.cpp:67:23) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Norm_Acc_Loop' (top.cpp:78:24) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Init_Sums_Loop' (top.cpp:50:18) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Complete partitioning on dimension 2. (top.cpp:37:0)
+INFO: [HLS 214-248] Applying array_partition to 'col_sums': Complete partitioning on dimension 1. (top.cpp:41:9)
+INFO: [HLS 214-248] Applying array_partition to 'scales': Complete partitioning on dimension 1. (top.cpp:45:9)
+INFO: [HLS 214-241] Aggregating bram variable 'A' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C' with compact=bit mode in 24-bits
+INFO: [HLS 214-248] Applying array_reshape to 'A': Complete reshaping on dimension 2. (top.cpp:22:0)
+INFO: [HLS 214-248] Applying array_reshape to 'C': Complete reshaping on dimension 2. (top.cpp:22:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.53 seconds. CPU system time: 0.85 seconds. Elapsed time: 8.54 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.35 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.37 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.24 seconds. CPU system time: 0.05 seconds. Elapsed time: 2.33 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2.74 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.8 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_Row_Processing_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Processing_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 59, loop 'Row_Processing_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.59 seconds. CPU system time: 0.13 seconds. Elapsed time: 2.73 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.31 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.38 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_Apply_Scales_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Apply_Scales_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Apply_Scales_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.05 seconds. CPU system time: 0.07 seconds. Elapsed time: 2.16 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.56 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.62 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.43 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.49 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.41 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.48 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_Row_Processing_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_Row_Processing_Loop' pipeline 'Row_Processing_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'top_kernel_Pipeline_Row_Processing_Loop' is 34186 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'sdiv_40ns_24s_40_44_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_Row_Processing_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.5 seconds. CPU system time: 0.06 seconds. Elapsed time: 2.59 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_Apply_Scales_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_Apply_Scales_Loop' pipeline 'Apply_Scales_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_24s_24s_48_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_Apply_Scales_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3.33 seconds. CPU system time: 0.25 seconds. Elapsed time: 3.67 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_43_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_44_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modecud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_45_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modedEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_46_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeeOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_47_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modefYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_48_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeg8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_49_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modehbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_50_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_51_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modejbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_52_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modekbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_33_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modelbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_34_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modemb6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_35_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modencg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_36_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeocq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_37_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modepcA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_38_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeqcK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_39_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modercU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_40_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modesc4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_41_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modetde' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_42_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeudo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_23_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modevdy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_24_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modewdI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_25_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modexdS' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_26_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeyd2' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_27_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modezec' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_28_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeAem' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_29_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeBew' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_30_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeCeG' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_31_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeDeQ' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_32_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeEe0' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_13_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeFfa' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_14_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeGfk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_15_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeHfu' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_16_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeIfE' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_17_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeJfO' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_18_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeKfY' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_19_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeLf8' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_20_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeMgi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_21_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeNgs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_22_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeOgC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_3_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modePgM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeQgW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_5_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeRg6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_6_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeShg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_7_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeThq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_8_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeUhA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_9_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeVhK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_10_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeWhU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_11_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeXh4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_12_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeYie' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeZio' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_0_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode0iy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_1_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode1iI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_2_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode2iS' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.93 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.18 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.94 seconds. CPU system time: 0.21 seconds. Elapsed time: 2.44 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.18 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.56 seconds; current allocated memory: 0.000 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.22 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:50; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:20; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:45; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1.1 (64-bit)
+Tool Version Limit: 2025.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(10)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.37 seconds. CPU system time: 0.13 seconds. Elapsed time: 8.1 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.41 seconds. CPU system time: 1.02 seconds. Elapsed time: 5.57 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,467 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 21,500 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,338 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,349 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,146 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,308 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,877 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,005 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,325 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,010 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,754 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,690 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,690 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,690 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,694 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,703 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'Col_Update_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:105:19)
+INFO: [HLS 214-291] Loop 'Row_Sum_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:67:23)
+INFO: [HLS 214-291] Loop 'Norm_Acc_Loop' is marked as complete unroll implied by the pipeline pragma (top.cpp:78:24)
+INFO: [HLS 214-186] Unrolling loop 'Col_Update_Loop' (top.cpp:105:19) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Calc_Scales_Loop' (top.cpp:92:23) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Row_Sum_Loop' (top.cpp:67:23) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Norm_Acc_Loop' (top.cpp:78:24) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'Init_Sums_Loop' (top.cpp:50:18) in function 'top_kernel' completely with a factor of 64 (top.cpp:22:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Complete partitioning on dimension 2. (top.cpp:37:0)
+INFO: [HLS 214-248] Applying array_partition to 'col_sums': Complete partitioning on dimension 1. (top.cpp:41:9)
+INFO: [HLS 214-248] Applying array_partition to 'scales': Complete partitioning on dimension 1. (top.cpp:45:9)
+INFO: [HLS 214-241] Aggregating bram variable 'A' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C' with compact=bit mode in 24-bits
+INFO: [HLS 214-248] Applying array_reshape to 'A': Complete reshaping on dimension 2. (top.cpp:22:0)
+INFO: [HLS 214-248] Applying array_reshape to 'C': Complete reshaping on dimension 2. (top.cpp:22:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.62 seconds. CPU system time: 0.94 seconds. Elapsed time: 13.65 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.37 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.39 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.28 seconds. CPU system time: 0.05 seconds. Elapsed time: 2.34 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2.93 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.97 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_Row_Processing_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Processing_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 59, loop 'Row_Processing_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.57 seconds. CPU system time: 0.11 seconds. Elapsed time: 2.69 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.39 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.46 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_Apply_Scales_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Apply_Scales_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Apply_Scales_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.03 seconds. CPU system time: 0.05 seconds. Elapsed time: 2.11 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.59 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.62 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.46 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.53 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.4 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.46 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_Row_Processing_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_Row_Processing_Loop' pipeline 'Row_Processing_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'top_kernel_Pipeline_Row_Processing_Loop' is 34186 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'sdiv_40ns_24s_40_44_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_Row_Processing_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.17 seconds. CPU system time: 0.06 seconds. Elapsed time: 2.27 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_Apply_Scales_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_Apply_Scales_Loop' pipeline 'Apply_Scales_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_24s_24s_48_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_Apply_Scales_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3.25 seconds. CPU system time: 0.28 seconds. Elapsed time: 3.6 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_43_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_44_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modecud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_45_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modedEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_46_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeeOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_47_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modefYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_48_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeg8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_49_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modehbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_50_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_51_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modejbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_52_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modekbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_33_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modelbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_34_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modemb6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_35_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modencg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_36_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeocq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_37_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modepcA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_38_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeqcK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_39_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modercU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_40_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modesc4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_41_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modetde' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_42_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeudo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_23_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modevdy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_24_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modewdI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_25_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modexdS' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_26_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeyd2' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_27_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modezec' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_28_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeAem' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_29_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeBew' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_30_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeCeG' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_31_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeDeQ' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_32_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeEe0' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_13_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeFfa' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_14_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeGfk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_15_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeHfu' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_16_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeIfE' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_17_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeJfO' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_18_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeKfY' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_19_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeLf8' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_20_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeMgi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_21_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeNgs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_22_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeOgC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_3_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modePgM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeQgW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_5_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeRg6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_6_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeShg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_7_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeThq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_8_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeUhA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_9_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeVhK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_10_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeWhU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_11_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeXh4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_12_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeYie' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeZio' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_0_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode0iy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_1_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode1iI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_2_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode2iS' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_1_1': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.85 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.1 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.81 seconds. CPU system time: 0.16 seconds. Elapsed time: 2.25 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.12 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.48 seconds; current allocated memory: 0.000 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.22 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:54; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:20; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:48; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1.1 (64-bit)
+Tool Version Limit: 2025.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(10)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.44 seconds. CPU system time: 0.16 seconds. Elapsed time: 8.18 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+WARNING: [HLS 207-5571] unexpected pragma argument 'sdiv', expects function/operation (top.cpp:34:34)
+WARNING: [HLS 207-5571] unexpected pragma argument 'udiv', expects function/operation (top.cpp:35:34)
+WARNING: [HLS 207-5571] unexpected pragma argument 'mul', expects function/operation (top.cpp:36:34)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.02 seconds. CPU system time: 1.04 seconds. Elapsed time: 6.21 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,942 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,498 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,862 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,680 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,625 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,990 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,819 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,851 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,883 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,268 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,947 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,757 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,757 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,757 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,837 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,864 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_105_11' is marked as complete unroll implied by the pipeline pragma (top.cpp:105:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_91_8' is marked as complete unroll implied by the pipeline pragma (top.cpp:91:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_63_4' is marked as complete unroll implied by the pipeline pragma (top.cpp:63:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_78_6' is marked as complete unroll implied by the pipeline pragma (top.cpp:78:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_105_11' (top.cpp:105:21) in function 'top_kernel' completely with a factor of 16 (top.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_91_8' (top.cpp:91:19) in function 'top_kernel' completely with a factor of 16 (top.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_63_4' (top.cpp:63:30) in function 'top_kernel' completely with a factor of 16 (top.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_78_6' (top.cpp:78:19) in function 'top_kernel' completely with a factor of 16 (top.cpp:17:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 16 on dimension 2. (top.cpp:23:0)
+INFO: [HLS 214-248] Applying array_partition to 'col_sum': Complete partitioning on dimension 1. (top.cpp:27:9)
+INFO: [HLS 214-248] Applying array_partition to 'scale': Complete partitioning on dimension 1. (top.cpp:28:12)
+INFO: [HLS 214-248] Applying array_partition to 'row_buf': Complete partitioning on dimension 1. (top.cpp:52:16)
+INFO: [HLS 214-248] Applying array_partition to 'A': Cyclic partitioning with factor 16 on dimension 2. (top.cpp:17:0)
+INFO: [HLS 214-248] Applying array_partition to 'C': Cyclic partitioning with factor 16 on dimension 2. (top.cpp:17:0)
+INFO: [HLS 214-241] Aggregating bram variable 'C_15' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_14' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_13' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_12' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_11' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_10' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_9' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_8' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_7' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_6' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_5' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_4' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_3' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_2' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_1' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_0' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_15' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_14' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_13' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_12' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_11' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_10' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_9' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_8' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_7' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_6' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_5' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_4' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_3' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_2' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_1' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_0' with compact=bit mode in 24-bits
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.22 seconds. CPU system time: 0.89 seconds. Elapsed time: 9.18 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.42 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.48 seconds; current allocated memory: 0.000 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:40:9) to (top.cpp:39:19) in function 'top_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.41 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.55 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_102_9'(top.cpp:102:23) and 'VITIS_LOOP_103_10'(top.cpp:103:28) in function 'top_kernel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_102_9' (top.cpp:102:23) in function 'top_kernel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.25 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_60_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 7.7225 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_9', top.cpp:68) (combination delay: 8.832 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 9.267 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln68_3', top.cpp:68) to 'add' operation 25 bit ('add_ln68_9', top.cpp:68) (combination delay: 10.3765 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_14', top.cpp:68) (combination delay: 10.8115 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln68_4', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 11.921 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_11', top.cpp:68) (combination delay: 12.356 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln68_5', top.cpp:68) to 'add' operation 25 bit ('add_ln68_13', top.cpp:68) (combination delay: 13.4655 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 13.9005 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln68_1', top.cpp:68) to 'add' operation 25 bit ('add_ln68_10', top.cpp:68) (combination delay: 15.01 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_16', top.cpp:68) (combination delay: 15.445 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 16.5545 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 16.9895 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_12', top.cpp:68) (combination delay: 18.099 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 18.534 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 19.6435 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_16', top.cpp:68) (combination delay: 20.0785 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln68_3', top.cpp:68) to 'add' operation 25 bit ('add_ln68_16', top.cpp:68) (combination delay: 21.188 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_16', top.cpp:68) (combination delay: 21.623 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln68_2', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 22.7325 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('acc', top.cpp:68) to 'add' operation 25 bit ('add_ln68_16', top.cpp:68) (combination delay: 23.1675 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('acc', top.cpp:68) to 'add' operation 24 bit ('acc', top.cpp:68) (combination delay: 24.277 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln68_1', top.cpp:68) to 'select' operation 24 bit ('acc', top.cpp:68) (combination delay: 24.712 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('acc', top.cpp:68) to 'store' operation 0 bit ('acc_write_ln62', top.cpp:62) of variable 'acc', top.cpp:68 on local variable 'acc', top.cpp:62 (combination delay: 25.201 ns) to honor II or Latency constraint in region 'VITIS_LOOP_60_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_60_3'
+WARNING: [HLS 200-871] Estimated clock period (25.201 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'top_kernel_Pipeline_VITIS_LOOP_60_3' consists of the following:
+	'load' operation 24 bit ('acc_load', top.cpp:68) on local variable 'acc', top.cpp:62 [174]  (0.000 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [201]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [209]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [213]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [221]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [225]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [233]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [237]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [245]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [249]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [257]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [261]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [269]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [273]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [281]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [285]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [293]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [297]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [305]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [309]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [317]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [321]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [329]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [333]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [341]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [345]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [353]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [357]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [365]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [369]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [377]  (0.435 ns)
+	'add' operation 24 bit ('acc', top.cpp:68) [455]  (1.110 ns)
+	'select' operation 24 bit ('acc', top.cpp:68) [463]  (0.435 ns)
+	'store' operation 0 bit ('acc_write_ln62', top.cpp:62) of variable 'acc', top.cpp:68 on local variable 'acc', top.cpp:62 [466]  (0.489 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.42 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.54 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.18 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_76_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_76_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 46, loop 'VITIS_LOOP_76_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.41 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.47 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.34 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.41 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_89_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_89_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_89_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.71 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.74 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_102_9_VITIS_LOOP_103_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_102_9_VITIS_LOOP_103_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_102_9_VITIS_LOOP_103_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.54 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.56 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.41 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.5 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_60_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_60_3' pipeline 'VITIS_LOOP_60_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_60_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.25 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_76_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_76_5' pipeline 'VITIS_LOOP_76_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_40ns_24s_40_44_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_6_24_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_76_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.78 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.87 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_89_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_89_7' pipeline 'VITIS_LOOP_89_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_6_24_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_89_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.95 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.11 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_102_9_VITIS_LOOP_103_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_102_9_VITIS_LOOP_103_10' pipeline 'VITIS_LOOP_102_9_VITIS_LOOP_103_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_24s_24s_48_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_6_24_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_102_9_VITIS_LOOP_103_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.55 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.64 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_3_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modecud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_2_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modedEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_1_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeeOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_0_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modefYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_RAM_AUTO_1R1W' to 'top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modeg8j' due to the length limit 80
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.53 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.63 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.65 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.08 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.54 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.94 seconds; current allocated memory: 0.000 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 39.68 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:42; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:16; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:47; Allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1.1 (64-bit)
+Tool Version Limit: 2025.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg(10)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.38 seconds. CPU system time: 0.14 seconds. Elapsed time: 8.09 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.68 seconds. CPU system time: 1.05 seconds. Elapsed time: 5.9 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,930 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,408 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,265 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,189 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,158 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,942 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,261 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,285 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,279 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,792 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,280 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,175 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,175 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,168 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,208 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,238 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_103_11' is marked as complete unroll implied by the pipeline pragma (top.cpp:103:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_90_8' is marked as complete unroll implied by the pipeline pragma (top.cpp:90:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_76_6' is marked as complete unroll implied by the pipeline pragma (top.cpp:76:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_103_11' (top.cpp:103:21) in function 'top_kernel' completely with a factor of 8 (top.cpp:26:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_90_8' (top.cpp:90:19) in function 'top_kernel' completely with a factor of 8 (top.cpp:26:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_76_6' (top.cpp:76:19) in function 'top_kernel' completely with a factor of 8 (top.cpp:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 8 on dimension 2. (top.cpp:31:0)
+INFO: [HLS 214-248] Applying array_partition to 'col_sum_bank': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (top.cpp:36:12)
+INFO: [HLS 214-248] Applying array_partition to 'scale_bank': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (top.cpp:37:12)
+INFO: [HLS 214-248] Applying array_partition to 'A': Cyclic partitioning with factor 8 on dimension 2. (top.cpp:26:0)
+INFO: [HLS 214-248] Applying array_partition to 'C': Cyclic partitioning with factor 8 on dimension 2. (top.cpp:26:0)
+INFO: [HLS 214-241] Aggregating bram variable 'C_7' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_6' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_5' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_4' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_3' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_2' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_1' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'C_0' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_7' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_6' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_5' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_4' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_3' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_2' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_1' with compact=bit mode in 24-bits
+INFO: [HLS 214-241] Aggregating bram variable 'A_0' with compact=bit mode in 24-bits
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.1 seconds. CPU system time: 0.88 seconds. Elapsed time: 8.93 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 0.000 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:48:9) to (top.cpp:47:26) in function 'top_kernel'... converting 18 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.3 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_100_9'(top.cpp:100:23) and 'VITIS_LOOP_101_10'(top.cpp:101:28) in function 'top_kernel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_100_9' (top.cpp:100:23) in function 'top_kernel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.36 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.41 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_66_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_66_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.67 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.73 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.08 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_74_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_74_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 47, loop 'VITIS_LOOP_74_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.75 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.78 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.18 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.21 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_88_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_88_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_88_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.42 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.46 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_100_9_VITIS_LOOP_101_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_100_9_VITIS_LOOP_101_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_100_9_VITIS_LOOP_101_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 0.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_66_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_66_4' pipeline 'VITIS_LOOP_66_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_66_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_74_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_74_5' pipeline 'VITIS_LOOP_74_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_40ns_24s_40_44_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_24_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_74_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.35 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.41 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_88_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_88_7' pipeline 'VITIS_LOOP_88_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_24_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_88_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.67 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.79 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_100_9_VITIS_LOOP_101_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_100_9_VITIS_LOOP_101_10' pipeline 'VITIS_LOOP_100_9_VITIS_LOOP_101_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_24s_24s_48_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_24_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_100_9_VITIS_LOOP_101_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.36 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.43 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.3 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.37 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.5 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.88 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.04 seconds. CPU system time: 0.14 seconds. Elapsed time: 1.34 seconds; current allocated memory: 0.000 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.43 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:34; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:12; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:46; Allocated memory: 0.000 MB.

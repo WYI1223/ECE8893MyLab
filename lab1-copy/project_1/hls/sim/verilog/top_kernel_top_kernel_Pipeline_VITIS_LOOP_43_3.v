@@ -457,7 +457,7 @@ wire  signed [24:0] sext_ln47_fu_1550_p1;
 wire   [24:0] add_ln47_1_fu_1564_p2;
 wire   [23:0] add_ln47_fu_1558_p2;
 wire   [0:0] tmp_fu_1570_p3;
-wire   [0:0] tmp_130_fu_1578_p3;
+wire   [0:0] tmp_257_fu_1578_p3;
 wire   [0:0] xor_ln47_fu_1586_p2;
 wire   [0:0] and_ln47_fu_1592_p2;
 wire   [0:0] xor_ln47_1_fu_1598_p2;
@@ -1605,7 +1605,7 @@ assign add_ln47_fu_1558_p1 = empty_fu_310;
 
 assign add_ln47_fu_1558_p2 = ($signed(add_ln47_fu_1558_p0) + $signed(add_ln47_fu_1558_p1));
 
-assign and_ln47_fu_1592_p2 = (xor_ln47_fu_1586_p2 & tmp_130_fu_1578_p3);
+assign and_ln47_fu_1592_p2 = (xor_ln47_fu_1586_p2 & tmp_257_fu_1578_p3);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -1771,13 +1771,13 @@ assign sext_ln47_fu_1550_p0 = empty_fu_310;
 
 assign sext_ln47_fu_1550_p1 = sext_ln47_fu_1550_p0;
 
-assign tmp_130_fu_1578_p3 = add_ln47_fu_1558_p2[32'd23];
+assign tmp_257_fu_1578_p3 = add_ln47_fu_1558_p2[32'd23];
 
 assign tmp_fu_1570_p3 = add_ln47_1_fu_1564_p2[32'd24];
 
 assign trunc_ln43_fu_1088_p1 = ap_sig_allocacmp_j[5:0];
 
-assign xor_ln47_1_fu_1598_p2 = (tmp_fu_1570_p3 ^ tmp_130_fu_1578_p3);
+assign xor_ln47_1_fu_1598_p2 = (tmp_fu_1570_p3 ^ tmp_257_fu_1578_p3);
 
 assign xor_ln47_fu_1586_p2 = (tmp_fu_1570_p3 ^ 1'd1);
 

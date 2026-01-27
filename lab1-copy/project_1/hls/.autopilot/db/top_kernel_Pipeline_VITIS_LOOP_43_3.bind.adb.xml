@@ -1015,7 +1015,7 @@ newFuncRoot:65 %row_buf_63 = alloca i32 1
 
 <Node id="134" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-newFuncRoot:66 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %A, void @empty_5, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
+newFuncRoot:66 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %A, void @empty_10, i32 0, i32 0, void @empty_9, i32 4294967295, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -3377,7 +3377,7 @@ for.end18.exitStub:130 %ret_ln0 = ret
 
 <Node id="150" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body9.split:5 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_2
+for.body9.split:5 %specpipeline_ln44 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_9
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln44"/></StgValue>
@@ -3407,7 +3407,7 @@ for.body9.split:6 %speclooptripcount_ln37 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="152" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body9.split:7 %specloopname_ln43 = specloopname void @_ssdm_op_SpecLoopName, void @empty
+for.body9.split:7 %specloopname_ln43 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln43"/></StgValue>
@@ -5575,10 +5575,10 @@ arrayidx15.exit:5 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %add_l
 
 <Node id="354" bw="1" op_0_bw="1" op_1_bw="24" op_2_bw="32">
 <![CDATA[
-arrayidx15.exit:6 %tmp_130 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln47, i32 23
+arrayidx15.exit:6 %tmp_257 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln47, i32 23
 
 ]]></Node>
-<StgValue><ssdm name="tmp_130"/></StgValue>
+<StgValue><ssdm name="tmp_257"/></StgValue>
 </operation>
 
 <operation id="227" st_id="2" stage="1" lat="1">
@@ -5605,7 +5605,7 @@ arrayidx15.exit:7 %xor_ln47 = xor i1 %tmp, i1 1
 
 <Node id="356" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-arrayidx15.exit:8 %and_ln47 = and i1 %tmp_130, i1 %xor_ln47
+arrayidx15.exit:8 %and_ln47 = and i1 %tmp_257, i1 %xor_ln47
 
 ]]></Node>
 <StgValue><ssdm name="and_ln47"/></StgValue>
@@ -5620,7 +5620,7 @@ arrayidx15.exit:8 %and_ln47 = and i1 %tmp_130, i1 %xor_ln47
 
 <Node id="357" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-arrayidx15.exit:9 %xor_ln47_1 = xor i1 %tmp, i1 %tmp_130
+arrayidx15.exit:9 %xor_ln47_1 = xor i1 %tmp, i1 %tmp_257
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln47_1"/></StgValue>
@@ -6032,23 +6032,23 @@ arrayidx15.exit:14 %br_ln43 = br void %for.body9
 </dataflow>
 <dataflow id="511" from="A" to="specinterface_ln0" fromId="376" toId="71">
 </dataflow>
-<dataflow id="513" from="empty_5" to="specinterface_ln0" fromId="512" toId="71">
+<dataflow id="513" from="empty_10" to="specinterface_ln0" fromId="512" toId="71">
 </dataflow>
 <dataflow id="515" from="StgValue_514" to="specinterface_ln0" fromId="514" toId="71">
 </dataflow>
 <dataflow id="516" from="StgValue_514" to="specinterface_ln0" fromId="514" toId="71">
 </dataflow>
-<dataflow id="518" from="empty_2" to="specinterface_ln0" fromId="517" toId="71">
+<dataflow id="518" from="empty_9" to="specinterface_ln0" fromId="517" toId="71">
 </dataflow>
 <dataflow id="520" from="StgValue_519" to="specinterface_ln0" fromId="519" toId="71">
 </dataflow>
 <dataflow id="521" from="StgValue_514" to="specinterface_ln0" fromId="514" toId="71">
 </dataflow>
-<dataflow id="522" from="empty_2" to="specinterface_ln0" fromId="517" toId="71">
+<dataflow id="522" from="empty_9" to="specinterface_ln0" fromId="517" toId="71">
 </dataflow>
-<dataflow id="523" from="empty_2" to="specinterface_ln0" fromId="517" toId="71">
+<dataflow id="523" from="empty_9" to="specinterface_ln0" fromId="517" toId="71">
 </dataflow>
-<dataflow id="524" from="empty_2" to="specinterface_ln0" fromId="517" toId="71">
+<dataflow id="524" from="empty_9" to="specinterface_ln0" fromId="517" toId="71">
 </dataflow>
 <dataflow id="525" from="StgValue_514" to="specinterface_ln0" fromId="514" toId="71">
 </dataflow>
@@ -6058,9 +6058,9 @@ arrayidx15.exit:14 %br_ln43 = br void %for.body9
 </dataflow>
 <dataflow id="528" from="StgValue_514" to="specinterface_ln0" fromId="514" toId="71">
 </dataflow>
-<dataflow id="529" from="empty_2" to="specinterface_ln0" fromId="517" toId="71">
+<dataflow id="529" from="empty_9" to="specinterface_ln0" fromId="517" toId="71">
 </dataflow>
-<dataflow id="530" from="empty_2" to="specinterface_ln0" fromId="517" toId="71">
+<dataflow id="530" from="empty_9" to="specinterface_ln0" fromId="517" toId="71">
 </dataflow>
 <dataflow id="531" from="StgValue_519" to="specinterface_ln0" fromId="519" toId="71">
 </dataflow>
@@ -6252,7 +6252,7 @@ arrayidx15.exit:14 %br_ln43 = br void %for.body9
 </dataflow>
 <dataflow id="695" from="StgValue_514" to="specpipeline_ln44" fromId="514" toId="88">
 </dataflow>
-<dataflow id="696" from="empty_2" to="specpipeline_ln44" fromId="517" toId="88">
+<dataflow id="696" from="empty_9" to="specpipeline_ln44" fromId="517" toId="88">
 </dataflow>
 <dataflow id="698" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln37" fromId="697" toId="89">
 </dataflow>
@@ -6264,7 +6264,7 @@ arrayidx15.exit:14 %br_ln43 = br void %for.body9
 </dataflow>
 <dataflow id="704" from="_ssdm_op_SpecLoopName" to="specloopname_ln43" fromId="703" toId="90">
 </dataflow>
-<dataflow id="706" from="empty" to="specloopname_ln43" fromId="705" toId="90">
+<dataflow id="706" from="empty_7" to="specloopname_ln43" fromId="705" toId="90">
 </dataflow>
 <dataflow id="707" from="A_addr" to="a" fromId="83" toId="91">
 </dataflow>
@@ -6544,23 +6544,23 @@ arrayidx15.exit:14 %br_ln43 = br void %for.body9
 </dataflow>
 <dataflow id="847" from="StgValue_846" to="tmp" fromId="846" toId="225">
 </dataflow>
-<dataflow id="849" from="_ssdm_op_BitSelect.i1.i24.i32" to="tmp_130" fromId="848" toId="226">
+<dataflow id="849" from="_ssdm_op_BitSelect.i1.i24.i32" to="tmp_257" fromId="848" toId="226">
 </dataflow>
-<dataflow id="850" from="add_ln47" to="tmp_130" fromId="223" toId="226">
+<dataflow id="850" from="add_ln47" to="tmp_257" fromId="223" toId="226">
 </dataflow>
-<dataflow id="852" from="StgValue_851" to="tmp_130" fromId="851" toId="226">
+<dataflow id="852" from="StgValue_851" to="tmp_257" fromId="851" toId="226">
 </dataflow>
 <dataflow id="853" from="tmp" to="xor_ln47" fromId="225" toId="227">
 </dataflow>
 <dataflow id="855" from="StgValue_854" to="xor_ln47" fromId="854" toId="227">
 </dataflow>
-<dataflow id="856" from="tmp_130" to="and_ln47" fromId="226" toId="228">
+<dataflow id="856" from="tmp_257" to="and_ln47" fromId="226" toId="228">
 </dataflow>
 <dataflow id="857" from="xor_ln47" to="and_ln47" fromId="227" toId="228">
 </dataflow>
 <dataflow id="858" from="tmp" to="xor_ln47_1" fromId="225" toId="229">
 </dataflow>
-<dataflow id="859" from="tmp_130" to="xor_ln47_1" fromId="226" toId="229">
+<dataflow id="859" from="tmp_257" to="xor_ln47_1" fromId="226" toId="229">
 </dataflow>
 <dataflow id="860" from="and_ln47" to="select_ln47" fromId="228" toId="230">
 </dataflow>

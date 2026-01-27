@@ -59280,7 +59280,7 @@ void top_kernel(data_t A[256][64],
     data_t scale[64];
 
 
-    const int UF = 8;
+    const int UF = 16;
 
 
 

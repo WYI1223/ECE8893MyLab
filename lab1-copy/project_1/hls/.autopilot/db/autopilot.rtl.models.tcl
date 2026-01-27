@@ -6,7 +6,7 @@ set SynModuleInfo {
   }
   {SRCNAME top_kernel_Pipeline_VITIS_LOOP_54_4 MODELNAME top_kernel_Pipeline_VITIS_LOOP_54_4 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_4
     SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_17_6_24_1_1 RTLNAME top_kernel_sparsemux_17_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_kernel_sparsemux_9_6_24_1_1 RTLNAME top_kernel_sparsemux_9_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME top_kernel_sdiv_40ns_24s_40_44_1 RTLNAME top_kernel_sdiv_40ns_24s_40_44_1 BINDTYPE op TYPE sdiv IMPL auto LATENCY 43 ALLOW_PRAGMA 1}
     }
   }
@@ -23,7 +23,7 @@ set SynModuleInfo {
   }
   {SRCNAME top_kernel MODELNAME top_kernel RTLNAME top_kernel IS_TOP 1
     SUBMODULES {
-      {MODELNAME top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1W RTLNAME top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb RTLNAME top_kernel_top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
 }

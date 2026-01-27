@@ -3302,11 +3302,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">40009</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">38985</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">40010</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">38986</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -3319,8 +3319,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Top_kernel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114453611</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-01-27T04:32:06Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114453617</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-01-27T04:37:26Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -3331,7 +3331,7 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="41680daa"/>
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="03f12115"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="c12a4ca9"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="5f76a341"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="22bfebb0"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

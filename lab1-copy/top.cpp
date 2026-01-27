@@ -18,7 +18,7 @@ void top_kernel(data_t A[N_ROWS][N_COLS],
     data_t scale[N_COLS];
 
     // Tunable unroll factor across columns (must divide N_COLS)
-    const int UF = 8;
+    const int UF = 16;
 
     // Partition frequently accessed, column-parallel structures.
     // NOTE: These pragmas do not change numerical behavior.

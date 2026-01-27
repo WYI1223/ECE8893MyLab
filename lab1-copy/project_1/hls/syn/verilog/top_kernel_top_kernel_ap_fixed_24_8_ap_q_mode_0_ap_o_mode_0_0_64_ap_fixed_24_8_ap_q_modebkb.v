@@ -13,8 +13,8 @@ module top_kernel_top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed
     reset, clk);
 
 parameter DataWidth = 24;
-parameter AddressWidth = 9;
-parameter AddressRange = 512;
+parameter AddressWidth = 10;
+parameter AddressRange = 1024;
  
 input[AddressWidth-1:0] address0;
 input ce0;

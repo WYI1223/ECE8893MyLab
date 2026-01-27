@@ -14623,7 +14623,7 @@
 					<Obj>
 						<type>0</type>
 						<id>354</id>
-						<name>tmp_130</name>
+						<name>tmp_257</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy</fileDirectory>
 						<lineNumber>47</lineNumber>
@@ -38898,7 +38898,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_130_fu_1578</first>
+			<first>tmp_257_fu_1578</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

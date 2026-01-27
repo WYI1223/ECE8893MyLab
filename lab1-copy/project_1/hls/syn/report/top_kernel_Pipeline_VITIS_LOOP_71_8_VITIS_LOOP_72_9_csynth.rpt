@@ -1,0 +1,253 @@
+
+
+================================================================
+== Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9'
+================================================================
+* Date:           Mon Jan 26 21:32:20 2026
+
+* Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+* Project:        project_1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.277 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   |  min  |  max  |                      Type                      |
+    +---------+---------+----------+----------+-------+-------+------------------------------------------------+
+    |    16387|    16387|  0.164 ms|  0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-------+-------+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_71_8_VITIS_LOOP_72_9  |    16385|    16385|         3|          1|          1|  16384|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    283|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    2|       0|    312|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     72|    -|
+|Register         |        -|    -|     112|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    2|     112|    667|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+------------------------+---------+----+---+-----+-----+
+    |           Instance          |         Module         | BRAM_18K| DSP| FF| LUT | URAM|
+    +-----------------------------+------------------------+---------+----+---+-----+-----+
+    |mul_24s_24s_48_1_1_U208      |mul_24s_24s_48_1_1      |        0|   2|  0|   39|    0|
+    |sparsemux_129_6_24_1_1_U209  |sparsemux_129_6_24_1_1  |        0|   0|  0|  273|    0|
+    +-----------------------------+------------------------+---------+----+---+-----+-----+
+    |Total                        |                        |        0|   2|  0|  312|    0|
+    +-----------------------------+------------------------+---------+----+---+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln71_1_fu_802_p2      |         +|   0|  0|  22|          15|           1|
+    |add_ln71_fu_814_p2        |         +|   0|  0|  16|           9|           1|
+    |add_ln72_fu_1137_p2       |         +|   0|  0|  14|           7|           1|
+    |add_ln74_1_fu_858_p2      |         +|   0|  0|  21|          14|          14|
+    |add_ln74_fu_1205_p2       |         +|   0|  0|  31|          24|          24|
+    |and_ln74_1_fu_1287_p2     |       and|   0|  0|   2|           1|           1|
+    |and_ln74_2_fu_1301_p2     |       and|   0|  0|   2|           1|           1|
+    |and_ln74_3_fu_1325_p2     |       and|   0|  0|   2|           1|           1|
+    |and_ln74_4_fu_1331_p2     |       and|   0|  0|   2|           1|           1|
+    |and_ln74_5_fu_1349_p2     |       and|   0|  0|   2|           1|           1|
+    |and_ln74_fu_1225_p2       |       and|   0|  0|   2|           1|           1|
+    |icmp_ln71_fu_796_p2       |      icmp|   0|  0|  23|          15|          16|
+    |icmp_ln72_fu_820_p2       |      icmp|   0|  0|  15|           7|           8|
+    |icmp_ln74_1_fu_1261_p2    |      icmp|   0|  0|  15|           8|           2|
+    |icmp_ln74_2_fu_1267_p2    |      icmp|   0|  0|  15|           8|           1|
+    |icmp_ln74_fu_1247_p2      |      icmp|   0|  0|  14|           7|           2|
+    |or_ln74_1_fu_1363_p2      |        or|   0|  0|   2|           1|           1|
+    |or_ln74_2_fu_1337_p2      |        or|   0|  0|   2|           1|           1|
+    |or_ln74_fu_1313_p2        |        or|   0|  0|   2|           1|           1|
+    |select_ln71_1_fu_834_p3   |    select|   0|  0|   8|           1|           9|
+    |select_ln71_fu_826_p3     |    select|   0|  0|   7|           1|           1|
+    |select_ln74_1_fu_1293_p3  |    select|   0|  0|   2|           1|           1|
+    |select_ln74_2_fu_1355_p3  |    select|   0|  0|  24|           1|          23|
+    |select_ln74_3_fu_1369_p3  |    select|   0|  0|  24|           1|          24|
+    |select_ln74_fu_1273_p3    |    select|   0|  0|   2|           1|           1|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    |xor_ln74_1_fu_1281_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln74_2_fu_1307_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln74_3_fu_1319_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln74_4_fu_1343_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln74_fu_1219_p2       |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 283|         135|         150|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                            |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_load                |   9|          2|    9|         18|
+    |ap_sig_allocacmp_indvar_flatten6_load  |   9|          2|   15|         30|
+    |ap_sig_allocacmp_j_load                |   9|          2|    7|         14|
+    |i_fu_356                               |   9|          2|    9|         18|
+    |indvar_flatten6_fu_360                 |   9|          2|   15|         30|
+    |j_fu_352                               |   9|          2|    7|         14|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  |  72|         16|   64|        128|
+    +---------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+----+----+-----+-----------+
+    |                Name                | FF | LUT| Bits| Const Bits|
+    +------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                           |   1|   0|    1|          0|
+    |ap_done_reg                         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1             |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2             |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg    |   1|   0|    1|          0|
+    |i_fu_356                            |   9|   0|    9|          0|
+    |indvar_flatten6_fu_360              |  15|   0|   15|          0|
+    |j_fu_352                            |   7|   0|    7|          0|
+    |select_ln74_3_reg_1417              |  24|   0|   24|          0|
+    |tmp_1_reg_1412                      |  24|   0|   24|          0|
+    |zext_ln74_2_reg_1402                |  14|   0|   64|         50|
+    |zext_ln74_2_reg_1402_pp0_iter1_reg  |  14|   0|   64|         50|
+    +------------------------------------+----+----+-----+-----------+
+    |Total                               | 112|   0|  212|        100|
+    +------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-----------------------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |                    Source Object                    |    C Type    |
++-----------------+-----+-----+------------+-----------------------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9|  return value|
+|C_address0       |  out|   14|   ap_memory|                                                    C|         array|
+|C_ce0            |  out|    1|   ap_memory|                                                    C|         array|
+|C_we0            |  out|    1|   ap_memory|                                                    C|         array|
+|C_d0             |  out|   24|   ap_memory|                                                    C|         array|
+|scale_reload     |   in|   24|     ap_none|                                         scale_reload|        scalar|
+|scale_1_reload   |   in|   24|     ap_none|                                       scale_1_reload|        scalar|
+|scale_2_reload   |   in|   24|     ap_none|                                       scale_2_reload|        scalar|
+|scale_3_reload   |   in|   24|     ap_none|                                       scale_3_reload|        scalar|
+|scale_4_reload   |   in|   24|     ap_none|                                       scale_4_reload|        scalar|
+|scale_5_reload   |   in|   24|     ap_none|                                       scale_5_reload|        scalar|
+|scale_6_reload   |   in|   24|     ap_none|                                       scale_6_reload|        scalar|
+|scale_7_reload   |   in|   24|     ap_none|                                       scale_7_reload|        scalar|
+|scale_8_reload   |   in|   24|     ap_none|                                       scale_8_reload|        scalar|
+|scale_9_reload   |   in|   24|     ap_none|                                       scale_9_reload|        scalar|
+|scale_10_reload  |   in|   24|     ap_none|                                      scale_10_reload|        scalar|
+|scale_11_reload  |   in|   24|     ap_none|                                      scale_11_reload|        scalar|
+|scale_12_reload  |   in|   24|     ap_none|                                      scale_12_reload|        scalar|
+|scale_13_reload  |   in|   24|     ap_none|                                      scale_13_reload|        scalar|
+|scale_14_reload  |   in|   24|     ap_none|                                      scale_14_reload|        scalar|
+|scale_15_reload  |   in|   24|     ap_none|                                      scale_15_reload|        scalar|
+|scale_16_reload  |   in|   24|     ap_none|                                      scale_16_reload|        scalar|
+|scale_17_reload  |   in|   24|     ap_none|                                      scale_17_reload|        scalar|
+|scale_18_reload  |   in|   24|     ap_none|                                      scale_18_reload|        scalar|
+|scale_19_reload  |   in|   24|     ap_none|                                      scale_19_reload|        scalar|
+|scale_20_reload  |   in|   24|     ap_none|                                      scale_20_reload|        scalar|
+|scale_21_reload  |   in|   24|     ap_none|                                      scale_21_reload|        scalar|
+|scale_22_reload  |   in|   24|     ap_none|                                      scale_22_reload|        scalar|
+|scale_23_reload  |   in|   24|     ap_none|                                      scale_23_reload|        scalar|
+|scale_24_reload  |   in|   24|     ap_none|                                      scale_24_reload|        scalar|
+|scale_25_reload  |   in|   24|     ap_none|                                      scale_25_reload|        scalar|
+|scale_26_reload  |   in|   24|     ap_none|                                      scale_26_reload|        scalar|
+|scale_27_reload  |   in|   24|     ap_none|                                      scale_27_reload|        scalar|
+|scale_28_reload  |   in|   24|     ap_none|                                      scale_28_reload|        scalar|
+|scale_29_reload  |   in|   24|     ap_none|                                      scale_29_reload|        scalar|
+|scale_30_reload  |   in|   24|     ap_none|                                      scale_30_reload|        scalar|
+|scale_31_reload  |   in|   24|     ap_none|                                      scale_31_reload|        scalar|
+|scale_32_reload  |   in|   24|     ap_none|                                      scale_32_reload|        scalar|
+|scale_33_reload  |   in|   24|     ap_none|                                      scale_33_reload|        scalar|
+|scale_34_reload  |   in|   24|     ap_none|                                      scale_34_reload|        scalar|
+|scale_35_reload  |   in|   24|     ap_none|                                      scale_35_reload|        scalar|
+|scale_36_reload  |   in|   24|     ap_none|                                      scale_36_reload|        scalar|
+|scale_37_reload  |   in|   24|     ap_none|                                      scale_37_reload|        scalar|
+|scale_38_reload  |   in|   24|     ap_none|                                      scale_38_reload|        scalar|
+|scale_39_reload  |   in|   24|     ap_none|                                      scale_39_reload|        scalar|
+|scale_40_reload  |   in|   24|     ap_none|                                      scale_40_reload|        scalar|
+|scale_41_reload  |   in|   24|     ap_none|                                      scale_41_reload|        scalar|
+|scale_42_reload  |   in|   24|     ap_none|                                      scale_42_reload|        scalar|
+|scale_43_reload  |   in|   24|     ap_none|                                      scale_43_reload|        scalar|
+|scale_44_reload  |   in|   24|     ap_none|                                      scale_44_reload|        scalar|
+|scale_45_reload  |   in|   24|     ap_none|                                      scale_45_reload|        scalar|
+|scale_46_reload  |   in|   24|     ap_none|                                      scale_46_reload|        scalar|
+|scale_47_reload  |   in|   24|     ap_none|                                      scale_47_reload|        scalar|
+|scale_48_reload  |   in|   24|     ap_none|                                      scale_48_reload|        scalar|
+|scale_49_reload  |   in|   24|     ap_none|                                      scale_49_reload|        scalar|
+|scale_50_reload  |   in|   24|     ap_none|                                      scale_50_reload|        scalar|
+|scale_51_reload  |   in|   24|     ap_none|                                      scale_51_reload|        scalar|
+|scale_52_reload  |   in|   24|     ap_none|                                      scale_52_reload|        scalar|
+|scale_53_reload  |   in|   24|     ap_none|                                      scale_53_reload|        scalar|
+|scale_54_reload  |   in|   24|     ap_none|                                      scale_54_reload|        scalar|
+|scale_55_reload  |   in|   24|     ap_none|                                      scale_55_reload|        scalar|
+|scale_56_reload  |   in|   24|     ap_none|                                      scale_56_reload|        scalar|
+|scale_57_reload  |   in|   24|     ap_none|                                      scale_57_reload|        scalar|
+|scale_58_reload  |   in|   24|     ap_none|                                      scale_58_reload|        scalar|
+|scale_59_reload  |   in|   24|     ap_none|                                      scale_59_reload|        scalar|
+|scale_60_reload  |   in|   24|     ap_none|                                      scale_60_reload|        scalar|
+|scale_61_reload  |   in|   24|     ap_none|                                      scale_61_reload|        scalar|
+|scale_62_reload  |   in|   24|     ap_none|                                      scale_62_reload|        scalar|
+|scale_63_reload  |   in|   24|     ap_none|                                      scale_63_reload|        scalar|
+|tmp_address0     |  out|   14|   ap_memory|                                                  tmp|         array|
+|tmp_ce0          |  out|    1|   ap_memory|                                                  tmp|         array|
+|tmp_q0           |   in|   24|   ap_memory|                                                  tmp|         array|
++-----------------+-----+-----+------------+-----------------------------------------------------+--------------+
+

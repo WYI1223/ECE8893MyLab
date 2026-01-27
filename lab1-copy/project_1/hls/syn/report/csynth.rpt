@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'top_kernel'
 ================================================================
 + General Information: 
-    * Date:           Mon Jan 26 21:03:05 2026
+    * Date:           Mon Jan 26 21:32:20 2026
     * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
     * Project:        project_1
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,21 +15,23 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+---------+-----------+------------+-----+
-    |                         Modules                        | Issue|      |       Latency       | Iteration|         |  Trip |          |         |         |           |            |     |
-    |                         & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM   |   DSP   |     FF    |     LUT    | URAM|
-    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+---------+-----------+------------+-----+
-    |+ top_kernel                                            |     -|  0.02|    62793|  6.279e+05|         -|    62794|      -|        no|  22 (5%)|   7 (1%)|  7385 (5%)|  7623 (10%)|    -|
-    | + top_kernel_Pipeline_VITIS_LOOP_69_5                  |     -|  1.57|       66|    660.000|         -|       65|      -|    rewind|        -|   5 (1%)|  1652 (1%)|   572 (~0%)|    -|
-    |  o VITIS_LOOP_69_5                                     |     -|  7.30|       64|    640.000|         2|        1|     64|       yes|        -|        -|          -|           -|    -|
-    | + top_kernel_Pipeline_VITIS_LOOP_79_6_VITIS_LOOP_81_7  |     -|  0.02|    16387|  1.639e+05|         -|    16385|      -|    rewind|        -|  2 (~0%)|  112 (~0%)|   667 (~0%)|    -|
-    |  o VITIS_LOOP_79_6_VITIS_LOOP_81_7                     |     -|  7.30|    16385|  1.638e+05|         3|        1|  16384|       yes|        -|        -|          -|           -|    -|
-    | o VITIS_LOOP_41_2                                      |     -|  7.30|    46336|  4.634e+05|       181|        -|    256|        no|        -|        -|          -|           -|    -|
-    |  + top_kernel_Pipeline_VITIS_LOOP_46_3                 |     -|  3.91|       66|    660.000|         -|       65|      -|    rewind|        -|        -|   34 (~0%)|   214 (~0%)|    -|
-    |   o VITIS_LOOP_46_3                                    |     -|  7.30|       64|    640.000|         2|        1|     64|       yes|        -|        -|          -|           -|    -|
-    |  + top_kernel_Pipeline_VITIS_LOOP_56_4                 |     -|  1.56|      111|  1.110e+03|         -|       65|      -|    rewind|        -|        -|  3998 (2%)|   5352 (7%)|    -|
-    |   o VITIS_LOOP_56_4                                    |     -|  7.30|      109|  1.090e+03|        47|        1|     64|       yes|        -|        -|          -|           -|    -|
-    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+---------+-----------+------------+-----+
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+---------+-----------+-----------+-----+
+    |                         Modules                        | Issue|      |       Latency       | Iteration|         |  Trip |          |         |         |           |           |     |
+    |                         & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM   |   DSP   |     FF    |    LUT    | URAM|
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+---------+-----------+-----------+-----+
+    |+ top_kernel                                            |     -|  0.02|    78669|  7.867e+05|         -|    78670|      -|        no|  22 (5%)|   7 (1%)|  7135 (5%)|  6469 (9%)|    -|
+    | + top_kernel_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_56_6  |     -|  3.09|    16386|  1.639e+05|         -|    16385|      -|    rewind|        -|        -|  1576 (1%)|  1858 (2%)|    -|
+    |  o VITIS_LOOP_55_5_VITIS_LOOP_56_6                     |     -|  7.30|    16384|  1.638e+05|         2|        1|  16384|       yes|        -|        -|          -|          -|    -|
+    | + top_kernel_Pipeline_VITIS_LOOP_63_7                  |     -|  1.57|       66|    660.000|         -|       65|      -|    rewind|        -|   5 (1%)|  1652 (1%)|  572 (~0%)|    -|
+    |  o VITIS_LOOP_63_7                                     |     -|  7.30|       64|    640.000|         2|        1|     64|       yes|        -|        -|          -|          -|    -|
+    | + top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9  |     -|  0.02|    16387|  1.639e+05|         -|    16385|      -|    rewind|        -|  2 (~0%)|  112 (~0%)|  667 (~0%)|    -|
+    |  o VITIS_LOOP_71_8_VITIS_LOOP_72_9                     |     -|  7.30|    16385|  1.638e+05|         3|        1|  16384|       yes|        -|        -|          -|          -|    -|
+    | o VITIS_LOOP_27_1                                      |     -|  7.30|    45824|  4.582e+05|       179|        -|    256|        no|        -|        -|          -|          -|    -|
+    |  + top_kernel_Pipeline_VITIS_LOOP_31_2                 |     -|  3.91|       66|    660.000|         -|       65|      -|    rewind|        -|        -|   34 (~0%)|  214 (~0%)|    -|
+    |   o VITIS_LOOP_31_2                                    |     -|  7.30|       64|    640.000|         2|        1|     64|       yes|        -|        -|          -|          -|    -|
+    |  + top_kernel_Pipeline_VITIS_LOOP_39_3                 |     -|  2.44|      109|  1.090e+03|         -|       65|      -|    rewind|        -|        -|  3705 (2%)|  2894 (4%)|    -|
+    |   o VITIS_LOOP_39_3                                    |     -|  7.30|      107|  1.070e+03|        45|        1|     64|       yes|        -|        -|          -|          -|    -|
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+---------+-----------+-----------+-----+
 
 
 ================================================================
@@ -87,101 +89,110 @@
 | Name                                                   | DSP | Pragma | Variable      | Op        | Impl                     | Latency |
 +--------------------------------------------------------+-----+--------+---------------+-----------+--------------------------+---------+
 | + top_kernel                                           | 7   |        |               |           |                          |         |
-|   icmp_ln41_fu_1210_p2                                 |     |        | icmp_ln41     | seteq     | auto                     | 0       |
-|   add_ln41_fu_1216_p2                                  |     |        | add_ln41      | add       | fabric                   | 0       |
-|   add_ln53_fu_1503_p2                                  |     |        | add_ln53      | add       | fabric                   | 0       |
-|   xor_ln53_fu_1529_p2                                  |     |        | xor_ln53      | xor       | auto                     | 0       |
-|   and_ln53_fu_1535_p2                                  |     |        | and_ln53      | and       | auto                     | 0       |
-|   xor_ln53_1_fu_1541_p2                                |     |        | xor_ln53_1    | xor       | auto                     | 0       |
-|   select_ln53_fu_1547_p3                               |     |        | select_ln53   | select    | auto_sel                 | 0       |
-|   denom_1_fu_1555_p3                                   |     |        | denom_1       | select    | auto_sel                 | 0       |
-|  + top_kernel_Pipeline_VITIS_LOOP_46_3                 | 0   |        |               |           |                          |         |
-|    icmp_ln46_fu_103_p2                                 |     |        | icmp_ln46     | seteq     | auto                     | 0       |
-|    add_ln46_fu_109_p2                                  |     |        | add_ln46      | add       | fabric                   | 0       |
-|    add_ln49_2_fu_119_p2                                |     |        | add_ln49_2    | add       | fabric                   | 0       |
-|    add_ln49_fu_146_p2                                  |     |        | add_ln49      | add       | fabric                   | 0       |
-|    add_ln49_1_fu_152_p2                                |     |        | add_ln49_1    | add       | fabric                   | 0       |
-|    xor_ln49_fu_174_p2                                  |     |        | xor_ln49      | xor       | auto                     | 0       |
-|    and_ln49_fu_180_p2                                  |     |        | and_ln49      | and       | auto                     | 0       |
-|    xor_ln49_1_fu_186_p2                                |     |        | xor_ln49_1    | xor       | auto                     | 0       |
-|    select_ln49_fu_192_p3                               |     |        | select_ln49   | select    | auto_sel                 | 0       |
-|    select_ln49_1_fu_200_p3                             |     |        | select_ln49_1 | select    | auto_sel                 | 0       |
-|  + top_kernel_Pipeline_VITIS_LOOP_69_5                 | 5   |        |               |           |                          |         |
-|    icmp_ln69_fu_1557_p2                                |     |        | icmp_ln69     | seteq     | auto                     | 0       |
-|    add_ln69_fu_1563_p2                                 |     |        | add_ln69      | add       | fabric                   | 0       |
-|    sparsemux_129_6_24_1_1_U77                          |     |        | tmp_1_1       | sparsemux | compactencoding_dontcare | 0       |
-|    mul_40s_42ns_81_1_1_U76                             | 5   |        | mul_ln72      | mul       | auto                     | 0       |
-|    sub_ln72_fu_2003_p2                                 |     |        | sub_ln72      | sub       | fabric                   | 0       |
-|    select_ln72_1_fu_2027_p3                            |     |        | select_ln72_1 | select    | auto_sel                 | 0       |
-|    sub_ln72_1_fu_2038_p2                               |     |        | sub_ln72_1    | sub       | fabric                   | 0       |
-|    select_ln72_2_fu_2044_p3                            |     |        | select_ln72_2 | select    | auto_sel                 | 0       |
-|    or_ln72_fu_2082_p2                                  |     |        | or_ln72       | or        | auto                     | 0       |
-|    xor_ln72_fu_2088_p2                                 |     |        | xor_ln72      | xor       | auto                     | 0       |
-|    and_ln72_fu_2094_p2                                 |     |        | and_ln72      | and       | auto                     | 0       |
-|    and_ln72_2_fu_2100_p2                               |     |        | and_ln72_2    | and       | auto                     | 0       |
-|    xor_ln72_1_fu_2106_p2                               |     |        | xor_ln72_1    | xor       | auto                     | 0       |
-|    and_ln72_1_fu_2112_p2                               |     |        | and_ln72_1    | and       | auto                     | 0       |
-|    select_ln72_fu_2118_p3                              |     |        | select_ln72   | select    | auto_sel                 | 0       |
-|    or_ln72_1_fu_2126_p2                                |     |        | or_ln72_1     | or        | auto                     | 0       |
+|   icmp_ln27_fu_896_p2                                  |     |        | icmp_ln27     | seteq     | auto                     | 0       |
+|   add_ln27_fu_902_p2                                   |     |        | add_ln27      | add       | fabric                   | 0       |
+|   add_ln36_fu_933_p2                                   |     |        | add_ln36      | add       | fabric                   | 0       |
+|   xor_ln36_fu_959_p2                                   |     |        | xor_ln36      | xor       | auto                     | 0       |
+|   and_ln36_fu_965_p2                                   |     |        | and_ln36      | and       | auto                     | 0       |
+|   xor_ln36_1_fu_971_p2                                 |     |        | xor_ln36_1    | xor       | auto                     | 0       |
+|   select_ln36_fu_977_p3                                |     |        | select_ln36   | select    | auto_sel                 | 0       |
+|   denom_1_fu_985_p3                                    |     |        | denom_1       | select    | auto_sel                 | 0       |
+|  + top_kernel_Pipeline_VITIS_LOOP_31_2                 | 0   |        |               |           |                          |         |
+|    icmp_ln31_fu_103_p2                                 |     |        | icmp_ln31     | seteq     | auto                     | 0       |
+|    add_ln31_fu_109_p2                                  |     |        | add_ln31      | add       | fabric                   | 0       |
+|    add_ln33_2_fu_119_p2                                |     |        | add_ln33_2    | add       | fabric                   | 0       |
+|    add_ln33_fu_146_p2                                  |     |        | add_ln33      | add       | fabric                   | 0       |
+|    add_ln33_1_fu_152_p2                                |     |        | add_ln33_1    | add       | fabric                   | 0       |
+|    xor_ln33_fu_174_p2                                  |     |        | xor_ln33      | xor       | auto                     | 0       |
+|    and_ln33_fu_180_p2                                  |     |        | and_ln33      | and       | auto                     | 0       |
+|    xor_ln33_1_fu_186_p2                                |     |        | xor_ln33_1    | xor       | auto                     | 0       |
+|    select_ln33_fu_192_p3                               |     |        | select_ln33   | select    | auto_sel                 | 0       |
+|    select_ln33_1_fu_200_p3                             |     |        | select_ln33_1 | select    | auto_sel                 | 0       |
+|  + top_kernel_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_56_6 | 0   |        |               |           |                          |         |
+|    icmp_ln55_fu_1524_p2                                |     |        | icmp_ln55     | seteq     | auto                     | 0       |
+|    add_ln55_1_fu_1530_p2                               |     |        | add_ln55_1    | add       | fabric                   | 0       |
+|    add_ln55_fu_1542_p2                                 |     |        | add_ln55      | add       | fabric                   | 0       |
+|    icmp_ln56_fu_1548_p2                                |     |        | icmp_ln56     | seteq     | auto                     | 0       |
+|    select_ln55_fu_1554_p3                              |     |        | select_ln55   | select    | auto_sel                 | 0       |
+|    select_ln55_1_fu_1562_p3                            |     |        | select_ln55_1 | select    | auto_sel                 | 0       |
+|    add_ln59_2_fu_1586_p2                               |     |        | add_ln59_2    | add       | fabric                   | 0       |
+|    sparsemux_129_6_24_1_1_U10                          |     |        | tmp_s         | sparsemux | compactencoding_dontcare | 0       |
+|    col_sum_64_fu_2085_p2                               |     |        | col_sum_64    | add       | fabric                   | 0       |
+|    add_ln59_1_fu_2091_p2                               |     |        | add_ln59_1    | add       | fabric                   | 0       |
+|    icmp_ln59_fu_2097_p2                                |     |        | icmp_ln59     | seteq     | auto                     | 0       |
+|    xor_ln59_fu_2888_p2                                 |     |        | xor_ln59      | xor       | auto                     | 0       |
+|    and_ln59_fu_2894_p2                                 |     |        | and_ln59      | and       | auto                     | 0       |
+|    xor_ln59_1_fu_2900_p2                               |     |        | xor_ln59_1    | xor       | auto                     | 0       |
+|    and_ln59_1_fu_2906_p2                               |     |        | and_ln59_1    | and       | auto                     | 0       |
+|    xor_ln59_2_fu_2912_p2                               |     |        | xor_ln59_2    | xor       | auto                     | 0       |
+|    add_ln56_fu_1601_p2                                 |     |        | add_ln56      | add       | fabric                   | 0       |
+|  + top_kernel_Pipeline_VITIS_LOOP_39_3                 | 0   |        |               |           |                          |         |
+|    icmp_ln39_fu_126_p2                                 |     |        | icmp_ln39     | seteq     | auto                     | 0       |
+|    add_ln39_fu_132_p2                                  |     |        | add_ln39      | add       | fabric                   | 0       |
+|    add_ln41_fu_142_p2                                  |     |        | add_ln41      | add       | fabric                   | 0       |
+|    sdiv_40ns_24s_40_44_1_U4                            |     |        | sdiv_ln41     | sdiv      | auto                     | 43      |
+|    icmp_ln41_fu_201_p2                                 |     |        | icmp_ln41     | setne     | auto                     | 0       |
+|    icmp_ln41_1_fu_207_p2                               |     |        | icmp_ln41_1   | setne     | auto                     | 0       |
+|    or_ln41_fu_213_p2                                   |     |        | or_ln41       | or        | auto                     | 0       |
+|    xor_ln41_fu_219_p2                                  |     |        | xor_ln41      | xor       | auto                     | 0       |
+|    and_ln41_fu_225_p2                                  |     |        | and_ln41      | and       | auto                     | 0       |
+|    xor_ln41_1_fu_231_p2                                |     |        | xor_ln41_1    | xor       | auto                     | 0       |
+|    or_ln41_1_fu_237_p2                                 |     |        | or_ln41_1     | or        | auto                     | 0       |
+|    and_ln41_1_fu_243_p2                                |     |        | and_ln41_1    | and       | auto                     | 0       |
+|    select_ln41_fu_249_p3                               |     |        | select_ln41   | select    | auto_sel                 | 0       |
+|    or_ln41_2_fu_257_p2                                 |     |        | or_ln41_2     | or        | auto                     | 0       |
+|    select_ln41_1_fu_263_p3                             |     |        | select_ln41_1 | select    | auto_sel                 | 0       |
+|  + top_kernel_Pipeline_VITIS_LOOP_63_7                 | 5   |        |               |           |                          |         |
+|    icmp_ln63_fu_1557_p2                                |     |        | icmp_ln63     | seteq     | auto                     | 0       |
+|    add_ln63_fu_1563_p2                                 |     |        | add_ln63      | add       | fabric                   | 0       |
+|    sparsemux_129_6_24_1_1_U78                          |     |        | tmp_7         | sparsemux | compactencoding_dontcare | 0       |
+|    mul_40s_42ns_81_1_1_U77                             | 5   |        | mul_ln65      | mul       | auto                     | 0       |
+|    sub_ln65_fu_2003_p2                                 |     |        | sub_ln65      | sub       | fabric                   | 0       |
+|    select_ln65_1_fu_2027_p3                            |     |        | select_ln65_1 | select    | auto_sel                 | 0       |
+|    sub_ln65_1_fu_2038_p2                               |     |        | sub_ln65_1    | sub       | fabric                   | 0       |
+|    select_ln65_2_fu_2044_p3                            |     |        | select_ln65_2 | select    | auto_sel                 | 0       |
+|    or_ln65_fu_2082_p2                                  |     |        | or_ln65       | or        | auto                     | 0       |
+|    xor_ln65_fu_2088_p2                                 |     |        | xor_ln65      | xor       | auto                     | 0       |
+|    and_ln65_fu_2094_p2                                 |     |        | and_ln65      | and       | auto                     | 0       |
+|    and_ln65_2_fu_2100_p2                               |     |        | and_ln65_2    | and       | auto                     | 0       |
+|    xor_ln65_1_fu_2106_p2                               |     |        | xor_ln65_1    | xor       | auto                     | 0       |
+|    and_ln65_1_fu_2112_p2                               |     |        | and_ln65_1    | and       | auto                     | 0       |
+|    select_ln65_fu_2118_p3                              |     |        | select_ln65   | select    | auto_sel                 | 0       |
+|    or_ln65_1_fu_2126_p2                                |     |        | or_ln65_1     | or        | auto                     | 0       |
 |    scale_64_fu_2132_p3                                 |     |        | scale_64      | select    | auto_sel                 | 0       |
-|  + top_kernel_Pipeline_VITIS_LOOP_56_4                 | 0   |        |               |           |                          |         |
-|    icmp_ln56_fu_1551_p2                                |     |        | icmp_ln56     | seteq     | auto                     | 0       |
-|    add_ln56_fu_1557_p2                                 |     |        | add_ln56      | add       | fabric                   | 0       |
-|    add_ln61_fu_1567_p2                                 |     |        | add_ln61      | add       | fabric                   | 0       |
-|    sdiv_40ns_24s_40_44_1_U4                            |     |        | sdiv_ln60     | sdiv      | auto                     | 43      |
-|    icmp_ln60_fu_1630_p2                                |     |        | icmp_ln60     | setne     | auto                     | 0       |
-|    icmp_ln60_1_fu_1636_p2                              |     |        | icmp_ln60_1   | setne     | auto                     | 0       |
-|    or_ln60_fu_1642_p2                                  |     |        | or_ln60       | or        | auto                     | 0       |
-|    xor_ln60_fu_1648_p2                                 |     |        | xor_ln60      | xor       | auto                     | 0       |
-|    and_ln60_fu_1654_p2                                 |     |        | and_ln60      | and       | auto                     | 0       |
-|    xor_ln60_1_fu_1660_p2                               |     |        | xor_ln60_1    | xor       | auto                     | 0       |
-|    or_ln60_1_fu_1666_p2                                |     |        | or_ln60_1     | or        | auto                     | 0       |
-|    and_ln60_1_fu_1672_p2                               |     |        | and_ln60_1    | and       | auto                     | 0       |
-|    select_ln60_fu_1678_p3                              |     |        | select_ln60   | select    | auto_sel                 | 0       |
-|    or_ln60_2_fu_1686_p2                                |     |        | or_ln60_2     | or        | auto                     | 0       |
-|    t_1_fu_1692_p3                                      |     |        | t_1           | select    | auto_sel                 | 0       |
-|    sparsemux_129_6_24_1_1_U5                           |     |        | tmp_s         | sparsemux | compactencoding_dontcare | 0       |
-|    col_sum_64_fu_1972_p2                               |     |        | col_sum_64    | add       | fabric                   | 0       |
-|    add_ln62_1_fu_1978_p2                               |     |        | add_ln62_1    | add       | fabric                   | 0       |
-|    icmp_ln62_fu_1984_p2                                |     |        | icmp_ln62     | seteq     | auto                     | 0       |
-|    xor_ln62_fu_2135_p2                                 |     |        | xor_ln62      | xor       | auto                     | 0       |
-|    and_ln62_fu_2141_p2                                 |     |        | and_ln62      | and       | auto                     | 0       |
-|    xor_ln62_1_fu_2147_p2                               |     |        | xor_ln62_1    | xor       | auto                     | 0       |
-|    and_ln62_1_fu_2153_p2                               |     |        | and_ln62_1    | and       | auto                     | 0       |
-|    xor_ln62_2_fu_2159_p2                               |     |        | xor_ln62_2    | xor       | auto                     | 0       |
-|  + top_kernel_Pipeline_VITIS_LOOP_79_6_VITIS_LOOP_81_7 | 2   |        |               |           |                          |         |
-|    icmp_ln79_fu_796_p2                                 |     |        | icmp_ln79     | seteq     | auto                     | 0       |
-|    add_ln79_1_fu_802_p2                                |     |        | add_ln79_1    | add       | fabric                   | 0       |
-|    add_ln79_fu_814_p2                                  |     |        | add_ln79      | add       | fabric                   | 0       |
-|    icmp_ln81_fu_820_p2                                 |     |        | icmp_ln81     | seteq     | auto                     | 0       |
-|    select_ln79_fu_826_p3                               |     |        | select_ln79   | select    | auto_sel                 | 0       |
-|    select_ln79_1_fu_834_p3                             |     |        | select_ln79_1 | select    | auto_sel                 | 0       |
-|    add_ln84_1_fu_858_p2                                |     |        | add_ln84_1    | add       | fabric                   | 0       |
-|    sparsemux_129_6_24_1_1_U208                         |     |        | tmp_1         | sparsemux | compactencoding_dontcare | 0       |
-|    mul_24s_24s_48_1_1_U207                             | 2   |        | mul_ln84      | mul       | auto                     | 0       |
-|    add_ln84_fu_1205_p2                                 |     |        | add_ln84      | add       | fabric                   | 0       |
-|    xor_ln84_fu_1219_p2                                 |     |        | xor_ln84      | xor       | auto                     | 0       |
-|    and_ln84_fu_1225_p2                                 |     |        | and_ln84      | and       | auto                     | 0       |
-|    icmp_ln84_fu_1247_p2                                |     |        | icmp_ln84     | seteq     | auto                     | 0       |
-|    icmp_ln84_1_fu_1261_p2                              |     |        | icmp_ln84_1   | seteq     | auto                     | 0       |
-|    icmp_ln84_2_fu_1267_p2                              |     |        | icmp_ln84_2   | seteq     | auto                     | 0       |
-|    select_ln84_fu_1273_p3                              |     |        | select_ln84   | select    | auto_sel                 | 0       |
-|    xor_ln84_1_fu_1281_p2                               |     |        | xor_ln84_1    | xor       | auto                     | 0       |
-|    and_ln84_1_fu_1287_p2                               |     |        | and_ln84_1    | and       | auto                     | 0       |
-|    select_ln84_1_fu_1293_p3                            |     |        | select_ln84_1 | select    | auto_sel                 | 0       |
-|    and_ln84_2_fu_1301_p2                               |     |        | and_ln84_2    | and       | auto                     | 0       |
-|    xor_ln84_2_fu_1307_p2                               |     |        | xor_ln84_2    | xor       | auto                     | 0       |
-|    or_ln84_fu_1313_p2                                  |     |        | or_ln84       | or        | auto                     | 0       |
-|    xor_ln84_3_fu_1319_p2                               |     |        | xor_ln84_3    | xor       | auto                     | 0       |
-|    and_ln84_3_fu_1325_p2                               |     |        | and_ln84_3    | and       | auto                     | 0       |
-|    and_ln84_4_fu_1331_p2                               |     |        | and_ln84_4    | and       | auto                     | 0       |
-|    or_ln84_2_fu_1337_p2                                |     |        | or_ln84_2     | or        | auto                     | 0       |
-|    xor_ln84_4_fu_1343_p2                               |     |        | xor_ln84_4    | xor       | auto                     | 0       |
-|    and_ln84_5_fu_1349_p2                               |     |        | and_ln84_5    | and       | auto                     | 0       |
-|    select_ln84_2_fu_1355_p3                            |     |        | select_ln84_2 | select    | auto_sel                 | 0       |
-|    or_ln84_1_fu_1363_p2                                |     |        | or_ln84_1     | or        | auto                     | 0       |
-|    select_ln84_3_fu_1369_p3                            |     |        | select_ln84_3 | select    | auto_sel                 | 0       |
-|    add_ln81_fu_1137_p2                                 |     |        | add_ln81      | add       | fabric                   | 0       |
+|  + top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9 | 2   |        |               |           |                          |         |
+|    icmp_ln71_fu_796_p2                                 |     |        | icmp_ln71     | seteq     | auto                     | 0       |
+|    add_ln71_1_fu_802_p2                                |     |        | add_ln71_1    | add       | fabric                   | 0       |
+|    add_ln71_fu_814_p2                                  |     |        | add_ln71      | add       | fabric                   | 0       |
+|    icmp_ln72_fu_820_p2                                 |     |        | icmp_ln72     | seteq     | auto                     | 0       |
+|    select_ln71_fu_826_p3                               |     |        | select_ln71   | select    | auto_sel                 | 0       |
+|    select_ln71_1_fu_834_p3                             |     |        | select_ln71_1 | select    | auto_sel                 | 0       |
+|    add_ln74_1_fu_858_p2                                |     |        | add_ln74_1    | add       | fabric                   | 0       |
+|    sparsemux_129_6_24_1_1_U209                         |     |        | tmp_1         | sparsemux | compactencoding_dontcare | 0       |
+|    mul_24s_24s_48_1_1_U208                             | 2   |        | mul_ln74      | mul       | auto                     | 0       |
+|    add_ln74_fu_1205_p2                                 |     |        | add_ln74      | add       | fabric                   | 0       |
+|    xor_ln74_fu_1219_p2                                 |     |        | xor_ln74      | xor       | auto                     | 0       |
+|    and_ln74_fu_1225_p2                                 |     |        | and_ln74      | and       | auto                     | 0       |
+|    icmp_ln74_fu_1247_p2                                |     |        | icmp_ln74     | seteq     | auto                     | 0       |
+|    icmp_ln74_1_fu_1261_p2                              |     |        | icmp_ln74_1   | seteq     | auto                     | 0       |
+|    icmp_ln74_2_fu_1267_p2                              |     |        | icmp_ln74_2   | seteq     | auto                     | 0       |
+|    select_ln74_fu_1273_p3                              |     |        | select_ln74   | select    | auto_sel                 | 0       |
+|    xor_ln74_1_fu_1281_p2                               |     |        | xor_ln74_1    | xor       | auto                     | 0       |
+|    and_ln74_1_fu_1287_p2                               |     |        | and_ln74_1    | and       | auto                     | 0       |
+|    select_ln74_1_fu_1293_p3                            |     |        | select_ln74_1 | select    | auto_sel                 | 0       |
+|    and_ln74_2_fu_1301_p2                               |     |        | and_ln74_2    | and       | auto                     | 0       |
+|    xor_ln74_2_fu_1307_p2                               |     |        | xor_ln74_2    | xor       | auto                     | 0       |
+|    or_ln74_fu_1313_p2                                  |     |        | or_ln74       | or        | auto                     | 0       |
+|    xor_ln74_3_fu_1319_p2                               |     |        | xor_ln74_3    | xor       | auto                     | 0       |
+|    and_ln74_3_fu_1325_p2                               |     |        | and_ln74_3    | and       | auto                     | 0       |
+|    and_ln74_4_fu_1331_p2                               |     |        | and_ln74_4    | and       | auto                     | 0       |
+|    or_ln74_2_fu_1337_p2                                |     |        | or_ln74_2     | or        | auto                     | 0       |
+|    xor_ln74_4_fu_1343_p2                               |     |        | xor_ln74_4    | xor       | auto                     | 0       |
+|    and_ln74_5_fu_1349_p2                               |     |        | and_ln74_5    | and       | auto                     | 0       |
+|    select_ln74_2_fu_1355_p3                            |     |        | select_ln74_2 | select    | auto_sel                 | 0       |
+|    or_ln74_1_fu_1363_p2                                |     |        | or_ln74_1     | or        | auto                     | 0       |
+|    select_ln74_3_fu_1369_p3                            |     |        | select_ln74_3 | select    | auto_sel                 | 0       |
+|    add_ln72_fu_1137_p2                                 |     |        | add_ln72      | add       | fabric                   | 0       |
 +--------------------------------------------------------+-----+--------+---------------+-----------+--------------------------+---------+
 
 
@@ -204,15 +215,16 @@
 +-----------------+-------------------------------------+-----------------------------------+
 | Type            | Options                             | Location                          |
 +-----------------+-------------------------------------+-----------------------------------+
-| BIND_STORAGE    | variable=tmp type=ram_t2p impl=bram | top.cpp:14 in top_kernel, tmp     |
+| BIND_STORAGE    | variable=tmp type=ram_t2p impl=bram | top.cpp:16 in top_kernel, tmp     |
 | ARRAY_PARTITION | variable=col_sum complete dim=1     | top.cpp:21 in top_kernel, col_sum |
 | ARRAY_PARTITION | variable=scale complete dim=1       | top.cpp:22 in top_kernel, scale   |
-| PIPELINE        | ii=1                                | top.cpp:29 in top_kernel          |
-| PIPELINE        | ii=1                                | top.cpp:48 in top_kernel          |
-| PIPELINE        | ii=1                                | top.cpp:58 in top_kernel          |
-| DEPENDENCE      | variable=col_sum inter false        | top.cpp:59 in top_kernel, col_sum |
-| PIPELINE        | ii=1                                | top.cpp:71 in top_kernel          |
-| PIPELINE        | ii=1                                | top.cpp:83 in top_kernel          |
+| PIPELINE        | ii=1                                | top.cpp:32 in top_kernel          |
+| PIPELINE        | ii=1                                | top.cpp:40 in top_kernel          |
+| PIPELINE        | ii=1                                | top.cpp:51 in top_kernel          |
+| PIPELINE        | ii=1                                | top.cpp:57 in top_kernel          |
+| DEPENDENCE      | variable=col_sum inter false        | top.cpp:58 in top_kernel, col_sum |
+| PIPELINE        | ii=1                                | top.cpp:64 in top_kernel          |
+| PIPELINE        | ii=1                                | top.cpp:73 in top_kernel          |
 +-----------------+-------------------------------------+-----------------------------------+
 
 

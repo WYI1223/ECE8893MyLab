@@ -59259,6 +59259,8 @@ void top_kernel(data_t A[256][64],
 
 
 
+
+
 void top_kernel(data_t A[256][64],
                 data_t C[256][64])
 {
@@ -59271,50 +59273,49 @@ void top_kernel(data_t A[256][64],
 
     data_t col_sum[64];
     data_t scale[64];
-
-
 #pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
 #pragma HLS ARRAY_PARTITION variable=scale complete dim=1
 
 
 
 
-    for (int j = 0; j < 64; j++)
-    {
-#pragma HLS PIPELINE II=1
-        col_sum[j] = (data_t)0.0;
-    }
-# 41 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
-    for (int i = 0; i < 256; i++)
-    {
+    for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
 
 
-        for (int j = 0; j < 64; j++)
-        {
+        for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
             row_sum += A[i][j];
         }
 
-
         data_t denom = row_sum + (data_t)1.0;
 
 
-        for (int j = 0; j < 64; j++)
-        {
+        for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS DEPENDENCE variable=col_sum inter false
-            data_t t = A[i][j] / denom;
-            tmp[i][j] = t;
-            col_sum[j] += t;
+            tmp[i][j] = A[i][j] / denom;
         }
     }
 
 
 
 
-    for (int j = 0; j < 64; j++)
-    {
+
+
+    for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+        col_sum[j] = (data_t)0.0;
+    }
+
+    for (int i = 0; i < 256; i++) {
+        for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS DEPENDENCE variable=col_sum inter false
+            col_sum[j] += tmp[i][j];
+        }
+    }
+
+    for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
         scale[j] = col_sum[j] / (data_t)256;
     }
@@ -59322,11 +59323,8 @@ void top_kernel(data_t A[256][64],
 
 
 
-
-    for (int i = 0; i < 256; i++)
-    {
-        for (int j = 0; j < 64; j++)
-        {
+    for (int i = 0; i < 256; i++) {
+        for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
             C[i][j] = tmp[i][j] * scale[j];
         }

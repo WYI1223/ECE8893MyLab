@@ -6512,12 +6512,14 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
 
 
 
+
+
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
                 data_t C[256][64])
 {
 #line 19 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/script.tcl"
 #pragma HLSDIRECTIVE TOP name=top_kernel
-# 9 "top.cpp"
+# 11 "top.cpp"
 
 
     static data_t tmp[256][64];
@@ -6528,50 +6530,49 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
 
  data_t col_sum[64];
     data_t scale[64];
-
-
 #pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
 #pragma HLS ARRAY_PARTITION variable=scale complete dim=1
 
 
 
 
- VITIS_LOOP_27_1: for (int j = 0; j < 64; j++)
-    {
-#pragma HLS PIPELINE II=1
- col_sum[j] = (data_t)0.0;
-    }
-# 41 "top.cpp"
-    VITIS_LOOP_41_2: for (int i = 0; i < 256; i++)
-    {
+ VITIS_LOOP_27_1: for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
 
 
-        VITIS_LOOP_46_3: for (int j = 0; j < 64; j++)
-        {
+        VITIS_LOOP_31_2: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  row_sum += A[i][j];
         }
 
-
         data_t denom = row_sum + (data_t)1.0;
 
 
-        VITIS_LOOP_56_4: for (int j = 0; j < 64; j++)
-        {
+        VITIS_LOOP_39_3: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS DEPENDENCE variable=col_sum inter false
- data_t t = A[i][j] / denom;
-            tmp[i][j] = t;
-            col_sum[j] += t;
+ tmp[i][j] = A[i][j] / denom;
         }
     }
 
 
 
 
-    VITIS_LOOP_69_5: for (int j = 0; j < 64; j++)
-    {
+
+
+    VITIS_LOOP_50_4: for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+ col_sum[j] = (data_t)0.0;
+    }
+
+    VITIS_LOOP_55_5: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_56_6: for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS DEPENDENCE variable=col_sum inter false
+ col_sum[j] += tmp[i][j];
+        }
+    }
+
+    VITIS_LOOP_63_7: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  scale[j] = col_sum[j] / (data_t)256;
     }
@@ -6579,11 +6580,8 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
 
 
 
-
-    VITIS_LOOP_79_6: for (int i = 0; i < 256; i++)
-    {
-        VITIS_LOOP_81_7: for (int j = 0; j < 64; j++)
-        {
+    VITIS_LOOP_71_8: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_72_9: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  C[i][j] = tmp[i][j] * scale[j];
         }

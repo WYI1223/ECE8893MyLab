@@ -22,40 +22,40 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>62793</Best-caseLatency>
-<Average-caseLatency>62793</Average-caseLatency>
-<Worst-caseLatency>62793</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.628 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.628 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.628 ms</Worst-caseRealTimeLatency>
-<Interval-min>62794</Interval-min>
-<Interval-max>62794</Interval-max>
+<Best-caseLatency>78669</Best-caseLatency>
+<Average-caseLatency>78669</Average-caseLatency>
+<Worst-caseLatency>78669</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.787 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.787 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.787 ms</Worst-caseRealTimeLatency>
+<Interval-min>78670</Interval-min>
+<Interval-max>78670</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_41_2>
+<VITIS_LOOP_27_1>
 <Slack>7.30</Slack>
 <TripCount>256</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>46336</Latency>
-<AbsoluteTimeLatency>463360</AbsoluteTimeLatency>
-<IterationLatency>181</IterationLatency>
+<Latency>45824</Latency>
+<AbsoluteTimeLatency>458240</AbsoluteTimeLatency>
+<IterationLatency>179</IterationLatency>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_41_2>
+</VITIS_LOOP_27_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:41</SourceLocation>
+<SourceLocation>top.cpp:27</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_41_2>
-<Name>VITIS_LOOP_41_2</Name>
+<VITIS_LOOP_27_1>
+<Name>VITIS_LOOP_27_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:41</SourceLocation>
-</VITIS_LOOP_41_2>
+<SourceLocation>top.cpp:27</SourceLocation>
+</VITIS_LOOP_27_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -64,8 +64,8 @@
 <Resources>
 <BRAM_18K>22</BRAM_18K>
 <DSP>7</DSP>
-<FF>7385</FF>
-<LUT>7623</LUT>
+<FF>7135</FF>
+<LUT>6469</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

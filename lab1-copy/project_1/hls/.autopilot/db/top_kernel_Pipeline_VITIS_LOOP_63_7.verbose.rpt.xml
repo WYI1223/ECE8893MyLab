@@ -1,0 +1,393 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_63_7'" level="0">
+<item name = "Date">Mon Jan 26 21:32:19 2026
+</item>
+<item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
+<item name = "Project">project_1</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.731 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_63_7">64, 64, 2, 1, 1, 64, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 241, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 5, 0, 295, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 36, -</column>
+<column name="Register">-, -, 1652, -, -</column>
+<specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 1, 1, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_40s_42ns_81_1_1_U77">mul_40s_42ns_81_1_1, 0, 5, 0, 22, 0</column>
+<column name="sparsemux_129_6_24_1_1_U78">sparsemux_129_6_24_1_1, 0, 0, 0, 273, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln63_fu_1563_p2">+, 0, 0, 14, 7, 1</column>
+<column name="sub_ln65_1_fu_2038_p2">-, 0, 0, 25, 1, 18</column>
+<column name="sub_ln65_fu_2003_p2">-, 0, 0, 88, 1, 81</column>
+<column name="and_ln65_1_fu_2112_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln65_2_fu_2100_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln65_fu_2094_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln63_fu_1557_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="or_ln65_1_fu_2126_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln65_fu_2082_p2">or, 0, 0, 2, 1, 1</column>
+<column name="scale_64_fu_2132_p3">select, 0, 0, 24, 1, 24</column>
+<column name="select_ln65_1_fu_2027_p3">select, 0, 0, 17, 1, 17</column>
+<column name="select_ln65_2_fu_2044_p3">select, 0, 0, 18, 1, 18</column>
+<column name="select_ln65_fu_2118_p3">select, 0, 0, 24, 1, 23</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln65_1_fu_2106_p2">xor, 0, 0, 2, 2, 1</column>
+<column name="xor_ln65_fu_2088_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_j_1">9, 2, 7, 14</column>
+<column name="j_fu_452">9, 2, 7, 14</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="j_fu_452">7, 0, 7, 0</column>
+<column name="mul_ln65_reg_3114">81, 0, 81, 0</column>
+<column name="scale_10_fu_496">24, 0, 24, 0</column>
+<column name="scale_11_fu_500">24, 0, 24, 0</column>
+<column name="scale_12_fu_504">24, 0, 24, 0</column>
+<column name="scale_13_fu_508">24, 0, 24, 0</column>
+<column name="scale_14_fu_512">24, 0, 24, 0</column>
+<column name="scale_15_fu_516">24, 0, 24, 0</column>
+<column name="scale_16_fu_520">24, 0, 24, 0</column>
+<column name="scale_17_fu_524">24, 0, 24, 0</column>
+<column name="scale_18_fu_528">24, 0, 24, 0</column>
+<column name="scale_19_fu_532">24, 0, 24, 0</column>
+<column name="scale_1_fu_460">24, 0, 24, 0</column>
+<column name="scale_20_fu_536">24, 0, 24, 0</column>
+<column name="scale_21_fu_540">24, 0, 24, 0</column>
+<column name="scale_22_fu_544">24, 0, 24, 0</column>
+<column name="scale_23_fu_548">24, 0, 24, 0</column>
+<column name="scale_24_fu_552">24, 0, 24, 0</column>
+<column name="scale_25_fu_556">24, 0, 24, 0</column>
+<column name="scale_26_fu_560">24, 0, 24, 0</column>
+<column name="scale_27_fu_564">24, 0, 24, 0</column>
+<column name="scale_28_fu_568">24, 0, 24, 0</column>
+<column name="scale_29_fu_572">24, 0, 24, 0</column>
+<column name="scale_2_fu_464">24, 0, 24, 0</column>
+<column name="scale_30_fu_576">24, 0, 24, 0</column>
+<column name="scale_31_fu_580">24, 0, 24, 0</column>
+<column name="scale_32_fu_584">24, 0, 24, 0</column>
+<column name="scale_33_fu_588">24, 0, 24, 0</column>
+<column name="scale_34_fu_592">24, 0, 24, 0</column>
+<column name="scale_35_fu_596">24, 0, 24, 0</column>
+<column name="scale_36_fu_600">24, 0, 24, 0</column>
+<column name="scale_37_fu_604">24, 0, 24, 0</column>
+<column name="scale_38_fu_608">24, 0, 24, 0</column>
+<column name="scale_39_fu_612">24, 0, 24, 0</column>
+<column name="scale_3_fu_468">24, 0, 24, 0</column>
+<column name="scale_40_fu_616">24, 0, 24, 0</column>
+<column name="scale_41_fu_620">24, 0, 24, 0</column>
+<column name="scale_42_fu_624">24, 0, 24, 0</column>
+<column name="scale_43_fu_628">24, 0, 24, 0</column>
+<column name="scale_44_fu_632">24, 0, 24, 0</column>
+<column name="scale_45_fu_636">24, 0, 24, 0</column>
+<column name="scale_46_fu_640">24, 0, 24, 0</column>
+<column name="scale_47_fu_644">24, 0, 24, 0</column>
+<column name="scale_48_fu_648">24, 0, 24, 0</column>
+<column name="scale_49_fu_652">24, 0, 24, 0</column>
+<column name="scale_4_fu_472">24, 0, 24, 0</column>
+<column name="scale_50_fu_656">24, 0, 24, 0</column>
+<column name="scale_51_fu_660">24, 0, 24, 0</column>
+<column name="scale_52_fu_664">24, 0, 24, 0</column>
+<column name="scale_53_fu_668">24, 0, 24, 0</column>
+<column name="scale_54_fu_672">24, 0, 24, 0</column>
+<column name="scale_55_fu_676">24, 0, 24, 0</column>
+<column name="scale_56_fu_680">24, 0, 24, 0</column>
+<column name="scale_57_fu_684">24, 0, 24, 0</column>
+<column name="scale_58_fu_688">24, 0, 24, 0</column>
+<column name="scale_59_fu_692">24, 0, 24, 0</column>
+<column name="scale_5_fu_476">24, 0, 24, 0</column>
+<column name="scale_60_fu_696">24, 0, 24, 0</column>
+<column name="scale_61_fu_700">24, 0, 24, 0</column>
+<column name="scale_62_fu_704">24, 0, 24, 0</column>
+<column name="scale_63_fu_708">24, 0, 24, 0</column>
+<column name="scale_6_fu_480">24, 0, 24, 0</column>
+<column name="scale_7_fu_484">24, 0, 24, 0</column>
+<column name="scale_8_fu_488">24, 0, 24, 0</column>
+<column name="scale_9_fu_492">24, 0, 24, 0</column>
+<column name="scale_fu_456">24, 0, 24, 0</column>
+<column name="tmp_1_reg_3120">1, 0, 1, 0</column>
+<column name="tmp_24_cast1_reg_3126">18, 0, 18, 0</column>
+<column name="trunc_ln63_reg_3110">6, 0, 6, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_63_7, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_63_7, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_63_7, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_63_7, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_63_7, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_63_7, return value</column>
+<column name="col_sum_load_reload">in, 24, ap_none, col_sum_load_reload, scalar</column>
+<column name="col_sum_1_load_reload">in, 24, ap_none, col_sum_1_load_reload, scalar</column>
+<column name="col_sum_2_load_reload">in, 24, ap_none, col_sum_2_load_reload, scalar</column>
+<column name="col_sum_3_load_reload">in, 24, ap_none, col_sum_3_load_reload, scalar</column>
+<column name="col_sum_4_load_reload">in, 24, ap_none, col_sum_4_load_reload, scalar</column>
+<column name="col_sum_5_load_reload">in, 24, ap_none, col_sum_5_load_reload, scalar</column>
+<column name="col_sum_6_load_reload">in, 24, ap_none, col_sum_6_load_reload, scalar</column>
+<column name="col_sum_7_load_reload">in, 24, ap_none, col_sum_7_load_reload, scalar</column>
+<column name="col_sum_8_load_reload">in, 24, ap_none, col_sum_8_load_reload, scalar</column>
+<column name="col_sum_9_load_reload">in, 24, ap_none, col_sum_9_load_reload, scalar</column>
+<column name="col_sum_10_load_reload">in, 24, ap_none, col_sum_10_load_reload, scalar</column>
+<column name="col_sum_11_load_reload">in, 24, ap_none, col_sum_11_load_reload, scalar</column>
+<column name="col_sum_12_load_reload">in, 24, ap_none, col_sum_12_load_reload, scalar</column>
+<column name="col_sum_13_load_reload">in, 24, ap_none, col_sum_13_load_reload, scalar</column>
+<column name="col_sum_14_load_reload">in, 24, ap_none, col_sum_14_load_reload, scalar</column>
+<column name="col_sum_15_load_reload">in, 24, ap_none, col_sum_15_load_reload, scalar</column>
+<column name="col_sum_16_load_reload">in, 24, ap_none, col_sum_16_load_reload, scalar</column>
+<column name="col_sum_17_load_reload">in, 24, ap_none, col_sum_17_load_reload, scalar</column>
+<column name="col_sum_18_load_reload">in, 24, ap_none, col_sum_18_load_reload, scalar</column>
+<column name="col_sum_19_load_reload">in, 24, ap_none, col_sum_19_load_reload, scalar</column>
+<column name="col_sum_20_load_reload">in, 24, ap_none, col_sum_20_load_reload, scalar</column>
+<column name="col_sum_21_load_reload">in, 24, ap_none, col_sum_21_load_reload, scalar</column>
+<column name="col_sum_22_load_reload">in, 24, ap_none, col_sum_22_load_reload, scalar</column>
+<column name="col_sum_23_load_reload">in, 24, ap_none, col_sum_23_load_reload, scalar</column>
+<column name="col_sum_24_load_reload">in, 24, ap_none, col_sum_24_load_reload, scalar</column>
+<column name="col_sum_25_load_reload">in, 24, ap_none, col_sum_25_load_reload, scalar</column>
+<column name="col_sum_26_load_reload">in, 24, ap_none, col_sum_26_load_reload, scalar</column>
+<column name="col_sum_27_load_reload">in, 24, ap_none, col_sum_27_load_reload, scalar</column>
+<column name="col_sum_28_load_reload">in, 24, ap_none, col_sum_28_load_reload, scalar</column>
+<column name="col_sum_29_load_reload">in, 24, ap_none, col_sum_29_load_reload, scalar</column>
+<column name="col_sum_30_load_reload">in, 24, ap_none, col_sum_30_load_reload, scalar</column>
+<column name="col_sum_31_load_reload">in, 24, ap_none, col_sum_31_load_reload, scalar</column>
+<column name="col_sum_32_load_reload">in, 24, ap_none, col_sum_32_load_reload, scalar</column>
+<column name="col_sum_33_load_reload">in, 24, ap_none, col_sum_33_load_reload, scalar</column>
+<column name="col_sum_34_load_reload">in, 24, ap_none, col_sum_34_load_reload, scalar</column>
+<column name="col_sum_35_load_reload">in, 24, ap_none, col_sum_35_load_reload, scalar</column>
+<column name="col_sum_36_load_reload">in, 24, ap_none, col_sum_36_load_reload, scalar</column>
+<column name="col_sum_37_load_reload">in, 24, ap_none, col_sum_37_load_reload, scalar</column>
+<column name="col_sum_38_load_reload">in, 24, ap_none, col_sum_38_load_reload, scalar</column>
+<column name="col_sum_39_load_reload">in, 24, ap_none, col_sum_39_load_reload, scalar</column>
+<column name="col_sum_40_load_reload">in, 24, ap_none, col_sum_40_load_reload, scalar</column>
+<column name="col_sum_41_load_reload">in, 24, ap_none, col_sum_41_load_reload, scalar</column>
+<column name="col_sum_42_load_reload">in, 24, ap_none, col_sum_42_load_reload, scalar</column>
+<column name="col_sum_43_load_reload">in, 24, ap_none, col_sum_43_load_reload, scalar</column>
+<column name="col_sum_44_load_reload">in, 24, ap_none, col_sum_44_load_reload, scalar</column>
+<column name="col_sum_45_load_reload">in, 24, ap_none, col_sum_45_load_reload, scalar</column>
+<column name="col_sum_46_load_reload">in, 24, ap_none, col_sum_46_load_reload, scalar</column>
+<column name="col_sum_47_load_reload">in, 24, ap_none, col_sum_47_load_reload, scalar</column>
+<column name="col_sum_48_load_reload">in, 24, ap_none, col_sum_48_load_reload, scalar</column>
+<column name="col_sum_49_load_reload">in, 24, ap_none, col_sum_49_load_reload, scalar</column>
+<column name="col_sum_50_load_reload">in, 24, ap_none, col_sum_50_load_reload, scalar</column>
+<column name="col_sum_51_load_reload">in, 24, ap_none, col_sum_51_load_reload, scalar</column>
+<column name="col_sum_52_load_reload">in, 24, ap_none, col_sum_52_load_reload, scalar</column>
+<column name="col_sum_53_load_reload">in, 24, ap_none, col_sum_53_load_reload, scalar</column>
+<column name="col_sum_54_load_reload">in, 24, ap_none, col_sum_54_load_reload, scalar</column>
+<column name="col_sum_55_load_reload">in, 24, ap_none, col_sum_55_load_reload, scalar</column>
+<column name="col_sum_56_load_reload">in, 24, ap_none, col_sum_56_load_reload, scalar</column>
+<column name="col_sum_57_load_reload">in, 24, ap_none, col_sum_57_load_reload, scalar</column>
+<column name="col_sum_58_load_reload">in, 24, ap_none, col_sum_58_load_reload, scalar</column>
+<column name="col_sum_59_load_reload">in, 24, ap_none, col_sum_59_load_reload, scalar</column>
+<column name="col_sum_60_load_reload">in, 24, ap_none, col_sum_60_load_reload, scalar</column>
+<column name="col_sum_61_load_reload">in, 24, ap_none, col_sum_61_load_reload, scalar</column>
+<column name="col_sum_62_load_reload">in, 24, ap_none, col_sum_62_load_reload, scalar</column>
+<column name="col_sum_63_load_reload">in, 24, ap_none, col_sum_63_load_reload, scalar</column>
+<column name="scale_63_out">out, 24, ap_vld, scale_63_out, pointer</column>
+<column name="scale_63_out_ap_vld">out, 1, ap_vld, scale_63_out, pointer</column>
+<column name="scale_62_out">out, 24, ap_vld, scale_62_out, pointer</column>
+<column name="scale_62_out_ap_vld">out, 1, ap_vld, scale_62_out, pointer</column>
+<column name="scale_61_out">out, 24, ap_vld, scale_61_out, pointer</column>
+<column name="scale_61_out_ap_vld">out, 1, ap_vld, scale_61_out, pointer</column>
+<column name="scale_60_out">out, 24, ap_vld, scale_60_out, pointer</column>
+<column name="scale_60_out_ap_vld">out, 1, ap_vld, scale_60_out, pointer</column>
+<column name="scale_59_out">out, 24, ap_vld, scale_59_out, pointer</column>
+<column name="scale_59_out_ap_vld">out, 1, ap_vld, scale_59_out, pointer</column>
+<column name="scale_58_out">out, 24, ap_vld, scale_58_out, pointer</column>
+<column name="scale_58_out_ap_vld">out, 1, ap_vld, scale_58_out, pointer</column>
+<column name="scale_57_out">out, 24, ap_vld, scale_57_out, pointer</column>
+<column name="scale_57_out_ap_vld">out, 1, ap_vld, scale_57_out, pointer</column>
+<column name="scale_56_out">out, 24, ap_vld, scale_56_out, pointer</column>
+<column name="scale_56_out_ap_vld">out, 1, ap_vld, scale_56_out, pointer</column>
+<column name="scale_55_out">out, 24, ap_vld, scale_55_out, pointer</column>
+<column name="scale_55_out_ap_vld">out, 1, ap_vld, scale_55_out, pointer</column>
+<column name="scale_54_out">out, 24, ap_vld, scale_54_out, pointer</column>
+<column name="scale_54_out_ap_vld">out, 1, ap_vld, scale_54_out, pointer</column>
+<column name="scale_53_out">out, 24, ap_vld, scale_53_out, pointer</column>
+<column name="scale_53_out_ap_vld">out, 1, ap_vld, scale_53_out, pointer</column>
+<column name="scale_52_out">out, 24, ap_vld, scale_52_out, pointer</column>
+<column name="scale_52_out_ap_vld">out, 1, ap_vld, scale_52_out, pointer</column>
+<column name="scale_51_out">out, 24, ap_vld, scale_51_out, pointer</column>
+<column name="scale_51_out_ap_vld">out, 1, ap_vld, scale_51_out, pointer</column>
+<column name="scale_50_out">out, 24, ap_vld, scale_50_out, pointer</column>
+<column name="scale_50_out_ap_vld">out, 1, ap_vld, scale_50_out, pointer</column>
+<column name="scale_49_out">out, 24, ap_vld, scale_49_out, pointer</column>
+<column name="scale_49_out_ap_vld">out, 1, ap_vld, scale_49_out, pointer</column>
+<column name="scale_48_out">out, 24, ap_vld, scale_48_out, pointer</column>
+<column name="scale_48_out_ap_vld">out, 1, ap_vld, scale_48_out, pointer</column>
+<column name="scale_47_out">out, 24, ap_vld, scale_47_out, pointer</column>
+<column name="scale_47_out_ap_vld">out, 1, ap_vld, scale_47_out, pointer</column>
+<column name="scale_46_out">out, 24, ap_vld, scale_46_out, pointer</column>
+<column name="scale_46_out_ap_vld">out, 1, ap_vld, scale_46_out, pointer</column>
+<column name="scale_45_out">out, 24, ap_vld, scale_45_out, pointer</column>
+<column name="scale_45_out_ap_vld">out, 1, ap_vld, scale_45_out, pointer</column>
+<column name="scale_44_out">out, 24, ap_vld, scale_44_out, pointer</column>
+<column name="scale_44_out_ap_vld">out, 1, ap_vld, scale_44_out, pointer</column>
+<column name="scale_43_out">out, 24, ap_vld, scale_43_out, pointer</column>
+<column name="scale_43_out_ap_vld">out, 1, ap_vld, scale_43_out, pointer</column>
+<column name="scale_42_out">out, 24, ap_vld, scale_42_out, pointer</column>
+<column name="scale_42_out_ap_vld">out, 1, ap_vld, scale_42_out, pointer</column>
+<column name="scale_41_out">out, 24, ap_vld, scale_41_out, pointer</column>
+<column name="scale_41_out_ap_vld">out, 1, ap_vld, scale_41_out, pointer</column>
+<column name="scale_40_out">out, 24, ap_vld, scale_40_out, pointer</column>
+<column name="scale_40_out_ap_vld">out, 1, ap_vld, scale_40_out, pointer</column>
+<column name="scale_39_out">out, 24, ap_vld, scale_39_out, pointer</column>
+<column name="scale_39_out_ap_vld">out, 1, ap_vld, scale_39_out, pointer</column>
+<column name="scale_38_out">out, 24, ap_vld, scale_38_out, pointer</column>
+<column name="scale_38_out_ap_vld">out, 1, ap_vld, scale_38_out, pointer</column>
+<column name="scale_37_out">out, 24, ap_vld, scale_37_out, pointer</column>
+<column name="scale_37_out_ap_vld">out, 1, ap_vld, scale_37_out, pointer</column>
+<column name="scale_36_out">out, 24, ap_vld, scale_36_out, pointer</column>
+<column name="scale_36_out_ap_vld">out, 1, ap_vld, scale_36_out, pointer</column>
+<column name="scale_35_out">out, 24, ap_vld, scale_35_out, pointer</column>
+<column name="scale_35_out_ap_vld">out, 1, ap_vld, scale_35_out, pointer</column>
+<column name="scale_34_out">out, 24, ap_vld, scale_34_out, pointer</column>
+<column name="scale_34_out_ap_vld">out, 1, ap_vld, scale_34_out, pointer</column>
+<column name="scale_33_out">out, 24, ap_vld, scale_33_out, pointer</column>
+<column name="scale_33_out_ap_vld">out, 1, ap_vld, scale_33_out, pointer</column>
+<column name="scale_32_out">out, 24, ap_vld, scale_32_out, pointer</column>
+<column name="scale_32_out_ap_vld">out, 1, ap_vld, scale_32_out, pointer</column>
+<column name="scale_31_out">out, 24, ap_vld, scale_31_out, pointer</column>
+<column name="scale_31_out_ap_vld">out, 1, ap_vld, scale_31_out, pointer</column>
+<column name="scale_30_out">out, 24, ap_vld, scale_30_out, pointer</column>
+<column name="scale_30_out_ap_vld">out, 1, ap_vld, scale_30_out, pointer</column>
+<column name="scale_29_out">out, 24, ap_vld, scale_29_out, pointer</column>
+<column name="scale_29_out_ap_vld">out, 1, ap_vld, scale_29_out, pointer</column>
+<column name="scale_28_out">out, 24, ap_vld, scale_28_out, pointer</column>
+<column name="scale_28_out_ap_vld">out, 1, ap_vld, scale_28_out, pointer</column>
+<column name="scale_27_out">out, 24, ap_vld, scale_27_out, pointer</column>
+<column name="scale_27_out_ap_vld">out, 1, ap_vld, scale_27_out, pointer</column>
+<column name="scale_26_out">out, 24, ap_vld, scale_26_out, pointer</column>
+<column name="scale_26_out_ap_vld">out, 1, ap_vld, scale_26_out, pointer</column>
+<column name="scale_25_out">out, 24, ap_vld, scale_25_out, pointer</column>
+<column name="scale_25_out_ap_vld">out, 1, ap_vld, scale_25_out, pointer</column>
+<column name="scale_24_out">out, 24, ap_vld, scale_24_out, pointer</column>
+<column name="scale_24_out_ap_vld">out, 1, ap_vld, scale_24_out, pointer</column>
+<column name="scale_23_out">out, 24, ap_vld, scale_23_out, pointer</column>
+<column name="scale_23_out_ap_vld">out, 1, ap_vld, scale_23_out, pointer</column>
+<column name="scale_22_out">out, 24, ap_vld, scale_22_out, pointer</column>
+<column name="scale_22_out_ap_vld">out, 1, ap_vld, scale_22_out, pointer</column>
+<column name="scale_21_out">out, 24, ap_vld, scale_21_out, pointer</column>
+<column name="scale_21_out_ap_vld">out, 1, ap_vld, scale_21_out, pointer</column>
+<column name="scale_20_out">out, 24, ap_vld, scale_20_out, pointer</column>
+<column name="scale_20_out_ap_vld">out, 1, ap_vld, scale_20_out, pointer</column>
+<column name="scale_19_out">out, 24, ap_vld, scale_19_out, pointer</column>
+<column name="scale_19_out_ap_vld">out, 1, ap_vld, scale_19_out, pointer</column>
+<column name="scale_18_out">out, 24, ap_vld, scale_18_out, pointer</column>
+<column name="scale_18_out_ap_vld">out, 1, ap_vld, scale_18_out, pointer</column>
+<column name="scale_17_out">out, 24, ap_vld, scale_17_out, pointer</column>
+<column name="scale_17_out_ap_vld">out, 1, ap_vld, scale_17_out, pointer</column>
+<column name="scale_16_out">out, 24, ap_vld, scale_16_out, pointer</column>
+<column name="scale_16_out_ap_vld">out, 1, ap_vld, scale_16_out, pointer</column>
+<column name="scale_15_out">out, 24, ap_vld, scale_15_out, pointer</column>
+<column name="scale_15_out_ap_vld">out, 1, ap_vld, scale_15_out, pointer</column>
+<column name="scale_14_out">out, 24, ap_vld, scale_14_out, pointer</column>
+<column name="scale_14_out_ap_vld">out, 1, ap_vld, scale_14_out, pointer</column>
+<column name="scale_13_out">out, 24, ap_vld, scale_13_out, pointer</column>
+<column name="scale_13_out_ap_vld">out, 1, ap_vld, scale_13_out, pointer</column>
+<column name="scale_12_out">out, 24, ap_vld, scale_12_out, pointer</column>
+<column name="scale_12_out_ap_vld">out, 1, ap_vld, scale_12_out, pointer</column>
+<column name="scale_11_out">out, 24, ap_vld, scale_11_out, pointer</column>
+<column name="scale_11_out_ap_vld">out, 1, ap_vld, scale_11_out, pointer</column>
+<column name="scale_10_out">out, 24, ap_vld, scale_10_out, pointer</column>
+<column name="scale_10_out_ap_vld">out, 1, ap_vld, scale_10_out, pointer</column>
+<column name="scale_9_out">out, 24, ap_vld, scale_9_out, pointer</column>
+<column name="scale_9_out_ap_vld">out, 1, ap_vld, scale_9_out, pointer</column>
+<column name="scale_8_out">out, 24, ap_vld, scale_8_out, pointer</column>
+<column name="scale_8_out_ap_vld">out, 1, ap_vld, scale_8_out, pointer</column>
+<column name="scale_7_out">out, 24, ap_vld, scale_7_out, pointer</column>
+<column name="scale_7_out_ap_vld">out, 1, ap_vld, scale_7_out, pointer</column>
+<column name="scale_6_out">out, 24, ap_vld, scale_6_out, pointer</column>
+<column name="scale_6_out_ap_vld">out, 1, ap_vld, scale_6_out, pointer</column>
+<column name="scale_5_out">out, 24, ap_vld, scale_5_out, pointer</column>
+<column name="scale_5_out_ap_vld">out, 1, ap_vld, scale_5_out, pointer</column>
+<column name="scale_4_out">out, 24, ap_vld, scale_4_out, pointer</column>
+<column name="scale_4_out_ap_vld">out, 1, ap_vld, scale_4_out, pointer</column>
+<column name="scale_3_out">out, 24, ap_vld, scale_3_out, pointer</column>
+<column name="scale_3_out_ap_vld">out, 1, ap_vld, scale_3_out, pointer</column>
+<column name="scale_2_out">out, 24, ap_vld, scale_2_out, pointer</column>
+<column name="scale_2_out_ap_vld">out, 1, ap_vld, scale_2_out, pointer</column>
+<column name="scale_1_out">out, 24, ap_vld, scale_1_out, pointer</column>
+<column name="scale_1_out_ap_vld">out, 1, ap_vld, scale_1_out, pointer</column>
+<column name="scale_out">out, 24, ap_vld, scale_out, pointer</column>
+<column name="scale_out_ap_vld">out, 1, ap_vld, scale_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

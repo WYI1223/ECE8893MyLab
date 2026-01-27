@@ -1,13 +1,14 @@
 <pragmas>
-<pragma file="top.cpp" line="83" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="71" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="48" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="58" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="29" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="14" pragmaType="bind_storage" parentfunction="top_kernel" op="666" impl="30" latency="-1" variable="_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
+<pragma file="top.cpp" line="73" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="64" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="57" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="51" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="32" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="40" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="16" pragmaType="bind_storage" parentfunction="top_kernel" op="666" impl="30" latency="-1" variable="_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
 <pragma file="top.cpp" line="21" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="0" mode="complete" dynamic="0" variable="col_sum"/>
 <pragma file="top.cpp" line="22" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="0" mode="complete" dynamic="0" variable="scale"/>
-<pragma file="top.cpp" line="59" pragmaType="dependence" parentfunction="top_kernel" class="" direction="NODIR" type="inter" distance="0" variable="col_sum"/>
+<pragma file="top.cpp" line="58" pragmaType="dependence" parentfunction="top_kernel" class="" direction="NODIR" type="inter" distance="0" variable="col_sum"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 8, true, (ap_q_mode)0, (ap_o_mode)0, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)0, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
 <pragma file="/tools/software/xilinx/2025.1.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi48ELb0EEC2EDq48_j" off="0" region="0" recursive="0"/>

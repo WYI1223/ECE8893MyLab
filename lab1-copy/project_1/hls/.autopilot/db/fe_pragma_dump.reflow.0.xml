@@ -8,9 +8,9 @@
 <pragma file="top.cpp" line="66" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
 <pragma file="top.cpp" line="69" pragmaType="unroll" parentfunction="top_kernel" factor="-1" skip_exit_check="0"/>
 <pragma file="top.cpp" line="40" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="25" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="4" mode="cyclic" dynamic="0" variable="_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
-<pragma file="top.cpp" line="26" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="4" mode="cyclic" dynamic="0" variable="A"/>
-<pragma file="top.cpp" line="27" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="4" mode="cyclic" dynamic="0" variable="C"/>
+<pragma file="top.cpp" line="25" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="32" mode="cyclic" dynamic="0" variable="_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
+<pragma file="top.cpp" line="26" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="32" mode="cyclic" dynamic="0" variable="A"/>
+<pragma file="top.cpp" line="27" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="32" mode="cyclic" dynamic="0" variable="C"/>
 <pragma file="top.cpp" line="32" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="0" mode="complete" dynamic="0" variable="col_sum"/>
 <pragma file="top.cpp" line="33" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="0" mode="complete" dynamic="0" variable="scale"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>

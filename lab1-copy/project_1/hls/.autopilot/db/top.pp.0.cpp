@@ -6516,7 +6516,7 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
 # 17 "top.cpp"
 
 
-    const int UF = 4;
+    const int UF = 32;
 
 
     static data_t tmp[256][64];

@@ -16,7 +16,7 @@ void top_kernel(data_t A[N_ROWS][N_COLS],
                 data_t C[N_ROWS][N_COLS])
 {
     // Tune unroll factor (must divide N_COLS=64). 4 is a safe default.
-    const int UF = 4;
+    const int UF = 32;
 
     // Intermediate buffer for row-normalized values
     static data_t tmp[N_ROWS][N_COLS];

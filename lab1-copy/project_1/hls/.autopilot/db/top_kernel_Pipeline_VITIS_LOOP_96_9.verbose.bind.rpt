@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_96_9'
 ================================================================
-* Date:           Mon Jan 26 22:00:08 2026
+* Date:           Mon Jan 26 22:11:42 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -226,7 +226,7 @@ ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i40 @_ssd
 ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%sext_ln99 = sext i40 %shl_ln" [top.cpp:99]   --->   Operation 143 'sext' 'sext_ln99' <Predicate = (!icmp_ln96)> <Delay = 0.00>
 ST_1 : Operation 144 [1/1] (4.26ns)   --->   "%mul_ln99 = mul i81 %sext_ln99, i81 1099511758849" [top.cpp:99]   --->   Operation 144 'mul' 'mul_ln99' <Predicate = (!icmp_ln96)> <Delay = 4.26> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.26> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_5, i32 23" [top.cpp:99]   --->   Operation 145 'bitselect' 'tmp' <Predicate = (!icmp_ln96)> <Delay = 0.00>
-ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%tmp_68_cast1 = partselect i18 @_ssdm_op_PartSelect.i18.i81.i32.i32, i81 %mul_ln99, i32 63, i32 80" [top.cpp:99]   --->   Operation 146 'partselect' 'tmp_68_cast1' <Predicate = (!icmp_ln96)> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%tmp_396_cast1 = partselect i18 @_ssdm_op_PartSelect.i18.i81.i32.i32, i81 %mul_ln99, i32 63, i32 80" [top.cpp:99]   --->   Operation 146 'partselect' 'tmp_396_cast1' <Predicate = (!icmp_ln96)> <Delay = 0.00>
 ST_1 : Operation 147 [1/1] (0.88ns)   --->   "%switch_ln99 = switch i6 %trunc_ln96, void %arrayidx91.case.63, i6 0, void %arrayidx91.case.0, i6 1, void %arrayidx91.case.1, i6 2, void %arrayidx91.case.2, i6 3, void %arrayidx91.case.3, i6 4, void %arrayidx91.case.4, i6 5, void %arrayidx91.case.5, i6 6, void %arrayidx91.case.6, i6 7, void %arrayidx91.case.7, i6 8, void %arrayidx91.case.8, i6 9, void %arrayidx91.case.9, i6 10, void %arrayidx91.case.10, i6 11, void %arrayidx91.case.11, i6 12, void %arrayidx91.case.12, i6 13, void %arrayidx91.case.13, i6 14, void %arrayidx91.case.14, i6 15, void %arrayidx91.case.15, i6 16, void %arrayidx91.case.16, i6 17, void %arrayidx91.case.17, i6 18, void %arrayidx91.case.18, i6 19, void %arrayidx91.case.19, i6 20, void %arrayidx91.case.20, i6 21, void %arrayidx91.case.21, i6 22, void %arrayidx91.case.22, i6 23, void %arrayidx91.case.23, i6 24, void %arrayidx91.case.24, i6 25, void %arrayidx91.case.25, i6 26, void %arrayidx91.case.26, i6 27, void %arrayidx91.case.27, i6 28, void %arrayidx91.case.28, i6 29, void %arrayidx91.case.29, i6 30, void %arrayidx91.case.30, i6 31, void %arrayidx91.case.31, i6 32, void %arrayidx91.case.32, i6 33, void %arrayidx91.case.33, i6 34, void %arrayidx91.case.34, i6 35, void %arrayidx91.case.35, i6 36, void %arrayidx91.case.36, i6 37, void %arrayidx91.case.37, i6 38, void %arrayidx91.case.38, i6 39, void %arrayidx91.case.39, i6 40, void %arrayidx91.case.40, i6 41, void %arrayidx91.case.41, i6 42, void %arrayidx91.case.42, i6 43, void %arrayidx91.case.43, i6 44, void %arrayidx91.case.44, i6 45, void %arrayidx91.case.45, i6 46, void %arrayidx91.case.46, i6 47, void %arrayidx91.case.47, i6 48, void %arrayidx91.case.48, i6 49, void %arrayidx91.case.49, i6 50, void %arrayidx91.case.50, i6 51, void %arrayidx91.case.51, i6 52, void %arrayidx91.case.52, i6 53, void %arrayidx91.case.53, i6 54, void %arrayidx91.case.54, i6 55, void %arrayidx91.case.55, i6 56, void %arrayidx91.case.56, i6 57, void %arrayidx91.case.57, i6 58, void %arrayidx91.case.58, i6 59, void %arrayidx91.case.59, i6 60, void %arrayidx91.case.60, i6 61, void %arrayidx91.case.61, i6 62, void %land.end49.i.i.i.split.arrayidx91.exit_crit_edge" [top.cpp:99]   --->   Operation 147 'switch' 'switch_ln99' <Predicate = (!icmp_ln96)> <Delay = 0.88>
 ST_1 : Operation 148 [1/1] (0.48ns)   --->   "%store_ln96 = store i7 %add_ln96, i7 %j" [top.cpp:96]   --->   Operation 148 'store' 'store_ln96' <Predicate = (!icmp_ln96)> <Delay = 0.48>
 ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%br_ln96 = br void %land.end49.i.i.i" [top.cpp:96]   --->   Operation 149 'br' 'br_ln96' <Predicate = (!icmp_ln96)> <Delay = 0.00>
@@ -361,16 +361,16 @@ ST_1 : Operation 429 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_
 ST_1 : Operation 430 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 430 'ret' 'ret_ln0' <Predicate = (icmp_ln96)> <Delay = 0.48>
 
 State 2 <SV = 1> <Delay = 3.75>
-ST_2 : Operation 150 [1/1] (0.00ns)   --->   "%specpipeline_ln98 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_2" [top.cpp:98]   --->   Operation 150 'specpipeline' 'specpipeline_ln98' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 150 [1/1] (0.00ns)   --->   "%specpipeline_ln98 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_22" [top.cpp:98]   --->   Operation 150 'specpipeline' 'specpipeline_ln98' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 151 [1/1] (0.00ns)   --->   "%speclooptripcount_ln31 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64" [top.cpp:31]   --->   Operation 151 'speclooptripcount' 'speclooptripcount_ln31' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 152 [1/1] (0.00ns)   --->   "%specloopname_ln96 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [top.cpp:96]   --->   Operation 152 'specloopname' 'specloopname_ln96' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 152 [1/1] (0.00ns)   --->   "%specloopname_ln96 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24" [top.cpp:96]   --->   Operation 152 'specloopname' 'specloopname_ln96' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 153 [1/1] (1.53ns)   --->   "%sub_ln99 = sub i81 0, i81 %mul_ln99" [top.cpp:99]   --->   Operation 153 'sub' 'sub_ln99' <Predicate = (tmp)> <Delay = 1.53> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 154 [1/1] (0.00ns) (grouped into LUT with out node sub_ln99_1)   --->   "%tmp_67_cast = partselect i17 @_ssdm_op_PartSelect.i17.i81.i32.i32, i81 %sub_ln99, i32 63, i32 79" [top.cpp:99]   --->   Operation 154 'partselect' 'tmp_67_cast' <Predicate = (tmp)> <Delay = 0.00>
-ST_2 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node sub_ln99_1)   --->   "%tmp_68_cast = partselect i17 @_ssdm_op_PartSelect.i17.i81.i32.i32, i81 %mul_ln99, i32 63, i32 79" [top.cpp:99]   --->   Operation 155 'partselect' 'tmp_68_cast' <Predicate = false> <Delay = 0.00>
-ST_2 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node sub_ln99_1)   --->   "%select_ln99_1 = select i1 %tmp, i17 %tmp_67_cast, i17 %tmp_68_cast" [top.cpp:99]   --->   Operation 156 'select' 'select_ln99_1' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 154 [1/1] (0.00ns) (grouped into LUT with out node sub_ln99_1)   --->   "%tmp_395_cast = partselect i17 @_ssdm_op_PartSelect.i17.i81.i32.i32, i81 %sub_ln99, i32 63, i32 79" [top.cpp:99]   --->   Operation 154 'partselect' 'tmp_395_cast' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node sub_ln99_1)   --->   "%tmp_396_cast = partselect i17 @_ssdm_op_PartSelect.i17.i81.i32.i32, i81 %mul_ln99, i32 63, i32 79" [top.cpp:99]   --->   Operation 155 'partselect' 'tmp_396_cast' <Predicate = false> <Delay = 0.00>
+ST_2 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node sub_ln99_1)   --->   "%select_ln99_1 = select i1 %tmp, i17 %tmp_395_cast, i17 %tmp_396_cast" [top.cpp:99]   --->   Operation 156 'select' 'select_ln99_1' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 157 [1/1] (0.00ns) (grouped into LUT with out node sub_ln99_1)   --->   "%zext_ln99 = zext i17 %select_ln99_1" [top.cpp:99]   --->   Operation 157 'zext' 'zext_ln99' <Predicate = (tmp)> <Delay = 0.00>
 ST_2 : Operation 158 [1/1] (1.02ns) (out node of the LUT)   --->   "%sub_ln99_1 = sub i18 0, i18 %zext_ln99" [top.cpp:99]   --->   Operation 158 'sub' 'sub_ln99_1' <Predicate = (tmp)> <Delay = 1.02> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 159 [1/1] (0.42ns)   --->   "%select_ln99_2 = select i1 %tmp, i18 %sub_ln99_1, i18 %tmp_68_cast1" [top.cpp:99]   --->   Operation 159 'select' 'select_ln99_2' <Predicate = true> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 159 [1/1] (0.42ns)   --->   "%select_ln99_2 = select i1 %tmp, i18 %sub_ln99_1, i18 %tmp_396_cast1" [top.cpp:99]   --->   Operation 159 'select' 'select_ln99_2' <Predicate = true> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 160 [1/1] (0.00ns)   --->   "%sext_ln99_1 = sext i18 %select_ln99_2" [top.cpp:99]   --->   Operation 160 'sext' 'sext_ln99_1' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 161 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sext_ln99_1, i32 39" [top.cpp:99]   --->   Operation 161 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 162 [1/1] (0.00ns) (grouped into LUT with out node scale_64)   --->   "%sext_ln99_2 = sext i18 %select_ln99_2" [top.cpp:99]   --->   Operation 162 'sext' 'sext_ln99_2' <Predicate = true> <Delay = 0.00>
@@ -801,7 +801,7 @@ shl_ln                      (bitconcatenate   ) [ 000]
 sext_ln99                   (sext             ) [ 000]
 mul_ln99                    (mul              ) [ 011]
 tmp                         (bitselect        ) [ 011]
-tmp_68_cast1                (partselect       ) [ 011]
+tmp_396_cast1               (partselect       ) [ 011]
 switch_ln99                 (switch           ) [ 000]
 store_ln96                  (store            ) [ 000]
 br_ln96                     (br               ) [ 000]
@@ -809,8 +809,8 @@ specpipeline_ln98           (specpipeline     ) [ 000]
 speclooptripcount_ln31      (speclooptripcount) [ 000]
 specloopname_ln96           (specloopname     ) [ 000]
 sub_ln99                    (sub              ) [ 000]
-tmp_67_cast                 (partselect       ) [ 000]
-tmp_68_cast                 (partselect       ) [ 000]
+tmp_395_cast                (partselect       ) [ 000]
+tmp_396_cast                (partselect       ) [ 000]
 select_ln99_1               (select           ) [ 000]
 zext_ln99                   (zext             ) [ 000]
 sub_ln99_1                  (sub              ) [ 000]
@@ -2977,7 +2977,7 @@ ret_ln0                     (ret              ) [ 000]
 <pin id="419" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_2"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -3013,7 +3013,7 @@ ret_ln0                     (ret              ) [ 000]
 <pin id="427" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_4"/></StgValue>
+<StgValue><ssdm name="empty_24"/></StgValue>
 </bind>
 </comp>
 
@@ -5688,7 +5688,7 @@ ret_ln0                     (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="1858" class="1004" name="tmp_68_cast1_fu_1858">
+<comp id="1858" class="1004" name="tmp_396_cast1_fu_1858">
 <pin_list>
 <pin id="1859" dir="0" index="0" bw="18" slack="0"/>
 <pin id="1860" dir="0" index="1" bw="81" slack="0"/>
@@ -5698,7 +5698,7 @@ ret_ln0                     (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_68_cast1/1 "/>
+<opset="tmp_396_cast1/1 "/>
 </bind>
 </comp>
 
@@ -5800,7 +5800,7 @@ ret_ln0                     (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="2008" class="1004" name="tmp_67_cast_fu_2008">
+<comp id="2008" class="1004" name="tmp_395_cast_fu_2008">
 <pin_list>
 <pin id="2009" dir="0" index="0" bw="17" slack="0"/>
 <pin id="2010" dir="0" index="1" bw="81" slack="0"/>
@@ -5810,11 +5810,11 @@ ret_ln0                     (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_67_cast/2 "/>
+<opset="tmp_395_cast/2 "/>
 </bind>
 </comp>
 
-<comp id="2018" class="1004" name="tmp_68_cast_fu_2018">
+<comp id="2018" class="1004" name="tmp_396_cast_fu_2018">
 <pin_list>
 <pin id="2019" dir="0" index="0" bw="17" slack="0"/>
 <pin id="2020" dir="0" index="1" bw="81" slack="1"/>
@@ -5824,7 +5824,7 @@ ret_ln0                     (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_68_cast/2 "/>
+<opset="tmp_396_cast/2 "/>
 </bind>
 </comp>
 
@@ -8200,13 +8200,13 @@ ret_ln0                     (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="3126" class="1005" name="tmp_68_cast1_reg_3126">
+<comp id="3126" class="1005" name="tmp_396_cast1_reg_3126">
 <pin_list>
 <pin id="3127" dir="0" index="0" bw="18" slack="1"/>
 <pin id="3128" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_68_cast1 "/>
+<opset="tmp_396_cast1 "/>
 </bind>
 </comp>
 
@@ -10190,7 +10190,7 @@ ret_ln0                     (ret              ) [ 000]
 		sext_ln99 : 5
 		mul_ln99 : 6
 		tmp : 4
-		tmp_68_cast1 : 7
+		tmp_396_cast1 : 7
 		switch_ln99 : 3
 		store_ln96 : 3
 		scale_load : 1
@@ -10322,7 +10322,7 @@ ret_ln0                     (ret              ) [ 000]
 		write_ln0 : 2
 		write_ln0 : 2
 	State 2
-		tmp_67_cast : 1
+		tmp_395_cast : 1
 		select_ln99_1 : 2
 		zext_ln99 : 3
 		sub_ln99_1 : 4
@@ -10584,9 +10584,9 @@ ret_ln0                     (ret              ) [ 000]
 |          |               tmp_2_fu_2066              |    0    |    0    |    0    |
 |          |               tmp_3_fu_2074              |    0    |    0    |    0    |
 |----------|------------------------------------------|---------|---------|---------|
-|          |           tmp_68_cast1_fu_1858           |    0    |    0    |    0    |
-|partselect|            tmp_67_cast_fu_2008           |    0    |    0    |    0    |
-|          |            tmp_68_cast_fu_2018           |    0    |    0    |    0    |
+|          |           tmp_396_cast1_fu_1858          |    0    |    0    |    0    |
+|partselect|           tmp_395_cast_fu_2008           |    0    |    0    |    0    |
+|          |           tmp_396_cast_fu_2018           |    0    |    0    |    0    |
 |----------|------------------------------------------|---------|---------|---------|
 |  switch  |            switch_ln99_fu_1868           |    0    |    0    |    0    |
 |----------|------------------------------------------|---------|---------|---------|
@@ -10599,81 +10599,81 @@ Memories:
 N/A
 
 * Register list:
-+---------------------+--------+
-|                     |   FF   |
-+---------------------+--------+
-|      j_reg_2716     |    7   |
-|  mul_ln99_reg_3114  |   81   |
-|  scale_10_reg_2783  |   24   |
-|  scale_11_reg_2789  |   24   |
-|  scale_12_reg_2795  |   24   |
-|  scale_13_reg_2801  |   24   |
-|  scale_14_reg_2807  |   24   |
-|  scale_15_reg_2813  |   24   |
-|  scale_16_reg_2819  |   24   |
-|  scale_17_reg_2825  |   24   |
-|  scale_18_reg_2831  |   24   |
-|  scale_19_reg_2837  |   24   |
-|   scale_1_reg_2729  |   24   |
-|  scale_20_reg_2843  |   24   |
-|  scale_21_reg_2849  |   24   |
-|  scale_22_reg_2855  |   24   |
-|  scale_23_reg_2861  |   24   |
-|  scale_24_reg_2867  |   24   |
-|  scale_25_reg_2873  |   24   |
-|  scale_26_reg_2879  |   24   |
-|  scale_27_reg_2885  |   24   |
-|  scale_28_reg_2891  |   24   |
-|  scale_29_reg_2897  |   24   |
-|   scale_2_reg_2735  |   24   |
-|  scale_30_reg_2903  |   24   |
-|  scale_31_reg_2909  |   24   |
-|  scale_32_reg_2915  |   24   |
-|  scale_33_reg_2921  |   24   |
-|  scale_34_reg_2927  |   24   |
-|  scale_35_reg_2933  |   24   |
-|  scale_36_reg_2939  |   24   |
-|  scale_37_reg_2945  |   24   |
-|  scale_38_reg_2951  |   24   |
-|  scale_39_reg_2957  |   24   |
-|   scale_3_reg_2741  |   24   |
-|  scale_40_reg_2963  |   24   |
-|  scale_41_reg_2969  |   24   |
-|  scale_42_reg_2975  |   24   |
-|  scale_43_reg_2981  |   24   |
-|  scale_44_reg_2987  |   24   |
-|  scale_45_reg_2993  |   24   |
-|  scale_46_reg_2999  |   24   |
-|  scale_47_reg_3005  |   24   |
-|  scale_48_reg_3011  |   24   |
-|  scale_49_reg_3017  |   24   |
-|   scale_4_reg_2747  |   24   |
-|  scale_50_reg_3023  |   24   |
-|  scale_51_reg_3029  |   24   |
-|  scale_52_reg_3035  |   24   |
-|  scale_53_reg_3041  |   24   |
-|  scale_54_reg_3047  |   24   |
-|  scale_55_reg_3053  |   24   |
-|  scale_56_reg_3059  |   24   |
-|  scale_57_reg_3065  |   24   |
-|  scale_58_reg_3071  |   24   |
-|  scale_59_reg_3077  |   24   |
-|   scale_5_reg_2753  |   24   |
-|  scale_60_reg_3083  |   24   |
-|  scale_61_reg_3089  |   24   |
-|  scale_62_reg_3095  |   24   |
-|  scale_63_reg_3101  |   24   |
-|   scale_6_reg_2759  |   24   |
-|   scale_7_reg_2765  |   24   |
-|   scale_8_reg_2771  |   24   |
-|   scale_9_reg_2777  |   24   |
-|    scale_reg_2723   |   24   |
-|tmp_68_cast1_reg_3126|   18   |
-|     tmp_reg_3120    |    1   |
-| trunc_ln96_reg_3110 |    6   |
-+---------------------+--------+
-|        Total        |  1649  |
-+---------------------+--------+
++----------------------+--------+
+|                      |   FF   |
++----------------------+--------+
+|      j_reg_2716      |    7   |
+|   mul_ln99_reg_3114  |   81   |
+|   scale_10_reg_2783  |   24   |
+|   scale_11_reg_2789  |   24   |
+|   scale_12_reg_2795  |   24   |
+|   scale_13_reg_2801  |   24   |
+|   scale_14_reg_2807  |   24   |
+|   scale_15_reg_2813  |   24   |
+|   scale_16_reg_2819  |   24   |
+|   scale_17_reg_2825  |   24   |
+|   scale_18_reg_2831  |   24   |
+|   scale_19_reg_2837  |   24   |
+|   scale_1_reg_2729   |   24   |
+|   scale_20_reg_2843  |   24   |
+|   scale_21_reg_2849  |   24   |
+|   scale_22_reg_2855  |   24   |
+|   scale_23_reg_2861  |   24   |
+|   scale_24_reg_2867  |   24   |
+|   scale_25_reg_2873  |   24   |
+|   scale_26_reg_2879  |   24   |
+|   scale_27_reg_2885  |   24   |
+|   scale_28_reg_2891  |   24   |
+|   scale_29_reg_2897  |   24   |
+|   scale_2_reg_2735   |   24   |
+|   scale_30_reg_2903  |   24   |
+|   scale_31_reg_2909  |   24   |
+|   scale_32_reg_2915  |   24   |
+|   scale_33_reg_2921  |   24   |
+|   scale_34_reg_2927  |   24   |
+|   scale_35_reg_2933  |   24   |
+|   scale_36_reg_2939  |   24   |
+|   scale_37_reg_2945  |   24   |
+|   scale_38_reg_2951  |   24   |
+|   scale_39_reg_2957  |   24   |
+|   scale_3_reg_2741   |   24   |
+|   scale_40_reg_2963  |   24   |
+|   scale_41_reg_2969  |   24   |
+|   scale_42_reg_2975  |   24   |
+|   scale_43_reg_2981  |   24   |
+|   scale_44_reg_2987  |   24   |
+|   scale_45_reg_2993  |   24   |
+|   scale_46_reg_2999  |   24   |
+|   scale_47_reg_3005  |   24   |
+|   scale_48_reg_3011  |   24   |
+|   scale_49_reg_3017  |   24   |
+|   scale_4_reg_2747   |   24   |
+|   scale_50_reg_3023  |   24   |
+|   scale_51_reg_3029  |   24   |
+|   scale_52_reg_3035  |   24   |
+|   scale_53_reg_3041  |   24   |
+|   scale_54_reg_3047  |   24   |
+|   scale_55_reg_3053  |   24   |
+|   scale_56_reg_3059  |   24   |
+|   scale_57_reg_3065  |   24   |
+|   scale_58_reg_3071  |   24   |
+|   scale_59_reg_3077  |   24   |
+|   scale_5_reg_2753   |   24   |
+|   scale_60_reg_3083  |   24   |
+|   scale_61_reg_3089  |   24   |
+|   scale_62_reg_3095  |   24   |
+|   scale_63_reg_3101  |   24   |
+|   scale_6_reg_2759   |   24   |
+|   scale_7_reg_2765   |   24   |
+|   scale_8_reg_2771   |   24   |
+|   scale_9_reg_2777   |   24   |
+|    scale_reg_2723    |   24   |
+|tmp_396_cast1_reg_3126|   18   |
+|     tmp_reg_3120     |    1   |
+|  trunc_ln96_reg_3110 |    6   |
++----------------------+--------+
+|         Total        |  1649  |
++----------------------+--------+
 
 * Multiplexer (MUX) list: 
 |--------|------|------|------|--------|

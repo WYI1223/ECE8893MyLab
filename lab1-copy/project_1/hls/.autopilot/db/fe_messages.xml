@@ -53,17 +53,17 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:67:19" msg_body="Loop 'VITIS_LOOP_67_5' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_67_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_110_12' (top.cpp:110:21) in function 'top_kernel' completely with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:110:21" LoopName="VITIS_LOOP_110_12"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_110_12' (top.cpp:110:21) in function 'top_kernel' completely with a factor of 32">
+        <args Factor="32" LoopLoc="top.cpp:110:21" LoopName="VITIS_LOOP_110_12"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_85_8' (top.cpp:85:19) in function 'top_kernel' completely with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:85:19" LoopName="VITIS_LOOP_85_8"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_85_8' (top.cpp:85:19) in function 'top_kernel' completely with a factor of 32">
+        <args Factor="32" LoopLoc="top.cpp:85:19" LoopName="VITIS_LOOP_85_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_67_5' (top.cpp:67:19) in function 'top_kernel' completely with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:67:19" LoopName="VITIS_LOOP_67_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_67_5' (top.cpp:67:19) in function 'top_kernel' completely with a factor of 32">
+        <args Factor="32" LoopLoc="top.cpp:67:19" LoopName="VITIS_LOOP_67_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:22:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 4 on dimension 2.">
-        <args Dim="2" Factor="4" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:22:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 32 on dimension 2.">
+        <args Dim="2" Factor="32" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:30:9" msg_body="Applying array_partition to 'col_sum': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="col_sum"/>
@@ -71,11 +71,11 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:31:12" msg_body="Applying array_partition to 'scale': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="scale"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Applying array_partition to 'A': Cyclic partitioning with factor 4 on dimension 2.">
-        <args Dim="2" Factor="4" Mode="Cyclic" UOName="A"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Applying array_partition to 'A': Cyclic partitioning with factor 32 on dimension 2.">
+        <args Dim="2" Factor="32" Mode="Cyclic" UOName="A"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Applying array_partition to 'C': Cyclic partitioning with factor 4 on dimension 2.">
-        <args Dim="2" Factor="4" Mode="Cyclic" UOName="C"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Applying array_partition to 'C': Cyclic partitioning with factor 32 on dimension 2.">
+        <args Dim="2" Factor="32" Mode="Cyclic" UOName="C"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

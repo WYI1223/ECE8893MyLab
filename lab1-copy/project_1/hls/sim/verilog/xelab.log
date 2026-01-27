@@ -13,6 +13,62 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA
 INFO: [VRFC 10-311] analyzing module AESL_automem_A_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_A_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_18.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_18
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_19.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_19
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_21
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_22.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_22
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_23
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_24
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_25
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_26
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_27.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_27
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_29
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_30
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A_31
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_C_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_1.v" into library xil_defaultlib
@@ -21,8 +77,67 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA
 INFO: [VRFC 10-311] analyzing module AESL_automem_C_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_C_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_18.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_18
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_19.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_19
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_21
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_22.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_22
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_23
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_24
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_25
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_26
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_27.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_27
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_29
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_30
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C_31
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_top_kernel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_sdiv_40ns_24s_40_44_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_40ns_24s_40_44_1_divider
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_40ns_24s_40_44_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_3
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_64_4.v" into library xil_defaultlib
@@ -37,9 +152,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA
 INFO: [VRFC 10-311] analyzing module top_kernel
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_pipe_sequential_init
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_sdiv_40ns_24s_40_44_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_40ns_24s_40_44_1_divider
-INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_40ns_24s_40_44_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_mul_24s_24s_48_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_mul_24s_24s_48_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_mul_40s_42ns_81_1_1.v" into library xil_defaultlib
@@ -62,6 +174,10 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA
 INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_33_6_24_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1W.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_sparsemux_65_5_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_65_5_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_modebkb
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
@@ -84,11 +200,10 @@ Compiling package std.std
 Compiling package xil_defaultlib.top_kernel_subsystem_pkg
 Compiling package xil_defaultlib.file_agent_pkg
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.top_kernel_top_kernel_ap_fixed_6...
-Compiling module xil_defaultlib.top_kernel_sparsemux_9_2_24_1_1(...
+Compiling module xil_defaultlib.top_kernel_top_kernel_ap_fixed_2...
+Compiling module xil_defaultlib.top_kernel_sparsemux_65_5_24_1_1...
 Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
-Compiling module xil_defaultlib.top_kernel_sparsemux_33_6_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
 Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
@@ -105,10 +220,66 @@ Compiling module xil_defaultlib.AESL_automem_A_0
 Compiling module xil_defaultlib.AESL_automem_A_1
 Compiling module xil_defaultlib.AESL_automem_A_2
 Compiling module xil_defaultlib.AESL_automem_A_3
+Compiling module xil_defaultlib.AESL_automem_A_4
+Compiling module xil_defaultlib.AESL_automem_A_5
+Compiling module xil_defaultlib.AESL_automem_A_6
+Compiling module xil_defaultlib.AESL_automem_A_7
+Compiling module xil_defaultlib.AESL_automem_A_8
+Compiling module xil_defaultlib.AESL_automem_A_9
+Compiling module xil_defaultlib.AESL_automem_A_10
+Compiling module xil_defaultlib.AESL_automem_A_11
+Compiling module xil_defaultlib.AESL_automem_A_12
+Compiling module xil_defaultlib.AESL_automem_A_13
+Compiling module xil_defaultlib.AESL_automem_A_14
+Compiling module xil_defaultlib.AESL_automem_A_15
+Compiling module xil_defaultlib.AESL_automem_A_16
+Compiling module xil_defaultlib.AESL_automem_A_17
+Compiling module xil_defaultlib.AESL_automem_A_18
+Compiling module xil_defaultlib.AESL_automem_A_19
+Compiling module xil_defaultlib.AESL_automem_A_20
+Compiling module xil_defaultlib.AESL_automem_A_21
+Compiling module xil_defaultlib.AESL_automem_A_22
+Compiling module xil_defaultlib.AESL_automem_A_23
+Compiling module xil_defaultlib.AESL_automem_A_24
+Compiling module xil_defaultlib.AESL_automem_A_25
+Compiling module xil_defaultlib.AESL_automem_A_26
+Compiling module xil_defaultlib.AESL_automem_A_27
+Compiling module xil_defaultlib.AESL_automem_A_28
+Compiling module xil_defaultlib.AESL_automem_A_29
+Compiling module xil_defaultlib.AESL_automem_A_30
+Compiling module xil_defaultlib.AESL_automem_A_31
 Compiling module xil_defaultlib.AESL_automem_C_0
 Compiling module xil_defaultlib.AESL_automem_C_1
 Compiling module xil_defaultlib.AESL_automem_C_2
 Compiling module xil_defaultlib.AESL_automem_C_3
+Compiling module xil_defaultlib.AESL_automem_C_4
+Compiling module xil_defaultlib.AESL_automem_C_5
+Compiling module xil_defaultlib.AESL_automem_C_6
+Compiling module xil_defaultlib.AESL_automem_C_7
+Compiling module xil_defaultlib.AESL_automem_C_8
+Compiling module xil_defaultlib.AESL_automem_C_9
+Compiling module xil_defaultlib.AESL_automem_C_10
+Compiling module xil_defaultlib.AESL_automem_C_11
+Compiling module xil_defaultlib.AESL_automem_C_12
+Compiling module xil_defaultlib.AESL_automem_C_13
+Compiling module xil_defaultlib.AESL_automem_C_14
+Compiling module xil_defaultlib.AESL_automem_C_15
+Compiling module xil_defaultlib.AESL_automem_C_16
+Compiling module xil_defaultlib.AESL_automem_C_17
+Compiling module xil_defaultlib.AESL_automem_C_18
+Compiling module xil_defaultlib.AESL_automem_C_19
+Compiling module xil_defaultlib.AESL_automem_C_20
+Compiling module xil_defaultlib.AESL_automem_C_21
+Compiling module xil_defaultlib.AESL_automem_C_22
+Compiling module xil_defaultlib.AESL_automem_C_23
+Compiling module xil_defaultlib.AESL_automem_C_24
+Compiling module xil_defaultlib.AESL_automem_C_25
+Compiling module xil_defaultlib.AESL_automem_C_26
+Compiling module xil_defaultlib.AESL_automem_C_27
+Compiling module xil_defaultlib.AESL_automem_C_28
+Compiling module xil_defaultlib.AESL_automem_C_29
+Compiling module xil_defaultlib.AESL_automem_C_30
+Compiling module xil_defaultlib.AESL_automem_C_31
 Compiling module xil_defaultlib.nodf_module_intf_default
 Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=10)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)

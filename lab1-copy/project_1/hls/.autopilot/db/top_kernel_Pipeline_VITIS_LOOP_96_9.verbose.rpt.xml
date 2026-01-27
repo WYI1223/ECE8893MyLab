@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_96_9'" level="0">
-<item name = "Date">Mon Jan 26 22:00:10 2026
+<item name = "Date">Mon Jan 26 22:11:47 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -62,8 +62,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_40s_42ns_81_1_1_U97">mul_40s_42ns_81_1_1, 0, 5, 0, 22, 0</column>
-<column name="sparsemux_129_6_24_1_1_U98">sparsemux_129_6_24_1_1, 0, 0, 0, 273, 0</column>
+<column name="mul_40s_42ns_81_1_1_U232">mul_40s_42ns_81_1_1, 0, 5, 0, 22, 0</column>
+<column name="sparsemux_129_6_24_1_1_U233">sparsemux_129_6_24_1_1, 0, 0, 0, 273, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -177,7 +177,7 @@
 <column name="scale_8_fu_488">24, 0, 24, 0</column>
 <column name="scale_9_fu_492">24, 0, 24, 0</column>
 <column name="scale_fu_456">24, 0, 24, 0</column>
-<column name="tmp_68_cast1_reg_3126">18, 0, 18, 0</column>
+<column name="tmp_396_cast1_reg_3126">18, 0, 18, 0</column>
 <column name="tmp_reg_3120">1, 0, 1, 0</column>
 <column name="trunc_ln96_reg_3110">6, 0, 6, 0</column>
 </table>

@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_kernel_sparsemux_9_6_24_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {compactencoding_dontcare}
+	::AP::rtl_comp_handler top_kernel_sparsemux_17_6_24_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {compactencoding_dontcare}
 }
 
 
@@ -16,17 +16,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 4525 \
-    name top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9 \
+    id 2426 \
+    name top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9 \
+    corename top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7 \
     op interface \
-    ports { top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_address0 { O 10 vector } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_ce0 { O 1 bit } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_q0 { I 24 vector } } \
+    ports { top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_address0 { O 11 vector } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_ce0 { O 1 bit } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_q0 { I 24 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7'"
 }
 }
 
@@ -34,22 +34,22 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4521 \
-    name col_sum \
+    id 2418 \
+    name col_sum_8 \
     type other \
     dir IO \
     reset_level 1 \
     sync_rst true \
-    corename dc_col_sum \
+    corename dc_col_sum_8 \
     op interface \
-    ports { col_sum_i { I 24 vector } col_sum_o { O 24 vector } col_sum_o_ap_vld { O 1 bit } } \
+    ports { col_sum_8_i { I 24 vector } col_sum_8_o { O 24 vector } col_sum_8_o_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4522 \
+    id 2419 \
     name col_sum_16 \
     type other \
     dir IO \
@@ -64,7 +64,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4523 \
+    id 2420 \
+    name col_sum_24 \
+    type other \
+    dir IO \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_col_sum_24 \
+    op interface \
+    ports { col_sum_24_i { I 24 vector } col_sum_24_o { O 24 vector } col_sum_24_o_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2421 \
     name col_sum_32 \
     type other \
     dir IO \
@@ -79,7 +94,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4524 \
+    id 2422 \
+    name col_sum_40 \
+    type other \
+    dir IO \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_col_sum_40 \
+    op interface \
+    ports { col_sum_40_i { I 24 vector } col_sum_40_o { O 24 vector } col_sum_40_o_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2423 \
     name col_sum_48 \
     type other \
     dir IO \
@@ -88,6 +118,36 @@ eval "cg_default_interface_gen_dc { \
     corename dc_col_sum_48 \
     op interface \
     ports { col_sum_48_i { I 24 vector } col_sum_48_o { O 24 vector } col_sum_48_o_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2424 \
+    name col_sum_56 \
+    type other \
+    dir IO \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_col_sum_56 \
+    op interface \
+    ports { col_sum_56_i { I 24 vector } col_sum_56_o { O 24 vector } col_sum_56_o_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2425 \
+    name col_sum_load_1_out \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_col_sum_load_1_out \
+    op interface \
+    ports { col_sum_load_1_out { O 24 vector } col_sum_load_1_out_ap_vld { O 1 bit } } \
 } "
 }
 

@@ -16,62 +16,62 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    col_sum_load_1 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_1_load_1 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_load_1_reload : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_1_load_1_reload : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_2_load_2 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_3_load_2 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_4_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_5_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_6_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_7_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_8_load_8 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_9_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_10_load_8 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_11_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_12_load_11 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_13_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_14_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_15_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_16_load_14 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_17_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_18_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_19_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_20_load_12 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_21_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_22_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_23_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_24_load_13 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_25_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_26_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_27_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_28_load_12 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_29_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_30_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_31_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_32_load_14 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_33_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_34_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_35_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_36_load_12 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_37_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_38_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_39_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_40_load_13 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_41_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_42_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_43_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_44_load_12 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_45_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_46_load_10 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_47_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_48_load_14 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_49_load_7 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_50_load_9 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_51_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_52_load_9 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_53_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_54_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_55_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_6_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_7_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_8_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_9_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_10_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_11_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_12_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_13_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_14_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_15_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_16_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_17_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_18_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_19_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_20_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_21_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_22_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_23_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_24_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_25_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_26_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_27_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_28_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_29_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_30_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_31_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_32_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_33_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_34_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_35_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_36_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_37_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_38_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_39_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_40_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_41_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_42_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_43_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_44_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_45_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_46_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_47_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_48_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_49_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_50_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_51_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_52_load_5 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_53_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_54_load_4 : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_55_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_56_load_6 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_57_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_58_load_3 : IN STD_LOGIC_VECTOR (23 downto 0);
@@ -79,7 +79,7 @@ port (
     col_sum_60_load_2 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_61_load_1 : IN STD_LOGIC_VECTOR (23 downto 0);
     col_sum_62_load : IN STD_LOGIC_VECTOR (23 downto 0);
-    col_sum_63_load : IN STD_LOGIC_VECTOR (23 downto 0);
+    col_sum_63_load_reload : IN STD_LOGIC_VECTOR (23 downto 0);
     scale_63_out : OUT STD_LOGIC_VECTOR (23 downto 0);
     scale_63_out_ap_vld : OUT STD_LOGIC;
     scale_62_out : OUT STD_LOGIC_VECTOR (23 downto 0);
@@ -320,7 +320,7 @@ attribute shreg_extract : string;
     signal mul_ln101_fu_1544_p2 : STD_LOGIC_VECTOR (80 downto 0);
     signal mul_ln101_reg_3114 : STD_LOGIC_VECTOR (80 downto 0);
     signal tmp_reg_3120 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_267_cast1_reg_3126 : STD_LOGIC_VECTOR (17 downto 0);
+    signal tmp_139_cast1_reg_3126 : STD_LOGIC_VECTOR (17 downto 0);
     signal j_fu_452 : STD_LOGIC_VECTOR (6 downto 0) := "0000000";
     signal add_ln99_fu_1563_p2 : STD_LOGIC_VECTOR (6 downto 0);
     signal ap_loop_init : STD_LOGIC;
@@ -398,8 +398,8 @@ attribute shreg_extract : string;
     signal tmp_s_fu_1573_p131 : STD_LOGIC_VECTOR (23 downto 0);
     signal shl_ln1_fu_1837_p3 : STD_LOGIC_VECTOR (39 downto 0);
     signal sub_ln101_fu_2003_p2 : STD_LOGIC_VECTOR (80 downto 0);
-    signal tmp_266_cast_fu_2008_p4 : STD_LOGIC_VECTOR (16 downto 0);
-    signal tmp_267_cast_fu_2018_p4 : STD_LOGIC_VECTOR (16 downto 0);
+    signal tmp_138_cast_fu_2008_p4 : STD_LOGIC_VECTOR (16 downto 0);
+    signal tmp_139_cast_fu_2018_p4 : STD_LOGIC_VECTOR (16 downto 0);
     signal select_ln101_1_fu_2027_p3 : STD_LOGIC_VECTOR (16 downto 0);
     signal zext_ln101_fu_2034_p1 : STD_LOGIC_VECTOR (17 downto 0);
     signal sub_ln101_1_fu_2038_p2 : STD_LOGIC_VECTOR (17 downto 0);
@@ -730,7 +730,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mul_40s_42ns_81_1_1_U5096 : component top_kernel_mul_40s_42ns_81_1_1
+    mul_40s_42ns_81_1_1_U2749 : component top_kernel_mul_40s_42ns_81_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -742,7 +742,7 @@ begin
         din1 => mul_ln101_fu_1544_p1,
         dout => mul_ln101_fu_1544_p2);
 
-    sparsemux_129_6_24_1_1_U5097 : component top_kernel_sparsemux_129_6_24_1_1
+    sparsemux_129_6_24_1_1_U2750 : component top_kernel_sparsemux_129_6_24_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -878,62 +878,62 @@ begin
         sel_WIDTH => 6,
         dout_WIDTH => 24)
     port map (
-        din0 => col_sum_load_1,
-        din1 => col_sum_1_load_1,
+        din0 => col_sum_load_1_reload,
+        din1 => col_sum_1_load_1_reload,
         din2 => col_sum_2_load_2,
         din3 => col_sum_3_load_2,
         din4 => col_sum_4_load_4,
         din5 => col_sum_5_load_3,
-        din6 => col_sum_6_load_5,
-        din7 => col_sum_7_load_4,
-        din8 => col_sum_8_load_8,
-        din9 => col_sum_9_load_5,
-        din10 => col_sum_10_load_8,
-        din11 => col_sum_11_load_6,
-        din12 => col_sum_12_load_11,
-        din13 => col_sum_13_load_7,
-        din14 => col_sum_14_load_10,
-        din15 => col_sum_15_load_7,
-        din16 => col_sum_16_load_14,
-        din17 => col_sum_17_load_7,
-        din18 => col_sum_18_load_10,
-        din19 => col_sum_19_load_7,
-        din20 => col_sum_20_load_12,
-        din21 => col_sum_21_load_7,
-        din22 => col_sum_22_load_10,
-        din23 => col_sum_23_load_7,
-        din24 => col_sum_24_load_13,
-        din25 => col_sum_25_load_7,
-        din26 => col_sum_26_load_10,
-        din27 => col_sum_27_load_7,
-        din28 => col_sum_28_load_12,
-        din29 => col_sum_29_load_7,
-        din30 => col_sum_30_load_10,
-        din31 => col_sum_31_load_7,
-        din32 => col_sum_32_load_14,
-        din33 => col_sum_33_load_7,
-        din34 => col_sum_34_load_10,
-        din35 => col_sum_35_load_7,
-        din36 => col_sum_36_load_12,
-        din37 => col_sum_37_load_7,
-        din38 => col_sum_38_load_10,
-        din39 => col_sum_39_load_7,
-        din40 => col_sum_40_load_13,
-        din41 => col_sum_41_load_7,
-        din42 => col_sum_42_load_10,
-        din43 => col_sum_43_load_7,
-        din44 => col_sum_44_load_12,
-        din45 => col_sum_45_load_7,
-        din46 => col_sum_46_load_10,
-        din47 => col_sum_47_load_7,
-        din48 => col_sum_48_load_14,
-        din49 => col_sum_49_load_7,
-        din50 => col_sum_50_load_9,
-        din51 => col_sum_51_load_6,
-        din52 => col_sum_52_load_9,
-        din53 => col_sum_53_load_5,
-        din54 => col_sum_54_load_6,
-        din55 => col_sum_55_load_4,
+        din6 => col_sum_6_load_4,
+        din7 => col_sum_7_load_3,
+        din8 => col_sum_8_load_6,
+        din9 => col_sum_9_load_3,
+        din10 => col_sum_10_load_4,
+        din11 => col_sum_11_load_3,
+        din12 => col_sum_12_load_5,
+        din13 => col_sum_13_load_3,
+        din14 => col_sum_14_load_4,
+        din15 => col_sum_15_load_3,
+        din16 => col_sum_16_load_6,
+        din17 => col_sum_17_load_3,
+        din18 => col_sum_18_load_4,
+        din19 => col_sum_19_load_3,
+        din20 => col_sum_20_load_5,
+        din21 => col_sum_21_load_3,
+        din22 => col_sum_22_load_4,
+        din23 => col_sum_23_load_3,
+        din24 => col_sum_24_load_6,
+        din25 => col_sum_25_load_3,
+        din26 => col_sum_26_load_4,
+        din27 => col_sum_27_load_3,
+        din28 => col_sum_28_load_5,
+        din29 => col_sum_29_load_3,
+        din30 => col_sum_30_load_4,
+        din31 => col_sum_31_load_3,
+        din32 => col_sum_32_load_6,
+        din33 => col_sum_33_load_3,
+        din34 => col_sum_34_load_4,
+        din35 => col_sum_35_load_3,
+        din36 => col_sum_36_load_5,
+        din37 => col_sum_37_load_3,
+        din38 => col_sum_38_load_4,
+        din39 => col_sum_39_load_3,
+        din40 => col_sum_40_load_6,
+        din41 => col_sum_41_load_3,
+        din42 => col_sum_42_load_4,
+        din43 => col_sum_43_load_3,
+        din44 => col_sum_44_load_5,
+        din45 => col_sum_45_load_3,
+        din46 => col_sum_46_load_4,
+        din47 => col_sum_47_load_3,
+        din48 => col_sum_48_load_6,
+        din49 => col_sum_49_load_3,
+        din50 => col_sum_50_load_4,
+        din51 => col_sum_51_load_3,
+        din52 => col_sum_52_load_5,
+        din53 => col_sum_53_load_3,
+        din54 => col_sum_54_load_4,
+        din55 => col_sum_55_load_3,
         din56 => col_sum_56_load_6,
         din57 => col_sum_57_load_3,
         din58 => col_sum_58_load_3,
@@ -941,7 +941,7 @@ begin
         din60 => col_sum_60_load_2,
         din61 => col_sum_61_load_1,
         din62 => col_sum_62_load,
-        din63 => col_sum_63_load,
+        din63 => col_sum_63_load_reload,
         def => tmp_s_fu_1573_p129,
         sel => tmp_s_fu_1573_p130,
         dout => tmp_s_fu_1573_p131);
@@ -1026,7 +1026,7 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 mul_ln101_reg_3114 <= mul_ln101_fu_1544_p2;
-                tmp_267_cast1_reg_3126 <= mul_ln101_fu_1544_p2(80 downto 63);
+                tmp_139_cast1_reg_3126 <= mul_ln101_fu_1544_p2(80 downto 63);
                 tmp_reg_3120 <= tmp_s_fu_1573_p131(23 downto 23);
                 trunc_ln99_reg_3110 <= trunc_ln99_fu_1569_p1;
             end if;
@@ -2340,11 +2340,11 @@ begin
     end process;
 
     select_ln101_1_fu_2027_p3 <= 
-        tmp_266_cast_fu_2008_p4 when (tmp_reg_3120(0) = '1') else 
-        tmp_267_cast_fu_2018_p4;
+        tmp_138_cast_fu_2008_p4 when (tmp_reg_3120(0) = '1') else 
+        tmp_139_cast_fu_2018_p4;
     select_ln101_2_fu_2044_p3 <= 
         sub_ln101_1_fu_2038_p2 when (tmp_reg_3120(0) = '1') else 
-        tmp_267_cast1_reg_3126;
+        tmp_139_cast1_reg_3126;
     select_ln101_fu_2118_p3 <= 
         ap_const_lv24_7FFFFF when (and_ln101_fu_2094_p2(0) = '1') else 
         ap_const_lv24_800000;
@@ -2355,9 +2355,9 @@ begin
     shl_ln1_fu_1837_p3 <= (tmp_s_fu_1573_p131 & ap_const_lv16_0);
     sub_ln101_1_fu_2038_p2 <= std_logic_vector(unsigned(ap_const_lv18_0) - unsigned(zext_ln101_fu_2034_p1));
     sub_ln101_fu_2003_p2 <= std_logic_vector(unsigned(ap_const_lv81_0) - unsigned(mul_ln101_reg_3114));
+    tmp_138_cast_fu_2008_p4 <= sub_ln101_fu_2003_p2(79 downto 63);
+    tmp_139_cast_fu_2018_p4 <= mul_ln101_reg_3114(79 downto 63);
     tmp_1_fu_2054_p3 <= sext_ln101_1_fu_2050_p1(39 downto 39);
-    tmp_266_cast_fu_2008_p4 <= sub_ln101_fu_2003_p2(79 downto 63);
-    tmp_267_cast_fu_2018_p4 <= mul_ln101_reg_3114(79 downto 63);
     tmp_2_fu_2066_p3 <= sext_ln101_1_fu_2050_p1(23 downto 23);
     tmp_3_fu_2074_p3 <= select_ln101_2_fu_2044_p3(17 downto 17);
     tmp_s_fu_1573_p129 <= "XXXXXXXXXXXXXXXXXXXXXXXX";

@@ -13,62 +13,62 @@ module top_kernel_top_kernel_Pipeline_VITIS_LOOP_99_10 (
         ap_done,
         ap_idle,
         ap_ready,
-        col_sum_load_1,
-        col_sum_1_load_1,
+        col_sum_load_1_reload,
+        col_sum_1_load_1_reload,
         col_sum_2_load_2,
         col_sum_3_load_2,
         col_sum_4_load_4,
         col_sum_5_load_3,
-        col_sum_6_load_5,
-        col_sum_7_load_4,
-        col_sum_8_load_8,
-        col_sum_9_load_5,
-        col_sum_10_load_8,
-        col_sum_11_load_6,
-        col_sum_12_load_11,
-        col_sum_13_load_7,
-        col_sum_14_load_10,
-        col_sum_15_load_7,
-        col_sum_16_load_14,
-        col_sum_17_load_7,
-        col_sum_18_load_10,
-        col_sum_19_load_7,
-        col_sum_20_load_12,
-        col_sum_21_load_7,
-        col_sum_22_load_10,
-        col_sum_23_load_7,
-        col_sum_24_load_13,
-        col_sum_25_load_7,
-        col_sum_26_load_10,
-        col_sum_27_load_7,
-        col_sum_28_load_12,
-        col_sum_29_load_7,
-        col_sum_30_load_10,
-        col_sum_31_load_7,
-        col_sum_32_load_14,
-        col_sum_33_load_7,
-        col_sum_34_load_10,
-        col_sum_35_load_7,
-        col_sum_36_load_12,
-        col_sum_37_load_7,
-        col_sum_38_load_10,
-        col_sum_39_load_7,
-        col_sum_40_load_13,
-        col_sum_41_load_7,
-        col_sum_42_load_10,
-        col_sum_43_load_7,
-        col_sum_44_load_12,
-        col_sum_45_load_7,
-        col_sum_46_load_10,
-        col_sum_47_load_7,
-        col_sum_48_load_14,
-        col_sum_49_load_7,
-        col_sum_50_load_9,
-        col_sum_51_load_6,
-        col_sum_52_load_9,
-        col_sum_53_load_5,
-        col_sum_54_load_6,
-        col_sum_55_load_4,
+        col_sum_6_load_4,
+        col_sum_7_load_3,
+        col_sum_8_load_6,
+        col_sum_9_load_3,
+        col_sum_10_load_4,
+        col_sum_11_load_3,
+        col_sum_12_load_5,
+        col_sum_13_load_3,
+        col_sum_14_load_4,
+        col_sum_15_load_3,
+        col_sum_16_load_6,
+        col_sum_17_load_3,
+        col_sum_18_load_4,
+        col_sum_19_load_3,
+        col_sum_20_load_5,
+        col_sum_21_load_3,
+        col_sum_22_load_4,
+        col_sum_23_load_3,
+        col_sum_24_load_6,
+        col_sum_25_load_3,
+        col_sum_26_load_4,
+        col_sum_27_load_3,
+        col_sum_28_load_5,
+        col_sum_29_load_3,
+        col_sum_30_load_4,
+        col_sum_31_load_3,
+        col_sum_32_load_6,
+        col_sum_33_load_3,
+        col_sum_34_load_4,
+        col_sum_35_load_3,
+        col_sum_36_load_5,
+        col_sum_37_load_3,
+        col_sum_38_load_4,
+        col_sum_39_load_3,
+        col_sum_40_load_6,
+        col_sum_41_load_3,
+        col_sum_42_load_4,
+        col_sum_43_load_3,
+        col_sum_44_load_5,
+        col_sum_45_load_3,
+        col_sum_46_load_4,
+        col_sum_47_load_3,
+        col_sum_48_load_6,
+        col_sum_49_load_3,
+        col_sum_50_load_4,
+        col_sum_51_load_3,
+        col_sum_52_load_5,
+        col_sum_53_load_3,
+        col_sum_54_load_4,
+        col_sum_55_load_3,
         col_sum_56_load_6,
         col_sum_57_load_3,
         col_sum_58_load_3,
@@ -76,7 +76,7 @@ module top_kernel_top_kernel_Pipeline_VITIS_LOOP_99_10 (
         col_sum_60_load_2,
         col_sum_61_load_1,
         col_sum_62_load,
-        col_sum_63_load,
+        col_sum_63_load_reload,
         scale_63_out,
         scale_63_out_ap_vld,
         scale_62_out,
@@ -215,62 +215,62 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [23:0] col_sum_load_1;
-input  [23:0] col_sum_1_load_1;
+input  [23:0] col_sum_load_1_reload;
+input  [23:0] col_sum_1_load_1_reload;
 input  [23:0] col_sum_2_load_2;
 input  [23:0] col_sum_3_load_2;
 input  [23:0] col_sum_4_load_4;
 input  [23:0] col_sum_5_load_3;
-input  [23:0] col_sum_6_load_5;
-input  [23:0] col_sum_7_load_4;
-input  [23:0] col_sum_8_load_8;
-input  [23:0] col_sum_9_load_5;
-input  [23:0] col_sum_10_load_8;
-input  [23:0] col_sum_11_load_6;
-input  [23:0] col_sum_12_load_11;
-input  [23:0] col_sum_13_load_7;
-input  [23:0] col_sum_14_load_10;
-input  [23:0] col_sum_15_load_7;
-input  [23:0] col_sum_16_load_14;
-input  [23:0] col_sum_17_load_7;
-input  [23:0] col_sum_18_load_10;
-input  [23:0] col_sum_19_load_7;
-input  [23:0] col_sum_20_load_12;
-input  [23:0] col_sum_21_load_7;
-input  [23:0] col_sum_22_load_10;
-input  [23:0] col_sum_23_load_7;
-input  [23:0] col_sum_24_load_13;
-input  [23:0] col_sum_25_load_7;
-input  [23:0] col_sum_26_load_10;
-input  [23:0] col_sum_27_load_7;
-input  [23:0] col_sum_28_load_12;
-input  [23:0] col_sum_29_load_7;
-input  [23:0] col_sum_30_load_10;
-input  [23:0] col_sum_31_load_7;
-input  [23:0] col_sum_32_load_14;
-input  [23:0] col_sum_33_load_7;
-input  [23:0] col_sum_34_load_10;
-input  [23:0] col_sum_35_load_7;
-input  [23:0] col_sum_36_load_12;
-input  [23:0] col_sum_37_load_7;
-input  [23:0] col_sum_38_load_10;
-input  [23:0] col_sum_39_load_7;
-input  [23:0] col_sum_40_load_13;
-input  [23:0] col_sum_41_load_7;
-input  [23:0] col_sum_42_load_10;
-input  [23:0] col_sum_43_load_7;
-input  [23:0] col_sum_44_load_12;
-input  [23:0] col_sum_45_load_7;
-input  [23:0] col_sum_46_load_10;
-input  [23:0] col_sum_47_load_7;
-input  [23:0] col_sum_48_load_14;
-input  [23:0] col_sum_49_load_7;
-input  [23:0] col_sum_50_load_9;
-input  [23:0] col_sum_51_load_6;
-input  [23:0] col_sum_52_load_9;
-input  [23:0] col_sum_53_load_5;
-input  [23:0] col_sum_54_load_6;
-input  [23:0] col_sum_55_load_4;
+input  [23:0] col_sum_6_load_4;
+input  [23:0] col_sum_7_load_3;
+input  [23:0] col_sum_8_load_6;
+input  [23:0] col_sum_9_load_3;
+input  [23:0] col_sum_10_load_4;
+input  [23:0] col_sum_11_load_3;
+input  [23:0] col_sum_12_load_5;
+input  [23:0] col_sum_13_load_3;
+input  [23:0] col_sum_14_load_4;
+input  [23:0] col_sum_15_load_3;
+input  [23:0] col_sum_16_load_6;
+input  [23:0] col_sum_17_load_3;
+input  [23:0] col_sum_18_load_4;
+input  [23:0] col_sum_19_load_3;
+input  [23:0] col_sum_20_load_5;
+input  [23:0] col_sum_21_load_3;
+input  [23:0] col_sum_22_load_4;
+input  [23:0] col_sum_23_load_3;
+input  [23:0] col_sum_24_load_6;
+input  [23:0] col_sum_25_load_3;
+input  [23:0] col_sum_26_load_4;
+input  [23:0] col_sum_27_load_3;
+input  [23:0] col_sum_28_load_5;
+input  [23:0] col_sum_29_load_3;
+input  [23:0] col_sum_30_load_4;
+input  [23:0] col_sum_31_load_3;
+input  [23:0] col_sum_32_load_6;
+input  [23:0] col_sum_33_load_3;
+input  [23:0] col_sum_34_load_4;
+input  [23:0] col_sum_35_load_3;
+input  [23:0] col_sum_36_load_5;
+input  [23:0] col_sum_37_load_3;
+input  [23:0] col_sum_38_load_4;
+input  [23:0] col_sum_39_load_3;
+input  [23:0] col_sum_40_load_6;
+input  [23:0] col_sum_41_load_3;
+input  [23:0] col_sum_42_load_4;
+input  [23:0] col_sum_43_load_3;
+input  [23:0] col_sum_44_load_5;
+input  [23:0] col_sum_45_load_3;
+input  [23:0] col_sum_46_load_4;
+input  [23:0] col_sum_47_load_3;
+input  [23:0] col_sum_48_load_6;
+input  [23:0] col_sum_49_load_3;
+input  [23:0] col_sum_50_load_4;
+input  [23:0] col_sum_51_load_3;
+input  [23:0] col_sum_52_load_5;
+input  [23:0] col_sum_53_load_3;
+input  [23:0] col_sum_54_load_4;
+input  [23:0] col_sum_55_load_3;
 input  [23:0] col_sum_56_load_6;
 input  [23:0] col_sum_57_load_3;
 input  [23:0] col_sum_58_load_3;
@@ -278,7 +278,7 @@ input  [23:0] col_sum_59_load_2;
 input  [23:0] col_sum_60_load_2;
 input  [23:0] col_sum_61_load_1;
 input  [23:0] col_sum_62_load;
-input  [23:0] col_sum_63_load;
+input  [23:0] col_sum_63_load_reload;
 output  [23:0] scale_63_out;
 output   scale_63_out_ap_vld;
 output  [23:0] scale_62_out;
@@ -490,7 +490,7 @@ wire    ap_block_pp0_stage0_11001;
 wire   [80:0] mul_ln101_fu_1544_p2;
 reg   [80:0] mul_ln101_reg_3114;
 reg   [0:0] tmp_reg_3120;
-reg   [17:0] tmp_267_cast1_reg_3126;
+reg   [17:0] tmp_139_cast1_reg_3126;
 reg   [6:0] j_fu_452;
 wire   [6:0] add_ln99_fu_1563_p2;
 wire    ap_loop_init;
@@ -568,8 +568,8 @@ wire   [5:0] tmp_s_fu_1573_p130;
 wire   [23:0] tmp_s_fu_1573_p131;
 wire  signed [39:0] shl_ln1_fu_1837_p3;
 wire   [80:0] sub_ln101_fu_2003_p2;
-wire   [16:0] tmp_266_cast_fu_2008_p4;
-wire   [16:0] tmp_267_cast_fu_2018_p4;
+wire   [16:0] tmp_138_cast_fu_2008_p4;
+wire   [16:0] tmp_139_cast_fu_2018_p4;
 wire   [16:0] select_ln101_1_fu_2027_p3;
 wire   [17:0] zext_ln101_fu_2034_p1;
 wire   [17:0] sub_ln101_1_fu_2038_p2;
@@ -739,7 +739,7 @@ top_kernel_mul_40s_42ns_81_1_1 #(
     .din0_WIDTH( 40 ),
     .din1_WIDTH( 42 ),
     .dout_WIDTH( 81 ))
-mul_40s_42ns_81_1_1_U5096(
+mul_40s_42ns_81_1_1_U2749(
     .din0(shl_ln1_fu_1837_p3),
     .din1(mul_ln101_fu_1544_p1),
     .dout(mul_ln101_fu_1544_p2)
@@ -879,63 +879,63 @@ mul_40s_42ns_81_1_1_U5096(
     .def_WIDTH( 24 ),
     .sel_WIDTH( 6 ),
     .dout_WIDTH( 24 ))
-sparsemux_129_6_24_1_1_U5097(
-    .din0(col_sum_load_1),
-    .din1(col_sum_1_load_1),
+sparsemux_129_6_24_1_1_U2750(
+    .din0(col_sum_load_1_reload),
+    .din1(col_sum_1_load_1_reload),
     .din2(col_sum_2_load_2),
     .din3(col_sum_3_load_2),
     .din4(col_sum_4_load_4),
     .din5(col_sum_5_load_3),
-    .din6(col_sum_6_load_5),
-    .din7(col_sum_7_load_4),
-    .din8(col_sum_8_load_8),
-    .din9(col_sum_9_load_5),
-    .din10(col_sum_10_load_8),
-    .din11(col_sum_11_load_6),
-    .din12(col_sum_12_load_11),
-    .din13(col_sum_13_load_7),
-    .din14(col_sum_14_load_10),
-    .din15(col_sum_15_load_7),
-    .din16(col_sum_16_load_14),
-    .din17(col_sum_17_load_7),
-    .din18(col_sum_18_load_10),
-    .din19(col_sum_19_load_7),
-    .din20(col_sum_20_load_12),
-    .din21(col_sum_21_load_7),
-    .din22(col_sum_22_load_10),
-    .din23(col_sum_23_load_7),
-    .din24(col_sum_24_load_13),
-    .din25(col_sum_25_load_7),
-    .din26(col_sum_26_load_10),
-    .din27(col_sum_27_load_7),
-    .din28(col_sum_28_load_12),
-    .din29(col_sum_29_load_7),
-    .din30(col_sum_30_load_10),
-    .din31(col_sum_31_load_7),
-    .din32(col_sum_32_load_14),
-    .din33(col_sum_33_load_7),
-    .din34(col_sum_34_load_10),
-    .din35(col_sum_35_load_7),
-    .din36(col_sum_36_load_12),
-    .din37(col_sum_37_load_7),
-    .din38(col_sum_38_load_10),
-    .din39(col_sum_39_load_7),
-    .din40(col_sum_40_load_13),
-    .din41(col_sum_41_load_7),
-    .din42(col_sum_42_load_10),
-    .din43(col_sum_43_load_7),
-    .din44(col_sum_44_load_12),
-    .din45(col_sum_45_load_7),
-    .din46(col_sum_46_load_10),
-    .din47(col_sum_47_load_7),
-    .din48(col_sum_48_load_14),
-    .din49(col_sum_49_load_7),
-    .din50(col_sum_50_load_9),
-    .din51(col_sum_51_load_6),
-    .din52(col_sum_52_load_9),
-    .din53(col_sum_53_load_5),
-    .din54(col_sum_54_load_6),
-    .din55(col_sum_55_load_4),
+    .din6(col_sum_6_load_4),
+    .din7(col_sum_7_load_3),
+    .din8(col_sum_8_load_6),
+    .din9(col_sum_9_load_3),
+    .din10(col_sum_10_load_4),
+    .din11(col_sum_11_load_3),
+    .din12(col_sum_12_load_5),
+    .din13(col_sum_13_load_3),
+    .din14(col_sum_14_load_4),
+    .din15(col_sum_15_load_3),
+    .din16(col_sum_16_load_6),
+    .din17(col_sum_17_load_3),
+    .din18(col_sum_18_load_4),
+    .din19(col_sum_19_load_3),
+    .din20(col_sum_20_load_5),
+    .din21(col_sum_21_load_3),
+    .din22(col_sum_22_load_4),
+    .din23(col_sum_23_load_3),
+    .din24(col_sum_24_load_6),
+    .din25(col_sum_25_load_3),
+    .din26(col_sum_26_load_4),
+    .din27(col_sum_27_load_3),
+    .din28(col_sum_28_load_5),
+    .din29(col_sum_29_load_3),
+    .din30(col_sum_30_load_4),
+    .din31(col_sum_31_load_3),
+    .din32(col_sum_32_load_6),
+    .din33(col_sum_33_load_3),
+    .din34(col_sum_34_load_4),
+    .din35(col_sum_35_load_3),
+    .din36(col_sum_36_load_5),
+    .din37(col_sum_37_load_3),
+    .din38(col_sum_38_load_4),
+    .din39(col_sum_39_load_3),
+    .din40(col_sum_40_load_6),
+    .din41(col_sum_41_load_3),
+    .din42(col_sum_42_load_4),
+    .din43(col_sum_43_load_3),
+    .din44(col_sum_44_load_5),
+    .din45(col_sum_45_load_3),
+    .din46(col_sum_46_load_4),
+    .din47(col_sum_47_load_3),
+    .din48(col_sum_48_load_6),
+    .din49(col_sum_49_load_3),
+    .din50(col_sum_50_load_4),
+    .din51(col_sum_51_load_3),
+    .din52(col_sum_52_load_5),
+    .din53(col_sum_53_load_3),
+    .din54(col_sum_54_load_4),
+    .din55(col_sum_55_load_3),
     .din56(col_sum_56_load_6),
     .din57(col_sum_57_load_3),
     .din58(col_sum_58_load_3),
@@ -943,7 +943,7 @@ sparsemux_129_6_24_1_1_U5097(
     .din60(col_sum_60_load_2),
     .din61(col_sum_61_load_1),
     .din62(col_sum_62_load),
-    .din63(col_sum_63_load),
+    .din63(col_sum_63_load_reload),
     .def(tmp_s_fu_1573_p129),
     .sel(tmp_s_fu_1573_p130),
     .dout(tmp_s_fu_1573_p131)
@@ -1009,7 +1009,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         mul_ln101_reg_3114 <= mul_ln101_fu_1544_p2;
-        tmp_267_cast1_reg_3126 <= {{mul_ln101_fu_1544_p2[80:63]}};
+        tmp_139_cast1_reg_3126 <= {{mul_ln101_fu_1544_p2[80:63]}};
         tmp_reg_3120 <= tmp_s_fu_1573_p131[32'd23];
         trunc_ln99_reg_3110 <= trunc_ln99_fu_1569_p1;
     end
@@ -2136,9 +2136,9 @@ assign scale_9_out = scale_9_fu_492;
 
 assign scale_out = scale_fu_456;
 
-assign select_ln101_1_fu_2027_p3 = ((tmp_reg_3120[0:0] == 1'b1) ? tmp_266_cast_fu_2008_p4 : tmp_267_cast_fu_2018_p4);
+assign select_ln101_1_fu_2027_p3 = ((tmp_reg_3120[0:0] == 1'b1) ? tmp_138_cast_fu_2008_p4 : tmp_139_cast_fu_2018_p4);
 
-assign select_ln101_2_fu_2044_p3 = ((tmp_reg_3120[0:0] == 1'b1) ? sub_ln101_1_fu_2038_p2 : tmp_267_cast1_reg_3126);
+assign select_ln101_2_fu_2044_p3 = ((tmp_reg_3120[0:0] == 1'b1) ? sub_ln101_1_fu_2038_p2 : tmp_139_cast1_reg_3126);
 
 assign select_ln101_fu_2118_p3 = ((and_ln101_fu_2094_p2[0:0] == 1'b1) ? 24'd8388607 : 24'd8388608);
 
@@ -2152,11 +2152,11 @@ assign sub_ln101_1_fu_2038_p2 = (18'd0 - zext_ln101_fu_2034_p1);
 
 assign sub_ln101_fu_2003_p2 = (81'd0 - mul_ln101_reg_3114);
 
+assign tmp_138_cast_fu_2008_p4 = {{sub_ln101_fu_2003_p2[79:63]}};
+
+assign tmp_139_cast_fu_2018_p4 = {{mul_ln101_reg_3114[79:63]}};
+
 assign tmp_1_fu_2054_p3 = sext_ln101_1_fu_2050_p1[32'd39];
-
-assign tmp_266_cast_fu_2008_p4 = {{sub_ln101_fu_2003_p2[79:63]}};
-
-assign tmp_267_cast_fu_2018_p4 = {{mul_ln101_reg_3114[79:63]}};
 
 assign tmp_2_fu_2066_p3 = sext_ln101_1_fu_2050_p1[32'd23];
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_83_6'" level="0">
-<item name = "Date">Mon Jan 26 23:11:24 2026
+<item name = "Date">Mon Jan 26 23:24:33 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -78,22 +78,22 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln83_fu_810_p2">+, 0, 0, 14, 7, 1</column>
-<column name="icmp_ln83_fu_804_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="add_ln83_fu_740_p2">+, 0, 0, 14, 7, 1</column>
+<column name="icmp_ln83_fu_734_p2">icmp, 0, 0, 15, 7, 8</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_j_2">9, 2, 7, 14</column>
-<column name="j_fu_280">9, 2, 7, 14</column>
+<column name="j_fu_266">9, 2, 7, 14</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="j_fu_280">7, 0, 7, 0</column>
+<column name="j_fu_266">7, 0, 7, 0</column>
 </table>
 </item>
 </section>
@@ -109,14 +109,6 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_83_6, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_83_6, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_83_6, return value</column>
-<column name="col_sum">out, 24, ap_vld, col_sum, pointer</column>
-<column name="col_sum_ap_vld">out, 1, ap_vld, col_sum, pointer</column>
-<column name="col_sum_1">out, 24, ap_vld, col_sum_1, pointer</column>
-<column name="col_sum_1_ap_vld">out, 1, ap_vld, col_sum_1, pointer</column>
-<column name="col_sum_2">out, 24, ap_vld, col_sum_2, pointer</column>
-<column name="col_sum_2_ap_vld">out, 1, ap_vld, col_sum_2, pointer</column>
-<column name="col_sum_3">out, 24, ap_vld, col_sum_3, pointer</column>
-<column name="col_sum_3_ap_vld">out, 1, ap_vld, col_sum_3, pointer</column>
 <column name="col_sum_4">out, 24, ap_vld, col_sum_4, pointer</column>
 <column name="col_sum_4_ap_vld">out, 1, ap_vld, col_sum_4, pointer</column>
 <column name="col_sum_5">out, 24, ap_vld, col_sum_5, pointer</column>
@@ -231,12 +223,6 @@
 <column name="col_sum_59_ap_vld">out, 1, ap_vld, col_sum_59, pointer</column>
 <column name="col_sum_60">out, 24, ap_vld, col_sum_60, pointer</column>
 <column name="col_sum_60_ap_vld">out, 1, ap_vld, col_sum_60, pointer</column>
-<column name="col_sum_61">out, 24, ap_vld, col_sum_61, pointer</column>
-<column name="col_sum_61_ap_vld">out, 1, ap_vld, col_sum_61, pointer</column>
-<column name="col_sum_62">out, 24, ap_vld, col_sum_62, pointer</column>
-<column name="col_sum_62_ap_vld">out, 1, ap_vld, col_sum_62, pointer</column>
-<column name="col_sum_63">out, 24, ap_vld, col_sum_63, pointer</column>
-<column name="col_sum_63_ap_vld">out, 1, ap_vld, col_sum_63, pointer</column>
 </table>
 </item>
 </section>

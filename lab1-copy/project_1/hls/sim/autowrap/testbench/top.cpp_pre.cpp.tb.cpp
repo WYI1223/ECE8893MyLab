@@ -59266,7 +59266,7 @@ void top_kernel(data_t A[256][64],
                 data_t C[256][64])
 {
 
-    const int UF = 16;
+    const int UF = 8;
 
 
     static data_t tmp[256][64];

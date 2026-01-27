@@ -17,14 +17,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 5231 \
+    id 2884 \
     name C_0 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename C_0 \
     op interface \
-    ports { C_0_address0 { O 10 vector } C_0_ce0 { O 1 bit } C_0_we0 { O 1 bit } C_0_d0 { O 24 vector } } \
+    ports { C_0_address0 { O 11 vector } C_0_ce0 { O 1 bit } C_0_we0 { O 1 bit } C_0_d0 { O 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'C_0'"
@@ -36,17 +36,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 5236 \
-    name top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9 \
+    id 2893 \
+    name top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9 \
+    corename top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7 \
     op interface \
-    ports { top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_address0 { O 10 vector } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_ce0 { O 1 bit } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_q0 { I 24 vector } } \
+    ports { top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_address0 { O 11 vector } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_ce0 { O 1 bit } top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_q0 { I 24 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7'"
 }
 }
 
@@ -54,7 +54,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 5232 \
+    id 2885 \
     name scale_reload \
     type other \
     dir I \
@@ -69,7 +69,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 5233 \
+    id 2886 \
+    name scale_8_reload \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_scale_8_reload \
+    op interface \
+    ports { scale_8_reload { I 24 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2887 \
     name scale_16_reload \
     type other \
     dir I \
@@ -84,7 +99,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 5234 \
+    id 2888 \
+    name scale_24_reload \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_scale_24_reload \
+    op interface \
+    ports { scale_24_reload { I 24 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2889 \
     name scale_32_reload \
     type other \
     dir I \
@@ -99,7 +129,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 5235 \
+    id 2890 \
+    name scale_40_reload \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_scale_40_reload \
+    op interface \
+    ports { scale_40_reload { I 24 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2891 \
     name scale_48_reload \
     type other \
     dir I \
@@ -108,6 +153,21 @@ eval "cg_default_interface_gen_dc { \
     corename dc_scale_48_reload \
     op interface \
     ports { scale_48_reload { I 24 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2892 \
+    name scale_56_reload \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_scale_56_reload \
+    op interface \
+    ports { scale_56_reload { I 24 vector } } \
 } "
 }
 

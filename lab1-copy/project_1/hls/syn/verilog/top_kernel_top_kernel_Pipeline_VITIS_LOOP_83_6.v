@@ -13,14 +13,6 @@ module top_kernel_top_kernel_Pipeline_VITIS_LOOP_83_6 (
         ap_done,
         ap_idle,
         ap_ready,
-        col_sum,
-        col_sum_ap_vld,
-        col_sum_1,
-        col_sum_1_ap_vld,
-        col_sum_2,
-        col_sum_2_ap_vld,
-        col_sum_3,
-        col_sum_3_ap_vld,
         col_sum_4,
         col_sum_4_ap_vld,
         col_sum_5,
@@ -134,13 +126,7 @@ module top_kernel_top_kernel_Pipeline_VITIS_LOOP_83_6 (
         col_sum_59,
         col_sum_59_ap_vld,
         col_sum_60,
-        col_sum_60_ap_vld,
-        col_sum_61,
-        col_sum_61_ap_vld,
-        col_sum_62,
-        col_sum_62_ap_vld,
-        col_sum_63,
-        col_sum_63_ap_vld
+        col_sum_60_ap_vld
 );
 
 parameter    ap_ST_fsm_state1 = 1'd1;
@@ -151,14 +137,6 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [23:0] col_sum;
-output   col_sum_ap_vld;
-output  [23:0] col_sum_1;
-output   col_sum_1_ap_vld;
-output  [23:0] col_sum_2;
-output   col_sum_2_ap_vld;
-output  [23:0] col_sum_3;
-output   col_sum_3_ap_vld;
 output  [23:0] col_sum_4;
 output   col_sum_4_ap_vld;
 output  [23:0] col_sum_5;
@@ -273,18 +251,8 @@ output  [23:0] col_sum_59;
 output   col_sum_59_ap_vld;
 output  [23:0] col_sum_60;
 output   col_sum_60_ap_vld;
-output  [23:0] col_sum_61;
-output   col_sum_61_ap_vld;
-output  [23:0] col_sum_62;
-output   col_sum_62_ap_vld;
-output  [23:0] col_sum_63;
-output   col_sum_63_ap_vld;
 
 reg ap_idle;
-reg col_sum_ap_vld;
-reg col_sum_1_ap_vld;
-reg col_sum_2_ap_vld;
-reg col_sum_3_ap_vld;
 reg col_sum_4_ap_vld;
 reg col_sum_5_ap_vld;
 reg col_sum_6_ap_vld;
@@ -342,22 +310,19 @@ reg col_sum_57_ap_vld;
 reg col_sum_58_ap_vld;
 reg col_sum_59_ap_vld;
 reg col_sum_60_ap_vld;
-reg col_sum_61_ap_vld;
-reg col_sum_62_ap_vld;
-reg col_sum_63_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_block_state1_pp0_stage0_iter0;
-wire   [0:0] icmp_ln83_fu_804_p2;
+wire   [0:0] icmp_ln83_fu_734_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [6:0] j_fu_280;
-wire   [6:0] add_ln83_fu_810_p2;
+reg   [6:0] j_fu_266;
+wire   [6:0] add_ln83_fu_740_p2;
 wire    ap_loop_init;
 reg   [6:0] ap_sig_allocacmp_j_2;
-wire   [5:0] trunc_ln83_fu_816_p1;
+wire   [5:0] trunc_ln83_fu_746_p1;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -371,7 +336,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 1'd1;
-#0 j_fu_280 = 7'd0;
+#0 j_fu_266 = 7'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -412,10 +377,10 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((icmp_ln83_fu_804_p2 == 1'd0)) begin
-            j_fu_280 <= add_ln83_fu_810_p2;
+        if ((icmp_ln83_fu_734_p2 == 1'd0)) begin
+            j_fu_266 <= add_ln83_fu_740_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            j_fu_280 <= 7'd0;
+            j_fu_266 <= 7'd0;
         end
     end
 end
@@ -429,7 +394,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -464,12 +429,12 @@ always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_loop_init == 1'b1))) begin
         ap_sig_allocacmp_j_2 = 7'd0;
     end else begin
-        ap_sig_allocacmp_j_2 = j_fu_280;
+        ap_sig_allocacmp_j_2 = j_fu_266;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd10))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd10))) begin
         col_sum_10_ap_vld = 1'b1;
     end else begin
         col_sum_10_ap_vld = 1'b0;
@@ -477,7 +442,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd11))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd11))) begin
         col_sum_11_ap_vld = 1'b1;
     end else begin
         col_sum_11_ap_vld = 1'b0;
@@ -485,7 +450,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd12))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd12))) begin
         col_sum_12_ap_vld = 1'b1;
     end else begin
         col_sum_12_ap_vld = 1'b0;
@@ -493,7 +458,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd13))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd13))) begin
         col_sum_13_ap_vld = 1'b1;
     end else begin
         col_sum_13_ap_vld = 1'b0;
@@ -501,7 +466,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd14))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd14))) begin
         col_sum_14_ap_vld = 1'b1;
     end else begin
         col_sum_14_ap_vld = 1'b0;
@@ -509,7 +474,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd15))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd15))) begin
         col_sum_15_ap_vld = 1'b1;
     end else begin
         col_sum_15_ap_vld = 1'b0;
@@ -517,7 +482,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd16))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd16))) begin
         col_sum_16_ap_vld = 1'b1;
     end else begin
         col_sum_16_ap_vld = 1'b0;
@@ -525,7 +490,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd17))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd17))) begin
         col_sum_17_ap_vld = 1'b1;
     end else begin
         col_sum_17_ap_vld = 1'b0;
@@ -533,7 +498,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd18))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd18))) begin
         col_sum_18_ap_vld = 1'b1;
     end else begin
         col_sum_18_ap_vld = 1'b0;
@@ -541,7 +506,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd19))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd19))) begin
         col_sum_19_ap_vld = 1'b1;
     end else begin
         col_sum_19_ap_vld = 1'b0;
@@ -549,15 +514,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd1))) begin
-        col_sum_1_ap_vld = 1'b1;
-    end else begin
-        col_sum_1_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd20))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd20))) begin
         col_sum_20_ap_vld = 1'b1;
     end else begin
         col_sum_20_ap_vld = 1'b0;
@@ -565,7 +522,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd21))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd21))) begin
         col_sum_21_ap_vld = 1'b1;
     end else begin
         col_sum_21_ap_vld = 1'b0;
@@ -573,7 +530,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd22))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd22))) begin
         col_sum_22_ap_vld = 1'b1;
     end else begin
         col_sum_22_ap_vld = 1'b0;
@@ -581,7 +538,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd23))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd23))) begin
         col_sum_23_ap_vld = 1'b1;
     end else begin
         col_sum_23_ap_vld = 1'b0;
@@ -589,7 +546,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd24))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd24))) begin
         col_sum_24_ap_vld = 1'b1;
     end else begin
         col_sum_24_ap_vld = 1'b0;
@@ -597,7 +554,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd25))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd25))) begin
         col_sum_25_ap_vld = 1'b1;
     end else begin
         col_sum_25_ap_vld = 1'b0;
@@ -605,7 +562,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd26))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd26))) begin
         col_sum_26_ap_vld = 1'b1;
     end else begin
         col_sum_26_ap_vld = 1'b0;
@@ -613,7 +570,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd27))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd27))) begin
         col_sum_27_ap_vld = 1'b1;
     end else begin
         col_sum_27_ap_vld = 1'b0;
@@ -621,7 +578,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd28))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd28))) begin
         col_sum_28_ap_vld = 1'b1;
     end else begin
         col_sum_28_ap_vld = 1'b0;
@@ -629,7 +586,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd29))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd29))) begin
         col_sum_29_ap_vld = 1'b1;
     end else begin
         col_sum_29_ap_vld = 1'b0;
@@ -637,15 +594,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd2))) begin
-        col_sum_2_ap_vld = 1'b1;
-    end else begin
-        col_sum_2_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd30))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd30))) begin
         col_sum_30_ap_vld = 1'b1;
     end else begin
         col_sum_30_ap_vld = 1'b0;
@@ -653,7 +602,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd31))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd31))) begin
         col_sum_31_ap_vld = 1'b1;
     end else begin
         col_sum_31_ap_vld = 1'b0;
@@ -661,7 +610,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd32))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd32))) begin
         col_sum_32_ap_vld = 1'b1;
     end else begin
         col_sum_32_ap_vld = 1'b0;
@@ -669,7 +618,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd33))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd33))) begin
         col_sum_33_ap_vld = 1'b1;
     end else begin
         col_sum_33_ap_vld = 1'b0;
@@ -677,7 +626,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd34))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd34))) begin
         col_sum_34_ap_vld = 1'b1;
     end else begin
         col_sum_34_ap_vld = 1'b0;
@@ -685,7 +634,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd35))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd35))) begin
         col_sum_35_ap_vld = 1'b1;
     end else begin
         col_sum_35_ap_vld = 1'b0;
@@ -693,7 +642,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd36))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd36))) begin
         col_sum_36_ap_vld = 1'b1;
     end else begin
         col_sum_36_ap_vld = 1'b0;
@@ -701,7 +650,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd37))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd37))) begin
         col_sum_37_ap_vld = 1'b1;
     end else begin
         col_sum_37_ap_vld = 1'b0;
@@ -709,7 +658,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd38))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd38))) begin
         col_sum_38_ap_vld = 1'b1;
     end else begin
         col_sum_38_ap_vld = 1'b0;
@@ -717,7 +666,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd39))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd39))) begin
         col_sum_39_ap_vld = 1'b1;
     end else begin
         col_sum_39_ap_vld = 1'b0;
@@ -725,15 +674,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd3))) begin
-        col_sum_3_ap_vld = 1'b1;
-    end else begin
-        col_sum_3_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd40))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd40))) begin
         col_sum_40_ap_vld = 1'b1;
     end else begin
         col_sum_40_ap_vld = 1'b0;
@@ -741,7 +682,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd41))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd41))) begin
         col_sum_41_ap_vld = 1'b1;
     end else begin
         col_sum_41_ap_vld = 1'b0;
@@ -749,7 +690,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd42))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd42))) begin
         col_sum_42_ap_vld = 1'b1;
     end else begin
         col_sum_42_ap_vld = 1'b0;
@@ -757,7 +698,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd43))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd43))) begin
         col_sum_43_ap_vld = 1'b1;
     end else begin
         col_sum_43_ap_vld = 1'b0;
@@ -765,7 +706,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd44))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd44))) begin
         col_sum_44_ap_vld = 1'b1;
     end else begin
         col_sum_44_ap_vld = 1'b0;
@@ -773,7 +714,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd45))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd45))) begin
         col_sum_45_ap_vld = 1'b1;
     end else begin
         col_sum_45_ap_vld = 1'b0;
@@ -781,7 +722,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd46))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd46))) begin
         col_sum_46_ap_vld = 1'b1;
     end else begin
         col_sum_46_ap_vld = 1'b0;
@@ -789,7 +730,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd47))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd47))) begin
         col_sum_47_ap_vld = 1'b1;
     end else begin
         col_sum_47_ap_vld = 1'b0;
@@ -797,7 +738,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd48))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd48))) begin
         col_sum_48_ap_vld = 1'b1;
     end else begin
         col_sum_48_ap_vld = 1'b0;
@@ -805,7 +746,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd49))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd49))) begin
         col_sum_49_ap_vld = 1'b1;
     end else begin
         col_sum_49_ap_vld = 1'b0;
@@ -813,7 +754,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd4))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd4))) begin
         col_sum_4_ap_vld = 1'b1;
     end else begin
         col_sum_4_ap_vld = 1'b0;
@@ -821,7 +762,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd50))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd50))) begin
         col_sum_50_ap_vld = 1'b1;
     end else begin
         col_sum_50_ap_vld = 1'b0;
@@ -829,7 +770,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd51))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd51))) begin
         col_sum_51_ap_vld = 1'b1;
     end else begin
         col_sum_51_ap_vld = 1'b0;
@@ -837,7 +778,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd52))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd52))) begin
         col_sum_52_ap_vld = 1'b1;
     end else begin
         col_sum_52_ap_vld = 1'b0;
@@ -845,7 +786,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd53))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd53))) begin
         col_sum_53_ap_vld = 1'b1;
     end else begin
         col_sum_53_ap_vld = 1'b0;
@@ -853,7 +794,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd54))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd54))) begin
         col_sum_54_ap_vld = 1'b1;
     end else begin
         col_sum_54_ap_vld = 1'b0;
@@ -861,7 +802,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd55))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd55))) begin
         col_sum_55_ap_vld = 1'b1;
     end else begin
         col_sum_55_ap_vld = 1'b0;
@@ -869,7 +810,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd56))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd56))) begin
         col_sum_56_ap_vld = 1'b1;
     end else begin
         col_sum_56_ap_vld = 1'b0;
@@ -877,7 +818,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd57))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd57))) begin
         col_sum_57_ap_vld = 1'b1;
     end else begin
         col_sum_57_ap_vld = 1'b0;
@@ -885,7 +826,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd58))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd58))) begin
         col_sum_58_ap_vld = 1'b1;
     end else begin
         col_sum_58_ap_vld = 1'b0;
@@ -893,7 +834,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd59))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd59))) begin
         col_sum_59_ap_vld = 1'b1;
     end else begin
         col_sum_59_ap_vld = 1'b0;
@@ -901,7 +842,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd5))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd5))) begin
         col_sum_5_ap_vld = 1'b1;
     end else begin
         col_sum_5_ap_vld = 1'b0;
@@ -909,7 +850,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd60))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd60))) begin
         col_sum_60_ap_vld = 1'b1;
     end else begin
         col_sum_60_ap_vld = 1'b0;
@@ -917,31 +858,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd61))) begin
-        col_sum_61_ap_vld = 1'b1;
-    end else begin
-        col_sum_61_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd62))) begin
-        col_sum_62_ap_vld = 1'b1;
-    end else begin
-        col_sum_62_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd63))) begin
-        col_sum_63_ap_vld = 1'b1;
-    end else begin
-        col_sum_63_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd6))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd6))) begin
         col_sum_6_ap_vld = 1'b1;
     end else begin
         col_sum_6_ap_vld = 1'b0;
@@ -949,7 +866,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd7))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd7))) begin
         col_sum_7_ap_vld = 1'b1;
     end else begin
         col_sum_7_ap_vld = 1'b0;
@@ -957,7 +874,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd8))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd8))) begin
         col_sum_8_ap_vld = 1'b1;
     end else begin
         col_sum_8_ap_vld = 1'b0;
@@ -965,18 +882,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd9))) begin
+    if (((icmp_ln83_fu_734_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_746_p1 == 6'd9))) begin
         col_sum_9_ap_vld = 1'b1;
     end else begin
         col_sum_9_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((icmp_ln83_fu_804_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1) & (trunc_ln83_fu_816_p1 == 6'd0))) begin
-        col_sum_ap_vld = 1'b1;
-    end else begin
-        col_sum_ap_vld = 1'b0;
     end
 end
 
@@ -991,7 +900,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln83_fu_810_p2 = (ap_sig_allocacmp_j_2 + 7'd1);
+assign add_ln83_fu_740_p2 = (ap_sig_allocacmp_j_2 + 7'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -1004,10 +913,6 @@ assign ap_done = ap_done_sig;
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
-
-assign col_sum = 24'd0;
-
-assign col_sum_1 = 24'd0;
 
 assign col_sum_10 = 24'd0;
 
@@ -1029,8 +934,6 @@ assign col_sum_18 = 24'd0;
 
 assign col_sum_19 = 24'd0;
 
-assign col_sum_2 = 24'd0;
-
 assign col_sum_20 = 24'd0;
 
 assign col_sum_21 = 24'd0;
@@ -1050,8 +953,6 @@ assign col_sum_27 = 24'd0;
 assign col_sum_28 = 24'd0;
 
 assign col_sum_29 = 24'd0;
-
-assign col_sum_3 = 24'd0;
 
 assign col_sum_30 = 24'd0;
 
@@ -1121,20 +1022,14 @@ assign col_sum_6 = 24'd0;
 
 assign col_sum_60 = 24'd0;
 
-assign col_sum_61 = 24'd0;
-
-assign col_sum_62 = 24'd0;
-
-assign col_sum_63 = 24'd0;
-
 assign col_sum_7 = 24'd0;
 
 assign col_sum_8 = 24'd0;
 
 assign col_sum_9 = 24'd0;
 
-assign icmp_ln83_fu_804_p2 = ((ap_sig_allocacmp_j_2 == 7'd64) ? 1'b1 : 1'b0);
+assign icmp_ln83_fu_734_p2 = ((ap_sig_allocacmp_j_2 == 7'd64) ? 1'b1 : 1'b0);
 
-assign trunc_ln83_fu_816_p1 = ap_sig_allocacmp_j_2[5:0];
+assign trunc_ln83_fu_746_p1 = ap_sig_allocacmp_j_2[5:0];
 
 endmodule //top_kernel_top_kernel_Pipeline_VITIS_LOOP_83_6

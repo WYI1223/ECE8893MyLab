@@ -14,67 +14,67 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 55
+set cdfgNum 31
 set C_modelName {top_kernel_Pipeline_VITIS_LOOP_99_10}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 set C_modelArgList {
-	{ col_sum_load_1 int 24 regular  }
-	{ col_sum_1_load_1 int 24 regular  }
+	{ col_sum_load_1_reload int 24 regular  }
+	{ col_sum_1_load_1_reload int 24 regular  }
 	{ col_sum_2_load_2 int 24 regular  }
 	{ col_sum_3_load_2 int 24 regular  }
 	{ col_sum_4_load_4 int 24 regular  }
 	{ col_sum_5_load_3 int 24 regular  }
-	{ col_sum_6_load_5 int 24 regular  }
-	{ col_sum_7_load_4 int 24 regular  }
-	{ col_sum_8_load_8 int 24 regular  }
-	{ col_sum_9_load_5 int 24 regular  }
-	{ col_sum_10_load_8 int 24 regular  }
-	{ col_sum_11_load_6 int 24 regular  }
-	{ col_sum_12_load_11 int 24 regular  }
-	{ col_sum_13_load_7 int 24 regular  }
-	{ col_sum_14_load_10 int 24 regular  }
-	{ col_sum_15_load_7 int 24 regular  }
-	{ col_sum_16_load_14 int 24 regular  }
-	{ col_sum_17_load_7 int 24 regular  }
-	{ col_sum_18_load_10 int 24 regular  }
-	{ col_sum_19_load_7 int 24 regular  }
-	{ col_sum_20_load_12 int 24 regular  }
-	{ col_sum_21_load_7 int 24 regular  }
-	{ col_sum_22_load_10 int 24 regular  }
-	{ col_sum_23_load_7 int 24 regular  }
-	{ col_sum_24_load_13 int 24 regular  }
-	{ col_sum_25_load_7 int 24 regular  }
-	{ col_sum_26_load_10 int 24 regular  }
-	{ col_sum_27_load_7 int 24 regular  }
-	{ col_sum_28_load_12 int 24 regular  }
-	{ col_sum_29_load_7 int 24 regular  }
-	{ col_sum_30_load_10 int 24 regular  }
-	{ col_sum_31_load_7 int 24 regular  }
-	{ col_sum_32_load_14 int 24 regular  }
-	{ col_sum_33_load_7 int 24 regular  }
-	{ col_sum_34_load_10 int 24 regular  }
-	{ col_sum_35_load_7 int 24 regular  }
-	{ col_sum_36_load_12 int 24 regular  }
-	{ col_sum_37_load_7 int 24 regular  }
-	{ col_sum_38_load_10 int 24 regular  }
-	{ col_sum_39_load_7 int 24 regular  }
-	{ col_sum_40_load_13 int 24 regular  }
-	{ col_sum_41_load_7 int 24 regular  }
-	{ col_sum_42_load_10 int 24 regular  }
-	{ col_sum_43_load_7 int 24 regular  }
-	{ col_sum_44_load_12 int 24 regular  }
-	{ col_sum_45_load_7 int 24 regular  }
-	{ col_sum_46_load_10 int 24 regular  }
-	{ col_sum_47_load_7 int 24 regular  }
-	{ col_sum_48_load_14 int 24 regular  }
-	{ col_sum_49_load_7 int 24 regular  }
-	{ col_sum_50_load_9 int 24 regular  }
-	{ col_sum_51_load_6 int 24 regular  }
-	{ col_sum_52_load_9 int 24 regular  }
-	{ col_sum_53_load_5 int 24 regular  }
-	{ col_sum_54_load_6 int 24 regular  }
-	{ col_sum_55_load_4 int 24 regular  }
+	{ col_sum_6_load_4 int 24 regular  }
+	{ col_sum_7_load_3 int 24 regular  }
+	{ col_sum_8_load_6 int 24 regular  }
+	{ col_sum_9_load_3 int 24 regular  }
+	{ col_sum_10_load_4 int 24 regular  }
+	{ col_sum_11_load_3 int 24 regular  }
+	{ col_sum_12_load_5 int 24 regular  }
+	{ col_sum_13_load_3 int 24 regular  }
+	{ col_sum_14_load_4 int 24 regular  }
+	{ col_sum_15_load_3 int 24 regular  }
+	{ col_sum_16_load_6 int 24 regular  }
+	{ col_sum_17_load_3 int 24 regular  }
+	{ col_sum_18_load_4 int 24 regular  }
+	{ col_sum_19_load_3 int 24 regular  }
+	{ col_sum_20_load_5 int 24 regular  }
+	{ col_sum_21_load_3 int 24 regular  }
+	{ col_sum_22_load_4 int 24 regular  }
+	{ col_sum_23_load_3 int 24 regular  }
+	{ col_sum_24_load_6 int 24 regular  }
+	{ col_sum_25_load_3 int 24 regular  }
+	{ col_sum_26_load_4 int 24 regular  }
+	{ col_sum_27_load_3 int 24 regular  }
+	{ col_sum_28_load_5 int 24 regular  }
+	{ col_sum_29_load_3 int 24 regular  }
+	{ col_sum_30_load_4 int 24 regular  }
+	{ col_sum_31_load_3 int 24 regular  }
+	{ col_sum_32_load_6 int 24 regular  }
+	{ col_sum_33_load_3 int 24 regular  }
+	{ col_sum_34_load_4 int 24 regular  }
+	{ col_sum_35_load_3 int 24 regular  }
+	{ col_sum_36_load_5 int 24 regular  }
+	{ col_sum_37_load_3 int 24 regular  }
+	{ col_sum_38_load_4 int 24 regular  }
+	{ col_sum_39_load_3 int 24 regular  }
+	{ col_sum_40_load_6 int 24 regular  }
+	{ col_sum_41_load_3 int 24 regular  }
+	{ col_sum_42_load_4 int 24 regular  }
+	{ col_sum_43_load_3 int 24 regular  }
+	{ col_sum_44_load_5 int 24 regular  }
+	{ col_sum_45_load_3 int 24 regular  }
+	{ col_sum_46_load_4 int 24 regular  }
+	{ col_sum_47_load_3 int 24 regular  }
+	{ col_sum_48_load_6 int 24 regular  }
+	{ col_sum_49_load_3 int 24 regular  }
+	{ col_sum_50_load_4 int 24 regular  }
+	{ col_sum_51_load_3 int 24 regular  }
+	{ col_sum_52_load_5 int 24 regular  }
+	{ col_sum_53_load_3 int 24 regular  }
+	{ col_sum_54_load_4 int 24 regular  }
+	{ col_sum_55_load_3 int 24 regular  }
 	{ col_sum_56_load_6 int 24 regular  }
 	{ col_sum_57_load_3 int 24 regular  }
 	{ col_sum_58_load_3 int 24 regular  }
@@ -82,7 +82,7 @@ set C_modelArgList {
 	{ col_sum_60_load_2 int 24 regular  }
 	{ col_sum_61_load_1 int 24 regular  }
 	{ col_sum_62_load int 24 regular  }
-	{ col_sum_63_load int 24 regular  }
+	{ col_sum_63_load_reload int 24 regular  }
 	{ scale_63_out int 24 regular {pointer 1}  }
 	{ scale_62_out int 24 regular {pointer 1}  }
 	{ scale_61_out int 24 regular {pointer 1}  }
@@ -152,62 +152,62 @@ set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "col_sum_load_1", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_1_load_1", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+	{ "Name" : "col_sum_load_1_reload", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_1_load_1_reload", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_2_load_2", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_3_load_2", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_4_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_5_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_6_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_7_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_8_load_8", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_9_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_10_load_8", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_11_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_12_load_11", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_13_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_14_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_15_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_16_load_14", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_17_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_18_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_19_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_20_load_12", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_21_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_22_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_23_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_24_load_13", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_25_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_26_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_27_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_28_load_12", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_29_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_30_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_31_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_32_load_14", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_33_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_34_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_35_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_36_load_12", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_37_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_38_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_39_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_40_load_13", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_41_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_42_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_43_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_44_load_12", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_45_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_46_load_10", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_47_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_48_load_14", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_49_load_7", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_50_load_9", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_51_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_52_load_9", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_53_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_54_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_55_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_6_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_7_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_8_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_9_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_10_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_11_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_12_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_13_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_14_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_15_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_16_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_17_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_18_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_19_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_20_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_21_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_22_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_23_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_24_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_25_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_26_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_27_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_28_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_29_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_30_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_31_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_32_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_33_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_34_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_35_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_36_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_37_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_38_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_39_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_40_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_41_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_42_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_43_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_44_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_45_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_46_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_47_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_48_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_49_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_50_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_51_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_52_load_5", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_53_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_54_load_4", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_55_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_56_load_6", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_57_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_58_load_3", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
@@ -215,7 +215,7 @@ set C_modelArgMapList {[
  	{ "Name" : "col_sum_60_load_2", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_61_load_1", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "col_sum_62_load", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "col_sum_63_load", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "col_sum_63_load_reload", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "scale_63_out", "interface" : "wire", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
  	{ "Name" : "scale_62_out", "interface" : "wire", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
  	{ "Name" : "scale_61_out", "interface" : "wire", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
@@ -289,62 +289,62 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ col_sum_load_1 sc_in sc_lv 24 signal 0 } 
-	{ col_sum_1_load_1 sc_in sc_lv 24 signal 1 } 
+	{ col_sum_load_1_reload sc_in sc_lv 24 signal 0 } 
+	{ col_sum_1_load_1_reload sc_in sc_lv 24 signal 1 } 
 	{ col_sum_2_load_2 sc_in sc_lv 24 signal 2 } 
 	{ col_sum_3_load_2 sc_in sc_lv 24 signal 3 } 
 	{ col_sum_4_load_4 sc_in sc_lv 24 signal 4 } 
 	{ col_sum_5_load_3 sc_in sc_lv 24 signal 5 } 
-	{ col_sum_6_load_5 sc_in sc_lv 24 signal 6 } 
-	{ col_sum_7_load_4 sc_in sc_lv 24 signal 7 } 
-	{ col_sum_8_load_8 sc_in sc_lv 24 signal 8 } 
-	{ col_sum_9_load_5 sc_in sc_lv 24 signal 9 } 
-	{ col_sum_10_load_8 sc_in sc_lv 24 signal 10 } 
-	{ col_sum_11_load_6 sc_in sc_lv 24 signal 11 } 
-	{ col_sum_12_load_11 sc_in sc_lv 24 signal 12 } 
-	{ col_sum_13_load_7 sc_in sc_lv 24 signal 13 } 
-	{ col_sum_14_load_10 sc_in sc_lv 24 signal 14 } 
-	{ col_sum_15_load_7 sc_in sc_lv 24 signal 15 } 
-	{ col_sum_16_load_14 sc_in sc_lv 24 signal 16 } 
-	{ col_sum_17_load_7 sc_in sc_lv 24 signal 17 } 
-	{ col_sum_18_load_10 sc_in sc_lv 24 signal 18 } 
-	{ col_sum_19_load_7 sc_in sc_lv 24 signal 19 } 
-	{ col_sum_20_load_12 sc_in sc_lv 24 signal 20 } 
-	{ col_sum_21_load_7 sc_in sc_lv 24 signal 21 } 
-	{ col_sum_22_load_10 sc_in sc_lv 24 signal 22 } 
-	{ col_sum_23_load_7 sc_in sc_lv 24 signal 23 } 
-	{ col_sum_24_load_13 sc_in sc_lv 24 signal 24 } 
-	{ col_sum_25_load_7 sc_in sc_lv 24 signal 25 } 
-	{ col_sum_26_load_10 sc_in sc_lv 24 signal 26 } 
-	{ col_sum_27_load_7 sc_in sc_lv 24 signal 27 } 
-	{ col_sum_28_load_12 sc_in sc_lv 24 signal 28 } 
-	{ col_sum_29_load_7 sc_in sc_lv 24 signal 29 } 
-	{ col_sum_30_load_10 sc_in sc_lv 24 signal 30 } 
-	{ col_sum_31_load_7 sc_in sc_lv 24 signal 31 } 
-	{ col_sum_32_load_14 sc_in sc_lv 24 signal 32 } 
-	{ col_sum_33_load_7 sc_in sc_lv 24 signal 33 } 
-	{ col_sum_34_load_10 sc_in sc_lv 24 signal 34 } 
-	{ col_sum_35_load_7 sc_in sc_lv 24 signal 35 } 
-	{ col_sum_36_load_12 sc_in sc_lv 24 signal 36 } 
-	{ col_sum_37_load_7 sc_in sc_lv 24 signal 37 } 
-	{ col_sum_38_load_10 sc_in sc_lv 24 signal 38 } 
-	{ col_sum_39_load_7 sc_in sc_lv 24 signal 39 } 
-	{ col_sum_40_load_13 sc_in sc_lv 24 signal 40 } 
-	{ col_sum_41_load_7 sc_in sc_lv 24 signal 41 } 
-	{ col_sum_42_load_10 sc_in sc_lv 24 signal 42 } 
-	{ col_sum_43_load_7 sc_in sc_lv 24 signal 43 } 
-	{ col_sum_44_load_12 sc_in sc_lv 24 signal 44 } 
-	{ col_sum_45_load_7 sc_in sc_lv 24 signal 45 } 
-	{ col_sum_46_load_10 sc_in sc_lv 24 signal 46 } 
-	{ col_sum_47_load_7 sc_in sc_lv 24 signal 47 } 
-	{ col_sum_48_load_14 sc_in sc_lv 24 signal 48 } 
-	{ col_sum_49_load_7 sc_in sc_lv 24 signal 49 } 
-	{ col_sum_50_load_9 sc_in sc_lv 24 signal 50 } 
-	{ col_sum_51_load_6 sc_in sc_lv 24 signal 51 } 
-	{ col_sum_52_load_9 sc_in sc_lv 24 signal 52 } 
-	{ col_sum_53_load_5 sc_in sc_lv 24 signal 53 } 
-	{ col_sum_54_load_6 sc_in sc_lv 24 signal 54 } 
-	{ col_sum_55_load_4 sc_in sc_lv 24 signal 55 } 
+	{ col_sum_6_load_4 sc_in sc_lv 24 signal 6 } 
+	{ col_sum_7_load_3 sc_in sc_lv 24 signal 7 } 
+	{ col_sum_8_load_6 sc_in sc_lv 24 signal 8 } 
+	{ col_sum_9_load_3 sc_in sc_lv 24 signal 9 } 
+	{ col_sum_10_load_4 sc_in sc_lv 24 signal 10 } 
+	{ col_sum_11_load_3 sc_in sc_lv 24 signal 11 } 
+	{ col_sum_12_load_5 sc_in sc_lv 24 signal 12 } 
+	{ col_sum_13_load_3 sc_in sc_lv 24 signal 13 } 
+	{ col_sum_14_load_4 sc_in sc_lv 24 signal 14 } 
+	{ col_sum_15_load_3 sc_in sc_lv 24 signal 15 } 
+	{ col_sum_16_load_6 sc_in sc_lv 24 signal 16 } 
+	{ col_sum_17_load_3 sc_in sc_lv 24 signal 17 } 
+	{ col_sum_18_load_4 sc_in sc_lv 24 signal 18 } 
+	{ col_sum_19_load_3 sc_in sc_lv 24 signal 19 } 
+	{ col_sum_20_load_5 sc_in sc_lv 24 signal 20 } 
+	{ col_sum_21_load_3 sc_in sc_lv 24 signal 21 } 
+	{ col_sum_22_load_4 sc_in sc_lv 24 signal 22 } 
+	{ col_sum_23_load_3 sc_in sc_lv 24 signal 23 } 
+	{ col_sum_24_load_6 sc_in sc_lv 24 signal 24 } 
+	{ col_sum_25_load_3 sc_in sc_lv 24 signal 25 } 
+	{ col_sum_26_load_4 sc_in sc_lv 24 signal 26 } 
+	{ col_sum_27_load_3 sc_in sc_lv 24 signal 27 } 
+	{ col_sum_28_load_5 sc_in sc_lv 24 signal 28 } 
+	{ col_sum_29_load_3 sc_in sc_lv 24 signal 29 } 
+	{ col_sum_30_load_4 sc_in sc_lv 24 signal 30 } 
+	{ col_sum_31_load_3 sc_in sc_lv 24 signal 31 } 
+	{ col_sum_32_load_6 sc_in sc_lv 24 signal 32 } 
+	{ col_sum_33_load_3 sc_in sc_lv 24 signal 33 } 
+	{ col_sum_34_load_4 sc_in sc_lv 24 signal 34 } 
+	{ col_sum_35_load_3 sc_in sc_lv 24 signal 35 } 
+	{ col_sum_36_load_5 sc_in sc_lv 24 signal 36 } 
+	{ col_sum_37_load_3 sc_in sc_lv 24 signal 37 } 
+	{ col_sum_38_load_4 sc_in sc_lv 24 signal 38 } 
+	{ col_sum_39_load_3 sc_in sc_lv 24 signal 39 } 
+	{ col_sum_40_load_6 sc_in sc_lv 24 signal 40 } 
+	{ col_sum_41_load_3 sc_in sc_lv 24 signal 41 } 
+	{ col_sum_42_load_4 sc_in sc_lv 24 signal 42 } 
+	{ col_sum_43_load_3 sc_in sc_lv 24 signal 43 } 
+	{ col_sum_44_load_5 sc_in sc_lv 24 signal 44 } 
+	{ col_sum_45_load_3 sc_in sc_lv 24 signal 45 } 
+	{ col_sum_46_load_4 sc_in sc_lv 24 signal 46 } 
+	{ col_sum_47_load_3 sc_in sc_lv 24 signal 47 } 
+	{ col_sum_48_load_6 sc_in sc_lv 24 signal 48 } 
+	{ col_sum_49_load_3 sc_in sc_lv 24 signal 49 } 
+	{ col_sum_50_load_4 sc_in sc_lv 24 signal 50 } 
+	{ col_sum_51_load_3 sc_in sc_lv 24 signal 51 } 
+	{ col_sum_52_load_5 sc_in sc_lv 24 signal 52 } 
+	{ col_sum_53_load_3 sc_in sc_lv 24 signal 53 } 
+	{ col_sum_54_load_4 sc_in sc_lv 24 signal 54 } 
+	{ col_sum_55_load_3 sc_in sc_lv 24 signal 55 } 
 	{ col_sum_56_load_6 sc_in sc_lv 24 signal 56 } 
 	{ col_sum_57_load_3 sc_in sc_lv 24 signal 57 } 
 	{ col_sum_58_load_3 sc_in sc_lv 24 signal 58 } 
@@ -352,7 +352,7 @@ set portList {
 	{ col_sum_60_load_2 sc_in sc_lv 24 signal 60 } 
 	{ col_sum_61_load_1 sc_in sc_lv 24 signal 61 } 
 	{ col_sum_62_load sc_in sc_lv 24 signal 62 } 
-	{ col_sum_63_load sc_in sc_lv 24 signal 63 } 
+	{ col_sum_63_load_reload sc_in sc_lv 24 signal 63 } 
 	{ scale_63_out sc_out sc_lv 24 signal 64 } 
 	{ scale_63_out_ap_vld sc_out sc_logic 1 outvld 64 } 
 	{ scale_62_out sc_out sc_lv 24 signal 65 } 
@@ -489,62 +489,62 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "col_sum_load_1", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_load_1", "role": "default" }} , 
- 	{ "name": "col_sum_1_load_1", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_1_load_1", "role": "default" }} , 
+ 	{ "name": "col_sum_load_1_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_load_1_reload", "role": "default" }} , 
+ 	{ "name": "col_sum_1_load_1_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_1_load_1_reload", "role": "default" }} , 
  	{ "name": "col_sum_2_load_2", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_2_load_2", "role": "default" }} , 
  	{ "name": "col_sum_3_load_2", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_3_load_2", "role": "default" }} , 
  	{ "name": "col_sum_4_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_4_load_4", "role": "default" }} , 
  	{ "name": "col_sum_5_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_5_load_3", "role": "default" }} , 
- 	{ "name": "col_sum_6_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_6_load_5", "role": "default" }} , 
- 	{ "name": "col_sum_7_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_7_load_4", "role": "default" }} , 
- 	{ "name": "col_sum_8_load_8", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_8_load_8", "role": "default" }} , 
- 	{ "name": "col_sum_9_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_9_load_5", "role": "default" }} , 
- 	{ "name": "col_sum_10_load_8", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_10_load_8", "role": "default" }} , 
- 	{ "name": "col_sum_11_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_11_load_6", "role": "default" }} , 
- 	{ "name": "col_sum_12_load_11", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_12_load_11", "role": "default" }} , 
- 	{ "name": "col_sum_13_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_13_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_14_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_14_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_15_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_15_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_16_load_14", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_16_load_14", "role": "default" }} , 
- 	{ "name": "col_sum_17_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_17_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_18_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_18_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_19_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_19_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_20_load_12", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_20_load_12", "role": "default" }} , 
- 	{ "name": "col_sum_21_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_21_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_22_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_22_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_23_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_23_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_24_load_13", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_24_load_13", "role": "default" }} , 
- 	{ "name": "col_sum_25_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_25_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_26_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_26_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_27_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_27_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_28_load_12", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_28_load_12", "role": "default" }} , 
- 	{ "name": "col_sum_29_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_29_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_30_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_30_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_31_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_31_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_32_load_14", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_32_load_14", "role": "default" }} , 
- 	{ "name": "col_sum_33_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_33_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_34_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_34_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_35_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_35_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_36_load_12", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_36_load_12", "role": "default" }} , 
- 	{ "name": "col_sum_37_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_37_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_38_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_38_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_39_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_39_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_40_load_13", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_40_load_13", "role": "default" }} , 
- 	{ "name": "col_sum_41_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_41_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_42_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_42_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_43_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_43_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_44_load_12", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_44_load_12", "role": "default" }} , 
- 	{ "name": "col_sum_45_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_45_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_46_load_10", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_46_load_10", "role": "default" }} , 
- 	{ "name": "col_sum_47_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_47_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_48_load_14", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_48_load_14", "role": "default" }} , 
- 	{ "name": "col_sum_49_load_7", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_49_load_7", "role": "default" }} , 
- 	{ "name": "col_sum_50_load_9", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_50_load_9", "role": "default" }} , 
- 	{ "name": "col_sum_51_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_51_load_6", "role": "default" }} , 
- 	{ "name": "col_sum_52_load_9", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_52_load_9", "role": "default" }} , 
- 	{ "name": "col_sum_53_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_53_load_5", "role": "default" }} , 
- 	{ "name": "col_sum_54_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_54_load_6", "role": "default" }} , 
- 	{ "name": "col_sum_55_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_55_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_6_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_6_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_7_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_7_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_8_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_8_load_6", "role": "default" }} , 
+ 	{ "name": "col_sum_9_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_9_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_10_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_10_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_11_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_11_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_12_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_12_load_5", "role": "default" }} , 
+ 	{ "name": "col_sum_13_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_13_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_14_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_14_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_15_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_15_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_16_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_16_load_6", "role": "default" }} , 
+ 	{ "name": "col_sum_17_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_17_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_18_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_18_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_19_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_19_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_20_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_20_load_5", "role": "default" }} , 
+ 	{ "name": "col_sum_21_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_21_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_22_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_22_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_23_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_23_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_24_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_24_load_6", "role": "default" }} , 
+ 	{ "name": "col_sum_25_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_25_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_26_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_26_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_27_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_27_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_28_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_28_load_5", "role": "default" }} , 
+ 	{ "name": "col_sum_29_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_29_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_30_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_30_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_31_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_31_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_32_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_32_load_6", "role": "default" }} , 
+ 	{ "name": "col_sum_33_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_33_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_34_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_34_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_35_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_35_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_36_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_36_load_5", "role": "default" }} , 
+ 	{ "name": "col_sum_37_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_37_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_38_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_38_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_39_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_39_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_40_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_40_load_6", "role": "default" }} , 
+ 	{ "name": "col_sum_41_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_41_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_42_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_42_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_43_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_43_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_44_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_44_load_5", "role": "default" }} , 
+ 	{ "name": "col_sum_45_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_45_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_46_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_46_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_47_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_47_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_48_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_48_load_6", "role": "default" }} , 
+ 	{ "name": "col_sum_49_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_49_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_50_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_50_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_51_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_51_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_52_load_5", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_52_load_5", "role": "default" }} , 
+ 	{ "name": "col_sum_53_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_53_load_3", "role": "default" }} , 
+ 	{ "name": "col_sum_54_load_4", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_54_load_4", "role": "default" }} , 
+ 	{ "name": "col_sum_55_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_55_load_3", "role": "default" }} , 
  	{ "name": "col_sum_56_load_6", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_56_load_6", "role": "default" }} , 
  	{ "name": "col_sum_57_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_57_load_3", "role": "default" }} , 
  	{ "name": "col_sum_58_load_3", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_58_load_3", "role": "default" }} , 
@@ -552,7 +552,7 @@ set NewPortList {[
  	{ "name": "col_sum_60_load_2", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_60_load_2", "role": "default" }} , 
  	{ "name": "col_sum_61_load_1", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_61_load_1", "role": "default" }} , 
  	{ "name": "col_sum_62_load", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_62_load", "role": "default" }} , 
- 	{ "name": "col_sum_63_load", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_63_load", "role": "default" }} , 
+ 	{ "name": "col_sum_63_load_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "col_sum_63_load_reload", "role": "default" }} , 
  	{ "name": "scale_63_out", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "scale_63_out", "role": "default" }} , 
  	{ "name": "scale_63_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "scale_63_out", "role": "ap_vld" }} , 
  	{ "name": "scale_62_out", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "scale_62_out", "role": "default" }} , 
@@ -684,62 +684,62 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	top_kernel_Pipeline_VITIS_LOOP_99_10 {
-		col_sum_load_1 {Type I LastRead 0 FirstWrite -1}
-		col_sum_1_load_1 {Type I LastRead 0 FirstWrite -1}
+		col_sum_load_1_reload {Type I LastRead 0 FirstWrite -1}
+		col_sum_1_load_1_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_2_load_2 {Type I LastRead 0 FirstWrite -1}
 		col_sum_3_load_2 {Type I LastRead 0 FirstWrite -1}
 		col_sum_4_load_4 {Type I LastRead 0 FirstWrite -1}
 		col_sum_5_load_3 {Type I LastRead 0 FirstWrite -1}
-		col_sum_6_load_5 {Type I LastRead 0 FirstWrite -1}
-		col_sum_7_load_4 {Type I LastRead 0 FirstWrite -1}
-		col_sum_8_load_8 {Type I LastRead 0 FirstWrite -1}
-		col_sum_9_load_5 {Type I LastRead 0 FirstWrite -1}
-		col_sum_10_load_8 {Type I LastRead 0 FirstWrite -1}
-		col_sum_11_load_6 {Type I LastRead 0 FirstWrite -1}
-		col_sum_12_load_11 {Type I LastRead 0 FirstWrite -1}
-		col_sum_13_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_14_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_15_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_16_load_14 {Type I LastRead 0 FirstWrite -1}
-		col_sum_17_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_18_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_19_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_20_load_12 {Type I LastRead 0 FirstWrite -1}
-		col_sum_21_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_22_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_23_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_24_load_13 {Type I LastRead 0 FirstWrite -1}
-		col_sum_25_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_26_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_27_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_28_load_12 {Type I LastRead 0 FirstWrite -1}
-		col_sum_29_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_30_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_31_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_32_load_14 {Type I LastRead 0 FirstWrite -1}
-		col_sum_33_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_34_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_35_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_36_load_12 {Type I LastRead 0 FirstWrite -1}
-		col_sum_37_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_38_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_39_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_40_load_13 {Type I LastRead 0 FirstWrite -1}
-		col_sum_41_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_42_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_43_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_44_load_12 {Type I LastRead 0 FirstWrite -1}
-		col_sum_45_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_46_load_10 {Type I LastRead 0 FirstWrite -1}
-		col_sum_47_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_48_load_14 {Type I LastRead 0 FirstWrite -1}
-		col_sum_49_load_7 {Type I LastRead 0 FirstWrite -1}
-		col_sum_50_load_9 {Type I LastRead 0 FirstWrite -1}
-		col_sum_51_load_6 {Type I LastRead 0 FirstWrite -1}
-		col_sum_52_load_9 {Type I LastRead 0 FirstWrite -1}
-		col_sum_53_load_5 {Type I LastRead 0 FirstWrite -1}
-		col_sum_54_load_6 {Type I LastRead 0 FirstWrite -1}
-		col_sum_55_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_6_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_7_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_8_load_6 {Type I LastRead 0 FirstWrite -1}
+		col_sum_9_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_10_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_11_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_12_load_5 {Type I LastRead 0 FirstWrite -1}
+		col_sum_13_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_14_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_15_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_16_load_6 {Type I LastRead 0 FirstWrite -1}
+		col_sum_17_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_18_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_19_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_20_load_5 {Type I LastRead 0 FirstWrite -1}
+		col_sum_21_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_22_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_23_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_24_load_6 {Type I LastRead 0 FirstWrite -1}
+		col_sum_25_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_26_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_27_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_28_load_5 {Type I LastRead 0 FirstWrite -1}
+		col_sum_29_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_30_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_31_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_32_load_6 {Type I LastRead 0 FirstWrite -1}
+		col_sum_33_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_34_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_35_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_36_load_5 {Type I LastRead 0 FirstWrite -1}
+		col_sum_37_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_38_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_39_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_40_load_6 {Type I LastRead 0 FirstWrite -1}
+		col_sum_41_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_42_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_43_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_44_load_5 {Type I LastRead 0 FirstWrite -1}
+		col_sum_45_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_46_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_47_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_48_load_6 {Type I LastRead 0 FirstWrite -1}
+		col_sum_49_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_50_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_51_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_52_load_5 {Type I LastRead 0 FirstWrite -1}
+		col_sum_53_load_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_54_load_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_55_load_3 {Type I LastRead 0 FirstWrite -1}
 		col_sum_56_load_6 {Type I LastRead 0 FirstWrite -1}
 		col_sum_57_load_3 {Type I LastRead 0 FirstWrite -1}
 		col_sum_58_load_3 {Type I LastRead 0 FirstWrite -1}
@@ -747,7 +747,7 @@ set ArgLastReadFirstWriteLatency {
 		col_sum_60_load_2 {Type I LastRead 0 FirstWrite -1}
 		col_sum_61_load_1 {Type I LastRead 0 FirstWrite -1}
 		col_sum_62_load {Type I LastRead 0 FirstWrite -1}
-		col_sum_63_load {Type I LastRead 0 FirstWrite -1}
+		col_sum_63_load_reload {Type I LastRead 0 FirstWrite -1}
 		scale_63_out {Type O LastRead -1 FirstWrite 0}
 		scale_62_out {Type O LastRead -1 FirstWrite 0}
 		scale_61_out {Type O LastRead -1 FirstWrite 0}
@@ -825,62 +825,62 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	col_sum_load_1 { ap_none {  { col_sum_load_1 in_data 0 24 } } }
-	col_sum_1_load_1 { ap_none {  { col_sum_1_load_1 in_data 0 24 } } }
+	col_sum_load_1_reload { ap_none {  { col_sum_load_1_reload in_data 0 24 } } }
+	col_sum_1_load_1_reload { ap_none {  { col_sum_1_load_1_reload in_data 0 24 } } }
 	col_sum_2_load_2 { ap_none {  { col_sum_2_load_2 in_data 0 24 } } }
 	col_sum_3_load_2 { ap_none {  { col_sum_3_load_2 in_data 0 24 } } }
 	col_sum_4_load_4 { ap_none {  { col_sum_4_load_4 in_data 0 24 } } }
 	col_sum_5_load_3 { ap_none {  { col_sum_5_load_3 in_data 0 24 } } }
-	col_sum_6_load_5 { ap_none {  { col_sum_6_load_5 in_data 0 24 } } }
-	col_sum_7_load_4 { ap_none {  { col_sum_7_load_4 in_data 0 24 } } }
-	col_sum_8_load_8 { ap_none {  { col_sum_8_load_8 in_data 0 24 } } }
-	col_sum_9_load_5 { ap_none {  { col_sum_9_load_5 in_data 0 24 } } }
-	col_sum_10_load_8 { ap_none {  { col_sum_10_load_8 in_data 0 24 } } }
-	col_sum_11_load_6 { ap_none {  { col_sum_11_load_6 in_data 0 24 } } }
-	col_sum_12_load_11 { ap_none {  { col_sum_12_load_11 in_data 0 24 } } }
-	col_sum_13_load_7 { ap_none {  { col_sum_13_load_7 in_data 0 24 } } }
-	col_sum_14_load_10 { ap_none {  { col_sum_14_load_10 in_data 0 24 } } }
-	col_sum_15_load_7 { ap_none {  { col_sum_15_load_7 in_data 0 24 } } }
-	col_sum_16_load_14 { ap_none {  { col_sum_16_load_14 in_data 0 24 } } }
-	col_sum_17_load_7 { ap_none {  { col_sum_17_load_7 in_data 0 24 } } }
-	col_sum_18_load_10 { ap_none {  { col_sum_18_load_10 in_data 0 24 } } }
-	col_sum_19_load_7 { ap_none {  { col_sum_19_load_7 in_data 0 24 } } }
-	col_sum_20_load_12 { ap_none {  { col_sum_20_load_12 in_data 0 24 } } }
-	col_sum_21_load_7 { ap_none {  { col_sum_21_load_7 in_data 0 24 } } }
-	col_sum_22_load_10 { ap_none {  { col_sum_22_load_10 in_data 0 24 } } }
-	col_sum_23_load_7 { ap_none {  { col_sum_23_load_7 in_data 0 24 } } }
-	col_sum_24_load_13 { ap_none {  { col_sum_24_load_13 in_data 0 24 } } }
-	col_sum_25_load_7 { ap_none {  { col_sum_25_load_7 in_data 0 24 } } }
-	col_sum_26_load_10 { ap_none {  { col_sum_26_load_10 in_data 0 24 } } }
-	col_sum_27_load_7 { ap_none {  { col_sum_27_load_7 in_data 0 24 } } }
-	col_sum_28_load_12 { ap_none {  { col_sum_28_load_12 in_data 0 24 } } }
-	col_sum_29_load_7 { ap_none {  { col_sum_29_load_7 in_data 0 24 } } }
-	col_sum_30_load_10 { ap_none {  { col_sum_30_load_10 in_data 0 24 } } }
-	col_sum_31_load_7 { ap_none {  { col_sum_31_load_7 in_data 0 24 } } }
-	col_sum_32_load_14 { ap_none {  { col_sum_32_load_14 in_data 0 24 } } }
-	col_sum_33_load_7 { ap_none {  { col_sum_33_load_7 in_data 0 24 } } }
-	col_sum_34_load_10 { ap_none {  { col_sum_34_load_10 in_data 0 24 } } }
-	col_sum_35_load_7 { ap_none {  { col_sum_35_load_7 in_data 0 24 } } }
-	col_sum_36_load_12 { ap_none {  { col_sum_36_load_12 in_data 0 24 } } }
-	col_sum_37_load_7 { ap_none {  { col_sum_37_load_7 in_data 0 24 } } }
-	col_sum_38_load_10 { ap_none {  { col_sum_38_load_10 in_data 0 24 } } }
-	col_sum_39_load_7 { ap_none {  { col_sum_39_load_7 in_data 0 24 } } }
-	col_sum_40_load_13 { ap_none {  { col_sum_40_load_13 in_data 0 24 } } }
-	col_sum_41_load_7 { ap_none {  { col_sum_41_load_7 in_data 0 24 } } }
-	col_sum_42_load_10 { ap_none {  { col_sum_42_load_10 in_data 0 24 } } }
-	col_sum_43_load_7 { ap_none {  { col_sum_43_load_7 in_data 0 24 } } }
-	col_sum_44_load_12 { ap_none {  { col_sum_44_load_12 in_data 0 24 } } }
-	col_sum_45_load_7 { ap_none {  { col_sum_45_load_7 in_data 0 24 } } }
-	col_sum_46_load_10 { ap_none {  { col_sum_46_load_10 in_data 0 24 } } }
-	col_sum_47_load_7 { ap_none {  { col_sum_47_load_7 in_data 0 24 } } }
-	col_sum_48_load_14 { ap_none {  { col_sum_48_load_14 in_data 0 24 } } }
-	col_sum_49_load_7 { ap_none {  { col_sum_49_load_7 in_data 0 24 } } }
-	col_sum_50_load_9 { ap_none {  { col_sum_50_load_9 in_data 0 24 } } }
-	col_sum_51_load_6 { ap_none {  { col_sum_51_load_6 in_data 0 24 } } }
-	col_sum_52_load_9 { ap_none {  { col_sum_52_load_9 in_data 0 24 } } }
-	col_sum_53_load_5 { ap_none {  { col_sum_53_load_5 in_data 0 24 } } }
-	col_sum_54_load_6 { ap_none {  { col_sum_54_load_6 in_data 0 24 } } }
-	col_sum_55_load_4 { ap_none {  { col_sum_55_load_4 in_data 0 24 } } }
+	col_sum_6_load_4 { ap_none {  { col_sum_6_load_4 in_data 0 24 } } }
+	col_sum_7_load_3 { ap_none {  { col_sum_7_load_3 in_data 0 24 } } }
+	col_sum_8_load_6 { ap_none {  { col_sum_8_load_6 in_data 0 24 } } }
+	col_sum_9_load_3 { ap_none {  { col_sum_9_load_3 in_data 0 24 } } }
+	col_sum_10_load_4 { ap_none {  { col_sum_10_load_4 in_data 0 24 } } }
+	col_sum_11_load_3 { ap_none {  { col_sum_11_load_3 in_data 0 24 } } }
+	col_sum_12_load_5 { ap_none {  { col_sum_12_load_5 in_data 0 24 } } }
+	col_sum_13_load_3 { ap_none {  { col_sum_13_load_3 in_data 0 24 } } }
+	col_sum_14_load_4 { ap_none {  { col_sum_14_load_4 in_data 0 24 } } }
+	col_sum_15_load_3 { ap_none {  { col_sum_15_load_3 in_data 0 24 } } }
+	col_sum_16_load_6 { ap_none {  { col_sum_16_load_6 in_data 0 24 } } }
+	col_sum_17_load_3 { ap_none {  { col_sum_17_load_3 in_data 0 24 } } }
+	col_sum_18_load_4 { ap_none {  { col_sum_18_load_4 in_data 0 24 } } }
+	col_sum_19_load_3 { ap_none {  { col_sum_19_load_3 in_data 0 24 } } }
+	col_sum_20_load_5 { ap_none {  { col_sum_20_load_5 in_data 0 24 } } }
+	col_sum_21_load_3 { ap_none {  { col_sum_21_load_3 in_data 0 24 } } }
+	col_sum_22_load_4 { ap_none {  { col_sum_22_load_4 in_data 0 24 } } }
+	col_sum_23_load_3 { ap_none {  { col_sum_23_load_3 in_data 0 24 } } }
+	col_sum_24_load_6 { ap_none {  { col_sum_24_load_6 in_data 0 24 } } }
+	col_sum_25_load_3 { ap_none {  { col_sum_25_load_3 in_data 0 24 } } }
+	col_sum_26_load_4 { ap_none {  { col_sum_26_load_4 in_data 0 24 } } }
+	col_sum_27_load_3 { ap_none {  { col_sum_27_load_3 in_data 0 24 } } }
+	col_sum_28_load_5 { ap_none {  { col_sum_28_load_5 in_data 0 24 } } }
+	col_sum_29_load_3 { ap_none {  { col_sum_29_load_3 in_data 0 24 } } }
+	col_sum_30_load_4 { ap_none {  { col_sum_30_load_4 in_data 0 24 } } }
+	col_sum_31_load_3 { ap_none {  { col_sum_31_load_3 in_data 0 24 } } }
+	col_sum_32_load_6 { ap_none {  { col_sum_32_load_6 in_data 0 24 } } }
+	col_sum_33_load_3 { ap_none {  { col_sum_33_load_3 in_data 0 24 } } }
+	col_sum_34_load_4 { ap_none {  { col_sum_34_load_4 in_data 0 24 } } }
+	col_sum_35_load_3 { ap_none {  { col_sum_35_load_3 in_data 0 24 } } }
+	col_sum_36_load_5 { ap_none {  { col_sum_36_load_5 in_data 0 24 } } }
+	col_sum_37_load_3 { ap_none {  { col_sum_37_load_3 in_data 0 24 } } }
+	col_sum_38_load_4 { ap_none {  { col_sum_38_load_4 in_data 0 24 } } }
+	col_sum_39_load_3 { ap_none {  { col_sum_39_load_3 in_data 0 24 } } }
+	col_sum_40_load_6 { ap_none {  { col_sum_40_load_6 in_data 0 24 } } }
+	col_sum_41_load_3 { ap_none {  { col_sum_41_load_3 in_data 0 24 } } }
+	col_sum_42_load_4 { ap_none {  { col_sum_42_load_4 in_data 0 24 } } }
+	col_sum_43_load_3 { ap_none {  { col_sum_43_load_3 in_data 0 24 } } }
+	col_sum_44_load_5 { ap_none {  { col_sum_44_load_5 in_data 0 24 } } }
+	col_sum_45_load_3 { ap_none {  { col_sum_45_load_3 in_data 0 24 } } }
+	col_sum_46_load_4 { ap_none {  { col_sum_46_load_4 in_data 0 24 } } }
+	col_sum_47_load_3 { ap_none {  { col_sum_47_load_3 in_data 0 24 } } }
+	col_sum_48_load_6 { ap_none {  { col_sum_48_load_6 in_data 0 24 } } }
+	col_sum_49_load_3 { ap_none {  { col_sum_49_load_3 in_data 0 24 } } }
+	col_sum_50_load_4 { ap_none {  { col_sum_50_load_4 in_data 0 24 } } }
+	col_sum_51_load_3 { ap_none {  { col_sum_51_load_3 in_data 0 24 } } }
+	col_sum_52_load_5 { ap_none {  { col_sum_52_load_5 in_data 0 24 } } }
+	col_sum_53_load_3 { ap_none {  { col_sum_53_load_3 in_data 0 24 } } }
+	col_sum_54_load_4 { ap_none {  { col_sum_54_load_4 in_data 0 24 } } }
+	col_sum_55_load_3 { ap_none {  { col_sum_55_load_3 in_data 0 24 } } }
 	col_sum_56_load_6 { ap_none {  { col_sum_56_load_6 in_data 0 24 } } }
 	col_sum_57_load_3 { ap_none {  { col_sum_57_load_3 in_data 0 24 } } }
 	col_sum_58_load_3 { ap_none {  { col_sum_58_load_3 in_data 0 24 } } }
@@ -888,7 +888,7 @@ set Spec2ImplPortList {
 	col_sum_60_load_2 { ap_none {  { col_sum_60_load_2 in_data 0 24 } } }
 	col_sum_61_load_1 { ap_none {  { col_sum_61_load_1 in_data 0 24 } } }
 	col_sum_62_load { ap_none {  { col_sum_62_load in_data 0 24 } } }
-	col_sum_63_load { ap_none {  { col_sum_63_load in_data 0 24 } } }
+	col_sum_63_load_reload { ap_none {  { col_sum_63_load_reload in_data 0 24 } } }
 	scale_63_out { ap_vld {  { scale_63_out out_data 1 24 }  { scale_63_out_ap_vld out_vld 1 1 } } }
 	scale_62_out { ap_vld {  { scale_62_out out_data 1 24 }  { scale_62_out_ap_vld out_vld 1 1 } } }
 	scale_61_out { ap_vld {  { scale_61_out out_data 1 24 }  { scale_61_out_ap_vld out_vld 1 1 } } }

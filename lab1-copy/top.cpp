@@ -26,7 +26,7 @@ void top_kernel(data_t A[N_ROWS][N_COLS],
                 data_t C[N_ROWS][N_COLS])
 {
     // Must divide N_COLS (=64). Raise (8/16/32) to use more DSP and reduce cycles.
-    const int UF = 16;
+    const int UF = 8;
 
     // Intermediate normalized values and per-row denominators
     static data_t tmp[N_ROWS][N_COLS];

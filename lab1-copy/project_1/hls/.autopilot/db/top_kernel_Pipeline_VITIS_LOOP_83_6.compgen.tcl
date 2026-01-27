@@ -10,67 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4455 \
-    name col_sum \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_col_sum \
-    op interface \
-    ports { col_sum { O 24 vector } col_sum_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4456 \
-    name col_sum_1 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_col_sum_1 \
-    op interface \
-    ports { col_sum_1 { O 24 vector } col_sum_1_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4457 \
-    name col_sum_2 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_col_sum_2 \
-    op interface \
-    ports { col_sum_2 { O 24 vector } col_sum_2_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4458 \
-    name col_sum_3 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_col_sum_3 \
-    op interface \
-    ports { col_sum_3 { O 24 vector } col_sum_3_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4459 \
+    id 2359 \
     name col_sum_4 \
     type other \
     dir O \
@@ -85,7 +25,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4460 \
+    id 2360 \
     name col_sum_5 \
     type other \
     dir O \
@@ -100,7 +40,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4461 \
+    id 2361 \
     name col_sum_6 \
     type other \
     dir O \
@@ -115,7 +55,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4462 \
+    id 2362 \
     name col_sum_7 \
     type other \
     dir O \
@@ -130,7 +70,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4463 \
+    id 2363 \
     name col_sum_8 \
     type other \
     dir O \
@@ -145,7 +85,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4464 \
+    id 2364 \
     name col_sum_9 \
     type other \
     dir O \
@@ -160,7 +100,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4465 \
+    id 2365 \
     name col_sum_10 \
     type other \
     dir O \
@@ -175,7 +115,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4466 \
+    id 2366 \
     name col_sum_11 \
     type other \
     dir O \
@@ -190,7 +130,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4467 \
+    id 2367 \
     name col_sum_12 \
     type other \
     dir O \
@@ -205,7 +145,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4468 \
+    id 2368 \
     name col_sum_13 \
     type other \
     dir O \
@@ -220,7 +160,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4469 \
+    id 2369 \
     name col_sum_14 \
     type other \
     dir O \
@@ -235,7 +175,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4470 \
+    id 2370 \
     name col_sum_15 \
     type other \
     dir O \
@@ -250,7 +190,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4471 \
+    id 2371 \
     name col_sum_16 \
     type other \
     dir O \
@@ -265,7 +205,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4472 \
+    id 2372 \
     name col_sum_17 \
     type other \
     dir O \
@@ -280,7 +220,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4473 \
+    id 2373 \
     name col_sum_18 \
     type other \
     dir O \
@@ -295,7 +235,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4474 \
+    id 2374 \
     name col_sum_19 \
     type other \
     dir O \
@@ -310,7 +250,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4475 \
+    id 2375 \
     name col_sum_20 \
     type other \
     dir O \
@@ -325,7 +265,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4476 \
+    id 2376 \
     name col_sum_21 \
     type other \
     dir O \
@@ -340,7 +280,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4477 \
+    id 2377 \
     name col_sum_22 \
     type other \
     dir O \
@@ -355,7 +295,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4478 \
+    id 2378 \
     name col_sum_23 \
     type other \
     dir O \
@@ -370,7 +310,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4479 \
+    id 2379 \
     name col_sum_24 \
     type other \
     dir O \
@@ -385,7 +325,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4480 \
+    id 2380 \
     name col_sum_25 \
     type other \
     dir O \
@@ -400,7 +340,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4481 \
+    id 2381 \
     name col_sum_26 \
     type other \
     dir O \
@@ -415,7 +355,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4482 \
+    id 2382 \
     name col_sum_27 \
     type other \
     dir O \
@@ -430,7 +370,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4483 \
+    id 2383 \
     name col_sum_28 \
     type other \
     dir O \
@@ -445,7 +385,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4484 \
+    id 2384 \
     name col_sum_29 \
     type other \
     dir O \
@@ -460,7 +400,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4485 \
+    id 2385 \
     name col_sum_30 \
     type other \
     dir O \
@@ -475,7 +415,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4486 \
+    id 2386 \
     name col_sum_31 \
     type other \
     dir O \
@@ -490,7 +430,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4487 \
+    id 2387 \
     name col_sum_32 \
     type other \
     dir O \
@@ -505,7 +445,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4488 \
+    id 2388 \
     name col_sum_33 \
     type other \
     dir O \
@@ -520,7 +460,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4489 \
+    id 2389 \
     name col_sum_34 \
     type other \
     dir O \
@@ -535,7 +475,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4490 \
+    id 2390 \
     name col_sum_35 \
     type other \
     dir O \
@@ -550,7 +490,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4491 \
+    id 2391 \
     name col_sum_36 \
     type other \
     dir O \
@@ -565,7 +505,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4492 \
+    id 2392 \
     name col_sum_37 \
     type other \
     dir O \
@@ -580,7 +520,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4493 \
+    id 2393 \
     name col_sum_38 \
     type other \
     dir O \
@@ -595,7 +535,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4494 \
+    id 2394 \
     name col_sum_39 \
     type other \
     dir O \
@@ -610,7 +550,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4495 \
+    id 2395 \
     name col_sum_40 \
     type other \
     dir O \
@@ -625,7 +565,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4496 \
+    id 2396 \
     name col_sum_41 \
     type other \
     dir O \
@@ -640,7 +580,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4497 \
+    id 2397 \
     name col_sum_42 \
     type other \
     dir O \
@@ -655,7 +595,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4498 \
+    id 2398 \
     name col_sum_43 \
     type other \
     dir O \
@@ -670,7 +610,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4499 \
+    id 2399 \
     name col_sum_44 \
     type other \
     dir O \
@@ -685,7 +625,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4500 \
+    id 2400 \
     name col_sum_45 \
     type other \
     dir O \
@@ -700,7 +640,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4501 \
+    id 2401 \
     name col_sum_46 \
     type other \
     dir O \
@@ -715,7 +655,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4502 \
+    id 2402 \
     name col_sum_47 \
     type other \
     dir O \
@@ -730,7 +670,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4503 \
+    id 2403 \
     name col_sum_48 \
     type other \
     dir O \
@@ -745,7 +685,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4504 \
+    id 2404 \
     name col_sum_49 \
     type other \
     dir O \
@@ -760,7 +700,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4505 \
+    id 2405 \
     name col_sum_50 \
     type other \
     dir O \
@@ -775,7 +715,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4506 \
+    id 2406 \
     name col_sum_51 \
     type other \
     dir O \
@@ -790,7 +730,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4507 \
+    id 2407 \
     name col_sum_52 \
     type other \
     dir O \
@@ -805,7 +745,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4508 \
+    id 2408 \
     name col_sum_53 \
     type other \
     dir O \
@@ -820,7 +760,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4509 \
+    id 2409 \
     name col_sum_54 \
     type other \
     dir O \
@@ -835,7 +775,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4510 \
+    id 2410 \
     name col_sum_55 \
     type other \
     dir O \
@@ -850,7 +790,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4511 \
+    id 2411 \
     name col_sum_56 \
     type other \
     dir O \
@@ -865,7 +805,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4512 \
+    id 2412 \
     name col_sum_57 \
     type other \
     dir O \
@@ -880,7 +820,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4513 \
+    id 2413 \
     name col_sum_58 \
     type other \
     dir O \
@@ -895,7 +835,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4514 \
+    id 2414 \
     name col_sum_59 \
     type other \
     dir O \
@@ -910,7 +850,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4515 \
+    id 2415 \
     name col_sum_60 \
     type other \
     dir O \
@@ -919,51 +859,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_col_sum_60 \
     op interface \
     ports { col_sum_60 { O 24 vector } col_sum_60_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4516 \
-    name col_sum_61 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_col_sum_61 \
-    op interface \
-    ports { col_sum_61 { O 24 vector } col_sum_61_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4517 \
-    name col_sum_62 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_col_sum_62 \
-    op interface \
-    ports { col_sum_62 { O 24 vector } col_sum_62_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4518 \
-    name col_sum_63 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_col_sum_63 \
-    op interface \
-    ports { col_sum_63 { O 24 vector } col_sum_63_ap_vld { O 1 bit } } \
 } "
 }
 

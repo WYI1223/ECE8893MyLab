@@ -84,14 +84,6 @@ proc check_tvin_file {} {
          "c.top_kernel.autotvin_A_5.dat"
          "c.top_kernel.autotvin_A_6.dat"
          "c.top_kernel.autotvin_A_7.dat"
-         "c.top_kernel.autotvin_A_8.dat"
-         "c.top_kernel.autotvin_A_9.dat"
-         "c.top_kernel.autotvin_A_10.dat"
-         "c.top_kernel.autotvin_A_11.dat"
-         "c.top_kernel.autotvin_A_12.dat"
-         "c.top_kernel.autotvin_A_13.dat"
-         "c.top_kernel.autotvin_A_14.dat"
-         "c.top_kernel.autotvin_A_15.dat"
          "c.top_kernel.autotvin_C_0.dat"
          "c.top_kernel.autotvin_C_1.dat"
          "c.top_kernel.autotvin_C_2.dat"
@@ -100,14 +92,6 @@ proc check_tvin_file {} {
          "c.top_kernel.autotvin_C_5.dat"
          "c.top_kernel.autotvin_C_6.dat"
          "c.top_kernel.autotvin_C_7.dat"
-         "c.top_kernel.autotvin_C_8.dat"
-         "c.top_kernel.autotvin_C_9.dat"
-         "c.top_kernel.autotvin_C_10.dat"
-         "c.top_kernel.autotvin_C_11.dat"
-         "c.top_kernel.autotvin_C_12.dat"
-         "c.top_kernel.autotvin_C_13.dat"
-         "c.top_kernel.autotvin_C_14.dat"
-         "c.top_kernel.autotvin_C_15.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -135,14 +119,6 @@ proc check_tvout_file {} {
          "rtl.top_kernel.autotvout_C_5.dat"
          "rtl.top_kernel.autotvout_C_6.dat"
          "rtl.top_kernel.autotvout_C_7.dat"
-         "rtl.top_kernel.autotvout_C_8.dat"
-         "rtl.top_kernel.autotvout_C_9.dat"
-         "rtl.top_kernel.autotvout_C_10.dat"
-         "rtl.top_kernel.autotvout_C_11.dat"
-         "rtl.top_kernel.autotvout_C_12.dat"
-         "rtl.top_kernel.autotvout_C_13.dat"
-         "rtl.top_kernel.autotvout_C_14.dat"
-         "rtl.top_kernel.autotvout_C_15.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

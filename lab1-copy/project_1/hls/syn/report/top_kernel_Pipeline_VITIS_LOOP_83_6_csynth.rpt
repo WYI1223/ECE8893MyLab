@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_83_6'
 ================================================================
-* Date:           Mon Jan 26 23:11:24 2026
+* Date:           Mon Jan 26 23:24:33 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -85,8 +85,8 @@
     +---------------------+----------+----+---+----+------------+------------+
     |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------+----------+----+---+----+------------+------------+
-    |add_ln83_fu_810_p2   |         +|   0|  0|  14|           7|           1|
-    |icmp_ln83_fu_804_p2  |      icmp|   0|  0|  15|           7|           8|
+    |add_ln83_fu_740_p2   |         +|   0|  0|  14|           7|           1|
+    |icmp_ln83_fu_734_p2  |      icmp|   0|  0|  15|           7|           8|
     +---------------------+----------+----+---+----+------------+------------+
     |Total                |          |   0|  0|  29|          14|           9|
     +---------------------+----------+----+---+----+------------+------------+
@@ -97,7 +97,7 @@
     +----------------------+----+-----------+-----+-----------+
     |ap_done_int           |   9|          2|    1|          2|
     |ap_sig_allocacmp_j_2  |   9|          2|    7|         14|
-    |j_fu_280              |   9|          2|    7|         14|
+    |j_fu_266              |   9|          2|    7|         14|
     +----------------------+----+-----------+-----+-----------+
     |Total                 |  27|          6|   15|         30|
     +----------------------+----+-----------+-----+-----------+
@@ -108,7 +108,7 @@
     +-------------+---+----+-----+-----------+
     |ap_CS_fsm    |  1|   0|    1|          0|
     |ap_done_reg  |  1|   0|    1|          0|
-    |j_fu_280     |  7|   0|    7|          0|
+    |j_fu_266     |  7|   0|    7|          0|
     +-------------+---+----+-----+-----------+
     |Total        |  9|   0|    9|          0|
     +-------------+---+----+-----+-----------+
@@ -128,14 +128,6 @@
 |ap_done            |  out|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_83_6|  return value|
 |ap_idle            |  out|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_83_6|  return value|
 |ap_ready           |  out|    1|  ap_ctrl_hs|  top_kernel_Pipeline_VITIS_LOOP_83_6|  return value|
-|col_sum            |  out|   24|      ap_vld|                              col_sum|       pointer|
-|col_sum_ap_vld     |  out|    1|      ap_vld|                              col_sum|       pointer|
-|col_sum_1          |  out|   24|      ap_vld|                            col_sum_1|       pointer|
-|col_sum_1_ap_vld   |  out|    1|      ap_vld|                            col_sum_1|       pointer|
-|col_sum_2          |  out|   24|      ap_vld|                            col_sum_2|       pointer|
-|col_sum_2_ap_vld   |  out|    1|      ap_vld|                            col_sum_2|       pointer|
-|col_sum_3          |  out|   24|      ap_vld|                            col_sum_3|       pointer|
-|col_sum_3_ap_vld   |  out|    1|      ap_vld|                            col_sum_3|       pointer|
 |col_sum_4          |  out|   24|      ap_vld|                            col_sum_4|       pointer|
 |col_sum_4_ap_vld   |  out|    1|      ap_vld|                            col_sum_4|       pointer|
 |col_sum_5          |  out|   24|      ap_vld|                            col_sum_5|       pointer|
@@ -250,11 +242,5 @@
 |col_sum_59_ap_vld  |  out|    1|      ap_vld|                           col_sum_59|       pointer|
 |col_sum_60         |  out|   24|      ap_vld|                           col_sum_60|       pointer|
 |col_sum_60_ap_vld  |  out|    1|      ap_vld|                           col_sum_60|       pointer|
-|col_sum_61         |  out|   24|      ap_vld|                           col_sum_61|       pointer|
-|col_sum_61_ap_vld  |  out|    1|      ap_vld|                           col_sum_61|       pointer|
-|col_sum_62         |  out|   24|      ap_vld|                           col_sum_62|       pointer|
-|col_sum_62_ap_vld  |  out|    1|      ap_vld|                           col_sum_62|       pointer|
-|col_sum_63         |  out|   24|      ap_vld|                           col_sum_63|       pointer|
-|col_sum_63_ap_vld  |  out|    1|      ap_vld|                           col_sum_63|       pointer|
 +-------------------+-----+-----+------------+-------------------------------------+--------------+
 

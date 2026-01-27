@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_99_10'" level="0">
-<item name = "Date">Mon Jan 26 23:11:30 2026
+<item name = "Date">Mon Jan 26 23:24:36 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -62,8 +62,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_40s_42ns_81_1_1_U5096">mul_40s_42ns_81_1_1, 0, 5, 0, 22, 0</column>
-<column name="sparsemux_129_6_24_1_1_U5097">sparsemux_129_6_24_1_1, 0, 0, 0, 273, 0</column>
+<column name="mul_40s_42ns_81_1_1_U2749">mul_40s_42ns_81_1_1, 0, 5, 0, 22, 0</column>
+<column name="sparsemux_129_6_24_1_1_U2750">sparsemux_129_6_24_1_1, 0, 0, 0, 273, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -177,7 +177,7 @@
 <column name="scale_8_fu_488">24, 0, 24, 0</column>
 <column name="scale_9_fu_492">24, 0, 24, 0</column>
 <column name="scale_fu_456">24, 0, 24, 0</column>
-<column name="tmp_267_cast1_reg_3126">18, 0, 18, 0</column>
+<column name="tmp_139_cast1_reg_3126">18, 0, 18, 0</column>
 <column name="tmp_reg_3120">1, 0, 1, 0</column>
 <column name="trunc_ln99_reg_3110">6, 0, 6, 0</column>
 </table>
@@ -195,62 +195,62 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_99_10, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_99_10, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, top_kernel_Pipeline_VITIS_LOOP_99_10, return value</column>
-<column name="col_sum_load_1">in, 24, ap_none, col_sum_load_1, scalar</column>
-<column name="col_sum_1_load_1">in, 24, ap_none, col_sum_1_load_1, scalar</column>
+<column name="col_sum_load_1_reload">in, 24, ap_none, col_sum_load_1_reload, scalar</column>
+<column name="col_sum_1_load_1_reload">in, 24, ap_none, col_sum_1_load_1_reload, scalar</column>
 <column name="col_sum_2_load_2">in, 24, ap_none, col_sum_2_load_2, scalar</column>
 <column name="col_sum_3_load_2">in, 24, ap_none, col_sum_3_load_2, scalar</column>
 <column name="col_sum_4_load_4">in, 24, ap_none, col_sum_4_load_4, scalar</column>
 <column name="col_sum_5_load_3">in, 24, ap_none, col_sum_5_load_3, scalar</column>
-<column name="col_sum_6_load_5">in, 24, ap_none, col_sum_6_load_5, scalar</column>
-<column name="col_sum_7_load_4">in, 24, ap_none, col_sum_7_load_4, scalar</column>
-<column name="col_sum_8_load_8">in, 24, ap_none, col_sum_8_load_8, scalar</column>
-<column name="col_sum_9_load_5">in, 24, ap_none, col_sum_9_load_5, scalar</column>
-<column name="col_sum_10_load_8">in, 24, ap_none, col_sum_10_load_8, scalar</column>
-<column name="col_sum_11_load_6">in, 24, ap_none, col_sum_11_load_6, scalar</column>
-<column name="col_sum_12_load_11">in, 24, ap_none, col_sum_12_load_11, scalar</column>
-<column name="col_sum_13_load_7">in, 24, ap_none, col_sum_13_load_7, scalar</column>
-<column name="col_sum_14_load_10">in, 24, ap_none, col_sum_14_load_10, scalar</column>
-<column name="col_sum_15_load_7">in, 24, ap_none, col_sum_15_load_7, scalar</column>
-<column name="col_sum_16_load_14">in, 24, ap_none, col_sum_16_load_14, scalar</column>
-<column name="col_sum_17_load_7">in, 24, ap_none, col_sum_17_load_7, scalar</column>
-<column name="col_sum_18_load_10">in, 24, ap_none, col_sum_18_load_10, scalar</column>
-<column name="col_sum_19_load_7">in, 24, ap_none, col_sum_19_load_7, scalar</column>
-<column name="col_sum_20_load_12">in, 24, ap_none, col_sum_20_load_12, scalar</column>
-<column name="col_sum_21_load_7">in, 24, ap_none, col_sum_21_load_7, scalar</column>
-<column name="col_sum_22_load_10">in, 24, ap_none, col_sum_22_load_10, scalar</column>
-<column name="col_sum_23_load_7">in, 24, ap_none, col_sum_23_load_7, scalar</column>
-<column name="col_sum_24_load_13">in, 24, ap_none, col_sum_24_load_13, scalar</column>
-<column name="col_sum_25_load_7">in, 24, ap_none, col_sum_25_load_7, scalar</column>
-<column name="col_sum_26_load_10">in, 24, ap_none, col_sum_26_load_10, scalar</column>
-<column name="col_sum_27_load_7">in, 24, ap_none, col_sum_27_load_7, scalar</column>
-<column name="col_sum_28_load_12">in, 24, ap_none, col_sum_28_load_12, scalar</column>
-<column name="col_sum_29_load_7">in, 24, ap_none, col_sum_29_load_7, scalar</column>
-<column name="col_sum_30_load_10">in, 24, ap_none, col_sum_30_load_10, scalar</column>
-<column name="col_sum_31_load_7">in, 24, ap_none, col_sum_31_load_7, scalar</column>
-<column name="col_sum_32_load_14">in, 24, ap_none, col_sum_32_load_14, scalar</column>
-<column name="col_sum_33_load_7">in, 24, ap_none, col_sum_33_load_7, scalar</column>
-<column name="col_sum_34_load_10">in, 24, ap_none, col_sum_34_load_10, scalar</column>
-<column name="col_sum_35_load_7">in, 24, ap_none, col_sum_35_load_7, scalar</column>
-<column name="col_sum_36_load_12">in, 24, ap_none, col_sum_36_load_12, scalar</column>
-<column name="col_sum_37_load_7">in, 24, ap_none, col_sum_37_load_7, scalar</column>
-<column name="col_sum_38_load_10">in, 24, ap_none, col_sum_38_load_10, scalar</column>
-<column name="col_sum_39_load_7">in, 24, ap_none, col_sum_39_load_7, scalar</column>
-<column name="col_sum_40_load_13">in, 24, ap_none, col_sum_40_load_13, scalar</column>
-<column name="col_sum_41_load_7">in, 24, ap_none, col_sum_41_load_7, scalar</column>
-<column name="col_sum_42_load_10">in, 24, ap_none, col_sum_42_load_10, scalar</column>
-<column name="col_sum_43_load_7">in, 24, ap_none, col_sum_43_load_7, scalar</column>
-<column name="col_sum_44_load_12">in, 24, ap_none, col_sum_44_load_12, scalar</column>
-<column name="col_sum_45_load_7">in, 24, ap_none, col_sum_45_load_7, scalar</column>
-<column name="col_sum_46_load_10">in, 24, ap_none, col_sum_46_load_10, scalar</column>
-<column name="col_sum_47_load_7">in, 24, ap_none, col_sum_47_load_7, scalar</column>
-<column name="col_sum_48_load_14">in, 24, ap_none, col_sum_48_load_14, scalar</column>
-<column name="col_sum_49_load_7">in, 24, ap_none, col_sum_49_load_7, scalar</column>
-<column name="col_sum_50_load_9">in, 24, ap_none, col_sum_50_load_9, scalar</column>
-<column name="col_sum_51_load_6">in, 24, ap_none, col_sum_51_load_6, scalar</column>
-<column name="col_sum_52_load_9">in, 24, ap_none, col_sum_52_load_9, scalar</column>
-<column name="col_sum_53_load_5">in, 24, ap_none, col_sum_53_load_5, scalar</column>
-<column name="col_sum_54_load_6">in, 24, ap_none, col_sum_54_load_6, scalar</column>
-<column name="col_sum_55_load_4">in, 24, ap_none, col_sum_55_load_4, scalar</column>
+<column name="col_sum_6_load_4">in, 24, ap_none, col_sum_6_load_4, scalar</column>
+<column name="col_sum_7_load_3">in, 24, ap_none, col_sum_7_load_3, scalar</column>
+<column name="col_sum_8_load_6">in, 24, ap_none, col_sum_8_load_6, scalar</column>
+<column name="col_sum_9_load_3">in, 24, ap_none, col_sum_9_load_3, scalar</column>
+<column name="col_sum_10_load_4">in, 24, ap_none, col_sum_10_load_4, scalar</column>
+<column name="col_sum_11_load_3">in, 24, ap_none, col_sum_11_load_3, scalar</column>
+<column name="col_sum_12_load_5">in, 24, ap_none, col_sum_12_load_5, scalar</column>
+<column name="col_sum_13_load_3">in, 24, ap_none, col_sum_13_load_3, scalar</column>
+<column name="col_sum_14_load_4">in, 24, ap_none, col_sum_14_load_4, scalar</column>
+<column name="col_sum_15_load_3">in, 24, ap_none, col_sum_15_load_3, scalar</column>
+<column name="col_sum_16_load_6">in, 24, ap_none, col_sum_16_load_6, scalar</column>
+<column name="col_sum_17_load_3">in, 24, ap_none, col_sum_17_load_3, scalar</column>
+<column name="col_sum_18_load_4">in, 24, ap_none, col_sum_18_load_4, scalar</column>
+<column name="col_sum_19_load_3">in, 24, ap_none, col_sum_19_load_3, scalar</column>
+<column name="col_sum_20_load_5">in, 24, ap_none, col_sum_20_load_5, scalar</column>
+<column name="col_sum_21_load_3">in, 24, ap_none, col_sum_21_load_3, scalar</column>
+<column name="col_sum_22_load_4">in, 24, ap_none, col_sum_22_load_4, scalar</column>
+<column name="col_sum_23_load_3">in, 24, ap_none, col_sum_23_load_3, scalar</column>
+<column name="col_sum_24_load_6">in, 24, ap_none, col_sum_24_load_6, scalar</column>
+<column name="col_sum_25_load_3">in, 24, ap_none, col_sum_25_load_3, scalar</column>
+<column name="col_sum_26_load_4">in, 24, ap_none, col_sum_26_load_4, scalar</column>
+<column name="col_sum_27_load_3">in, 24, ap_none, col_sum_27_load_3, scalar</column>
+<column name="col_sum_28_load_5">in, 24, ap_none, col_sum_28_load_5, scalar</column>
+<column name="col_sum_29_load_3">in, 24, ap_none, col_sum_29_load_3, scalar</column>
+<column name="col_sum_30_load_4">in, 24, ap_none, col_sum_30_load_4, scalar</column>
+<column name="col_sum_31_load_3">in, 24, ap_none, col_sum_31_load_3, scalar</column>
+<column name="col_sum_32_load_6">in, 24, ap_none, col_sum_32_load_6, scalar</column>
+<column name="col_sum_33_load_3">in, 24, ap_none, col_sum_33_load_3, scalar</column>
+<column name="col_sum_34_load_4">in, 24, ap_none, col_sum_34_load_4, scalar</column>
+<column name="col_sum_35_load_3">in, 24, ap_none, col_sum_35_load_3, scalar</column>
+<column name="col_sum_36_load_5">in, 24, ap_none, col_sum_36_load_5, scalar</column>
+<column name="col_sum_37_load_3">in, 24, ap_none, col_sum_37_load_3, scalar</column>
+<column name="col_sum_38_load_4">in, 24, ap_none, col_sum_38_load_4, scalar</column>
+<column name="col_sum_39_load_3">in, 24, ap_none, col_sum_39_load_3, scalar</column>
+<column name="col_sum_40_load_6">in, 24, ap_none, col_sum_40_load_6, scalar</column>
+<column name="col_sum_41_load_3">in, 24, ap_none, col_sum_41_load_3, scalar</column>
+<column name="col_sum_42_load_4">in, 24, ap_none, col_sum_42_load_4, scalar</column>
+<column name="col_sum_43_load_3">in, 24, ap_none, col_sum_43_load_3, scalar</column>
+<column name="col_sum_44_load_5">in, 24, ap_none, col_sum_44_load_5, scalar</column>
+<column name="col_sum_45_load_3">in, 24, ap_none, col_sum_45_load_3, scalar</column>
+<column name="col_sum_46_load_4">in, 24, ap_none, col_sum_46_load_4, scalar</column>
+<column name="col_sum_47_load_3">in, 24, ap_none, col_sum_47_load_3, scalar</column>
+<column name="col_sum_48_load_6">in, 24, ap_none, col_sum_48_load_6, scalar</column>
+<column name="col_sum_49_load_3">in, 24, ap_none, col_sum_49_load_3, scalar</column>
+<column name="col_sum_50_load_4">in, 24, ap_none, col_sum_50_load_4, scalar</column>
+<column name="col_sum_51_load_3">in, 24, ap_none, col_sum_51_load_3, scalar</column>
+<column name="col_sum_52_load_5">in, 24, ap_none, col_sum_52_load_5, scalar</column>
+<column name="col_sum_53_load_3">in, 24, ap_none, col_sum_53_load_3, scalar</column>
+<column name="col_sum_54_load_4">in, 24, ap_none, col_sum_54_load_4, scalar</column>
+<column name="col_sum_55_load_3">in, 24, ap_none, col_sum_55_load_3, scalar</column>
 <column name="col_sum_56_load_6">in, 24, ap_none, col_sum_56_load_6, scalar</column>
 <column name="col_sum_57_load_3">in, 24, ap_none, col_sum_57_load_3, scalar</column>
 <column name="col_sum_58_load_3">in, 24, ap_none, col_sum_58_load_3, scalar</column>
@@ -258,7 +258,7 @@
 <column name="col_sum_60_load_2">in, 24, ap_none, col_sum_60_load_2, scalar</column>
 <column name="col_sum_61_load_1">in, 24, ap_none, col_sum_61_load_1, scalar</column>
 <column name="col_sum_62_load">in, 24, ap_none, col_sum_62_load, scalar</column>
-<column name="col_sum_63_load">in, 24, ap_none, col_sum_63_load, scalar</column>
+<column name="col_sum_63_load_reload">in, 24, ap_none, col_sum_63_load_reload, scalar</column>
 <column name="scale_63_out">out, 24, ap_vld, scale_63_out, pointer</column>
 <column name="scale_63_out_ap_vld">out, 1, ap_vld, scale_63_out, pointer</column>
 <column name="scale_62_out">out, 24, ap_vld, scale_62_out, pointer</column>

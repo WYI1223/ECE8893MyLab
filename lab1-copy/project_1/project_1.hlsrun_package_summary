@@ -1,0 +1,120 @@
+<ENTRY>
+{
+ "thisFile": "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/project_1.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jan 26 19:42:58 2026",
+ "timestampMillis": "1769474578566",
+ "buildStep": {
+  "cmdId": "81c7d105-7e28-48b7-9bb3-0006b04e7426",
+  "name": "vitis-run",
+  "logFile": "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/script.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 19:42:58 2026",
+ "timestampMillis": "1769474578567",
+ "status": {
+  "cmdId": "81c7d105-7e28-48b7-9bb3-0006b04e7426",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jan 26 19:42:58 2026",
+ "timestampMillis": "1769474578568",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jan 26 19:42:58 2026",
+ "timestampMillis": "1769474578568",
+ "buildStep": {
+  "cmdId": "2a527ed1-d489-43c3-bd7e-7fbebf4cbbc5",
+  "name": "export_design",
+  "logFile": "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/hls.log",
+  "commandLine": "export_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 19:42:58 2026",
+ "timestampMillis": "1769474578569",
+ "status": {
+  "cmdId": "2a527ed1-d489-43c3-bd7e-7fbebf4cbbc5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 19:43:35 2026",
+ "timestampMillis": "1769474615767",
+ "status": {
+  "cmdId": "2a527ed1-d489-43c3-bd7e-7fbebf4cbbc5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jan 26 19:43:35 2026",
+ "timestampMillis": "1769474615872",
+ "status": {
+  "cmdId": "81c7d105-7e28-48b7-9bb3-0006b04e7426",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

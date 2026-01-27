@@ -2,37 +2,142 @@
 <AdditionalInfo>
   <CTypeInfo>
       <RtlPort>
-        <name>A_address0</name>
+        <name>A_0_address0</name>
         <type>Unsigned</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
-        <name>A_ce0</name>
+        <name>A_0_ce0</name>
         <type>bool</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
-        <name>A_q0</name>
+        <name>A_0_q0</name>
         <type>Signed</type>
         <fractionWidth>16</fractionWidth>
       </RtlPort>
       <RtlPort>
-        <name>C_address0</name>
+        <name>A_1_address0</name>
         <type>Unsigned</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
-        <name>C_ce0</name>
+        <name>A_1_ce0</name>
         <type>bool</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
-        <name>C_d0</name>
+        <name>A_1_q0</name>
         <type>Signed</type>
         <fractionWidth>16</fractionWidth>
       </RtlPort>
       <RtlPort>
-        <name>C_we0</name>
+        <name>A_2_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>A_2_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>A_2_q0</name>
+        <type>Signed</type>
+        <fractionWidth>16</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>A_3_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>A_3_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>A_3_q0</name>
+        <type>Signed</type>
+        <fractionWidth>16</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_0_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_0_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_0_d0</name>
+        <type>Signed</type>
+        <fractionWidth>16</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_0_we0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_1_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_1_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_1_d0</name>
+        <type>Signed</type>
+        <fractionWidth>16</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_1_we0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_2_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_2_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_2_d0</name>
+        <type>Signed</type>
+        <fractionWidth>16</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_2_we0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_3_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_3_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_3_d0</name>
+        <type>Signed</type>
+        <fractionWidth>16</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>C_3_we0</name>
         <type>bool</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
@@ -43,7 +148,7 @@
   <Machine>64</Machine>
   <modelParameters>
     <combinational>0</combinational>
-    <latency>78669</latency>
-    <II>78670</II>
+    <latency>41805</latency>
+    <II>41806</II>
   </modelParameters>
 </AdditionalInfo>

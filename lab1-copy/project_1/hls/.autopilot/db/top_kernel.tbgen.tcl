@@ -18,20 +18,38 @@ set cdfgNum 8
 set C_modelName {top_kernel}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict A { MEM_WIDTH 24 MEM_SIZE 49152 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict C { MEM_WIDTH 24 MEM_SIZE 49152 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict A_0 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict A_1 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict A_2 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict A_3 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict C_0 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict C_1 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict C_2 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict C_3 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ A int 24 regular {array 16384 { 1 3 } 1 1 }  }
-	{ C int 24 regular {array 16384 { 0 3 } 0 1 }  }
+	{ A_0 int 24 regular {array 4096 { 1 3 } 1 1 }  }
+	{ A_1 int 24 regular {array 4096 { 1 3 } 1 1 }  }
+	{ A_2 int 24 regular {array 4096 { 1 3 } 1 1 }  }
+	{ A_3 int 24 regular {array 4096 { 1 3 } 1 1 }  }
+	{ C_0 int 24 regular {array 4096 { 0 3 } 0 1 }  }
+	{ C_1 int 24 regular {array 4096 { 0 3 } 0 1 }  }
+	{ C_2 int 24 regular {array 4096 { 0 3 } 0 1 }  }
+	{ C_3 int 24 regular {array 4096 { 0 3 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "A", "interface" : "memory", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "C", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "A_0", "interface" : "memory", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "A_1", "interface" : "memory", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "A_2", "interface" : "memory", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "A_3", "interface" : "memory", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "C_0", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "C_1", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "C_2", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "C_3", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 13
+set portNum 34
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -39,13 +57,34 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ A_address0 sc_out sc_lv 14 signal 0 } 
-	{ A_ce0 sc_out sc_logic 1 signal 0 } 
-	{ A_q0 sc_in sc_lv 24 signal 0 } 
-	{ C_address0 sc_out sc_lv 14 signal 1 } 
-	{ C_ce0 sc_out sc_logic 1 signal 1 } 
-	{ C_we0 sc_out sc_logic 1 signal 1 } 
-	{ C_d0 sc_out sc_lv 24 signal 1 } 
+	{ A_0_address0 sc_out sc_lv 12 signal 0 } 
+	{ A_0_ce0 sc_out sc_logic 1 signal 0 } 
+	{ A_0_q0 sc_in sc_lv 24 signal 0 } 
+	{ A_1_address0 sc_out sc_lv 12 signal 1 } 
+	{ A_1_ce0 sc_out sc_logic 1 signal 1 } 
+	{ A_1_q0 sc_in sc_lv 24 signal 1 } 
+	{ A_2_address0 sc_out sc_lv 12 signal 2 } 
+	{ A_2_ce0 sc_out sc_logic 1 signal 2 } 
+	{ A_2_q0 sc_in sc_lv 24 signal 2 } 
+	{ A_3_address0 sc_out sc_lv 12 signal 3 } 
+	{ A_3_ce0 sc_out sc_logic 1 signal 3 } 
+	{ A_3_q0 sc_in sc_lv 24 signal 3 } 
+	{ C_0_address0 sc_out sc_lv 12 signal 4 } 
+	{ C_0_ce0 sc_out sc_logic 1 signal 4 } 
+	{ C_0_we0 sc_out sc_logic 1 signal 4 } 
+	{ C_0_d0 sc_out sc_lv 24 signal 4 } 
+	{ C_1_address0 sc_out sc_lv 12 signal 5 } 
+	{ C_1_ce0 sc_out sc_logic 1 signal 5 } 
+	{ C_1_we0 sc_out sc_logic 1 signal 5 } 
+	{ C_1_d0 sc_out sc_lv 24 signal 5 } 
+	{ C_2_address0 sc_out sc_lv 12 signal 6 } 
+	{ C_2_ce0 sc_out sc_logic 1 signal 6 } 
+	{ C_2_we0 sc_out sc_logic 1 signal 6 } 
+	{ C_2_d0 sc_out sc_lv 24 signal 6 } 
+	{ C_3_address0 sc_out sc_lv 12 signal 7 } 
+	{ C_3_ce0 sc_out sc_logic 1 signal 7 } 
+	{ C_3_we0 sc_out sc_logic 1 signal 7 } 
+	{ C_3_d0 sc_out sc_lv 24 signal 7 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -54,24 +93,57 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "A_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "A", "role": "address0" }} , 
- 	{ "name": "A_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "A", "role": "ce0" }} , 
- 	{ "name": "A_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "A", "role": "q0" }} , 
- 	{ "name": "C_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "C", "role": "address0" }} , 
- 	{ "name": "C_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C", "role": "ce0" }} , 
- 	{ "name": "C_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C", "role": "we0" }} , 
- 	{ "name": "C_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "C", "role": "d0" }}  ]}
+ 	{ "name": "A_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "A_0", "role": "address0" }} , 
+ 	{ "name": "A_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "A_0", "role": "ce0" }} , 
+ 	{ "name": "A_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "A_0", "role": "q0" }} , 
+ 	{ "name": "A_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "A_1", "role": "address0" }} , 
+ 	{ "name": "A_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "A_1", "role": "ce0" }} , 
+ 	{ "name": "A_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "A_1", "role": "q0" }} , 
+ 	{ "name": "A_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "A_2", "role": "address0" }} , 
+ 	{ "name": "A_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "A_2", "role": "ce0" }} , 
+ 	{ "name": "A_2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "A_2", "role": "q0" }} , 
+ 	{ "name": "A_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "A_3", "role": "address0" }} , 
+ 	{ "name": "A_3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "A_3", "role": "ce0" }} , 
+ 	{ "name": "A_3_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "A_3", "role": "q0" }} , 
+ 	{ "name": "C_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "C_0", "role": "address0" }} , 
+ 	{ "name": "C_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_0", "role": "ce0" }} , 
+ 	{ "name": "C_0_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_0", "role": "we0" }} , 
+ 	{ "name": "C_0_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "C_0", "role": "d0" }} , 
+ 	{ "name": "C_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "C_1", "role": "address0" }} , 
+ 	{ "name": "C_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_1", "role": "ce0" }} , 
+ 	{ "name": "C_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_1", "role": "we0" }} , 
+ 	{ "name": "C_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "C_1", "role": "d0" }} , 
+ 	{ "name": "C_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "C_2", "role": "address0" }} , 
+ 	{ "name": "C_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_2", "role": "ce0" }} , 
+ 	{ "name": "C_2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_2", "role": "we0" }} , 
+ 	{ "name": "C_2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "C_2", "role": "d0" }} , 
+ 	{ "name": "C_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "C_3", "role": "address0" }} , 
+ 	{ "name": "C_3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_3", "role": "ce0" }} , 
+ 	{ "name": "C_3_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C_3", "role": "we0" }} , 
+ 	{ "name": "C_3_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "C_3", "role": "d0" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	top_kernel {
-		A {Type I LastRead 0 FirstWrite -1}
-		C {Type O LastRead -1 FirstWrite 2}
-		tmp {Type IO LastRead -1 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_31_2 {
-		zext_ln41 {Type I LastRead 0 FirstWrite -1}
-		A {Type I LastRead 0 FirstWrite -1}
+		A_0 {Type I LastRead 0 FirstWrite -1}
+		A_1 {Type I LastRead 0 FirstWrite -1}
+		A_2 {Type I LastRead 0 FirstWrite -1}
+		A_3 {Type I LastRead 0 FirstWrite -1}
+		C_0 {Type O LastRead -1 FirstWrite 2}
+		C_1 {Type O LastRead -1 FirstWrite 2}
+		C_2 {Type O LastRead -1 FirstWrite 2}
+		C_3 {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_1 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_2 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_3 {Type IO LastRead -1 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_54_3 {
+		i {Type I LastRead 0 FirstWrite -1}
+		A_0 {Type I LastRead 0 FirstWrite -1}
+		A_1 {Type I LastRead 0 FirstWrite -1}
+		A_2 {Type I LastRead 0 FirstWrite -1}
+		A_3 {Type I LastRead 0 FirstWrite -1}
 		p_out {Type O LastRead -1 FirstWrite 0}}
-	top_kernel_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_56_6 {
+	top_kernel_Pipeline_VITIS_LOOP_80_6_VITIS_LOOP_82_7 {
 		col_sum_load_out {Type O LastRead -1 FirstWrite 0}
 		col_sum_1_load_out {Type O LastRead -1 FirstWrite 0}
 		col_sum_2_load_out {Type O LastRead -1 FirstWrite 0}
@@ -136,13 +208,22 @@ set ArgLastReadFirstWriteLatency {
 		col_sum_61_load_out {Type O LastRead -1 FirstWrite 0}
 		col_sum_62_load_out {Type O LastRead -1 FirstWrite 0}
 		col_sum_63_load_out {Type O LastRead -1 FirstWrite 0}
-		tmp {Type I LastRead 0 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_39_3 {
-		zext_ln41 {Type I LastRead 0 FirstWrite -1}
-		A {Type I LastRead 0 FirstWrite -1}
-		conv_i362 {Type I LastRead 0 FirstWrite -1}
-		tmp {Type O LastRead -1 FirstWrite 44}}
-	top_kernel_Pipeline_VITIS_LOOP_63_7 {
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_1 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_2 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_3 {Type I LastRead 0 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_64_4 {
+		i {Type I LastRead 0 FirstWrite -1}
+		A_0 {Type I LastRead 0 FirstWrite -1}
+		A_1 {Type I LastRead 0 FirstWrite -1}
+		A_2 {Type I LastRead 0 FirstWrite -1}
+		A_3 {Type I LastRead 0 FirstWrite -1}
+		conv_i345 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_3 {Type O LastRead -1 FirstWrite 44}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_2 {Type O LastRead -1 FirstWrite 44}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_1 {Type O LastRead -1 FirstWrite 44}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp {Type O LastRead -1 FirstWrite 44}}
+	top_kernel_Pipeline_VITIS_LOOP_96_9 {
 		col_sum_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_1_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_2_load_reload {Type I LastRead 0 FirstWrite -1}
@@ -271,87 +352,99 @@ set ArgLastReadFirstWriteLatency {
 		scale_2_out {Type O LastRead -1 FirstWrite 0}
 		scale_1_out {Type O LastRead -1 FirstWrite 0}
 		scale_out {Type O LastRead -1 FirstWrite 0}}
-	top_kernel_Pipeline_VITIS_LOOP_71_8_VITIS_LOOP_72_9 {
-		C {Type O LastRead -1 FirstWrite 2}
+	top_kernel_Pipeline_VITIS_LOOP_105_10_VITIS_LOOP_107_11 {
+		C_3 {Type O LastRead -1 FirstWrite 2}
+		C_2 {Type O LastRead -1 FirstWrite 2}
+		C_1 {Type O LastRead -1 FirstWrite 2}
+		C_0 {Type O LastRead -1 FirstWrite 2}
 		scale_reload {Type I LastRead 0 FirstWrite -1}
-		scale_1_reload {Type I LastRead 0 FirstWrite -1}
-		scale_2_reload {Type I LastRead 0 FirstWrite -1}
-		scale_3_reload {Type I LastRead 0 FirstWrite -1}
 		scale_4_reload {Type I LastRead 0 FirstWrite -1}
-		scale_5_reload {Type I LastRead 0 FirstWrite -1}
-		scale_6_reload {Type I LastRead 0 FirstWrite -1}
-		scale_7_reload {Type I LastRead 0 FirstWrite -1}
 		scale_8_reload {Type I LastRead 0 FirstWrite -1}
-		scale_9_reload {Type I LastRead 0 FirstWrite -1}
-		scale_10_reload {Type I LastRead 0 FirstWrite -1}
-		scale_11_reload {Type I LastRead 0 FirstWrite -1}
 		scale_12_reload {Type I LastRead 0 FirstWrite -1}
-		scale_13_reload {Type I LastRead 0 FirstWrite -1}
-		scale_14_reload {Type I LastRead 0 FirstWrite -1}
-		scale_15_reload {Type I LastRead 0 FirstWrite -1}
 		scale_16_reload {Type I LastRead 0 FirstWrite -1}
-		scale_17_reload {Type I LastRead 0 FirstWrite -1}
-		scale_18_reload {Type I LastRead 0 FirstWrite -1}
-		scale_19_reload {Type I LastRead 0 FirstWrite -1}
 		scale_20_reload {Type I LastRead 0 FirstWrite -1}
-		scale_21_reload {Type I LastRead 0 FirstWrite -1}
-		scale_22_reload {Type I LastRead 0 FirstWrite -1}
-		scale_23_reload {Type I LastRead 0 FirstWrite -1}
 		scale_24_reload {Type I LastRead 0 FirstWrite -1}
-		scale_25_reload {Type I LastRead 0 FirstWrite -1}
-		scale_26_reload {Type I LastRead 0 FirstWrite -1}
-		scale_27_reload {Type I LastRead 0 FirstWrite -1}
 		scale_28_reload {Type I LastRead 0 FirstWrite -1}
-		scale_29_reload {Type I LastRead 0 FirstWrite -1}
-		scale_30_reload {Type I LastRead 0 FirstWrite -1}
-		scale_31_reload {Type I LastRead 0 FirstWrite -1}
 		scale_32_reload {Type I LastRead 0 FirstWrite -1}
-		scale_33_reload {Type I LastRead 0 FirstWrite -1}
-		scale_34_reload {Type I LastRead 0 FirstWrite -1}
-		scale_35_reload {Type I LastRead 0 FirstWrite -1}
 		scale_36_reload {Type I LastRead 0 FirstWrite -1}
-		scale_37_reload {Type I LastRead 0 FirstWrite -1}
-		scale_38_reload {Type I LastRead 0 FirstWrite -1}
-		scale_39_reload {Type I LastRead 0 FirstWrite -1}
 		scale_40_reload {Type I LastRead 0 FirstWrite -1}
-		scale_41_reload {Type I LastRead 0 FirstWrite -1}
-		scale_42_reload {Type I LastRead 0 FirstWrite -1}
-		scale_43_reload {Type I LastRead 0 FirstWrite -1}
 		scale_44_reload {Type I LastRead 0 FirstWrite -1}
-		scale_45_reload {Type I LastRead 0 FirstWrite -1}
-		scale_46_reload {Type I LastRead 0 FirstWrite -1}
-		scale_47_reload {Type I LastRead 0 FirstWrite -1}
 		scale_48_reload {Type I LastRead 0 FirstWrite -1}
-		scale_49_reload {Type I LastRead 0 FirstWrite -1}
-		scale_50_reload {Type I LastRead 0 FirstWrite -1}
-		scale_51_reload {Type I LastRead 0 FirstWrite -1}
 		scale_52_reload {Type I LastRead 0 FirstWrite -1}
-		scale_53_reload {Type I LastRead 0 FirstWrite -1}
-		scale_54_reload {Type I LastRead 0 FirstWrite -1}
-		scale_55_reload {Type I LastRead 0 FirstWrite -1}
 		scale_56_reload {Type I LastRead 0 FirstWrite -1}
-		scale_57_reload {Type I LastRead 0 FirstWrite -1}
-		scale_58_reload {Type I LastRead 0 FirstWrite -1}
-		scale_59_reload {Type I LastRead 0 FirstWrite -1}
 		scale_60_reload {Type I LastRead 0 FirstWrite -1}
+		scale_1_reload {Type I LastRead 0 FirstWrite -1}
+		scale_5_reload {Type I LastRead 0 FirstWrite -1}
+		scale_9_reload {Type I LastRead 0 FirstWrite -1}
+		scale_13_reload {Type I LastRead 0 FirstWrite -1}
+		scale_17_reload {Type I LastRead 0 FirstWrite -1}
+		scale_21_reload {Type I LastRead 0 FirstWrite -1}
+		scale_25_reload {Type I LastRead 0 FirstWrite -1}
+		scale_29_reload {Type I LastRead 0 FirstWrite -1}
+		scale_33_reload {Type I LastRead 0 FirstWrite -1}
+		scale_37_reload {Type I LastRead 0 FirstWrite -1}
+		scale_41_reload {Type I LastRead 0 FirstWrite -1}
+		scale_45_reload {Type I LastRead 0 FirstWrite -1}
+		scale_49_reload {Type I LastRead 0 FirstWrite -1}
+		scale_53_reload {Type I LastRead 0 FirstWrite -1}
+		scale_57_reload {Type I LastRead 0 FirstWrite -1}
 		scale_61_reload {Type I LastRead 0 FirstWrite -1}
+		scale_2_reload {Type I LastRead 0 FirstWrite -1}
+		scale_6_reload {Type I LastRead 0 FirstWrite -1}
+		scale_10_reload {Type I LastRead 0 FirstWrite -1}
+		scale_14_reload {Type I LastRead 0 FirstWrite -1}
+		scale_18_reload {Type I LastRead 0 FirstWrite -1}
+		scale_22_reload {Type I LastRead 0 FirstWrite -1}
+		scale_26_reload {Type I LastRead 0 FirstWrite -1}
+		scale_30_reload {Type I LastRead 0 FirstWrite -1}
+		scale_34_reload {Type I LastRead 0 FirstWrite -1}
+		scale_38_reload {Type I LastRead 0 FirstWrite -1}
+		scale_42_reload {Type I LastRead 0 FirstWrite -1}
+		scale_46_reload {Type I LastRead 0 FirstWrite -1}
+		scale_50_reload {Type I LastRead 0 FirstWrite -1}
+		scale_54_reload {Type I LastRead 0 FirstWrite -1}
+		scale_58_reload {Type I LastRead 0 FirstWrite -1}
 		scale_62_reload {Type I LastRead 0 FirstWrite -1}
+		scale_3_reload {Type I LastRead 0 FirstWrite -1}
+		scale_7_reload {Type I LastRead 0 FirstWrite -1}
+		scale_11_reload {Type I LastRead 0 FirstWrite -1}
+		scale_15_reload {Type I LastRead 0 FirstWrite -1}
+		scale_19_reload {Type I LastRead 0 FirstWrite -1}
+		scale_23_reload {Type I LastRead 0 FirstWrite -1}
+		scale_27_reload {Type I LastRead 0 FirstWrite -1}
+		scale_31_reload {Type I LastRead 0 FirstWrite -1}
+		scale_35_reload {Type I LastRead 0 FirstWrite -1}
+		scale_39_reload {Type I LastRead 0 FirstWrite -1}
+		scale_43_reload {Type I LastRead 0 FirstWrite -1}
+		scale_47_reload {Type I LastRead 0 FirstWrite -1}
+		scale_51_reload {Type I LastRead 0 FirstWrite -1}
+		scale_55_reload {Type I LastRead 0 FirstWrite -1}
+		scale_59_reload {Type I LastRead 0 FirstWrite -1}
 		scale_63_reload {Type I LastRead 0 FirstWrite -1}
-		tmp {Type I LastRead 0 FirstWrite -1}}}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_3 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_2 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_1 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "78669", "Max" : "78669"}
-	, {"Name" : "Interval", "Min" : "78670", "Max" : "78670"}
+	{"Name" : "Latency", "Min" : "41805", "Max" : "41805"}
+	, {"Name" : "Interval", "Min" : "41806", "Max" : "41806"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	A { ap_memory {  { A_address0 mem_address 1 14 }  { A_ce0 mem_ce 1 1 }  { A_q0 mem_dout 0 24 } } }
-	C { ap_memory {  { C_address0 mem_address 1 14 }  { C_ce0 mem_ce 1 1 }  { C_we0 mem_we 1 1 }  { C_d0 mem_din 1 24 } } }
+	A_0 { ap_memory {  { A_0_address0 mem_address 1 12 }  { A_0_ce0 mem_ce 1 1 }  { A_0_q0 mem_dout 0 24 } } }
+	A_1 { ap_memory {  { A_1_address0 mem_address 1 12 }  { A_1_ce0 mem_ce 1 1 }  { A_1_q0 mem_dout 0 24 } } }
+	A_2 { ap_memory {  { A_2_address0 mem_address 1 12 }  { A_2_ce0 mem_ce 1 1 }  { A_2_q0 mem_dout 0 24 } } }
+	A_3 { ap_memory {  { A_3_address0 mem_address 1 12 }  { A_3_ce0 mem_ce 1 1 }  { A_3_q0 mem_dout 0 24 } } }
+	C_0 { ap_memory {  { C_0_address0 mem_address 1 12 }  { C_0_ce0 mem_ce 1 1 }  { C_0_we0 mem_we 1 1 }  { C_0_d0 mem_din 1 24 } } }
+	C_1 { ap_memory {  { C_1_address0 mem_address 1 12 }  { C_1_ce0 mem_ce 1 1 }  { C_1_we0 mem_we 1 1 }  { C_1_d0 mem_din 1 24 } } }
+	C_2 { ap_memory {  { C_2_address0 mem_address 1 12 }  { C_2_ce0 mem_ce 1 1 }  { C_2_we0 mem_we 1 1 }  { C_2_d0 mem_din 1 24 } } }
+	C_3 { ap_memory {  { C_3_address0 mem_address 1 12 }  { C_3_ce0 mem_ce 1 1 }  { C_3_we0 mem_we 1 1 }  { C_3_d0 mem_din 1 24 } } }
 }
 
 set maxi_interface_dict [dict create]

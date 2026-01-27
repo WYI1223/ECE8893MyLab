@@ -1,86 +1,29 @@
 set SynModuleInfo {
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_56_2 MODELNAME top_kernel_Pipeline_VITIS_LOOP_56_2 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_56_2
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_43_3 MODELNAME top_kernel_Pipeline_VITIS_LOOP_43_3 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_43_3
     SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_17_3_24_1_1 RTLNAME top_kernel_sparsemux_17_3_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME top_kernel_flow_control_loop_pipe_sequential_init RTLNAME top_kernel_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME top_kernel_flow_control_loop_pipe_sequential_init_U}
     }
   }
-  {SRCNAME top_kernel_Outline_VITIS_LOOP_54_1 MODELNAME top_kernel_Outline_VITIS_LOOP_54_1 RTLNAME top_kernel_top_kernel_Outline_VITIS_LOOP_54_1}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_5 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_5 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_5
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_54_4 MODELNAME top_kernel_Pipeline_VITIS_LOOP_54_4 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_4
     SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_513_8_24_1_1 RTLNAME top_kernel_sparsemux_513_8_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_kernel_sparsemux_17_6_24_1_1 RTLNAME top_kernel_sparsemux_17_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME top_kernel_sdiv_40ns_24s_40_44_1 RTLNAME top_kernel_sdiv_40ns_24s_40_44_1 BINDTYPE op TYPE sdiv IMPL auto LATENCY 43 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_51 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_51 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_51}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_52 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_52 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_52}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_53 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_53 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_53}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_54 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_54 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_54}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_55 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_55 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_55}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_56 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_56 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_56}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_57 MODELNAME top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_57 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_69_4_VITIS_LOOP_71_57}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_83_6 MODELNAME top_kernel_Pipeline_VITIS_LOOP_83_6 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_83_6}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_17_6_24_1_1 RTLNAME top_kernel_sparsemux_17_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_98 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_98 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_98
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_115_6_24_1_1 RTLNAME top_kernel_sparsemux_115_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_99 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_99 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_99
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_59_6_24_1_1 RTLNAME top_kernel_sparsemux_59_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_910 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_910 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_910
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_115_6_24_1_1_x RTLNAME top_kernel_sparsemux_115_6_24_1_1_x BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_911 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_911 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_911
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_31_6_24_1_1 RTLNAME top_kernel_sparsemux_31_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_912 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_912 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_912
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_115_6_24_1_1_x0 RTLNAME top_kernel_sparsemux_115_6_24_1_1_x0 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_913 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_913 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_913
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_59_6_24_1_1_x RTLNAME top_kernel_sparsemux_59_6_24_1_1_x BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_914 MODELNAME top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_914 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_914
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_115_6_24_1_1_x1 RTLNAME top_kernel_sparsemux_115_6_24_1_1_x1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_99_10 MODELNAME top_kernel_Pipeline_VITIS_LOOP_99_10 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_99_10
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_67_5 MODELNAME top_kernel_Pipeline_VITIS_LOOP_67_5 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_67_5
     SUBMODULES {
       {MODELNAME top_kernel_mul_40s_42ns_81_1_1 RTLNAME top_kernel_mul_40s_42ns_81_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_sparsemux_129_6_24_1_1 RTLNAME top_kernel_sparsemux_129_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
   }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_13 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_13 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_13
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_73_6_VITIS_LOOP_74_7 MODELNAME top_kernel_Pipeline_VITIS_LOOP_73_6_VITIS_LOOP_74_7 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_73_6_VITIS_LOOP_74_7
     SUBMODULES {
       {MODELNAME top_kernel_mul_24s_24s_48_1_1 RTLNAME top_kernel_mul_24s_24s_48_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1315 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1315 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1315}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1316 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1316 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1316}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1317 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1317 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1317}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1318 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1318 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1318}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1319 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1319 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1319}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1320 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1320 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1320}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1321 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1321 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_12_VITIS_LOOP_110_1321}
   {SRCNAME top_kernel MODELNAME top_kernel RTLNAME top_kernel IS_TOP 1
     SUBMODULES {
-      {MODELNAME top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_T2P_BRAM_1R1W RTLNAME top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_T2P_BRAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1W RTLNAME top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
 }

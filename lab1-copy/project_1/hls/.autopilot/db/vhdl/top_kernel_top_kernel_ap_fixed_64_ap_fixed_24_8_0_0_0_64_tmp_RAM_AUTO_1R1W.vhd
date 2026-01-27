@@ -12,8 +12,8 @@ entity top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_AUTO_1R1
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 24; 
-        AddressWidth    : integer   := 12;
-        AddressRange    : integer   := 4096
+        AddressWidth    : integer   := 11;
+        AddressRange    : integer   := 2048
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

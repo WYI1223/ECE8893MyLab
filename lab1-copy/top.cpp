@@ -1,116 +1,80 @@
 #include "dcl.h"
 
-// ------------------------------------------------------------
-// Bit-exact, throughput-oriented HLS implementation.
-//
-// Hard constraints (to match host's strict "!=" check):
-//  - Keep arithmetic in data_t (no type widening).
-//  - No algebraic rewrites of A/denom (no reciprocal * multiply).
-//  - Preserve reduction orders:
-//      row_sum:    j = 0..N_COLS-1 (per row)
-//      col_sum[j]: i = 0..N_ROWS-1 (per column)
-//
-// Why previous "optimizations" can get slower:
-//  - UNROLL inside a pipelined loop does not guarantee multiple ops per cycle.
-//    The scheduler can serialize expensive ops (e.g., division) to reuse one
-//    operator, increasing area (mux/control) with little/no cycle reduction.
-//
-// Key idea here:
-//  - Create UF true parallel "lanes" by unrolling an outer lane loop.
-//    Each lane processes disjoint columns (cyclic banking), forcing spatial
-//    parallelism (multiple dividers in parallel) while keeping per-row/per-
-//    column accumulation orders intact (bit-exact).
-// ------------------------------------------------------------
-
+// Optimized implementation for HLS (bit-exact vs baseline/golden).
+// Key ideas (all output-preserving):
+//  - Fuse Phase-1 normalization with Phase-2 column-sum accumulation
+//  - Read each A element once per row (use a small row buffer)
+//  - Reorder Phase-2 to row-major access for the final scaling write
+//  - Pipeline inner loops; unroll only elementwise loops (no reduction unroll)
 void top_kernel(data_t A[N_ROWS][N_COLS],
-                data_t C[N_ROWS][N_COLS])
-{
-    // Must divide N_COLS (=64). Raise (8/16/32) to use more DSP and reduce cycles.
-    const int UF = 8;
+                data_t C[N_ROWS][N_COLS]) {
+#pragma HLS INLINE off
 
-    // Intermediate normalized values and per-row denominators
+    // Intermediate buffer for row-normalized values
     static data_t tmp[N_ROWS][N_COLS];
-    static data_t denom_row[N_ROWS];
 
-#pragma HLS ARRAY_PARTITION variable=denom_row complete dim=1
-
-#pragma HLS BIND_STORAGE variable=tmp       type=ram_t2p impl=bram
-
-    // Bank the column dimension so each lane hits a different bank.
-#pragma HLS ARRAY_PARTITION variable=A   cyclic factor=UF dim=2
-#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
-#pragma HLS ARRAY_PARTITION variable=C   cyclic factor=UF dim=2
-
-    // Per-column accumulators/scales (small -> registers)
+    // Column accumulators and final scales
     data_t col_sum[N_COLS];
     data_t scale[N_COLS];
-#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale   complete dim=1
 
-    // ------------------------------------------------------------
-    // Phase 1a: denom_row[i] = (sum_j A[i][j]) + 1
-    // Keep strict reduction order across j (no unroll).
-    // ------------------------------------------------------------
-    for (int i = 0; i < N_ROWS; i++) {
-        data_t row_sum = (data_t)0.0;
-        for (int j = 0; j < N_COLS; j++) {
-#pragma HLS PIPELINE II=1
-            row_sum += A[i][j];
-        }
-        denom_row[i] = row_sum + (data_t)1.0;
-    }
+    // Tunable unroll factor across columns (must divide N_COLS)
+    const int UF = 8;
 
-    // ------------------------------------------------------------
-    // Phase 1b: normalize into tmp
-    // UF parallel lanes, each handles j = lane, lane+UF, ...
-    // ------------------------------------------------------------
-    for (int lane = 0; lane < UF; lane++) {
-#pragma HLS UNROLL
-        for (int i = 0; i < N_ROWS; i++) {
-            data_t denom = denom_row[i];
-            for (int j = lane; j < N_COLS; j += UF) {
-#pragma HLS PIPELINE II=1
-                tmp[i][j] = A[i][j] / denom;
-            }
-        }
-    }
+    // Partition frequently accessed, column-parallel structures.
+    // NOTE: These pragmas do not change numerical behavior.
+#pragma HLS ARRAY_PARTITION variable=col_sum complete
+#pragma HLS ARRAY_PARTITION variable=scale   complete
+#pragma HLS ARRAY_PARTITION variable=tmp     cyclic factor=UF dim=2
 
-    // ------------------------------------------------------------
-    // Phase 2: col_sum[j] = sum_i tmp[i][j]
-    // Each column accumulates i=0..N_ROWS-1 in order (bit-exact).
-    // Lanes update disjoint columns.
-    // ------------------------------------------------------------
+    // Initialize column sums
     for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
         col_sum[j] = (data_t)0.0;
     }
 
-    for (int lane = 0; lane < UF; lane++) {
-#pragma HLS UNROLL
-        for (int i = 0; i < N_ROWS; i++) {
-            for (int j = lane; j < N_COLS; j += UF) {
+    // Phase 1: Row-wise normalization (fused with column-sum accumulation)
+    for (int i = 0; i < N_ROWS; i++) {
+        data_t row_buf[N_COLS];
+#pragma HLS ARRAY_PARTITION variable=row_buf complete
+
+        data_t row_sum = (data_t)0.0;
+
+        // Load row once and compute row sum (keep sequential accumulation order)
+        for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-                col_sum[j] += tmp[i][j];
-            }
+            data_t a = A[i][j];
+            row_buf[j] = a;
+            row_sum += a;
+        }
+
+        // Avoid division by zero, add small bias (same as baseline)
+        data_t denom = row_sum + (data_t)1.0;
+
+        // Normalize + write tmp + accumulate per-column sums
+        for (int j = 0; j < N_COLS; j++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=UF
+            // IMPORTANT for bit-exactness:
+            //   - materialize the rounded/stored tmp value as data_t first
+            //   - then accumulate that data_t into col_sum
+            data_t t = row_buf[j] / denom;
+            tmp[i][j] = t;
+            col_sum[j] += t;
         }
     }
 
-    // scale[j] = col_sum[j] / N_ROWS
+    // Compute per-column scale (average of normalized values)
     for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
         scale[j] = col_sum[j] / (data_t)N_ROWS;
     }
 
-    // ------------------------------------------------------------
-    // Phase 3: apply scale
-    // ------------------------------------------------------------
-    for (int lane = 0; lane < UF; lane++) {
-#pragma HLS UNROLL
-        for (int i = 0; i < N_ROWS; i++) {
-            for (int j = lane; j < N_COLS; j += UF) {
+    // Phase 2: Apply scale to each element (row-major for contiguous access)
+    for (int i = 0; i < N_ROWS; i++) {
+        for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-                C[i][j] = tmp[i][j] * scale[j];
-            }
+#pragma HLS UNROLL factor=UF
+            C[i][j] = tmp[i][j] * scale[j];
         }
     }
 }

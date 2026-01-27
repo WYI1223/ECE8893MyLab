@@ -76,22 +76,8 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.top_kernel.autotvin_A_0.dat"
-         "c.top_kernel.autotvin_A_1.dat"
-         "c.top_kernel.autotvin_A_2.dat"
-         "c.top_kernel.autotvin_A_3.dat"
-         "c.top_kernel.autotvin_A_4.dat"
-         "c.top_kernel.autotvin_A_5.dat"
-         "c.top_kernel.autotvin_A_6.dat"
-         "c.top_kernel.autotvin_A_7.dat"
-         "c.top_kernel.autotvin_C_0.dat"
-         "c.top_kernel.autotvin_C_1.dat"
-         "c.top_kernel.autotvin_C_2.dat"
-         "c.top_kernel.autotvin_C_3.dat"
-         "c.top_kernel.autotvin_C_4.dat"
-         "c.top_kernel.autotvin_C_5.dat"
-         "c.top_kernel.autotvin_C_6.dat"
-         "c.top_kernel.autotvin_C_7.dat"
+         "c.top_kernel.autotvin_A.dat"
+         "c.top_kernel.autotvin_C.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -111,14 +97,7 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.top_kernel.autotvout_C_0.dat"
-         "rtl.top_kernel.autotvout_C_1.dat"
-         "rtl.top_kernel.autotvout_C_2.dat"
-         "rtl.top_kernel.autotvout_C_3.dat"
-         "rtl.top_kernel.autotvout_C_4.dat"
-         "rtl.top_kernel.autotvout_C_5.dat"
-         "rtl.top_kernel.autotvout_C_6.dat"
-         "rtl.top_kernel.autotvout_C_7.dat"
+         "rtl.top_kernel.autotvout_C.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

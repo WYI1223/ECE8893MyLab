@@ -108,7 +108,7 @@ Built simulation snapshot top_kernel
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Mon Jan 26 19:42:34 2026
+  **** Start of session at: Mon Jan 26 21:04:05 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -175,10 +175,10 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 // RTL Simulation : 1 / 1 [100.00%] @ "617815000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 617865 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 10846 ; free virtual = 150849
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29340 ; free virtual = 162757
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 502212 KB (Peak: 554676 KB), Simulation CPU Usage: 10610 ms
-INFO: [Common 17-206] Exiting xsim at Mon Jan 26 19:42:49 2026...
+INFO: xsimkernel Simulation Memory Usage: 502212 KB (Peak: 554676 KB), Simulation CPU Usage: 7870 ms
+INFO: [Common 17-206] Exiting xsim at Mon Jan 26 21:04:15 2026...
 TEST PASSED!!
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

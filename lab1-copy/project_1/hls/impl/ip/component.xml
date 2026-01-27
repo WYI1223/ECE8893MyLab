@@ -168,7 +168,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>631abb2d</spirit:value>
+            <spirit:value>10081cf9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -184,7 +184,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>52b1a5a5</spirit:value>
+            <spirit:value>295b7597</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -200,7 +200,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>311598f5</spirit:value>
+            <spirit:value>20d3e647</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -216,7 +216,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>fcd033a6</spirit:value>
+            <spirit:value>9b7e8b3b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -663,7 +663,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_31_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_33_5.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_39_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -672,6 +680,14 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_46_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_49_5.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_6_VITIS_LOOP_56_7.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -799,7 +815,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_31_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_33_5.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_39_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -810,6 +836,16 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_46_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_49_5.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_6_VITIS_LOOP_56_7.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -910,7 +946,15 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_31_3.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_33_5.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_39_4.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -919,6 +963,14 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_46_3.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_49_5.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_6_VITIS_LOOP_56_7.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1027,7 +1079,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_31_3.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_33_5.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_39_4.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1038,6 +1100,16 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_46_3.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_49_5.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_6_VITIS_LOOP_56_7.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1131,8 +1203,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Top_kernel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114453382</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-01-27T00:43:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114453464</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-01-27T02:04:40Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1141,7 +1213,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.1.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="2e14d23d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="acc50380"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7536ef59"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="dba5ec02"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="db3d5566"/>
     </xilinx:packagingInfo>

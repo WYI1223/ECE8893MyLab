@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'top_kernel'
 ================================================================
 + General Information: 
-    * Date:           Mon Jan 26 19:41:29 2026
+    * Date:           Mon Jan 26 21:03:05 2026
     * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
     * Project:        project_1
     * Solution:       hls (Vivado IP Flow Target)

@@ -59254,80 +59254,66 @@ typedef ap_fixed<24, 8, AP_RND, AP_SAT> data_t;
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp" 2
-# 25 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
-void top_kernel(data_t A[256][64],
-                data_t C[256][64]) {
-#pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF dim=2
-#pragma HLS ARRAY_PARTITION variable=C cyclic factor=UF dim=2
 
+void top_kernel(data_t A[256][64],
+                data_t C[256][64])
+{
+    const int UF = 8;
+
+    data_t row_buf[64];
+#pragma HLS ARRAY_PARTITION variable=row_buf cyclic factor=UF dim=1
 
     static data_t tmp[256][64];
+#pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
 
+    data_t col_sum[64];
+    data_t scale[64];
+#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
+#pragma HLS ARRAY_PARTITION variable=scale complete dim=1
 
-    const int NB = 64 / 8;
-    data_t col_sum_bank[8][NB];
-    data_t scale_bank[8][NB];
-
-
-#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=1
-#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=2
-#pragma HLS ARRAY_PARTITION variable=scale_bank complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale_bank complete dim=2
-
-
-    for (int u = 0; u < 8; u++) {
-        for (int b = 0; b < NB; b++) {
+    for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-            col_sum_bank[u][b] = (data_t)0.0;
-        }
+        col_sum[j] = (data_t)0.0;
     }
-# 62 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
+
     for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
 
-
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-            row_sum += A[i][j];
+            data_t a = A[i][j];
+            row_buf[j] = a;
+            row_sum += a;
         }
 
         data_t denom = row_sum + (data_t)1.0;
 
-
-        for (int b = 0; b < NB; b++) {
+        for (int j = 0; j < 64; j += UF) {
 #pragma HLS PIPELINE II=1
-            for (int u = 0; u < 8; u++) {
+#pragma HLS DEPENDENCE variable=col_sum inter false
+            for (int k = 0; k < UF; k++) {
 #pragma HLS UNROLL
-                const int j = b * 8 + u;
-                data_t t = A[i][j] / denom;
-                tmp[i][j] = t;
-
-                col_sum_bank[u][b] += t;
+                int jj = j + k;
+                data_t t = row_buf[jj] / denom;
+                tmp[i][jj] = t;
+                col_sum[jj] += t;
             }
         }
     }
 
-
-    for (int b = 0; b < NB; b++) {
+    for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-        for (int u = 0; u < 8; u++) {
-#pragma HLS UNROLL
-            scale_bank[u][b] = col_sum_bank[u][b] / (data_t)256;
-        }
+        scale[j] = col_sum[j] / (data_t)256;
     }
 
-
-
-
-
     for (int i = 0; i < 256; i++) {
-        for (int b = 0; b < NB; b++) {
+        for (int j = 0; j < 64; j += UF) {
 #pragma HLS PIPELINE II=1
-            for (int u = 0; u < 8; u++) {
+            for (int k = 0; k < UF; k++) {
 #pragma HLS UNROLL
-                const int j = b * 8 + u;
-                C[i][j] = tmp[i][j] * scale_bank[u][b];
+                int jj = j + k;
+                C[i][jj] = tmp[i][jj] * scale[jj];
             }
         }
     }

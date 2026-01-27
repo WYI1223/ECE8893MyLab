@@ -18,58 +18,51 @@
       ^~~
       VITIS_LOOP_1248_1: 
 /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:4549:7: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6536:2: warning: Added loop label VITIS_LOOP_46_1:   [xilinx-label-all-loops]
- for (int u = 0; u < 8; u++) {
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6524:44: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
+                                           ^
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6532:2: warning: Added loop label VITIS_LOOP_20_1:   [xilinx-label-all-loops]
+ for (int j = 0; j < 64; j++) {
  ^~~
- VITIS_LOOP_46_1: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6536:2: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6537:9: warning: Added loop label VITIS_LOOP_47_2:   [xilinx-label-all-loops]
-        for (int b = 0; b < NB; b++) {
-        ^~~
-        VITIS_LOOP_47_2: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6537:9: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6543:5: warning: Added loop label VITIS_LOOP_62_3:   [xilinx-label-all-loops]
+ VITIS_LOOP_20_1: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6532:2: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6537:5: warning: Added loop label VITIS_LOOP_25_2:   [xilinx-label-all-loops]
     for (int i = 0; i < 256; i++) {
     ^~~
-    VITIS_LOOP_62_3: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6543:5: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6547:9: warning: Added loop label VITIS_LOOP_66_4:   [xilinx-label-all-loops]
+    VITIS_LOOP_25_2: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6537:5: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6540:9: warning: Added loop label VITIS_LOOP_28_3:   [xilinx-label-all-loops]
         for (int j = 0; j < 64; j++) {
         ^~~
-        VITIS_LOOP_66_4: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6547:9: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6555:9: warning: Added loop label VITIS_LOOP_74_5:   [xilinx-label-all-loops]
-        for (int b = 0; b < NB; b++) {
+        VITIS_LOOP_28_3: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6540:9: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6549:9: warning: Added loop label VITIS_LOOP_37_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < 64; j += UF) {
         ^~~
-        VITIS_LOOP_74_5: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6555:9: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6557:2: warning: Added loop label VITIS_LOOP_76_6:   [xilinx-label-all-loops]
- for (int u = 0; u < 8; u++) {
+        VITIS_LOOP_37_4: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6549:9: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6552:2: warning: Added loop label VITIS_LOOP_40_5:   [xilinx-label-all-loops]
+ for (int k = 0; k < UF; k++) {
  ^~~
- VITIS_LOOP_76_6: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6557:2: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6569:5: warning: Added loop label VITIS_LOOP_88_7:   [xilinx-label-all-loops]
-    for (int b = 0; b < NB; b++) {
+ VITIS_LOOP_40_5: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6552:2: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6562:5: warning: Added loop label VITIS_LOOP_50_6:   [xilinx-label-all-loops]
+    for (int j = 0; j < 64; j++) {
     ^~~
-    VITIS_LOOP_88_7: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6569:5: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6571:2: warning: Added loop label VITIS_LOOP_90_8:   [xilinx-label-all-loops]
- for (int u = 0; u < 8; u++) {
- ^~~
- VITIS_LOOP_90_8: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6571:2: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6581:5: warning: Added loop label VITIS_LOOP_100_9:   [xilinx-label-all-loops]
+    VITIS_LOOP_50_6: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6562:5: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6567:5: warning: Added loop label VITIS_LOOP_55_7:   [xilinx-label-all-loops]
     for (int i = 0; i < 256; i++) {
     ^~~
-    VITIS_LOOP_100_9: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6581:5: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6582:9: warning: Added loop label VITIS_LOOP_101_10:   [xilinx-label-all-loops]
-        for (int b = 0; b < NB; b++) {
+    VITIS_LOOP_55_7: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6567:5: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6568:9: warning: Added loop label VITIS_LOOP_56_8:   [xilinx-label-all-loops]
+        for (int j = 0; j < 64; j += UF) {
         ^~~
-        VITIS_LOOP_101_10: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6582:9: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6584:2: warning: Added loop label VITIS_LOOP_103_11:   [xilinx-label-all-loops]
- for (int u = 0; u < 8; u++) {
+        VITIS_LOOP_56_8: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6568:9: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6570:2: warning: Added loop label VITIS_LOOP_58_9:   [xilinx-label-all-loops]
+ for (int k = 0; k < UF; k++) {
  ^~~
- VITIS_LOOP_103_11: 
-/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6584:2: note: FIX-IT applied suggested code changes
+ VITIS_LOOP_58_9: 
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/.autopilot/db/top.pp.0.cpp:6570:2: note: FIX-IT applied suggested code changes

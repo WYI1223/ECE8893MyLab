@@ -6,48 +6,20 @@ Running: /tools/software/xilinx/2025.1.1/Vivado/bin/unwrapped/lnx64.o/xelab xil_
 Multi-threading is on. Using 110 slave threads.
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_0
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_5
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_6.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_6
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A_7.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_A_7
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_0
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_5
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_6.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_6
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C_7.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_C_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/AESL_automem_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_C
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_top_kernel_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_66_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_66_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_74_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_74_5
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_88_7.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_88_7
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_100_9_VITIS_LOOP_101_10.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_100_9_VITIS_LOOP_101_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_28_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_28_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_37_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_37_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_50_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_50_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
@@ -141,6 +113,10 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA
 INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_T2P_BRAM_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_RAM_AUTO_1R1W.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_9_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_T2P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_row_buf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_row_buf_RAM_AUTO_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
@@ -164,38 +140,27 @@ Compiling package xil_defaultlib.top_kernel_subsystem_pkg
 Compiling package xil_defaultlib.file_agent_pkg
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
 Compiling module xil_defaultlib.top_kernel_top_kernel_ap_fixed_6...
-Compiling module xil_defaultlib.top_kernel_sparsemux_17_3_24_1_1...
+Compiling module xil_defaultlib.top_kernel_row_buf_RAM_AUTO_1R1W
 Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_mul_40s_42ns_81_1_1(N...
+Compiling module xil_defaultlib.top_kernel_sparsemux_129_6_24_1_...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
 Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
+Compiling module xil_defaultlib.top_kernel_sparsemux_17_6_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_mul_24s_24s_48_1_1(NU...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel
 Compiling module xil_defaultlib.misc_interface_default
 Compiling module xil_defaultlib.sv_module_top
-Compiling module xil_defaultlib.AESL_automem_A_0
-Compiling module xil_defaultlib.AESL_automem_A_1
-Compiling module xil_defaultlib.AESL_automem_A_2
-Compiling module xil_defaultlib.AESL_automem_A_3
-Compiling module xil_defaultlib.AESL_automem_A_4
-Compiling module xil_defaultlib.AESL_automem_A_5
-Compiling module xil_defaultlib.AESL_automem_A_6
-Compiling module xil_defaultlib.AESL_automem_A_7
-Compiling module xil_defaultlib.AESL_automem_C_0
-Compiling module xil_defaultlib.AESL_automem_C_1
-Compiling module xil_defaultlib.AESL_automem_C_2
-Compiling module xil_defaultlib.AESL_automem_C_3
-Compiling module xil_defaultlib.AESL_automem_C_4
-Compiling module xil_defaultlib.AESL_automem_C_5
-Compiling module xil_defaultlib.AESL_automem_C_6
-Compiling module xil_defaultlib.AESL_automem_C_7
+Compiling module xil_defaultlib.AESL_automem_A
+Compiling module xil_defaultlib.AESL_automem_C
 Compiling module xil_defaultlib.nodf_module_intf_default
 Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=8)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
 Compiling module xil_defaultlib.dataflow_monitor_1
 Compiling module xil_defaultlib.apatb_top_kernel_top
 Compiling module xil_defaultlib.glbl
@@ -205,7 +170,7 @@ Built simulation snapshot top_kernel
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Tue Jan 27 00:50:51 2026
+  **** Start of session at: Tue Jan 27 16:16:36 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -269,11 +234,11 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "330535000"
+// RTL Simulation : 1 / 1 [100.00%] @ "392535000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 330585 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18527 ; free virtual = 166332
+$finish called at time : 392585 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 35442 ; free virtual = 174422
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 504124 KB (Peak: 556588 KB), Simulation CPU Usage: 8190 ms
-INFO: [Common 17-206] Exiting xsim at Tue Jan 27 00:51:02 2026...
+INFO: xsimkernel Simulation Memory Usage: 503044 KB (Peak: 555508 KB), Simulation CPU Usage: 8790 ms
+INFO: [Common 17-206] Exiting xsim at Tue Jan 27 16:16:47 2026...
 TEST PASSED!!

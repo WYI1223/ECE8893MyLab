@@ -1,109 +1,64 @@
 #include "dcl.h"
 
-// -----------------------------------------------------------------------------
-// Optimized, bit-exact HLS kernel.
-//
-// host.cpp compares ap_fixed outputs with strict "!=" (no tolerance), so:
-//   - Do NOT change the reduction order for row_sum or per-column col_sum.
-//
-// This version focuses on *meeting timing* while still extracting parallelism:
-//   - Fuse: while producing tmp[i][j], accumulate col_sum[j]
-//   - Bank column dimension with cyclic partitioning (reduces port conflicts)
-//   - Avoid large combinational add-chains / huge muxes that blow up Fmax
-//
-// Tune UF for your board/implementation. UF must divide N_COLS (=64).
-// Empirically UF=8 often gives better (cycles * period) than UF=16.
-// -----------------------------------------------------------------------------
-#ifndef UF
-#define UF 8
-#endif
-
-#if (N_COLS % UF) != 0
-#error "UF must evenly divide N_COLS"
-#endif
-
 void top_kernel(data_t A[N_ROWS][N_COLS],
-                data_t C[N_ROWS][N_COLS]) {
-#pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF dim=2
-#pragma HLS ARRAY_PARTITION variable=C cyclic factor=UF dim=2
+                data_t C[N_ROWS][N_COLS])
+{
+    const int UF = 8;
 
-    // Row-normalized buffer (needed because scale depends on all rows).
+    data_t row_buf[N_COLS];
+#pragma HLS ARRAY_PARTITION variable=row_buf cyclic factor=UF dim=1
+
     static data_t tmp[N_ROWS][N_COLS];
+#pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
 
-    // Banked column sums and scales: col_sum_bank[u][b] corresponds to column j = b*UF + u.
-    const int NB = N_COLS / UF;
-    data_t col_sum_bank[UF][NB];
-    data_t scale_bank[UF][NB];
+    data_t col_sum[N_COLS];
+    data_t scale[N_COLS];
+#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
+#pragma HLS ARRAY_PARTITION variable=scale   complete dim=1
 
-    // These are very small (UF*NB == 64). Keep them in registers.
-#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=1
-#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=2
-#pragma HLS ARRAY_PARTITION variable=scale_bank   complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale_bank   complete dim=2
-
-    // Init col_sum
-    for (int u = 0; u < UF; u++) {
-        for (int b = 0; b < NB; b++) {
+    for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-            col_sum_bank[u][b] = (data_t)0.0;
-        }
+        col_sum[j] = (data_t)0.0;
     }
 
-    // -------------------------------------------------------------------------
-    // Phase 1 (fused):
-    //   - compute row_sum (serial order preserved)
-    //   - normalize and write tmp
-    //   - accumulate per-column sums during normalization
-    //
-    // NOTE: row_sum loop is pipelined but NOT unrolled to preserve order and
-    // avoid a long combinational adder chain that hurts Fmax.
-    // -------------------------------------------------------------------------
     for (int i = 0; i < N_ROWS; i++) {
         data_t row_sum = (data_t)0.0;
 
-        // Row sum (order-preserving)
         for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-            row_sum += A[i][j];
+            data_t a = A[i][j];
+            row_buf[j] = a;
+            row_sum += a;
         }
 
         data_t denom = row_sum + (data_t)1.0;
 
-        // Normalize + accumulate column sums (UF columns per block)
-        for (int b = 0; b < NB; b++) {
+        for (int j = 0; j < N_COLS; j += UF) {
 #pragma HLS PIPELINE II=1
-            for (int u = 0; u < UF; u++) {
+#pragma HLS DEPENDENCE variable=col_sum inter false
+            for (int k = 0; k < UF; k++) {
 #pragma HLS UNROLL
-                const int j = b * UF + u;
-                data_t t = A[i][j] / denom;
-                tmp[i][j] = t;
-                // Accumulation order for each column is i=0..N_ROWS-1 (same as golden)
-                col_sum_bank[u][b] += t;
+                int jj = j + k;
+                data_t t = row_buf[jj] / denom;
+                tmp[i][jj] = t;
+                col_sum[jj] += t;
             }
         }
     }
 
-    // Compute scale = average of each column
-    for (int b = 0; b < NB; b++) {
+    for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-        for (int u = 0; u < UF; u++) {
-#pragma HLS UNROLL
-            scale_bank[u][b] = col_sum_bank[u][b] / (data_t)N_ROWS;
-        }
+        scale[j] = col_sum[j] / (data_t)N_ROWS;
     }
 
-    // -------------------------------------------------------------------------
-    // Phase 2: Apply scale
-    // Row-major order + UF-wide column banking => high-throughput writes.
-    // -------------------------------------------------------------------------
     for (int i = 0; i < N_ROWS; i++) {
-        for (int b = 0; b < NB; b++) {
+        for (int j = 0; j < N_COLS; j += UF) {
 #pragma HLS PIPELINE II=1
-            for (int u = 0; u < UF; u++) {
+            for (int k = 0; k < UF; k++) {
 #pragma HLS UNROLL
-                const int j = b * UF + u;
-                C[i][j] = tmp[i][j] * scale_bank[u][b];
+                int jj = j + k;
+                C[i][jj] = tmp[i][jj] * scale[jj];
             }
         }
     }

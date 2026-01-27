@@ -3,8 +3,8 @@
 # SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
 # IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
 # SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-# Start of session at: Mon Jan 26 22:13:12 2026
-# Process ID         : 300969
+# Start of session at: Mon Jan 26 23:13:06 2026
+# Process ID         : 1325544
 # Current directory  : /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog
 # Command line       : xsim -mode tcl -source {xsim.dir/top_kernel/xsim_script.tcl}
 # Log file           : /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/xsim.log
@@ -19,7 +19,7 @@
 # Host memory        : 201166 MB
 # Swap memory        : 68719 MB
 # Total Virtual      : 269885 MB
-# Available Virtual  : 174350 MB
+# Available Virtual  : 172607 MB
 #-----------------------------------------------------------
 source xsim.dir/top_kernel/xsim_script.tcl
 # xsim {top_kernel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=top_kernel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {top_kernel.tcl}
@@ -81,10 +81,10 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "300395000"
+// RTL Simulation : 1 / 1 [100.00%] @ "511855000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 300445 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26766 ; free virtual = 166005
+$finish called at time : 511905 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23668 ; free virtual = 164806
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 509704 KB (Peak: 562300 KB), Simulation CPU Usage: 14080 ms
-INFO: [Common 17-206] Exiting xsim at Mon Jan 26 22:13:30 2026...
+INFO: xsimkernel Simulation Memory Usage: 521868 KB (Peak: 574596 KB), Simulation CPU Usage: 24490 ms
+INFO: [Common 17-206] Exiting xsim at Mon Jan 26 23:13:33 2026...

@@ -1,0 +1,663 @@
+
+
+================================================================
+== Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_930'
+================================================================
+* Date:           Mon Jan 26 23:11:30 2026
+
+* Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+* Project:        project_1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.583 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+    |     1028|     1028|  10.280 us|  10.280 us|  1025|  1025|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_90_8_VITIS_LOOP_91_9  |     1026|     1026|         4|          1|          1|  1024|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    484|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|    222|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|   1346|    -|
+|Register         |        -|    -|     278|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     278|   2084|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      2|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------+--------------------------+---------+----+---+-----+-----+
+    |            Instance            |          Module          | BRAM_18K| DSP| FF| LUT | URAM|
+    +--------------------------------+--------------------------+---------+----+---+-----+-----+
+    |sparsemux_99_6_24_1_1_x5_U5044  |sparsemux_99_6_24_1_1_x5  |        0|   0|  0|  222|    0|
+    +--------------------------------+--------------------------+---------+----+---+-----+-----+
+    |Total                           |                          |        0|   0|  0|  222|    0|
+    +--------------------------------+--------------------------+---------+----+---+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------+----------+----+---+----+------------+------------+
+    |         Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------+----------+----+---+----+------------+------------+
+    |add_ln90_1_fu_1224_p2         |         +|   0|  0|  16|           9|           1|
+    |add_ln90_fu_1208_p2           |         +|   0|  0|  18|          11|           1|
+    |add_ln91_fu_1285_p2           |         +|   0|  0|  14|           7|           5|
+    |add_ln93_1_fu_1523_p2         |         +|   0|  0|  32|          25|          25|
+    |col_sum_fu_1517_p2            |         +|   0|  0|  31|          24|          24|
+    |and_ln93_1_fu_1668_p2         |       and|   0|  0|   2|           1|           1|
+    |and_ln93_fu_1656_p2           |       and|   0|  0|   2|           1|           1|
+    |ap_condition_1984             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_1991             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_1998             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2005             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2012             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2019             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2026             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2033             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2040             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2047             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2054             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2061             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2068             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2075             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2082             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2089             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2096             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2103             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2110             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2117             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2124             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2131             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2138             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2145             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2152             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2159             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2166             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2173             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2180             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2187             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2194             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2201             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2208             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2215             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2222             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2229             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2236             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2243             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2250             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2257             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2264             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2271             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2278             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2285             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2292             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2299             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2306             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2313             |       and|   0|  0|   2|           1|           1|
+    |ap_condition_2319             |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1000_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1021_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1025_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1046_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1050_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1071_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1075_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1096_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1100_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1121_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1125_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1146_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1150_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1171_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1175_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1196_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1200_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1221_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1225_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1246_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1250_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1271_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1275_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1296_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1300_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1321_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1325_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1346_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1350_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1371_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1375_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1396_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1400_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1421_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1425_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1446_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1450_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1471_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1475_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1496_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1500_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1521_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1525_state4  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred342_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred348_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred371_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred375_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred396_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred400_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred421_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred425_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred446_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred450_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred471_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred475_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred496_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred500_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred521_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred525_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred546_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred550_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred571_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred575_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred596_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred600_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred621_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred625_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred646_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred650_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred671_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred675_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred696_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred700_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred721_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred725_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred746_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred750_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred771_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred775_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred796_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred800_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred821_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred825_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred846_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred850_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred871_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred875_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred896_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred900_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred921_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred925_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred946_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred950_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred971_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred975_state4   |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_pred996_state4   |       and|   0|  0|   2|           1|           1|
+    |icmp_ln90_fu_1202_p2          |      icmp|   0|  0|  19|          11|          12|
+    |icmp_ln93_fu_1529_p2          |      icmp|   0|  0|  32|          25|           1|
+    |ap_predicate_pred1614_state3  |        or|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1696_state4  |        or|   0|  0|   2|           1|           1|
+    |ap_predicate_pred1730_state4  |        or|   0|  0|   2|           1|           1|
+    |select_ln90_fu_1250_p3        |    select|   0|  0|   8|           1|           9|
+    |select_ln91_fu_1238_p3        |    select|   0|  0|   6|           1|           4|
+    |ap_enable_pp0                 |       xor|   0|  0|   2|           1|           2|
+    |xor_ln93_1_fu_1662_p2         |       xor|   0|  0|   2|           1|           2|
+    |xor_ln93_2_fu_1674_p2         |       xor|   0|  0|   2|           1|           1|
+    |xor_ln93_fu_1650_p2           |       xor|   0|  0|   2|           1|           2|
+    +------------------------------+----------+----+---+----+------------+------------+
+    |Total                         |          |   0|  0| 484|         268|         239|
+    +------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |                   Name                  | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_load                  |   9|          2|    9|         18|
+    |ap_sig_allocacmp_indvar_flatten216_load  |   9|          2|   11|         22|
+    |ap_sig_allocacmp_j_load                  |   9|          2|    7|         14|
+    |col_sum_15_o                             |  26|          5|   24|        120|
+    |col_sum_16_o                             |  26|          5|   24|        120|
+    |col_sum_17_o                             |  26|          5|   24|        120|
+    |col_sum_18_o                             |  26|          5|   24|        120|
+    |col_sum_19_o                             |  26|          5|   24|        120|
+    |col_sum_20_o                             |  26|          5|   24|        120|
+    |col_sum_21_o                             |  26|          5|   24|        120|
+    |col_sum_22_o                             |  26|          5|   24|        120|
+    |col_sum_23_o                             |  26|          5|   24|        120|
+    |col_sum_24_o                             |  26|          5|   24|        120|
+    |col_sum_25_o                             |  26|          5|   24|        120|
+    |col_sum_26_o                             |  26|          5|   24|        120|
+    |col_sum_27_o                             |  26|          5|   24|        120|
+    |col_sum_28_o                             |  26|          5|   24|        120|
+    |col_sum_29_o                             |  26|          5|   24|        120|
+    |col_sum_30_o                             |  26|          5|   24|        120|
+    |col_sum_31_o                             |  26|          5|   24|        120|
+    |col_sum_32_o                             |  26|          5|   24|        120|
+    |col_sum_33_o                             |  26|          5|   24|        120|
+    |col_sum_34_o                             |  26|          5|   24|        120|
+    |col_sum_35_o                             |  26|          5|   24|        120|
+    |col_sum_36_o                             |  26|          5|   24|        120|
+    |col_sum_37_o                             |  26|          5|   24|        120|
+    |col_sum_38_o                             |  26|          5|   24|        120|
+    |col_sum_39_o                             |  26|          5|   24|        120|
+    |col_sum_40_o                             |  26|          5|   24|        120|
+    |col_sum_41_o                             |  26|          5|   24|        120|
+    |col_sum_42_o                             |  26|          5|   24|        120|
+    |col_sum_43_o                             |  26|          5|   24|        120|
+    |col_sum_44_o                             |  26|          5|   24|        120|
+    |col_sum_45_o                             |  26|          5|   24|        120|
+    |col_sum_46_o                             |  26|          5|   24|        120|
+    |col_sum_47_o                             |  26|          5|   24|        120|
+    |col_sum_48_o                             |  26|          5|   24|        120|
+    |col_sum_49_o                             |  26|          5|   24|        120|
+    |col_sum_50_o                             |  26|          5|   24|        120|
+    |col_sum_51_o                             |  26|          5|   24|        120|
+    |col_sum_52_o                             |  26|          5|   24|        120|
+    |col_sum_53_o                             |  26|          5|   24|        120|
+    |col_sum_54_o                             |  26|          5|   24|        120|
+    |col_sum_55_o                             |  26|          5|   24|        120|
+    |col_sum_56_o                             |  26|          5|   24|        120|
+    |col_sum_57_o                             |  26|          5|   24|        120|
+    |col_sum_58_o                             |  26|          5|   24|        120|
+    |col_sum_59_o                             |  26|          5|   24|        120|
+    |col_sum_60_o                             |  26|          5|   24|        120|
+    |col_sum_61_o                             |  26|          5|   24|        120|
+    |col_sum_62_o                             |  26|          5|   24|        120|
+    |col_sum_63_o                             |  26|          5|   24|        120|
+    |i_fu_280                                 |   9|          2|    9|         18|
+    |indvar_flatten216_fu_284                 |   9|          2|   11|         22|
+    |j_fu_276                                 |   9|          2|    7|         14|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |Total                                    |1346|        261| 1232|       5992|
+    +-----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |and_ln93_1_reg_1878               |   1|   0|    1|          0|
+    |and_ln93_reg_1874                 |   1|   0|    1|          0|
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_predicate_pred1000_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1012_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1021_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1025_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1037_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1046_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1050_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1062_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1071_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1075_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1087_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1096_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1100_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1112_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1121_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1125_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1137_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1146_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1150_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1162_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1171_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1175_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1187_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1196_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1200_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1212_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1221_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1225_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1237_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1246_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1250_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1262_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1271_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1275_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1287_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1296_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1300_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1312_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1321_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1325_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1337_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1346_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1350_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1362_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1371_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1375_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1387_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1396_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1400_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1412_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1421_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1425_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1437_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1446_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1450_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1462_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1471_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1475_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1487_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1496_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1500_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1512_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1521_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1525_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1614_state3      |   1|   0|    1|          0|
+    |ap_predicate_pred1696_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred1730_state4      |   1|   0|    1|          0|
+    |ap_predicate_pred325_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred342_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred348_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred362_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred371_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred375_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred387_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred396_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred400_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred412_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred421_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred425_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred437_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred446_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred450_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred462_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred471_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred475_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred487_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred496_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred500_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred512_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred521_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred525_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred537_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred546_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred550_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred562_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred571_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred575_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred587_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred596_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred600_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred612_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred621_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred625_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred637_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred646_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred650_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred662_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred671_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred675_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred687_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred696_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred700_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred712_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred721_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred725_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred737_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred746_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred750_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred762_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred771_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred775_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred787_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred796_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred800_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred812_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred821_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred825_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred837_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred846_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred850_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred862_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred871_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred875_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred887_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred896_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred900_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred912_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred921_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred925_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred937_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred946_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred950_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred962_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred971_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred975_state4       |   1|   0|    1|          0|
+    |ap_predicate_pred987_state3       |   1|   0|    1|          0|
+    |ap_predicate_pred996_state4       |   1|   0|    1|          0|
+    |col_sum_reg_1817                  |  24|   0|   24|          0|
+    |i_fu_280                          |   9|   0|    9|          0|
+    |indvar_flatten216_fu_284          |  11|   0|   11|          0|
+    |j_fu_276                          |   7|   0|    7|          0|
+    |select_ln91_reg_1804              |   6|   0|    6|          0|
+    |xor_ln93_2_reg_1882               |   1|   0|    1|          0|
+    |select_ln91_reg_1804              |  64|  32|    6|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 278|  32|  220|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------------------------------------------------------------------------------------+-----+-----+------------+--------------------------------------------------------------------------------------------------------+--------------+
+|                                                    RTL Ports                                                    | Dir | Bits|  Protocol  |                                              Source Object                                             |    C Type    |
++-----------------------------------------------------------------------------------------------------------------+-----+-----+------------+--------------------------------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                                           |   in|    1|  ap_ctrl_hs|                                                   top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_930|  return value|
+|ap_rst                                                                                                           |   in|    1|  ap_ctrl_hs|                                                   top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_930|  return value|
+|ap_start                                                                                                         |   in|    1|  ap_ctrl_hs|                                                   top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_930|  return value|
+|ap_done                                                                                                          |  out|    1|  ap_ctrl_hs|                                                   top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_930|  return value|
+|ap_idle                                                                                                          |  out|    1|  ap_ctrl_hs|                                                   top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_930|  return value|
+|ap_ready                                                                                                         |  out|    1|  ap_ctrl_hs|                                                   top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_930|  return value|
+|col_sum_15_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_15|       pointer|
+|col_sum_15_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_15|       pointer|
+|col_sum_15_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_15|       pointer|
+|col_sum_16_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_16|       pointer|
+|col_sum_16_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_16|       pointer|
+|col_sum_16_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_16|       pointer|
+|col_sum_17_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_17|       pointer|
+|col_sum_17_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_17|       pointer|
+|col_sum_17_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_17|       pointer|
+|col_sum_18_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_18|       pointer|
+|col_sum_18_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_18|       pointer|
+|col_sum_18_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_18|       pointer|
+|col_sum_19_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_19|       pointer|
+|col_sum_19_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_19|       pointer|
+|col_sum_19_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_19|       pointer|
+|col_sum_20_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_20|       pointer|
+|col_sum_20_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_20|       pointer|
+|col_sum_20_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_20|       pointer|
+|col_sum_21_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_21|       pointer|
+|col_sum_21_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_21|       pointer|
+|col_sum_21_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_21|       pointer|
+|col_sum_22_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_22|       pointer|
+|col_sum_22_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_22|       pointer|
+|col_sum_22_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_22|       pointer|
+|col_sum_23_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_23|       pointer|
+|col_sum_23_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_23|       pointer|
+|col_sum_23_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_23|       pointer|
+|col_sum_24_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_24|       pointer|
+|col_sum_24_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_24|       pointer|
+|col_sum_24_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_24|       pointer|
+|col_sum_25_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_25|       pointer|
+|col_sum_25_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_25|       pointer|
+|col_sum_25_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_25|       pointer|
+|col_sum_26_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_26|       pointer|
+|col_sum_26_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_26|       pointer|
+|col_sum_26_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_26|       pointer|
+|col_sum_27_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_27|       pointer|
+|col_sum_27_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_27|       pointer|
+|col_sum_27_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_27|       pointer|
+|col_sum_28_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_28|       pointer|
+|col_sum_28_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_28|       pointer|
+|col_sum_28_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_28|       pointer|
+|col_sum_29_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_29|       pointer|
+|col_sum_29_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_29|       pointer|
+|col_sum_29_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_29|       pointer|
+|col_sum_30_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_30|       pointer|
+|col_sum_30_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_30|       pointer|
+|col_sum_30_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_30|       pointer|
+|col_sum_31_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_31|       pointer|
+|col_sum_31_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_31|       pointer|
+|col_sum_31_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_31|       pointer|
+|col_sum_32_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_32|       pointer|
+|col_sum_32_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_32|       pointer|
+|col_sum_32_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_32|       pointer|
+|col_sum_33_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_33|       pointer|
+|col_sum_33_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_33|       pointer|
+|col_sum_33_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_33|       pointer|
+|col_sum_34_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_34|       pointer|
+|col_sum_34_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_34|       pointer|
+|col_sum_34_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_34|       pointer|
+|col_sum_35_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_35|       pointer|
+|col_sum_35_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_35|       pointer|
+|col_sum_35_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_35|       pointer|
+|col_sum_36_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_36|       pointer|
+|col_sum_36_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_36|       pointer|
+|col_sum_36_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_36|       pointer|
+|col_sum_37_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_37|       pointer|
+|col_sum_37_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_37|       pointer|
+|col_sum_37_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_37|       pointer|
+|col_sum_38_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_38|       pointer|
+|col_sum_38_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_38|       pointer|
+|col_sum_38_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_38|       pointer|
+|col_sum_39_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_39|       pointer|
+|col_sum_39_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_39|       pointer|
+|col_sum_39_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_39|       pointer|
+|col_sum_40_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_40|       pointer|
+|col_sum_40_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_40|       pointer|
+|col_sum_40_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_40|       pointer|
+|col_sum_41_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_41|       pointer|
+|col_sum_41_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_41|       pointer|
+|col_sum_41_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_41|       pointer|
+|col_sum_42_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_42|       pointer|
+|col_sum_42_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_42|       pointer|
+|col_sum_42_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_42|       pointer|
+|col_sum_43_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_43|       pointer|
+|col_sum_43_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_43|       pointer|
+|col_sum_43_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_43|       pointer|
+|col_sum_44_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_44|       pointer|
+|col_sum_44_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_44|       pointer|
+|col_sum_44_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_44|       pointer|
+|col_sum_45_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_45|       pointer|
+|col_sum_45_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_45|       pointer|
+|col_sum_45_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_45|       pointer|
+|col_sum_46_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_46|       pointer|
+|col_sum_46_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_46|       pointer|
+|col_sum_46_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_46|       pointer|
+|col_sum_47_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_47|       pointer|
+|col_sum_47_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_47|       pointer|
+|col_sum_47_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_47|       pointer|
+|col_sum_48_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_48|       pointer|
+|col_sum_48_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_48|       pointer|
+|col_sum_48_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_48|       pointer|
+|col_sum_49_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_49|       pointer|
+|col_sum_49_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_49|       pointer|
+|col_sum_49_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_49|       pointer|
+|col_sum_50_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_50|       pointer|
+|col_sum_50_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_50|       pointer|
+|col_sum_50_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_50|       pointer|
+|col_sum_51_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_51|       pointer|
+|col_sum_51_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_51|       pointer|
+|col_sum_51_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_51|       pointer|
+|col_sum_52_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_52|       pointer|
+|col_sum_52_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_52|       pointer|
+|col_sum_52_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_52|       pointer|
+|col_sum_53_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_53|       pointer|
+|col_sum_53_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_53|       pointer|
+|col_sum_53_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_53|       pointer|
+|col_sum_54_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_54|       pointer|
+|col_sum_54_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_54|       pointer|
+|col_sum_54_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_54|       pointer|
+|col_sum_55_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_55|       pointer|
+|col_sum_55_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_55|       pointer|
+|col_sum_55_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_55|       pointer|
+|col_sum_56_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_56|       pointer|
+|col_sum_56_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_56|       pointer|
+|col_sum_56_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_56|       pointer|
+|col_sum_57_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_57|       pointer|
+|col_sum_57_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_57|       pointer|
+|col_sum_57_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_57|       pointer|
+|col_sum_58_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_58|       pointer|
+|col_sum_58_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_58|       pointer|
+|col_sum_58_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_58|       pointer|
+|col_sum_59_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_59|       pointer|
+|col_sum_59_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_59|       pointer|
+|col_sum_59_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_59|       pointer|
+|col_sum_60_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_60|       pointer|
+|col_sum_60_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_60|       pointer|
+|col_sum_60_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_60|       pointer|
+|col_sum_61_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_61|       pointer|
+|col_sum_61_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_61|       pointer|
+|col_sum_61_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_61|       pointer|
+|col_sum_62_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_62|       pointer|
+|col_sum_62_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_62|       pointer|
+|col_sum_62_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_62|       pointer|
+|col_sum_63_i                                                                                                     |   in|   24|     ap_ovld|                                                                                              col_sum_63|       pointer|
+|col_sum_63_o                                                                                                     |  out|   24|     ap_ovld|                                                                                              col_sum_63|       pointer|
+|col_sum_63_o_ap_vld                                                                                              |  out|    1|     ap_ovld|                                                                                              col_sum_63|       pointer|
+|top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4_address0  |  out|   10|   ap_memory|  top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4|         array|
+|top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4_ce0       |  out|    1|   ap_memory|  top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4|         array|
+|top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4_q0        |   in|   24|   ap_memory|  top_kernel_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_ap_fixed_24_8_ap_q_mode_0_ap_o_mode_0_0_64_tmp_4|         array|
++-----------------------------------------------------------------------------------------------------------------+-----+-----+------------+--------------------------------------------------------------------------------------------------------+--------------+
+

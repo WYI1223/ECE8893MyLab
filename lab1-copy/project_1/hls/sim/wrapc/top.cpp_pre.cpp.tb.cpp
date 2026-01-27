@@ -59261,19 +59261,24 @@ typedef ap_fixed<24, 8, AP_RND, AP_SAT> data_t;
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp" 2
-# 15 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
+# 25 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
 void top_kernel(data_t A[256][64],
                 data_t C[256][64])
 {
 
-    const int UF = 32;
+    const int UF = 16;
 
 
     static data_t tmp[256][64];
+    static data_t denom_row[256];
+
+#pragma HLS ARRAY_PARTITION variable=denom_row complete dim=1
+
+#pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
 
 
-#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
 #pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF dim=2
+#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
 #pragma HLS ARRAY_PARTITION variable=C cyclic factor=UF dim=2
 
 
@@ -59285,66 +59290,53 @@ void top_kernel(data_t A[256][64],
 
 
 
-    for (int j = 0; j < 64; j++)
-    {
+
+    for (int i = 0; i < 256; i++) {
+        data_t row_sum = (data_t)0.0;
+        for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+            row_sum += A[i][j];
+        }
+        denom_row[i] = row_sum + (data_t)1.0;
+    }
+
+
+
+
+
+    for (int lane = 0; lane < UF; lane++) {
+#pragma HLS UNROLL
+        for (int i = 0; i < 256; i++) {
+            data_t denom = denom_row[i];
+            for (int j = lane; j < 64; j += UF) {
+#pragma HLS PIPELINE II=1
+                tmp[i][j] = A[i][j] / denom;
+            }
+        }
+    }
+
+
+
+
+
+
+    for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
         col_sum[j] = (data_t)0.0;
     }
 
-
-
-
-
-
-    for (int i = 0; i < 256; i++)
-    {
-        data_t row_sum = (data_t)0.0;
-
-
-        for (int j = 0; j < 64; j++)
-        {
-#pragma HLS PIPELINE II=1
-            row_sum += A[i][j];
-        }
-
-
-        data_t denom = row_sum + (data_t)1.0;
-
-
-        for (int jb = 0; jb < 64; jb += UF)
-        {
-#pragma HLS PIPELINE II=1
-            for (int k = 0; k < UF; k++)
-            {
+    for (int lane = 0; lane < UF; lane++) {
 #pragma HLS UNROLL
-                tmp[i][jb + k] = A[i][jb + k] / denom;
+        for (int i = 0; i < 256; i++) {
+            for (int j = lane; j < 64; j += UF) {
+#pragma HLS PIPELINE II=1
+                col_sum[j] += tmp[i][j];
             }
         }
     }
 
 
-
-
-
-
-    for (int i = 0; i < 256; i++)
-    {
-        for (int jb = 0; jb < 64; jb += UF)
-        {
-#pragma HLS PIPELINE II=1
-            for (int k = 0; k < UF; k++)
-            {
-#pragma HLS UNROLL
-                col_sum[jb + k] += tmp[i][jb + k];
-            }
-        }
-    }
-
-
-
-
-    for (int j = 0; j < 64; j++)
-    {
+    for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
         scale[j] = col_sum[j] / (data_t)256;
     }
@@ -59352,15 +59344,12 @@ void top_kernel(data_t A[256][64],
 
 
 
-    for (int i = 0; i < 256; i++)
-    {
-        for (int jb = 0; jb < 64; jb += UF)
-        {
-#pragma HLS PIPELINE II=1
-            for (int k = 0; k < UF; k++)
-            {
+    for (int lane = 0; lane < UF; lane++) {
 #pragma HLS UNROLL
-                C[i][jb + k] = tmp[i][jb + k] * scale[jb + k];
+        for (int i = 0; i < 256; i++) {
+            for (int j = lane; j < 64; j += UF) {
+#pragma HLS PIPELINE II=1
+                C[i][j] = tmp[i][j] * scale[j];
             }
         }
     }
@@ -59390,5 +59379,5 @@ apatb_top_kernel_ir(A, C);
 return ;
 }
 #endif
-# 117 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
+# 116 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
 

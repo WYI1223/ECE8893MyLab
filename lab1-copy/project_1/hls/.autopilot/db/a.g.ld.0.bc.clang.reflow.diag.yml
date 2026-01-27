@@ -1,80 +1,50 @@
 --- !Passed
-Pass:            reflow-infer-unroll
-Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 110, Column: 21 }
-Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
-Args:            
-  - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_110_12
-  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
-...
---- !Passed
-Pass:            reflow-infer-unroll
-Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 85, Column: 19 }
-Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
-Args:            
-  - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_85_8
-  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
-...
---- !Passed
-Pass:            reflow-infer-unroll
-Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 67, Column: 19 }
-Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
-Args:            
-  - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_67_5
-  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
-...
---- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 17, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 27, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_110_12
+  - LoopName:        VITIS_LOOP_107_11
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:110:21'
+  - LoopLoc:         'top.cpp:107:24'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '32'
+  - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 17, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 27, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_85_8
+  - LoopName:        VITIS_LOOP_88_7
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:85:19'
+  - LoopLoc:         'top.cpp:88:22'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '32'
+  - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 17, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 27, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_67_5
+  - LoopName:        VITIS_LOOP_67_3
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:67:19'
+  - LoopLoc:         'top.cpp:67:22'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '32'
+  - Factor:          '16'
 ...
 --- !Missed
 Pass:            inline
@@ -82,7 +52,7 @@ Name:            NeverInline
 Function:        apatb_top_kernel_ir
 Args:            
   - Callee:          'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
-    DebugLoc:        { File: top.cpp, Line: 17, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_top_kernel_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -90,7 +60,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 22, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 32, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Applying '
@@ -102,7 +72,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '32'
+  - Factor:          '16'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
@@ -110,7 +80,25 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 30, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 33, Column: 0 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9denom_row
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 45, Column: 9 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Applying '
@@ -128,7 +116,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 31, Column: 12 }
+DebugLoc:        { File: top.cpp, Line: 46, Column: 12 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Applying '
@@ -146,7 +134,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 17, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 27, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Applying '
@@ -158,7 +146,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '32'
+  - Factor:          '16'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
@@ -166,7 +154,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 17, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 27, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Applying '
@@ -178,250 +166,10 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '32'
+  - Factor:          '16'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_31
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_30
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_29
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_28
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_27
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_26
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_25
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_24
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_23
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_22
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_21
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_20
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_19
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_18
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_17
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            C_16
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
 ...
 --- !Passed
 Pass:            reflow-aggr
@@ -657,246 +405,6 @@ Args:
   - HwTyName:        bram
   - String:          ' variable '''
   - Name:            C_0
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_31
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_30
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_29
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_28
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_27
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_26
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_25
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_24
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_23
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_22
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_21
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_20
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_19
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_18
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_17
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
-  - String:          ' mode in '
-  - Bitwidth:        '24'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        bram
-  - String:          ' variable '''
-  - Name:            A_16
   - String:          ''' with '
   - AggregateTypeName: 'compact=bit'
   - String:          ' mode in '

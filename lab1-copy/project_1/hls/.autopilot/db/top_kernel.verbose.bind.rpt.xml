@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Tue Jan 27 16:15:30 2026
+<item name = "Date">Wed Jan 28 21:22:49 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,22 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">40265, 40265, 0.403 ms, 0.403 ms, 40266, 40266, no</column>
+<column name="">42265, 42265, 0.423 ms, 0.423 ms, 42266, 42266, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_28_3_fu_642">top_kernel_Pipeline_VITIS_LOOP_28_3, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_50_6_fu_658">top_kernel_Pipeline_VITIS_LOOP_50_6, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_37_4_fu_790">top_kernel_Pipeline_VITIS_LOOP_37_4, 55, 55, 0.550 us, 0.550 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8_fu_884">top_kernel_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8, 8195, 8195, 81.950 us, 81.950 us, 8194, 8194, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_45_3_fu_618">top_kernel_Pipeline_VITIS_LOOP_45_3, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_68_6_fu_630">top_kernel_Pipeline_VITIS_LOOP_68_6, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_54_4_fu_762">top_kernel_Pipeline_VITIS_LOOP_54_4, 63, 63, 0.630 us, 0.630 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9_fu_844">top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9, 8195, 8195, 81.950 us, 81.950 us, 8194, 8194, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_25_2">32000, 32000, 125, -, -, 256, no</column>
+<column name="- VITIS_LOOP_42_2">34048, 34048, 133, -, -, 256, no</column>
 </table>
 </item>
 </section>

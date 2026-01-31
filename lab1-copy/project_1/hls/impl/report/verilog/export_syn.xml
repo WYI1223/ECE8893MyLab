@@ -308,7 +308,7 @@
   </RtlModules>
   <TimingPaths>
     <TPATH DATAPATH_DELAY="6.719" DATAPATH_LOGIC_DELAY="4.688" DATAPATH_NET_DELAY="2.031" ENDPOINT_PIN="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[0]/S" LOGIC_LEVELS="17" MAX_FANOUT="32" SLACK="3.119" STARTPOINT_PIN="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0/CLKBWRCLK">
-      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54" MODULE_INSTNAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U" IS_FUNCINST="0"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_349" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_103" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_17__18" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
@@ -327,9 +327,10 @@
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_255_reg_14374[22]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="4336"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_111_reg_14194[22]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
+      <MODULE_INSTANCES>top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U</MODULE_INSTANCES>
     </TPATH>
     <TPATH DATAPATH_DELAY="6.719" DATAPATH_LOGIC_DELAY="4.688" DATAPATH_NET_DELAY="2.031" ENDPOINT_PIN="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[10]/S" LOGIC_LEVELS="17" MAX_FANOUT="32" SLACK="3.119" STARTPOINT_PIN="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0/CLKBWRCLK">
-      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54" MODULE_INSTNAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U" IS_FUNCINST="0"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_349" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_103" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_17__18" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
@@ -348,9 +349,10 @@
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_255_reg_14374[22]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="4336"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_111_reg_14194[22]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[10]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
+      <MODULE_INSTANCES>top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U</MODULE_INSTANCES>
     </TPATH>
     <TPATH DATAPATH_DELAY="6.719" DATAPATH_LOGIC_DELAY="4.688" DATAPATH_NET_DELAY="2.031" ENDPOINT_PIN="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[11]/S" LOGIC_LEVELS="17" MAX_FANOUT="32" SLACK="3.119" STARTPOINT_PIN="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0/CLKBWRCLK">
-      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54" MODULE_INSTNAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U" IS_FUNCINST="0"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_349" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_103" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_17__18" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
@@ -369,9 +371,10 @@
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_255_reg_14374[22]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="4336"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_111_reg_14194[22]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
+      <MODULE_INSTANCES>top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U</MODULE_INSTANCES>
     </TPATH>
     <TPATH DATAPATH_DELAY="6.719" DATAPATH_LOGIC_DELAY="4.688" DATAPATH_NET_DELAY="2.031" ENDPOINT_PIN="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[12]/S" LOGIC_LEVELS="17" MAX_FANOUT="32" SLACK="3.119" STARTPOINT_PIN="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0/CLKBWRCLK">
-      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54" MODULE_INSTNAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U" IS_FUNCINST="0"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_349" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_103" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_17__18" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
@@ -390,9 +393,10 @@
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_255_reg_14374[22]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="4336"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_111_reg_14194[22]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[12]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
+      <MODULE_INSTANCES>top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U</MODULE_INSTANCES>
     </TPATH>
     <TPATH DATAPATH_DELAY="6.719" DATAPATH_LOGIC_DELAY="4.688" DATAPATH_NET_DELAY="2.031" ENDPOINT_PIN="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[13]/S" LOGIC_LEVELS="17" MAX_FANOUT="32" SLACK="3.119" STARTPOINT_PIN="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0/CLKBWRCLK">
-      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
+      <CELL NAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54" MODULE_INSTNAME="top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U" IS_FUNCINST="0"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_349" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_103" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_7_RAM_AUTO_1R1W.v" LINE_NUMBER="54"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/tmp_product_i_17__18" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2462"/>
@@ -411,6 +415,7 @@
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_255_reg_14374[22]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="4336"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/mul_24s_24s_48_1_1_U98/select_ln80_111_reg_14194[22]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
       <CELL NAME="grp_top_kernel_Pipeline_phase2_write_row_fu_515/select_ln80_111_reg_14194_reg[13]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_phase2_write_row.v" LINE_NUMBER="2653"/>
+      <MODULE_INSTANCES>top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_6_U</MODULE_INSTANCES>
     </TPATH>
   </TimingPaths>
   <VivadoReportFiles>
@@ -423,7 +428,7 @@
     <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/top_kernel_utilization_hierarchical_synth.rpt"/>
   </VivadoReportFiles>
   <GeneralInfo NAME="General Information">
-    <item NAME="Date" VALUE="Wed Jan 28 21:46:57 EST 2026"/>
+    <item NAME="Date" VALUE="Thu Jan 29 16:27:33 EST 2026"/>
     <item NAME="Version" VALUE="2025.1 (Build 6214317 on Sep 11 2025)"/>
     <item NAME="Project" VALUE="project_1"/>
     <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>

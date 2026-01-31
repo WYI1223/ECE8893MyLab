@@ -34,279 +34,279 @@ INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
 INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
 INFO: [HLS 200-1510] Running: csynth_design 
 INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.5 seconds. CPU system time: 0.21 seconds. Elapsed time: 8.36 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.4 seconds. CPU system time: 0.15 seconds. Elapsed time: 8.17 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.12 seconds. CPU system time: 1.13 seconds. Elapsed time: 6.43 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.34 seconds. CPU system time: 1.06 seconds. Elapsed time: 6.59 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-1995] There were 4,923 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,355 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 689 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 645 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 626 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,984 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,719 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,724 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,729 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 2,050 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,783 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,657 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,657 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,657 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,661 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 1,689 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_81_10' is marked as complete unroll implied by the pipeline pragma (top.cpp:81:20)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_70_7' is marked as complete unroll implied by the pipeline pragma (top.cpp:70:19)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_57_5' is marked as complete unroll implied by the pipeline pragma (top.cpp:57:19)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_81_10' (top.cpp:81:20) in function 'top_kernel' completely with a factor of 4 (top.cpp:18:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_70_7' (top.cpp:70:19) in function 'top_kernel' completely with a factor of 4 (top.cpp:18:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_5' (top.cpp:57:19) in function 'top_kernel' completely with a factor of 4 (top.cpp:18:0)
-INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 4 on dimension 2. (top.cpp:26:0)
-INFO: [HLS 214-248] Applying array_partition to 'row_buf': Cyclic partitioning with factor 4 on dimension 1. (top.cpp:22:9)
-INFO: [HLS 214-248] Applying array_partition to 'col_sum': Complete partitioning on dimension 1. (top.cpp:30:9)
-INFO: [HLS 214-248] Applying array_partition to 'scale': Complete partitioning on dimension 1. (top.cpp:31:12)
+INFO: [HLS 200-1995] There were 5,655 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,345 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,284 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 926 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 905 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,563 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,024 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,027 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,030 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,351 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,088 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,962 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,962 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,962 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,966 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,991 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_96_9' is marked as complete unroll implied by the pipeline pragma (top.cpp:96:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_80_7' is marked as complete unroll implied by the pipeline pragma (top.cpp:80:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_68_5' is marked as complete unroll implied by the pipeline pragma (top.cpp:68:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_96_9' (top.cpp:96:26) in function 'top_kernel' completely with a factor of 2 (top.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_80_7' (top.cpp:80:19) in function 'top_kernel' completely with a factor of 8 (top.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_68_5' (top.cpp:68:19) in function 'top_kernel' completely with a factor of 8 (top.cpp:17:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 8 on dimension 2. (top.cpp:21:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E5A_loc': Cyclic partitioning with factor 8 on dimension 2. (top.cpp:20:0)
+INFO: [HLS 214-248] Applying array_partition to 'col_sum': Complete partitioning on dimension 1. (top.cpp:31:9)
+INFO: [HLS 214-248] Applying array_partition to 'scale': Complete partitioning on dimension 1. (top.cpp:32:12)
 INFO: [HLS 214-241] Aggregating bram variable 'C' with compact=bit mode in 24-bits
 INFO: [HLS 214-241] Aggregating bram variable 'A' with compact=bit mode in 24-bits
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.32 seconds. CPU system time: 1.1 seconds. Elapsed time: 9.5 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.51 seconds. CPU system time: 0.94 seconds. Elapsed time: 9.31 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.29 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 0.000 MB.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:37:9) to (top.cpp:36:19) in function 'top_kernel'... converting 3 basic blocks.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.05 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.09 seconds; current allocated memory: 0.000 MB.
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_78_8'(top.cpp:78:22) and 'VITIS_LOOP_79_9'(top.cpp:79:26) in function 'top_kernel' into perfectly nested loops.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_78_8' (top.cpp:78:22) in function 'top_kernel'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.63' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.62' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.61' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.60' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.59' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.58' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.57' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.56' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.55' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.54' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.53' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.52' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.51' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.50' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.49' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.48' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.47' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.46' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.45' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.44' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.43' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.42' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.41' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.40' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.39' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.38' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.37' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.36' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.35' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.34' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.33' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.32' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.31' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.30' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.29' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.28' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.27' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.26' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.25' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.24' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.23' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.22' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.21' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.20' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.19' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.18' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.17' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.16' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.15' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.14' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.13' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.12' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.11' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.10' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.9' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.8' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.7' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.6' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.5' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.4' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.3' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.2' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.1' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum' (top.cpp:30).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.63'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.62'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.61'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.60'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.59'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.58'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.57'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.56'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.55'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.54'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.53'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.52'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.51'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.50'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.49'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.48'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.47'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.46'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.45'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.44'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.43'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.42'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.41'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.40'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.39'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.38'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.37'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.36'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.35'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.34'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.33'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.32'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.31'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.30'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.29'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.28'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.27'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.26'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.25'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.24'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.23'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.22'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.21'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.20'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.19'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.18'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.17'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.16'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.15'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.14'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.13'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.12'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.11'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.10'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.9'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.8'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.7'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.6'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.5'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.4'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.3'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.2'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.1'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum'.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.1 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 0.000 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:38:9) to (top.cpp:37:19) in function 'top_kernel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:60:9) to (top.cpp:73:24) in function 'top_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.25 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.31 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_43_2'(top.cpp:43:22) and 'VITIS_LOOP_45_3'(top.cpp:45:26) in function 'top_kernel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_43_2' (top.cpp:43:22) in function 'top_kernel'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.63' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.62' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.61' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.60' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.59' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.58' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.57' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.56' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.55' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.54' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.53' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.52' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.51' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.50' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.49' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.48' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.47' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.46' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.45' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.44' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.43' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.42' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.41' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.40' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.39' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.38' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.37' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.36' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.35' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.34' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.33' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.32' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.31' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.30' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.29' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.28' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.27' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.26' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.25' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.24' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.23' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.22' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.21' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.20' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.19' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.18' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.17' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.16' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.15' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.14' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.13' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.12' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.11' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.10' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.9' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.8' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.7' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.6' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.5' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.4' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.3' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.2' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.1' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.63' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.62' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.61' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.60' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.59' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.58' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.57' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.56' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.55' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.54' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.53' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.52' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.51' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.50' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.49' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.48' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.47' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.46' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.45' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.44' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.43' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.42' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.41' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.40' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.39' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.38' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.37' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.36' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.35' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.34' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.33' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.32' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.31' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.30' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.29' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.28' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.27' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.26' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.25' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.24' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.23' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.22' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.21' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.20' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.19' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.18' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.17' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.16' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.15' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.14' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.13' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.12' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.11' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.10' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.9' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.8' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.7' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.6' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.5' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.4' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.3' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.2' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum.1' (top.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'col_sum' (top.cpp:31).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.4 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.44 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_45_3' 
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_45_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_45_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_43_2_VITIS_LOOP_45_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_43_2_VITIS_LOOP_45_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.64 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.72 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.39 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.48 seconds; current allocated memory: 0.000 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.07 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.07 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_54_4' 
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_59_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_4'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 47, loop 'VITIS_LOOP_54_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_59_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 45, loop 'VITIS_LOOP_59_4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.93 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.97 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.23 seconds; current allocated memory: 0.000 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.18 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.25 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.25 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_68_6' 
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_78_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_68_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_68_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_78_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_78_6'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.41 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.44 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.47 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.5 seconds; current allocated memory: 0.000 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.15 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9' 
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_90_8' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_78_8_VITIS_LOOP_79_9'.
-WARNING: [HLS 200-885] The II Violation in module 'top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9' (loop 'VITIS_LOOP_78_8_VITIS_LOOP_79_9'): Unable to schedule 'store' operation 0 bit ('C_addr_1_write_ln84', top.cpp:84) of variable 'select_ln84_7', top.cpp:84 on array 'C' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'C'.
-Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'VITIS_LOOP_78_8_VITIS_LOOP_79_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_90_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_90_8'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.35 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 0.000 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 0.000 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_45_3' 
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_45_3' pipeline 'VITIS_LOOP_45_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_45_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3' pipeline 'VITIS_LOOP_43_2_VITIS_LOOP_45_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_54_4' 
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_59_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_54_4' pipeline 'VITIS_LOOP_54_4' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'sdiv_40ns_24s_40_44_1': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_6_24_1_1': 4 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_54_4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.43 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.51 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_59_4' pipeline 'VITIS_LOOP_59_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_40ns_24s_40_44_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_24_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_59_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.93 seconds. CPU system time: 0.04 seconds. Elapsed time: 1 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_68_6' 
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_78_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_68_6' pipeline 'VITIS_LOOP_68_6' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_1_1': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_6_24_1_1': 4 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_68_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.67 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.82 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_78_6' pipeline 'VITIS_LOOP_78_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_40s_42ns_81_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_6_24_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_78_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.68 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.82 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9' 
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_90_8' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9' pipeline 'VITIS_LOOP_78_8_VITIS_LOOP_79_9' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_90_8' pipeline 'VITIS_LOOP_90_8' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mul_24s_24s_48_1_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_6_24_1_1': 4 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.37 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.44 seconds; current allocated memory: 0.000 MB.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_24_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_24_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_90_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.36 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.6 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -314,16 +314,16 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A' to 'ap_memor
 INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
-INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_T2P_BRAM_1R1W' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'top_kernel_row_buf_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.38 seconds; current allocated memory: 0.000 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.51 seconds. CPU system time: 0.13 seconds. Elapsed time: 1.06 seconds; current allocated memory: 0.000 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.78 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.3 seconds; current allocated memory: 0.000 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_A_loc_7_RAM_T2P_BRAM_1R1W' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_denom_row_RAM_1P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.29 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.41 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.99 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.81 seconds. CPU system time: 0.18 seconds. Elapsed time: 1.2 seconds; current allocated memory: 0.000 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
 INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 137.43 MHz
-INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:36; Allocated memory: 0.000 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 140.54 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:35; Allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: cosim_design 
 INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
 INFO: [COSIM 212-47] Using XSIM for RTL simulation.
@@ -356,14 +356,14 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA
 INFO: [VRFC 10-311] analyzing module AESL_automem_C
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_top_kernel_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_45_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_45_3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_68_6.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_68_6
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_59_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_59_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_78_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_78_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
@@ -488,16 +488,19 @@ Compiling package xil_defaultlib.top_kernel_subsystem_pkg
 Compiling package xil_defaultlib.file_agent_pkg
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
 Compiling module xil_defaultlib.top_kernel_top_kernel_ap_fixed_6...
-Compiling module xil_defaultlib.top_kernel_row_buf_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.top_kernel_denom_row_RAM_1P_BRAM...
 Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
-Compiling module xil_defaultlib.top_kernel_mul_40s_42ns_81_1_1(N...
-Compiling module xil_defaultlib.top_kernel_sparsemux_33_6_24_1_1...
+Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
+Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
+Compiling module xil_defaultlib.top_kernel_sparsemux_17_3_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
-Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
-Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
+Compiling module xil_defaultlib.top_kernel_mul_40s_42ns_81_1_1(N...
+Compiling module xil_defaultlib.top_kernel_sparsemux_17_6_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_mul_24s_24s_48_1_1(NU...
+Compiling module xil_defaultlib.top_kernel_sparsemux_65_5_24_1_1...
+Compiling module xil_defaultlib.top_kernel_sparsemux_9_2_24_1_1(...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel
 Compiling module xil_defaultlib.misc_interface_default
@@ -505,9 +508,7 @@ Compiling module xil_defaultlib.sv_module_top
 Compiling module xil_defaultlib.AESL_automem_A
 Compiling module xil_defaultlib.AESL_automem_C
 Compiling module xil_defaultlib.nodf_module_intf_default
-Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=8)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
-Compiling module xil_defaultlib.upc_loop_intf_default
 Compiling module xil_defaultlib.dataflow_monitor_1
 Compiling module xil_defaultlib.apatb_top_kernel_top
 Compiling module xil_defaultlib.glbl
@@ -517,7 +518,7 @@ Built simulation snapshot top_kernel
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Wed Jan 28 21:23:58 2026
+  **** Start of session at: Thu Jan 29 16:04:04 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -581,18 +582,18 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "412535000"
+// RTL Simulation : 1 / 1 [100.00%] @ "266995000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 412585 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 31315 ; free virtual = 177218
+$finish called at time : 267045 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 8709 ; free virtual = 132035
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 502608 KB (Peak: 555072 KB), Simulation CPU Usage: 8620 ms
-INFO: [Common 17-206] Exiting xsim at Wed Jan 28 21:24:09 2026...
+INFO: xsimkernel Simulation Memory Usage: 502432 KB (Peak: 554896 KB), Simulation CPU Usage: 7500 ms
+INFO: [Common 17-206] Exiting xsim at Thu Jan 29 16:04:14 2026...
 INFO: [COSIM 212-316] Starting C post checking ...
 TEST PASSED!!
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:16; Allocated memory: 0.000 MB.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:15; Allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog -flow impl 
 INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls_config.cfg
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
@@ -601,15 +602,15 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Wed Jan 28 21:24:22 2026
+  **** Start of session at: Thu Jan 29 16:04:28 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/hls_data.json outdir=/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip srcdir=/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls ippack_options_dict= ippack_options_dict=
 INFO: Copied 1 ipmisc file(s) to /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/misc
-INFO: Copied 187 verilog file(s) to /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/hdl/verilog
-INFO: Copied 173 vhdl file(s) to /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/hdl/vhdl
+INFO: Copied 195 verilog file(s) to /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/hdl/verilog
+INFO: Copied 181 vhdl file(s) to /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/hdl/vhdl
 INFO: Import ports from HDL: /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/hdl/vhdl/top_kernel.vhd (top_kernel)
 INFO: Add clock interface ap_clk
 INFO: Add reset interface ap_rst
@@ -628,14 +629,14 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/component.xml
 INFO: Created IP archive /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip/xilinx_com_hls_top_kernel_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 21:24:37 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 16:04:43 2026...
 INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
 
 ****** Vivado v2025.1.1 (64-bit)
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Wed Jan 28 21:25:01 2026
+  **** Start of session at: Thu Jan 29 16:05:06 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -688,8 +689,8 @@ source run_vivado.tcl
 # dict set report_options clock_name $clock
 # dict set report_options error_if_impl_timing_fails false
 # dict set report_options topmodule "top_kernel"
-# dict set report_options funcmodules {top_kernel_top_kernel_Pipeline_VITIS_LOOP_45_3 top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_4 top_kernel_top_kernel_Pipeline_VITIS_LOOP_68_6 top_kernel_top_kernel_Pipeline_VITIS_LOOP_78_8_VITIS_LOOP_79_9}
-# dict set report_options bindmodules {top_kernel_flow_control_loop_pipe_sequential_init top_kernel_sdiv_40ns_24s_40_44_1 top_kernel_sparsemux_33_6_24_1_1 top_kernel_mul_40s_42ns_81_1_1 top_kernel_mul_24s_24s_48_1_1 top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_T2P_BRAM_1R1W top_kernel_row_buf_RAM_AUTO_1R1W}
+# dict set report_options funcmodules {top_kernel_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3 top_kernel_top_kernel_Pipeline_VITIS_LOOP_59_4 top_kernel_top_kernel_Pipeline_VITIS_LOOP_78_6 top_kernel_top_kernel_Pipeline_VITIS_LOOP_90_8}
+# dict set report_options bindmodules {top_kernel_flow_control_loop_pipe_sequential_init top_kernel_sdiv_40ns_24s_40_44_1 top_kernel_sparsemux_17_3_24_1_1 top_kernel_mul_40s_42ns_81_1_1 top_kernel_sparsemux_17_6_24_1_1 top_kernel_mul_24s_24s_48_1_1 top_kernel_sparsemux_65_5_24_1_1 top_kernel_sparsemux_9_2_24_1_1 top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_A_loc_7_RAM_T2P_BRAM_1R1W top_kernel_denom_row_RAM_1P_BRAM_1R1W}
 # dict set report_options max_module_depth 6
 # create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
 # set_property target_language $language [current_project]
@@ -761,13 +762,13 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
 Exporting to file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
 Generated Hardware Definition File /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26544 ; free virtual = 172172
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 8118 ; free virtual = 131444
 # foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
 #   reset_run [get_runs $run]
 # }
 # set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
 # hls_vivado_reports_setup $report_options
-TIMESTAMP: HLS-REPORT: initialize report directories: 2026-01-28 21:25:28 EST
+TIMESTAMP: HLS-REPORT: initialize report directories: 2026-01-29 16:05:36 EST
 # if { $has_subcore } { report_ip_status }
 # if { $has_synth || $has_impl } {
 #   # synth properties setting
@@ -802,11 +803,11 @@ TIMESTAMP: HLS-REPORT: initialize report directories: 2026-01-28 21:25:28 EST
 #   }
 # }
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-[Wed Jan 28 21:25:28 2026] Launched bd_0_hls_inst_0_synth_1...
+[Thu Jan 29 16:05:36 2026] Launched bd_0_hls_inst_0_synth_1...
 Run output will be captured here: /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
-[Wed Jan 28 21:25:28 2026] Launched synth_1...
+[Thu Jan 29 16:05:36 2026] Launched synth_1...
 Run output will be captured here: /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/runme.log
-[Wed Jan 28 21:25:28 2026] Waiting for synth_1 to finish...
+[Thu Jan 29 16:05:36 2026] Waiting for synth_1 to finish...
 
 *** Running vivado
     with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
@@ -816,12 +817,12 @@ Run output will be captured here: /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spr
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Wed Jan 28 21:33:00 2026
+  **** Start of session at: Thu Jan 29 16:13:44 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source bd_0_wrapper.tcl -notrace
-INFO: Dispatch client connection id - 37107
+INFO: Dispatch client connection id - 32979
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
@@ -832,29 +833,29 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 893117
+INFO: [Synth 8-7075] Helper process launched with PID 467315
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21886 ; free virtual = 162097
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21626 ; free virtual = 126448
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'bd_0' [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
-INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-871641-ece-linlabsrv01/realtime/bd_0_hls_inst_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-871641-ece-linlabsrv01/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-427686-ece-linlabsrv01/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-427686-ece-linlabsrv01/realtime/bd_0_hls_inst_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'bd_0' (0#1) [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (0#1) [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21692 ; free virtual = 161905
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20923 ; free virtual = 125765
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21692 ; free virtual = 161905
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20801 ; free virtual = 125667
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21692 ; free virtual = 161905
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20800 ; free virtual = 125667
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21699 ; free virtual = 161912
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20778 ; free virtual = 125651
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -862,19 +863,19 @@ Initializing timing engine
 Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
 Finished Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
 Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/top_kernel.xdc]
-create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21419 ; free virtual = 161635
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19926 ; free virtual = 124824
 Finished Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/top_kernel.xdc]
 Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21411 ; free virtual = 161627
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19921 ; free virtual = 124821
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21405 ; free virtual = 161622
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19906 ; free virtual = 124799
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24882 ; free virtual = 165102
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19549 ; free virtual = 124461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -882,16 +883,16 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24882 ; free virtual = 165102
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19550 ; free virtual = 124462
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24867 ; free virtual = 165086
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19550 ; free virtual = 124462
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24879 ; free virtual = 165099
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19547 ; free virtual = 124460
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -914,25 +915,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24732 ; free virtual = 164952
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19478 ; free virtual = 124404
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21875 ; free virtual = 162218
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22562 ; free virtual = 127549
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21874 ; free virtual = 162217
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22559 ; free virtual = 127546
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21858 ; free virtual = 162201
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22543 ; free virtual = 127530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -950,37 +951,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20918 ; free virtual = 161161
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21037 ; free virtual = 126028
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20918 ; free virtual = 161161
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21037 ; free virtual = 126027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20918 ; free virtual = 161160
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21035 ; free virtual = 126026
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20918 ; free virtual = 161160
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21035 ; free virtual = 126026
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20918 ; free virtual = 161160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21035 ; free virtual = 126025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20919 ; free virtual = 161159
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21035 ; free virtual = 126025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1000,16 +1001,16 @@ Report Cell Usage:
 |1     |bd_0_hls_inst |     1|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20918 ; free virtual = 161159
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21034 ; free virtual = 126024
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20832 ; free virtual = 161070
-Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20832 ; free virtual = 161070
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20679 ; free virtual = 125677
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20678 ; free virtual = 125676
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20839 ; free virtual = 161077
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20659 ; free virtual = 125658
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20983 ; free virtual = 161218
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20496 ; free virtual = 125491
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -1017,37 +1018,37 @@ Synth Design complete | Checksum: 5eacee7e
 INFO: [Common 17-83] Releasing license: Synthesis
 22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20738 ; free virtual = 160973
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2624.744; main = 2488.790; forked = 195.995
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5377.766; main = 3794.551; forked = 1598.234
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20464 ; free virtual = 125462
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2557.567; main = 2457.323; forked = 178.906
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5365.363; main = 3794.148; forked = 1598.234
 INFO: [Common 17-1381] The checkpoint '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 21:34:27 2026...
-[Wed Jan 28 21:34:48 2026] synth_1 finished
-wait_on_runs: Time (s): cpu = 00:08:16 ; elapsed = 00:09:20 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23002 ; free virtual = 163332
-TIMESTAMP: HLS-REPORT: synthesis open_run: 2026-01-28 21:34:48 EST
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 16:15:11 2026...
+[Thu Jan 29 16:15:32 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:08:48 ; elapsed = 00:09:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21075 ; free virtual = 126104
+TIMESTAMP: HLS-REPORT: synthesis open_run: 2026-01-29 16:15:32 EST
 INFO: HLS-REPORT: Opening synthesis design database: open_run synth_1
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xczu3eg-sbva484-1-e
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
 INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
 INFO: [Project 1-454] Reading design checkpoint '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
-Netlist sorting complete. Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.33 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21347 ; free virtual = 161846
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20413 ; free virtual = 125529
 INFO: [Netlist 29-17] Analyzing 2589 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2025.1.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/top_kernel.xdc]
-create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20073 ; free virtual = 160375
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28312 ; free virtual = 133499
 Finished Parsing XDC File [/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/top_kernel.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22382 ; free virtual = 162681
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26340 ; free virtual = 131549
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 324 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 324 instances
 
-open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22285 ; free virtual = 162585
-TIMESTAMP: HLS-REPORT: synthesis generate_reports_vivado: 2026-01-28 21:35:28 EST
+open_run: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26286 ; free virtual = 131495
+TIMESTAMP: HLS-REPORT: synthesis generate_reports_vivado: 2026-01-29 16:16:13 EST
 INFO: HLS-REPORT: Running report: report_utilization -file ./report/top_kernel_utilization_synth.rpt
 INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 6 -file ./report/top_kernel_utilization_hierarchical_synth.rpt
 INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/top_kernel_timing_synth.rpt
@@ -1056,7 +1057,7 @@ INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, 
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
 Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-report_timing_summary: Time (s): cpu = 00:01:37 ; elapsed = 00:00:41 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20504 ; free virtual = 160832
+report_timing_summary: Time (s): cpu = 00:01:47 ; elapsed = 00:00:44 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33699 ; free virtual = 139111
 INFO: HLS-REPORT: Running report: report_power -file ./report/top_kernel_power_synth.rpt -xpe ./top_kernel_power.xpe
 Command: report_power -file ./report/top_kernel_power_synth.rpt -xpe ./top_kernel_power.xpe
 Running Vector-less Activity Propagation...
@@ -1064,7 +1065,7 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 12 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20001 ; free virtual = 160336
+report_power: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 35819 ; free virtual = 141237
 INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_synth.rpt
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
@@ -1073,14 +1074,14 @@ INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/top_kern
 INFO: [Implflow 30-839]  
 INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report synth -file ./report/top_kernel_failfast_synth.rpt
  -I- design metrics completed in 3 seconds
- -I- DONT_TOUCH metric completed in 1 seconds
- -I- MARK_DEBUG metric completed in 2 seconds
- -I- utilization metrics completed in 2 seconds
+ -I- DONT_TOUCH metric completed in 2 seconds
+ -I- MARK_DEBUG metric completed in 1 seconds
+ -I- utilization metrics completed in 3 seconds
  -I- control set metrics completed in 0 seconds
- -I- methodology check metrics completed in 9 seconds
- -I- average fanout metrics completed in 18 seconds (0 modules)
+ -I- methodology check metrics completed in 8 seconds
+ -I- average fanout metrics completed in 19 seconds (0 modules)
  -I- non-FD high fanout nets completed in 3 seconds
- -I- path budgeting metrics completed in 7 seconds
+ -I- path budgeting metrics completed in 6 seconds
 #  +-----------------------------------------------------------------------------------------+
 #  | Design Summary                                                                          |
 #  | design_1                                                                                |
@@ -1117,13 +1118,13 @@ INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast
  -I- Number of criteria to review: 2
  -I- This report should be run before placing the design and uses conservative guidelines beyond which runtime and timing closure will likely be more challenging
  -I- report_failfast completed in 45 seconds
-TIMESTAMP: HLS-REPORT: synthesis gen_data_dict_vivado: 2026-01-28 21:37:04 EST
-TIMESTAMP: HLS-REPORT: synth extract_util_hier: 2026-01-28 21:37:04 EST
-TIMESTAMP: HLS-REPORT: synth get_cell_hier_data: 2026-01-28 21:37:04 EST
-TIMESTAMP: HLS-REPORT: synth get_timing_paths: 2026-01-28 21:37:04 EST
-TIMESTAMP: HLS-REPORT: synth process timing paths: 2026-01-28 21:37:04 EST
-TIMESTAMP: HLS-REPORT: synth get_all_vv_rpt_files: 2026-01-28 21:37:04 EST
-TIMESTAMP: HLS-REPORT: synthesis write_reports_vivado: 2026-01-28 21:37:04 EST
+TIMESTAMP: HLS-REPORT: synthesis gen_data_dict_vivado: 2026-01-29 16:17:52 EST
+TIMESTAMP: HLS-REPORT: synth extract_util_hier: 2026-01-29 16:17:52 EST
+TIMESTAMP: HLS-REPORT: synth get_cell_hier_data: 2026-01-29 16:17:52 EST
+TIMESTAMP: HLS-REPORT: synth get_timing_paths: 2026-01-29 16:17:52 EST
+TIMESTAMP: HLS-REPORT: synth process timing paths: 2026-01-29 16:17:53 EST
+TIMESTAMP: HLS-REPORT: synth get_all_vv_rpt_files: 2026-01-29 16:17:53 EST
+TIMESTAMP: HLS-REPORT: synthesis write_reports_vivado: 2026-01-29 16:17:53 EST
 HLS EXTRACTION: synth area_totals:  0 70560 141120 360 432 0 0
 HLS EXTRACTION: synth area_current: 0 23772 13471 324 24 0 180 0 0 0
 HLS EXTRACTION: synth resources_dict: AVAIL_LUT 70560 LUT 23772 AVAIL_FF 141120 FF 13471 AVAIL_DSP 360 DSP 324 AVAIL_BRAM 432 BRAM 24 AVAIL_URAM 0 URAM 0 LATCH 0 SRL 180 AVAIL_CLB 0 CLB 0
@@ -1135,7 +1136,7 @@ Implementation tool: Xilinx Vivado v.2025.1.1
 Project:             project_1
 Solution:            hls
 Device target:       xczu3eg-sbva484-1-e
-Report date:         Wed Jan 28 21:37:04 EST 2026
+Report date:         Thu Jan 29 16:17:53 EST 2026
 
 #=== Post-Synthesis Resource usage ===
 SLICE:            0
@@ -1153,7 +1154,7 @@ CP required:                     10.000
 CP achieved post-synthesis:      6.881
 Timing met
 
-TIMESTAMP: HLS-REPORT: synthesis end: 2026-01-28 21:37:04 EST
+TIMESTAMP: HLS-REPORT: synthesis end: 2026-01-29 16:17:53 EST
 # if { $has_impl } {
 #   # launch run impl
 #   if { [llength $impl_props] } {
@@ -1165,11 +1166,11 @@ TIMESTAMP: HLS-REPORT: synthesis end: 2026-01-28 21:37:04 EST
 #   hls_vivado_reports_impl impl_1 $report_options
 # }
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 11975 ; free virtual = 149920
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 32263 ; free virtual = 137856
 WARNING: [Common 17-210] 'write_hwdef' is deprecated.
-[Wed Jan 28 21:37:09 2026] Launched impl_1...
+[Thu Jan 29 16:17:57 2026] Launched impl_1...
 Run output will be captured here: /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/runme.log
-[Wed Jan 28 21:37:09 2026] Waiting for impl_1 to finish...
+[Thu Jan 29 16:17:57 2026] Waiting for impl_1 to finish...
 
 *** Running vivado
     with args -log bd_0_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
@@ -1179,31 +1180,31 @@ Run output will be captured here: /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spr
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Wed Jan 28 21:37:14 2026
+  **** Start of session at: Thu Jan 29 16:18:01 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source bd_0_wrapper.tcl -notrace
-INFO: Dispatch client connection id - 37107
+INFO: Dispatch client connection id - 32979
 Command: open_checkpoint /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
-Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 9191 ; free virtual = 146516
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.36 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28287 ; free virtual = 133696
 INFO: [Netlist 29-17] Analyzing 2589 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2025.1.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 9899 ; free virtual = 146359
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 31701 ; free virtual = 137119
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
 INFO: [Project 1-856] Restoring constraints from binary archive.
 INFO: [Project 1-853] Binary constraint restore complete.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 8491 ; free virtual = 143927
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 34926 ; free virtual = 140987
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 324 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 324 instances
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2025.1.1 (64-bit) build 6233196
-open_checkpoint: Time (s): cpu = 00:01:05 ; elapsed = 00:00:49 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 8379 ; free virtual = 143815
+open_checkpoint: Time (s): cpu = 00:01:03 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 34844 ; free virtual = 140907
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
@@ -1218,12 +1219,12 @@ WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been r
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 8317 ; free virtual = 143764
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 34211 ; free virtual = 140274
 
 Starting Cache Timing Information Task
 Ending Cache Timing Information Task | Checksum: 188edc7bc
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 8213 ; free virtual = 143614
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 34346 ; free virtual = 140412
 
 Starting Logic Optimization Task
 
@@ -1232,30 +1233,30 @@ Phase 1 Initialization
 Phase 1.1 Core Generation And Design Setup
 Phase 1.1 Core Generation And Design Setup | Checksum: 188edc7bc
 
-Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.17 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7257 ; free virtual = 142415
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33837 ; free virtual = 139904
 
 Phase 1.2 Setup Constraints And Sort Netlist
 Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 188edc7bc
 
-Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.21 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7250 ; free virtual = 142408
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.18 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33843 ; free virtual = 139910
 Phase 1 Initialization | Checksum: 188edc7bc
 
-Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.21 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7248 ; free virtual = 142405
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33840 ; free virtual = 139907
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
 Phase 2.1 Timer Update | Checksum: 188edc7bc
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7069 ; free virtual = 141825
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33786 ; free virtual = 139874
 
 Phase 2.2 Timing Data Collection
 Phase 2.2 Timing Data Collection | Checksum: 188edc7bc
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7041 ; free virtual = 141800
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33784 ; free virtual = 139873
 Phase 2 Timer Update And Timing Data Collection | Checksum: 188edc7bc
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7040 ; free virtual = 141799
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33785 ; free virtual = 139874
 
 Phase 3 Retarget
 INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
@@ -1264,7 +1265,7 @@ INFO: [Opt 31-138] Pushed 4 inverter(s) to 78 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
 Phase 3 Retarget | Checksum: 1575699ed
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7390 ; free virtual = 141648
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33648 ; free virtual = 139738
 Retarget | Checksum: 1575699ed
 INFO: [Opt 31-389] Phase Retarget created 25 cells and removed 29 cells
 
@@ -1272,18 +1273,18 @@ Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Phase 4 Constant propagation | Checksum: 1aea7340b
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7279 ; free virtual = 141452
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33314 ; free virtual = 139405
 Constant propagation | Checksum: 1aea7340b
 INFO: [Opt 31-389] Phase Constant propagation created 60 cells and removed 162 cells
 
 Phase 5 Sweep
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7204 ; free virtual = 141378
+Done building netlist checker database: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33254 ; free virtual = 139345
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7097 ; free virtual = 141095
+Done building netlist checker database: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33397 ; free virtual = 139493
 Phase 5 Sweep | Checksum: 1b042f7ab
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7094 ; free virtual = 141025
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33394 ; free virtual = 139488
 Sweep | Checksum: 1b042f7ab
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
@@ -1291,7 +1292,7 @@ Phase 6 BUFG optimization
 INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
 Phase 6 BUFG optimization | Checksum: 1b042f7ab
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7152 ; free virtual = 141001
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33359 ; free virtual = 139452
 BUFG optimization | Checksum: 1b042f7ab
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
@@ -1299,14 +1300,14 @@ Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
 Phase 7 Shift Register Optimization | Checksum: 1b042f7ab
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7147 ; free virtual = 140997
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33353 ; free virtual = 139446
 Shift Register Optimization | Checksum: 1b042f7ab
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
 Phase 8 Post Processing Netlist | Checksum: 1b042f7ab
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 7082 ; free virtual = 140865
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33317 ; free virtual = 139413
 Post Processing Netlist | Checksum: 1b042f7ab
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 
@@ -1315,19 +1316,19 @@ Phase 9 Finalization
 Phase 9.1 Finalizing Design Cores and Updating Shapes
 Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: c0e72c7c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6983 ; free virtual = 140639
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33157 ; free virtual = 139254
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6983 ; free virtual = 140639
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33225 ; free virtual = 139322
 Phase 9.2 Verifying Netlist Connectivity | Checksum: c0e72c7c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6983 ; free virtual = 140639
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33225 ; free virtual = 139322
 Phase 9 Finalization | Checksum: c0e72c7c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6984 ; free virtual = 140639
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33224 ; free virtual = 139322
 Opt_design Change Summary
 =========================
 
@@ -1346,7 +1347,7 @@ Opt_design Change Summary
 
 Ending Logic Optimization Task | Checksum: c0e72c7c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6984 ; free virtual = 140640
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 33224 ; free virtual = 139321
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -1364,25 +1365,25 @@ INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 32
 Ending PowerOpt Patch Enables Task | Checksum: c0e72c7c
 
-Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.45 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6490 ; free virtual = 138554
+Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.41 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29959 ; free virtual = 136668
 Ending Power Optimization Task | Checksum: c0e72c7c
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6491 ; free virtual = 138556
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29940 ; free virtual = 136650
 
 Starting Final Cleanup Task
 Ending Final Cleanup Task | Checksum: c0e72c7c
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6489 ; free virtual = 138553
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29937 ; free virtual = 136647
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6488 ; free virtual = 138553
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29930 ; free virtual = 136641
 Ending Netlist Obfuscation Task | Checksum: c0e72c7c
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6488 ; free virtual = 138553
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29928 ; free virtual = 136639
 INFO: [Common 17-83] Releasing license: Implementation
 40 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:40 ; elapsed = 00:00:33 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6490 ; free virtual = 138555
+opt_design: Time (s): cpu = 00:01:29 ; elapsed = 00:00:30 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29921 ; free virtual = 136631
 INFO: [Vivado 12-24828] Executing command : report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
 Command: report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -1392,9 +1393,9 @@ INFO: [Vivado_Tcl 2-168] The results of DRC are in file /nethome/wsun377/ece8893
 report_drc completed successfully
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6523 ; free virtual = 138097
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27312 ; free virtual = 134510
 INFO: [Common 17-1381] The checkpoint '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:47 ; elapsed = 00:00:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6660 ; free virtual = 137961
+write_checkpoint: Time (s): cpu = 00:00:37 ; elapsed = 00:00:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26885 ; free virtual = 134163
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
@@ -1415,29 +1416,29 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6622 ; free virtual = 137793
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26425 ; free virtual = 133725
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 36ae7d77
 
-Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.1 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6619 ; free virtual = 137792
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 6620 ; free virtual = 137794
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26426 ; free virtual = 133726
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26424 ; free virtual = 133725
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6d773ae8
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20983 ; free virtual = 152113
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23908 ; free virtual = 131311
 
 Phase 1.3 Build Placer Netlist Model
 Phase 1.3 Build Placer Netlist Model | Checksum: dd886d6d
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19679 ; free virtual = 150846
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:45 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23203 ; free virtual = 130777
 
 Phase 1.4 Constrain Clocks/Macros
 Phase 1.4 Constrain Clocks/Macros | Checksum: dd886d6d
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19671 ; free virtual = 150837
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:45 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23182 ; free virtual = 130756
 Phase 1 Placer Initialization | Checksum: dd886d6d
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19677 ; free virtual = 150843
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:45 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23101 ; free virtual = 130676
 
 Phase 2 Global Placement
 
@@ -1448,66 +1449,66 @@ Phase 2.1.1 Partition Driven Placement
 Phase 2.1.1.1 PBP: Partition Driven Placement
 Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: a8e4b612
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:00:59 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20332 ; free virtual = 151508
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:57 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22946 ; free virtual = 130649
 
 Phase 2.1.1.2 PBP: Clock Region Placement
 INFO: [Place 30-3164] Check ILP status : ILP-based clock placer is skipped.
 Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: a8e4b612
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20332 ; free virtual = 151508
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:58 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22938 ; free virtual = 130642
 
 Phase 2.1.1.3 PBP: Discrete Incremental
 Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 16be37d4a
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20334 ; free virtual = 151511
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:58 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22871 ; free virtual = 130582
 
 Phase 2.1.1.4 PBP: Compute Congestion
 Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 16be37d4a
 
-Time (s): cpu = 00:02:08 ; elapsed = 00:01:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22592 ; free virtual = 153873
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22499 ; free virtual = 130269
 
 Phase 2.1.1.5 PBP: Macro Placement
 Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1afc1f1cd
 
-Time (s): cpu = 00:02:13 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22483 ; free virtual = 153684
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21939 ; free virtual = 129695
 
 Phase 2.1.1.6 PBP: UpdateTiming
 Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 1ca2a277d
 
-Time (s): cpu = 00:02:19 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22126 ; free virtual = 153328
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21692 ; free virtual = 129445
 
 Phase 2.1.1.7 PBP: Add part constraints
 Phase 2.1.1.7 PBP: Add part constraints | Checksum: 1ca2a277d
 
-Time (s): cpu = 00:02:20 ; elapsed = 00:01:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22143 ; free virtual = 153346
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21651 ; free virtual = 129405
 Phase 2.1.1 Partition Driven Placement | Checksum: 1ca2a277d
 
-Time (s): cpu = 00:02:20 ; elapsed = 00:01:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22142 ; free virtual = 153344
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21620 ; free virtual = 129373
 Phase 2.1 Floorplanning | Checksum: 1ef1f3c8a
 
-Time (s): cpu = 00:02:21 ; elapsed = 00:01:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22139 ; free virtual = 153341
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21626 ; free virtual = 129379
 
 Phase 2.2 Update Timing before SLR Path Opt
 Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1ef1f3c8a
 
-Time (s): cpu = 00:02:22 ; elapsed = 00:01:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22108 ; free virtual = 153310
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21590 ; free virtual = 129344
 
 Phase 2.3 Post-Processing in Floorplanning
 Phase 2.3 Post-Processing in Floorplanning | Checksum: 1ef1f3c8a
 
-Time (s): cpu = 00:02:22 ; elapsed = 00:01:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22126 ; free virtual = 153328
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21522 ; free virtual = 129276
 
 Phase 2.4 Global Place Phase1
 Phase 2.4 Global Place Phase1 | Checksum: 1e34aaa33
 
-Time (s): cpu = 00:03:36 ; elapsed = 00:01:39 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19585 ; free virtual = 150864
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:35 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22226 ; free virtual = 129937
 
 Phase 2.5 Global Place Phase2
 
 Phase 2.5.1 UpdateTiming Before Physical Synthesis
 Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1421b6752
 
-Time (s): cpu = 00:03:44 ; elapsed = 00:01:41 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19595 ; free virtual = 150875
+Time (s): cpu = 00:03:37 ; elapsed = 00:01:38 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22049 ; free virtual = 129800
 
 Phase 2.5.2 Physical Synthesis In Placer
 INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 191 LUT instances to create LUTNM shape
@@ -1519,7 +1520,7 @@ INFO: [Physopt 32-81] Processed net bd_0_i/hls_inst/inst/ap_CS_fsm_state7. Repli
 INFO: [Physopt 32-81] Processed net bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_phase2_write_row_fu_515/ap_CS_fsm_pp0_stage0. Replicated 9 times.
 INFO: [Physopt 32-232] Optimized 2 nets. Created 23 new instances.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 23 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19322 ; free virtual = 150603
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21875 ; free virtual = 129604
 INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
 INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
 INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
@@ -1527,7 +1528,7 @@ INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was
 INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19466 ; free virtual = 150747
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21856 ; free virtual = 129585
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -1552,58 +1553,58 @@ Summary of Physical Synthesis Optimizations
 
 Phase 2.5.2 Physical Synthesis In Placer | Checksum: e60f2bf8
 
-Time (s): cpu = 00:03:56 ; elapsed = 00:01:49 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19459 ; free virtual = 150743
+Time (s): cpu = 00:03:47 ; elapsed = 00:01:45 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21451 ; free virtual = 129196
 Phase 2.5 Global Place Phase2 | Checksum: 1008f8a19
 
-Time (s): cpu = 00:04:20 ; elapsed = 00:01:57 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19536 ; free virtual = 150821
+Time (s): cpu = 00:04:10 ; elapsed = 00:01:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19883 ; free virtual = 127665
 Phase 2 Global Placement | Checksum: 1008f8a19
 
-Time (s): cpu = 00:04:20 ; elapsed = 00:01:58 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19505 ; free virtual = 150791
+Time (s): cpu = 00:04:11 ; elapsed = 00:01:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19852 ; free virtual = 127634
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
 Phase 3.1 Commit Multi Column Macros | Checksum: 114450812
 
-Time (s): cpu = 00:04:41 ; elapsed = 00:02:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19536 ; free virtual = 150838
+Time (s): cpu = 00:04:32 ; elapsed = 00:01:59 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17821 ; free virtual = 125620
 
 Phase 3.2 Commit Most Macros & LUTRAMs
 Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 21903c0ae
 
-Time (s): cpu = 00:04:53 ; elapsed = 00:02:08 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19453 ; free virtual = 150798
+Time (s): cpu = 00:04:46 ; elapsed = 00:02:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17255 ; free virtual = 125077
 
 Phase 3.3 Small Shape DP
 
 Phase 3.3.1 Small Shape Clustering
 Phase 3.3.1 Small Shape Clustering | Checksum: 12536df05
 
-Time (s): cpu = 00:05:12 ; elapsed = 00:02:14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19069 ; free virtual = 150511
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 15677 ; free virtual = 123566
 
 Phase 3.3.2 Slice Area Swap
 
 Phase 3.3.2.1 Slice Area Swap Initial
 Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1d6353f7c
 
-Time (s): cpu = 00:05:14 ; elapsed = 00:02:16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19019 ; free virtual = 150423
+Time (s): cpu = 00:05:08 ; elapsed = 00:02:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17086 ; free virtual = 124975
 Phase 3.3.2 Slice Area Swap | Checksum: 1d6353f7c
 
-Time (s): cpu = 00:05:15 ; elapsed = 00:02:16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18955 ; free virtual = 150358
+Time (s): cpu = 00:05:08 ; elapsed = 00:02:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 16968 ; free virtual = 124858
 Phase 3.3 Small Shape DP | Checksum: 124968719
 
-Time (s): cpu = 00:05:24 ; elapsed = 00:02:19 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18286 ; free virtual = 149700
+Time (s): cpu = 00:05:18 ; elapsed = 00:02:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17090 ; free virtual = 124989
 
 Phase 3.4 Re-assign LUT pins
 Phase 3.4 Re-assign LUT pins | Checksum: 1a784ed59
 
-Time (s): cpu = 00:05:27 ; elapsed = 00:02:22 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18603 ; free virtual = 150023
+Time (s): cpu = 00:05:22 ; elapsed = 00:02:18 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 15589 ; free virtual = 123590
 
 Phase 3.5 Pipeline Register Optimization
 Phase 3.5 Pipeline Register Optimization | Checksum: 18497af41
 
-Time (s): cpu = 00:05:28 ; elapsed = 00:02:22 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18573 ; free virtual = 149994
+Time (s): cpu = 00:05:23 ; elapsed = 00:02:19 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 15507 ; free virtual = 123509
 Phase 3 Detail Placement | Checksum: 18497af41
 
-Time (s): cpu = 00:05:29 ; elapsed = 00:02:22 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18581 ; free virtual = 149995
+Time (s): cpu = 00:05:24 ; elapsed = 00:02:19 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 15473 ; free virtual = 123476
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -1622,7 +1623,7 @@ INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximu
 INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.391 | TNS=0.000 |
 Phase 1 Physical Synthesis Initialization | Checksum: 23544a259
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21606 ; free virtual = 153044
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 16068 ; free virtual = 124162
 INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
 INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
 INFO: [Place 46-35] Processed net bd_0_i/hls_inst/inst/ap_CS_fsm_state8, inserted BUFG to drive 1152 loads.
@@ -1630,27 +1631,27 @@ INFO: [Place 46-45] Replicated bufg driver bd_0_i/hls_inst/inst/ap_CS_fsm_reg[7]
 INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
 Ending Physical Synthesis Task | Checksum: 1d86f7a2e
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21426 ; free virtual = 152865
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 15981 ; free virtual = 124033
 Phase 4.1.1.1 BUFG Insertion | Checksum: 20ec08a00
 
-Time (s): cpu = 00:06:57 ; elapsed = 00:02:44 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21349 ; free virtual = 152788
+Time (s): cpu = 00:07:01 ; elapsed = 00:02:43 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 16589 ; free virtual = 124641
 
 Phase 4.1.1.2 Post Placement Timing Optimization
 INFO: [Place 30-746] Post Placement Timing Summary WNS=1.391. For the most accurate timing information please run report_timing.
 Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 20ed0b8d7
 
-Time (s): cpu = 00:06:58 ; elapsed = 00:02:44 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21492 ; free virtual = 152931
+Time (s): cpu = 00:07:02 ; elapsed = 00:02:43 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 16760 ; free virtual = 124812
 
-Time (s): cpu = 00:06:58 ; elapsed = 00:02:44 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21492 ; free virtual = 152931
+Time (s): cpu = 00:07:02 ; elapsed = 00:02:43 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 16760 ; free virtual = 124812
 Phase 4.1 Post Commit Optimization | Checksum: 20ed0b8d7
 
-Time (s): cpu = 00:06:59 ; elapsed = 00:02:45 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21476 ; free virtual = 152915
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23655 ; free virtual = 155098
+Time (s): cpu = 00:07:02 ; elapsed = 00:02:44 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 16748 ; free virtual = 124800
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19587 ; free virtual = 127664
 
 Phase 4.2 Post Placement Cleanup
 Phase 4.2 Post Placement Cleanup | Checksum: 1f56b8473
 
-Time (s): cpu = 00:07:20 ; elapsed = 00:02:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23564 ; free virtual = 155009
+Time (s): cpu = 00:07:23 ; elapsed = 00:02:51 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19567 ; free virtual = 127644
 
 Phase 4.3 Placer Reporting
 
@@ -1671,44 +1672,44 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 
 Phase 4.3.1 Print Estimated Congestion | Checksum: 1f56b8473
 
-Time (s): cpu = 00:07:21 ; elapsed = 00:02:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23522 ; free virtual = 154966
+Time (s): cpu = 00:07:24 ; elapsed = 00:02:52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19572 ; free virtual = 127649
 Phase 4.3 Placer Reporting | Checksum: 1f56b8473
 
-Time (s): cpu = 00:07:22 ; elapsed = 00:02:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23495 ; free virtual = 154940
+Time (s): cpu = 00:07:25 ; elapsed = 00:02:52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19560 ; free virtual = 127637
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23490 ; free virtual = 154935
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19554 ; free virtual = 127631
 
-Time (s): cpu = 00:07:22 ; elapsed = 00:02:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23490 ; free virtual = 154935
+Time (s): cpu = 00:07:25 ; elapsed = 00:02:52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19554 ; free virtual = 127631
 Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e103cb07
 
-Time (s): cpu = 00:07:22 ; elapsed = 00:02:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23562 ; free virtual = 155006
+Time (s): cpu = 00:07:26 ; elapsed = 00:02:52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19578 ; free virtual = 127656
 Ending Placer Task | Checksum: 1669143d5
 
-Time (s): cpu = 00:07:23 ; elapsed = 00:02:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23516 ; free virtual = 154964
+Time (s): cpu = 00:07:27 ; elapsed = 00:02:52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19558 ; free virtual = 127635
 83 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:07:35 ; elapsed = 00:02:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23513 ; free virtual = 154961
+place_design: Time (s): cpu = 00:07:37 ; elapsed = 00:02:55 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19491 ; free virtual = 127567
 INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
 Running report generation with 3 threads.
 INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.44 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23347 ; free virtual = 154795
+report_control_sets: Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19372 ; free virtual = 127447
 INFO: [Vivado 12-24828] Executing command : report_io -file bd_0_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.63 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23312 ; free virtual = 154761
+report_io: Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.66 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19363 ; free virtual = 127438
 INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_wrapper_utilization_placed.rpt -pb bd_0_wrapper_utilization_placed.pb
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22955 ; free virtual = 154412
-Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22837 ; free virtual = 154368
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22835 ; free virtual = 154367
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.22 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19287 ; free virtual = 127371
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18793 ; free virtual = 126953
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18790 ; free virtual = 126950
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.5 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22913 ; free virtual = 154446
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22888 ; free virtual = 154429
-Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22883 ; free virtual = 154428
-Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22873 ; free virtual = 154418
+Wrote RouteStorage: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18763 ; free virtual = 126923
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18749 ; free virtual = 126917
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18742 ; free virtual = 126912
+Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18739 ; free virtual = 126909
 INFO: [Common 17-1381] The checkpoint '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22801 ; free virtual = 154272
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18510 ; free virtual = 126608
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
@@ -1717,27 +1718,27 @@ Starting Initial Update Timing Task
 WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
 Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26425 ; free virtual = 157908
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22383 ; free virtual = 130495
 INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 1.391 | TNS= 0.000 | 
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
 94 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26425 ; free virtual = 157908
+phys_opt_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22382 ; free virtual = 130495
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.13 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26423 ; free virtual = 157914
-Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26128 ; free virtual = 157695
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26099 ; free virtual = 157667
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22483 ; free virtual = 130604
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21992 ; free virtual = 130191
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21982 ; free virtual = 130182
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.4 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26186 ; free virtual = 157753
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26176 ; free virtual = 157752
-Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26171 ; free virtual = 157750
-Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26170 ; free virtual = 157748
+Wrote RouteStorage: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.4 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21877 ; free virtual = 130078
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21813 ; free virtual = 130022
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21777 ; free virtual = 129989
+Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21745 ; free virtual = 129958
 INFO: [Common 17-1381] The checkpoint '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_physopt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26231 ; free virtual = 157735
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21441 ; free virtual = 129579
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
@@ -1748,7 +1749,7 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 
 Phase 1 Build RT Design
 Checksum: PlaceDB: 78fe7100 ConstDB: 0 ShapeSum: e7658f7b RouteDB: 62d435a
-Nodegraph reading from file.  Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.77 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26145 ; free virtual = 157650
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.79 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21311 ; free virtual = 129453
 WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
 WARNING: [Route 35-198] Port "A_q0[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "A_q0[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
 WARNING: [Route 35-198] Port "A_q0[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "A_q0[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
@@ -1803,37 +1804,37 @@ WARNING: [Route 35-198] Port "ap_ctrl_start" does not have an associated HD.PART
 Post Restoration Checksum: NetGraph: 78aab0a8 | NumContArr: f6c3542f | Constraints: e781857e | Timing: c2a8fa9d
 Phase 1 Build RT Design | Checksum: 3199884f2
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26074 ; free virtual = 157580
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21199 ; free virtual = 129374
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
 Phase 2.1 Fix Topology Constraints | Checksum: 3199884f2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26071 ; free virtual = 157578
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21157 ; free virtual = 129334
 
 Phase 2.2 Pre Route Cleanup
 Phase 2.2 Pre Route Cleanup | Checksum: 3199884f2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26078 ; free virtual = 157585
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21154 ; free virtual = 129331
 
 Phase 2.3 Global Clock Net Routing
  Number of Nodes with overlaps = 0
 Phase 2.3 Global Clock Net Routing | Checksum: 258f61faa
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26276 ; free virtual = 157783
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:08 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21018 ; free virtual = 129174
 
 Phase 2.4 Update Timing
 Phase 2.4 Update Timing | Checksum: 2502797c2
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26189 ; free virtual = 157702
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20289 ; free virtual = 128461
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.692  | TNS=0.000  | WHS=0.017  | THS=0.000  |
 
 
 Phase 2.5 Soft Constraint Pins - Fast Budgeting
 Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 2725a1694
 
-Time (s): cpu = 00:01:24 ; elapsed = 00:00:19 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 25807 ; free virtual = 157329
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:17 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19248 ; free virtual = 127485
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -1849,22 +1850,22 @@ Router Utilization Summary
 
 Phase 2 Router Initialization | Checksum: 2725a1694
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:00:19 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 25836 ; free virtual = 157360
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:18 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19657 ; free virtual = 127927
 
 Phase 3 Global Routing
 Phase 3 Global Routing | Checksum: 2725a1694
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:00:19 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 25840 ; free virtual = 157365
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:18 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19632 ; free virtual = 127905
 
 Phase 4 Initial Routing
 
 Phase 4.1 Initial Net Routing Pass
 Phase 4.1 Initial Net Routing Pass | Checksum: 34bb8c691
 
-Time (s): cpu = 00:01:43 ; elapsed = 00:00:25 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28151 ; free virtual = 159679
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:25 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18980 ; free virtual = 127022
 Phase 4 Initial Routing | Checksum: 34133edcc
 
-Time (s): cpu = 00:01:44 ; elapsed = 00:00:25 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28169 ; free virtual = 159705
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:25 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18973 ; free virtual = 126966
 
 Phase 5 Rip-up And Reroute
 
@@ -1881,30 +1882,30 @@ INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.071  | TNS=0.000  | WHS
 
 Phase 5.1 Global Iteration 0 | Checksum: 23c98e7d7
 
-Time (s): cpu = 00:03:27 ; elapsed = 00:01:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24685 ; free virtual = 156320
+Time (s): cpu = 00:03:26 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18250 ; free virtual = 126065
 
 Phase 5.2 Additional Iteration for Hold
 Phase 5.2 Additional Iteration for Hold | Checksum: 26e1dc842
 
-Time (s): cpu = 00:03:28 ; elapsed = 00:01:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24682 ; free virtual = 156320
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18231 ; free virtual = 126046
 Phase 5 Rip-up And Reroute | Checksum: 26e1dc842
 
-Time (s): cpu = 00:03:28 ; elapsed = 00:01:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24682 ; free virtual = 156320
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18230 ; free virtual = 126044
 
 Phase 6 Delay and Skew Optimization
 
 Phase 6.1 Delay CleanUp
 Phase 6.1 Delay CleanUp | Checksum: 26e1dc842
 
-Time (s): cpu = 00:03:28 ; elapsed = 00:01:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24675 ; free virtual = 156314
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18223 ; free virtual = 126037
 
 Phase 6.2 Clock Skew Optimization
 Phase 6.2 Clock Skew Optimization | Checksum: 26e1dc842
 
-Time (s): cpu = 00:03:29 ; elapsed = 00:01:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24674 ; free virtual = 156314
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18222 ; free virtual = 126036
 Phase 6 Delay and Skew Optimization | Checksum: 26e1dc842
 
-Time (s): cpu = 00:03:29 ; elapsed = 00:01:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24671 ; free virtual = 156311
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18208 ; free virtual = 126022
 
 Phase 7 Post Hold Fix
 
@@ -1913,15 +1914,15 @@ INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.071  | TNS=0.000  | WHS
 
 Phase 7.1 Hold Fix Iter | Checksum: 22f78bed1
 
-Time (s): cpu = 00:03:44 ; elapsed = 00:01:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24533 ; free virtual = 156212
+Time (s): cpu = 00:03:42 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18194 ; free virtual = 126027
 Phase 7 Post Hold Fix | Checksum: 22f78bed1
 
-Time (s): cpu = 00:03:45 ; elapsed = 00:01:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24533 ; free virtual = 156213
+Time (s): cpu = 00:03:42 ; elapsed = 00:01:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18193 ; free virtual = 126027
 
 Phase 8 Leaf Clock Prog Delay Opt
 Phase 8 Leaf Clock Prog Delay Opt | Checksum: 298eda112
 
-Time (s): cpu = 00:03:58 ; elapsed = 00:01:10 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27867 ; free virtual = 159569
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17707 ; free virtual = 125561
 
 Phase 9 Route finalize
 
@@ -1939,29 +1940,29 @@ Router Utilization Summary
 
 Phase 9 Route finalize | Checksum: 298eda112
 
-Time (s): cpu = 00:04:00 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27857 ; free virtual = 159561
+Time (s): cpu = 00:03:54 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17616 ; free virtual = 125475
 
 Phase 10 Verifying routed nets
 
  Verification completed successfully
 Phase 10 Verifying routed nets | Checksum: 298eda112
 
-Time (s): cpu = 00:04:00 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27951 ; free virtual = 159557
+Time (s): cpu = 00:03:54 ; elapsed = 00:01:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17651 ; free virtual = 125510
 
 Phase 11 Depositing Routes
 Phase 11 Depositing Routes | Checksum: 298eda112
 
-Time (s): cpu = 00:04:06 ; elapsed = 00:01:14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30779 ; free virtual = 162386
+Time (s): cpu = 00:04:00 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17059 ; free virtual = 124854
 
 Phase 12 Resolve XTalk
 Phase 12 Resolve XTalk | Checksum: 298eda112
 
-Time (s): cpu = 00:04:06 ; elapsed = 00:01:14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30745 ; free virtual = 162353
+Time (s): cpu = 00:04:00 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17039 ; free virtual = 124834
 
 Phase 13 Post Process Routing
 Phase 13 Post Process Routing | Checksum: 298eda112
 
-Time (s): cpu = 00:04:07 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30788 ; free virtual = 162396
+Time (s): cpu = 00:04:01 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 17689 ; free virtual = 125484
 
 Phase 14 Post Router Timing
 INFO: [Route 35-57] Estimated Timing Summary | WNS=1.071  | TNS=0.000  | WHS=0.040  | THS=0.000  |
@@ -1969,23 +1970,23 @@ INFO: [Route 35-57] Estimated Timing Summary | WNS=1.071  | TNS=0.000  | WHS=0.0
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
 Phase 14 Post Router Timing | Checksum: 298eda112
 
-Time (s): cpu = 00:04:07 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30798 ; free virtual = 162405
-Total Elapsed time in route_design: 74.69 secs
+Time (s): cpu = 00:04:01 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18869 ; free virtual = 126665
+Total Elapsed time in route_design: 75.15 secs
 
 Phase 15 Post-Route Event Processing
 Phase 15 Post-Route Event Processing | Checksum: 1a390a5d7
 
-Time (s): cpu = 00:04:08 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30779 ; free virtual = 162386
+Time (s): cpu = 00:04:02 ; elapsed = 00:01:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20738 ; free virtual = 128533
 INFO: [Route 35-16] Router Completed Successfully
 Ending Routing Task | Checksum: 1a390a5d7
 
-Time (s): cpu = 00:04:10 ; elapsed = 00:01:16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30791 ; free virtual = 162398
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20755 ; free virtual = 128550
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 105 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:04:11 ; elapsed = 00:01:16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30798 ; free virtual = 162404
+route_design: Time (s): cpu = 00:04:04 ; elapsed = 00:01:16 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20720 ; free virtual = 128515
 INFO: [Vivado 12-24828] Executing command : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
 Command: report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -1993,7 +1994,7 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
 INFO: [Vivado_Tcl 2-168] The results of DRC are in file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_drc_routed.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 36064 ; free virtual = 167801
+report_drc: Time (s): cpu = 00:00:23 ; elapsed = 00:00:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21021 ; free virtual = 128822
 INFO: [Vivado 12-24828] Executing command : report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -2003,12 +2004,12 @@ INFO: [DRC 23-133] Running Methodology with 8 threads
 WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
 INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:01:17 ; elapsed = 00:00:17 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 37906 ; free virtual = 169604
+report_methodology: Time (s): cpu = 00:01:08 ; elapsed = 00:00:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23452 ; free virtual = 131290
 INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file bd_0_wrapper_timing_summary_routed.rpt -pb bd_0_wrapper_timing_summary_routed.pb -rpx bd_0_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-report_timing_summary: Time (s): cpu = 00:00:38 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 37231 ; free virtual = 168702
+report_timing_summary: Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 22424 ; free virtual = 130261
 INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
 Running report generation with 3 threads.
 INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file bd_0_wrapper_incremental_reuse_routed.rpt
@@ -2024,57 +2025,57 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 125 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 35952 ; free virtual = 167197
+report_power: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21258 ; free virtual = 129037
 INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file bd_0_wrapper_clock_utilization_routed.rpt
-generate_parallel_reports: Time (s): cpu = 00:02:55 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 35632 ; free virtual = 166881
+generate_parallel_reports: Time (s): cpu = 00:02:31 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21047 ; free virtual = 128808
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.8 ; elapsed = 00:00:00.19 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 35673 ; free virtual = 166930
-Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43272 ; free virtual = 174606
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43290 ; free virtual = 174623
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.7 ; elapsed = 00:00:00.15 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21059 ; free virtual = 128829
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20810 ; free virtual = 128655
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20809 ; free virtual = 128654
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.89 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43249 ; free virtual = 174591
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43265 ; free virtual = 174615
-Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43262 ; free virtual = 174615
-Write Physdb Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43261 ; free virtual = 174614
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.87 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20605 ; free virtual = 128473
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20588 ; free virtual = 128464
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20581 ; free virtual = 128459
+Write Physdb Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20573 ; free virtual = 128452
 INFO: [Common 17-1381] The checkpoint '/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43311 ; free virtual = 174585
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 21:44:35 2026...
-[Wed Jan 28 21:45:00 2026] impl_1 finished
-wait_on_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:07:52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 46289 ; free virtual = 177571
-TIMESTAMP: HLS-REPORT: implementation open_run: 2026-01-28 21:45:01 EST
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20330 ; free virtual = 128163
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 16:25:07 2026...
+[Thu Jan 29 16:25:33 2026] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:07:36 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 18102 ; free virtual = 125772
+TIMESTAMP: HLS-REPORT: implementation open_run: 2026-01-29 16:25:33 EST
 INFO: HLS-REPORT: Opening implementation design database: open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 46280 ; free virtual = 177564
+Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.31 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20160 ; free virtual = 127785
 INFO: [Netlist 29-17] Analyzing 2587 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2025.1.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 45807 ; free virtual = 177092
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.13 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 19098 ; free virtual = 126728
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
 INFO: [Project 1-856] Restoring constraints from binary archive.
 INFO: [Project 1-853] Binary constraint restore complete.
 INFO: [Designutils 20-5722] Start Reading Physical Databases.
 Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44719 ; free virtual = 176017
+Read Netlist Cache: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21376 ; free virtual = 129014
 Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44709 ; free virtual = 176007
-Read PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44281 ; free virtual = 175580
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44281 ; free virtual = 175581
+Read Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21370 ; free virtual = 129008
+Read PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21167 ; free virtual = 128808
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21163 ; free virtual = 128803
 Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.65 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44129 ; free virtual = 175429
-Read Physdb Files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44129 ; free virtual = 175429
-Restored from archive | CPU: 5.370000 secs | Memory: 77.053635 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44151 ; free virtual = 175450
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44168 ; free virtual = 175468
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21002 ; free virtual = 128643
+Read Physdb Files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 20994 ; free virtual = 128635
+Restored from archive | CPU: 5.070000 secs | Memory: 77.053635 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21022 ; free virtual = 128663
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21094 ; free virtual = 128735
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 338 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 324 instances
   SRLC32E => SRL16E: 14 instances
 
-open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:24 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 44129 ; free virtual = 175429
-TIMESTAMP: HLS-REPORT: implementation generate_reports_vivado: 2026-01-28 21:45:24 EST
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:24 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 21014 ; free virtual = 128652
+TIMESTAMP: HLS-REPORT: implementation generate_reports_vivado: 2026-01-29 16:25:57 EST
 INFO: HLS-REPORT: Running report: report_utilization -file ./report/top_kernel_utilization_routed.rpt
 INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 6 -file ./report/top_kernel_utilization_hierarchical_routed.rpt
 INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/top_kernel_timing_routed.rpt
@@ -2082,7 +2083,7 @@ INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, 
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
 Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-report_timing_summary: Time (s): cpu = 00:00:51 ; elapsed = 00:00:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43440 ; free virtual = 174760
+report_timing_summary: Time (s): cpu = 00:00:46 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28769 ; free virtual = 136449
 INFO: HLS-REPORT: Running report: report_power -file ./report/top_kernel_power_routed.rpt -xpe ./top_kernel_power.xpe
 Command: report_power -file ./report/top_kernel_power_routed.rpt -xpe ./top_kernel_power.xpe
 Running Vector-less Activity Propagation...
@@ -2090,7 +2091,7 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 13 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 43155 ; free virtual = 174483
+report_power: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29198 ; free virtual = 136951
 INFO: HLS-REPORT: Running report: report_route_status -file ./report/top_kernel_status_routed.rpt
 INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_routed.rpt
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
@@ -2098,14 +2099,14 @@ INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum o
 INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
 INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/top_kernel_design_analysis_routed.rpt
 INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report impl -file ./report/top_kernel_failfast_routed.rpt
- -I- design metrics completed in 2 seconds
+ -I- design metrics completed in 3 seconds
  -I- DONT_TOUCH metric completed in 2 seconds
  -I- MARK_DEBUG metric completed in 1 seconds
  -I- utilization metrics completed in 3 seconds
  -I- Generated file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/report/impl.BUFG.rpt
- -I- control set metrics completed in 1 seconds
+ -I- control set metrics completed in 0 seconds
  -I- methodology check metrics completed in 8 seconds
- -I- average fanout metrics completed in 16 seconds (0 modules)
+ -I- average fanout metrics completed in 20 seconds (0 modules)
  -I- non-FD high fanout nets completed in 3 seconds
  -I- path budgeting metrics completed in 7 seconds
 #  +-----------------------------------------------------------------------------------------+
@@ -2143,14 +2144,14 @@ INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast
  -I- Generated file /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/project_1/hls/impl/verilog/report/top_kernel_failfast_routed.rpt
  -I- Number of criteria to review: 2
  -I- This report should be run before placing the design and uses conservative guidelines beyond which runtime and timing closure will likely be more challenging
- -I- report_failfast completed in 44 seconds
-TIMESTAMP: HLS-REPORT: implementation gen_data_dict_vivado: 2026-01-28 21:46:35 EST
-TIMESTAMP: HLS-REPORT: impl extract_util_hier: 2026-01-28 21:46:35 EST
-TIMESTAMP: HLS-REPORT: impl get_cell_hier_data: 2026-01-28 21:46:35 EST
-TIMESTAMP: HLS-REPORT: impl get_timing_paths: 2026-01-28 21:46:35 EST
-TIMESTAMP: HLS-REPORT: impl process timing paths: 2026-01-28 21:46:35 EST
-TIMESTAMP: HLS-REPORT: impl get_all_vv_rpt_files: 2026-01-28 21:46:35 EST
-TIMESTAMP: HLS-REPORT: implementation write_reports_vivado: 2026-01-28 21:46:35 EST
+ -I- report_failfast completed in 49 seconds
+TIMESTAMP: HLS-REPORT: implementation gen_data_dict_vivado: 2026-01-29 16:27:10 EST
+TIMESTAMP: HLS-REPORT: impl extract_util_hier: 2026-01-29 16:27:10 EST
+TIMESTAMP: HLS-REPORT: impl get_cell_hier_data: 2026-01-29 16:27:10 EST
+TIMESTAMP: HLS-REPORT: impl get_timing_paths: 2026-01-29 16:27:10 EST
+TIMESTAMP: HLS-REPORT: impl process timing paths: 2026-01-29 16:27:10 EST
+TIMESTAMP: HLS-REPORT: impl get_all_vv_rpt_files: 2026-01-29 16:27:10 EST
+TIMESTAMP: HLS-REPORT: implementation write_reports_vivado: 2026-01-29 16:27:10 EST
 HLS EXTRACTION: impl area_totals:  0 70560 141120 360 432 8820 0
 HLS EXTRACTION: impl area_current: 0 23634 13435 324 24 0 140 4419 0 0
 HLS EXTRACTION: impl resources_dict: AVAIL_LUT 70560 LUT 23634 AVAIL_FF 141120 FF 13435 AVAIL_DSP 360 DSP 324 AVAIL_BRAM 432 BRAM 24 AVAIL_URAM 0 URAM 0 LATCH 0 SRL 140 AVAIL_CLB 8820 CLB 4419
@@ -2162,7 +2163,7 @@ Implementation tool: Xilinx Vivado v.2025.1.1
 Project:             project_1
 Solution:            hls
 Device target:       xczu3eg-sbva484-1-e
-Report date:         Wed Jan 28 21:46:35 EST 2026
+Report date:         Thu Jan 29 16:27:10 EST 2026
 
 #=== Post-Implementation Resource usage ===
 SLICE:            0
@@ -2181,13 +2182,13 @@ CP achieved post-synthesis:      6.881
 CP achieved post-implementation: 8.923
 Timing met
 
-TIMESTAMP: HLS-REPORT: implementation end: 2026-01-28 21:46:35 EST
+TIMESTAMP: HLS-REPORT: implementation end: 2026-01-29 16:27:10 EST
 INFO: HLS-REPORT: impl run complete: worst setup slack (WNS)=1.076737, worst hold slack (WHS)=0.040683, total pulse width slack(TPWS)=0.000000, number of unrouted nets=0
 # hls_vivado_reports_finalize $report_options
-TIMESTAMP: HLS-REPORT: all reports complete: 2026-01-28 21:46:35 EST
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 21:46:35 2026...
+TIMESTAMP: HLS-REPORT: all reports complete: 2026-01-29 16:27:10 EST
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 16:27:11 2026...
 INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
-INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:22:47; Allocated memory: 0.000 MB.
-INFO: [HLS 200-112] Total CPU user time: 1272.71 seconds. Total CPU system time: 102.4 seconds. Total elapsed time: 1491.7 seconds; peak allocated memory: 0.000 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 24m 54s
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:23:17; Allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 1307.01 seconds. Total CPU system time: 97.01 seconds. Total elapsed time: 1520.7 seconds; peak allocated memory: 0.000 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 25m 23s
 INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

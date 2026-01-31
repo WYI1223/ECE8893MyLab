@@ -13,8 +13,8 @@ module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_8_0_0_0_64_tmp_RAM_T2P_BRAM
     reset, clk);
 
 parameter DataWidth = 24;
-parameter AddressWidth = 12;
-parameter AddressRange = 4096;
+parameter AddressWidth = 11;
+parameter AddressRange = 2048;
  
 input[AddressWidth-1:0] address0;
 input ce0;

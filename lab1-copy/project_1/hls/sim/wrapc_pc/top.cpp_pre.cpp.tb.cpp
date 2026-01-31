@@ -59261,21 +59261,25 @@ typedef ap_fixed<24, 8, AP_RND, AP_SAT> data_t;
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp" 2
-# 14 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
-static const int UF_NORM = 4;
-static const int UF_OUT = 4;
+# 1 "/tools/software/xilinx/2025.1.1/Vitis/include/ap_int.h" 1
+# 3 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp" 2
+# 13 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
+static const int UF_NORM = 8;
+static const int UF_OUT = 2;
 
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]) {
 #pragma HLS INLINE off
 
-
-    data_t row_buf[64];
-#pragma HLS ARRAY_PARTITION variable=row_buf cyclic factor=UF_NORM dim=1
-
-
+    static data_t A_loc[256][64];
     static data_t tmp[256][64];
+    static data_t denom_row[256];
+
+#pragma HLS BIND_STORAGE variable=A_loc type=ram_t2p impl=bram
 #pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
+#pragma HLS BIND_STORAGE variable=denom_row type=ram_1p impl=bram
+
+#pragma HLS ARRAY_PARTITION variable=A_loc cyclic factor=UF_NORM dim=2
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
 
     data_t col_sum[64];
@@ -59292,26 +59296,35 @@ void top_kernel(data_t A[256][64],
 
     for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
-
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
             data_t a = A[i][j];
-            row_buf[j] = a;
+            A_loc[i][j] = a;
             row_sum += a;
         }
+        denom_row[i] = row_sum + (data_t)1.0;
+    }
 
-        data_t denom = row_sum + (data_t)1.0;
 
-        for (int jb = 0; jb < 64; jb += UF_NORM) {
+    const int BLKS_N = 64 / UF_NORM;
+    const int TOT_N = 256 * BLKS_N;
+
+    data_t denom_reg = (data_t)1.0;
+    for (int idx = 0; idx < TOT_N; idx++) {
 #pragma HLS PIPELINE II=1
+        int i = idx / BLKS_N;
+        int b = idx - i * BLKS_N;
+        int jb = b * UF_NORM;
+
+        if (b == 0) denom_reg = denom_row[i];
+
 #pragma HLS DEPENDENCE variable=col_sum inter false
-            for (int k = 0; k < UF_NORM; k++) {
+        for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
-                int j = jb + k;
-                data_t t = row_buf[j] / denom;
-                tmp[i][j] = t;
-                col_sum[j] += t;
-            }
+            int j = jb + k;
+            data_t t = A_loc[i][j] / denom_reg;
+            tmp[i][j] = t;
+            col_sum[j] += t;
         }
     }
 
@@ -59320,20 +59333,24 @@ void top_kernel(data_t A[256][64],
 #pragma HLS PIPELINE II=1
         for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
-            int j = jb + k;
-            scale[j] = col_sum[j] / (data_t)256;
+            scale[jb + k] = col_sum[jb + k] / (data_t)256;
         }
     }
 
 
-    for (int i = 0; i < 256; i++) {
-        for (int jb = 0; jb < 64; jb += UF_OUT) {
+    const int BLKS_O = 64 / UF_OUT;
+    const int TOT_O = 256 * BLKS_O;
+
+    for (int idx = 0; idx < TOT_O; idx++) {
 #pragma HLS PIPELINE II=1
-            for (int k = 0; k < UF_OUT; k++) {
+        int i = idx / BLKS_O;
+        int b = idx - i * BLKS_O;
+        int jb = b * UF_OUT;
+
+        for (int k = 0; k < UF_OUT; k++) {
 #pragma HLS UNROLL
-                int j = jb + k;
-                C[i][j] = tmp[i][j] * scale[j];
-            }
+            int j = jb + k;
+            C[i][j] = tmp[i][j] * scale[j];
         }
     }
 }
@@ -59362,5 +59379,5 @@ apatb_top_kernel_ir(A, C);
 return ;
 }
 #endif
-# 88 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
+# 102 "/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp"
 

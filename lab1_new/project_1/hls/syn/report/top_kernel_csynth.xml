@@ -22,50 +22,29 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>70448</Best-caseLatency>
-<Average-caseLatency>70448</Average-caseLatency>
-<Worst-caseLatency>70448</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.704 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.704 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.704 ms</Worst-caseRealTimeLatency>
-<Interval-min>70449</Interval-min>
-<Interval-max>70449</Interval-max>
+<Best-caseLatency>34898</Best-caseLatency>
+<Average-caseLatency>34898</Average-caseLatency>
+<Worst-caseLatency>34898</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.349 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.349 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.349 ms</Worst-caseRealTimeLatency>
+<Interval-min>34899</Interval-min>
+<Interval-max>34899</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<VITIS_LOOP_63_4>
-<Slack>7.30</Slack>
-<TripCount>256</TripCount>
-<isPerfectNested>0</isPerfectNested>
-<Latency>33536</Latency>
-<AbsoluteTimeLatency>335360</AbsoluteTimeLatency>
-<IterationLatency>131</IterationLatency>
-<PerformancePragma>-</PerformancePragma>
-<InstanceList>
-</InstanceList>
-</VITIS_LOOP_63_4>
-</SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:63</SourceLocation>
-<SummaryOfLoopViolations>
-<VITIS_LOOP_63_4>
-<Name>VITIS_LOOP_63_4</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:63</SourceLocation>
-</VITIS_LOOP_63_4>
-</SummaryOfLoopViolations>
+<SourceLocation>top.cpp:11</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>72</BRAM_18K>
-<DSP>8</DSP>
-<FF>18605</FF>
-<LUT>18523</LUT>
+<BRAM_18K>51</BRAM_18K>
+<DSP>2</DSP>
+<FF>30752</FF>
+<LUT>27677</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

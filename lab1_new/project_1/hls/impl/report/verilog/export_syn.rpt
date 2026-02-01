@@ -2,7 +2,7 @@
 == Vivado RTL Synthesis Results
 ================================================================
 + General Information:
-    * Date:            Sat Jan 31 20:10:12 EST 2026
+    * Date:            Sat Jan 31 22:05:05 EST 2026
     * Version:         2025.1 (Build 6214317 on Sep 11 2025)
     * Project:         project_1
     * Solution:        hls (Vivado IP Flow Target)
@@ -73,15 +73,10 @@ SRL:              747
 |     sdiv_38ns_24s_38_42_1_U13                                          | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
 |     sdiv_38ns_24s_38_42_1_U14                                          | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
 |     sdiv_38ns_24s_38_42_1_U15                                          | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
-|       (sdiv_38ns_24s_38_42_1_U15)                                      | 1187  | 62    |     |      |      |     |        |      |         |          |        |
 |     sdiv_38ns_24s_38_42_1_U16                                          | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
-|       (sdiv_38ns_24s_38_42_1_U16)                                      | 1187  | 62    |     |      |      |     |        |      |         |          |        |
 |     sdiv_38ns_24s_38_42_1_U17                                          | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
-|       (sdiv_38ns_24s_38_42_1_U17)                                      | 1187  | 62    |     |      |      |     |        |      |         |          |        |
 |     sdiv_38ns_24s_38_42_1_U18                                          | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
-|       (sdiv_38ns_24s_38_42_1_U18)                                      | 1187  | 62    |     |      |      |     |        |      |         |          |        |
 |     sdiv_38ns_24s_38_42_1_U19                                          | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
-|       (sdiv_38ns_24s_38_42_1_U19)                                      | 1187  | 62    |     |      |      |     |        |      |         |          |        |
 |   grp_top_kernel_Pipeline_VITIS_LOOP_73_8_fu_893                       | 796   | 1097  |     |      |      |     |        |      |         |          |        |
 |     (grp_top_kernel_Pipeline_VITIS_LOOP_73_8_fu_893)                   | 272   | 1095  |     |      |      |     |        |      |         |          |        |
 |     flow_control_loop_pipe_sequential_init_U                           | 524   | 2     |     |      |      |     |        |      |         |          |        |

@@ -1,12 +1,12 @@
 {
   "0": {
-    "basicblocks": 79,
+    "basicblocks": 85,
     "calls": "",
     "control_depth": 1,
     "def_use_depth": 2,
     "file": "top.cpp",
-    "fileloc": 5,
-    "instructions": 311,
+    "fileloc": 21,
+    "instructions": 321,
     "loads": {
       "L": 7,
       "T": 1
@@ -18,6 +18,6 @@
       "L": 6,
       "T": 1
     },
-    "total_instructions": 4982
+    "total_instructions": 4992
   }
 }

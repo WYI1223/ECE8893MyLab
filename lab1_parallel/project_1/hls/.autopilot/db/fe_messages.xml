@@ -1,0 +1,90 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/script.tcl:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A offset=slave bundle=A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=C offset=slave bundle=C" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_buf cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tmp type=ram_t2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tmp cyclic factor=8 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_sum complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=scale complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_sum inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:96:20" msg_body="Loop 'VITIS_LOOP_96_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_96_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:85:19" msg_body="Loop 'VITIS_LOOP_85_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_85_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:72:19" msg_body="Loop 'VITIS_LOOP_72_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_72_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:32:0" msg_body="Unrolling loop 'VITIS_LOOP_96_10' (top.cpp:96:20) in function 'top_kernel' completely with a factor of 2">
+        <args Factor="2" LoopLoc="top.cpp:96:20" LoopName="VITIS_LOOP_96_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:32:0" msg_body="Unrolling loop 'VITIS_LOOP_85_7' (top.cpp:85:19) in function 'top_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:85:19" LoopName="VITIS_LOOP_85_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:32:0" msg_body="Unrolling loop 'VITIS_LOOP_72_5' (top.cpp:72:19) in function 'top_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:72:19" LoopName="VITIS_LOOP_72_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:41:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:38:9" msg_body="Applying array_partition to 'row_buf': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="row_buf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:45:9" msg_body="Applying array_partition to 'col_sum': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="col_sum"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:46:12" msg_body="Applying array_partition to 'scale': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="scale"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

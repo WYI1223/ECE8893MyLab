@@ -1,0 +1,616 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Sat Jan 31 20:16:56 EST 2026
+    * Version:         2025.1 (Build 6214317 on Sep 11 2025)
+    * Project:         project_1
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu3eg-sbva484-1-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              23300
+FF:               24162
+DSP:              2
+BRAM:             25
+URAM:             0
+SRL:              743
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 6.715       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                 | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                 | 23300 | 24162 | 2   | 25   |      |     |        |      |         |          |        |
+|   (inst)                                                             | 8     | 1789  |     |      |      |     |        |      |         |          |        |
+|   A_m_axi_U                                                          | 561   | 741   |     | 1    |      |     |        |      |         |          |        |
+|   C_m_axi_U                                                          | 769   | 998   |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                    | 162   | 181   |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_60_3_fu_709                     | 105   | 73    |     |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Pipeline_VITIS_LOOP_60_3_fu_709)                 | 85    | 71    |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_69_4_fu_857                     | 20200 | 18915 |     |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Pipeline_VITIS_LOOP_69_4_fu_857)                 | 695   | 442   |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U12                                        | 2692  | 2364  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U13                                        | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U14                                        | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U15                                        | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U16                                        | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U17                                        | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U18                                        | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U19                                        | 2401  | 2301  |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_83_6_fu_725                     | 1066  | 1097  |     |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Pipeline_VITIS_LOOP_83_6_fu_725)                 | 306   | 1095  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                         | 760   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951     | 237   | 176   | 2   |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951) | 84    | 174   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                         | 55    | 2     |     |      |      |     |        |      |         |          |        |
+|     mul_24s_24s_48_1_1_U248                                          | 98    |       | 2   |      |      |     |        |      |         |          |        |
+|   row_buf_1_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
+|   row_buf_2_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
+|   row_buf_3_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
+|   row_buf_4_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
+|   row_buf_5_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
+|   row_buf_6_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
+|   row_buf_7_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
+|   row_buf_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U             |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2_U             |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3_U             |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4_U             |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5_U             |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6_U             |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7_U             |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_U               |       |       |     |      |      |     |        |      |         |          |        |
++----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 33.02% | OK     |
+| FD                                                        | 50%       | 17.12% | OK     |
+| LUTRAM+SRL                                                | 25%       | 3.25%  | OK     |
+| CARRY8                                                    | 25%       | 19.14% | OK     |
+| MUXF7                                                     | 15%       | 0.77%  | OK     |
+| DSP                                                       | 80%       | 0.56%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 5.79%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 3.17%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 1323      | 203    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.06   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.350ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.239ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+---------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                  | ENDPOINT PIN                                                                                    | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                 |                                                                                                 |              |            |                |          DELAY |        DELAY |
++-------+-------+---------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 3.285 | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0/CLKARDCLK | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[0]/S  |           15 |         25 |          6.553 |          4.440 |        2.113 |
+| Path2 | 3.285 | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0/CLKARDCLK | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[10]/S |           15 |         25 |          6.553 |          4.440 |        2.113 |
+| Path3 | 3.285 | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0/CLKARDCLK | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[11]/S |           15 |         25 |          6.553 |          4.440 |        2.113 |
+| Path4 | 3.285 | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0/CLKARDCLK | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[12]/S |           15 |         25 |          6.553 |          4.440 |        2.113 |
+| Path5 | 3.285 | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0/CLKARDCLK | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[13]/S |           15 |         25 |          6.553 |          4.440 |        2.113 |
++-------+-------+---------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                             | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[0]                            | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[10]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[11]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[12]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[13]                           | REGISTER.SDR.FDSE      |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                             | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[0]                            | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[10]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[11]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[12]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[13]                           | REGISTER.SDR.FDSE      |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                             | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[0]                            | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[10]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[11]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[12]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[13]                           | REGISTER.SDR.FDSE      |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                             | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[0]                            | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[10]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[11]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[12]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[13]                           | REGISTER.SDR.FDSE      |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                             | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[0]                            | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[10]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[11]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[12]                           | REGISTER.SDR.FDSE      |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U/ram_reg_bram_0                                                   | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_65                 | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product_i_41                 | CLB.LUT.LUT4           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_3      | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/icmp_ln99_1_reg_1794[0]_i_2      | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/and_ln99_3_reg_1799[0]_i_1       | CLB.LUT.LUT6           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_4   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/mul_24s_24s_48_1_1_U248/select_ln99_7_reg_1820[23]_i_1   | CLB.LUT.LUT5           |
+    | grp_top_kernel_Pipeline_VITIS_LOOP_93_8_VITIS_LOOP_94_9_fu_951/select_ln99_7_reg_1820_reg[13]                           | REGISTER.SDR.FDSE      |
+    +-------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------------+
+| Report Type              | Report Location                                                   |
++--------------------------+-------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/top_kernel_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/top_kernel_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/top_kernel_power_synth.rpt                    |
+| timing                   | impl/verilog/report/top_kernel_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/top_kernel_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/top_kernel_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/top_kernel_utilization_hierarchical_synth.rpt |
++--------------------------+-------------------------------------------------------------------+
+
+

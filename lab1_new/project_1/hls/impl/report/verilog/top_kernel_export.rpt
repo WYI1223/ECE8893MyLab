@@ -4,7 +4,7 @@ Implementation tool: Xilinx Vivado v.2025.1.1
 Project:             project_1
 Solution:            hls
 Device target:       xczu3eg-sbva484-1-e
-Report date:         Sat Jan 31 16:25:32 EST 2026
+Report date:         Sat Jan 31 20:09:50 EST 2026
 
 #=== Post-Implementation Resource usage ===
 SLICE:            0

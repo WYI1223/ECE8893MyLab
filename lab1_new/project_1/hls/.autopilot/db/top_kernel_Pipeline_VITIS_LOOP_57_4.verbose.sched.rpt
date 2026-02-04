@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_57_4'
 ================================================================
-* Date:           Sat Jan 31 21:46:18 2026
+* Date:           Tue Feb  3 15:39:24 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -1809,15 +1809,15 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'load' operation 24 bit ('denom_row_load', top.cpp:63) on array 'denom_row' [265]  (1.352 ns)
 	'select' operation 24 bit ('denom_reg', top.cpp:63) [266]  (0.435 ns)
-	'sdiv' operation 38 bit ('sdiv_ln69_5', top.cpp:69) [1070]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 3>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_7', top.cpp:69) [1390]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 4>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_7', top.cpp:69) [1390]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 5>: 1.716ns
 The critical path consists of the following:
@@ -1825,51 +1825,51 @@ The critical path consists of the following:
 
  <State 6>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_6', top.cpp:69) [1230]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 7>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_7', top.cpp:69) [1390]  (1.716 ns)
 
  <State 8>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_5', top.cpp:69) [1070]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 9>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_4', top.cpp:69) [910]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 10>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_4', top.cpp:69) [910]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_6', top.cpp:69) [1230]  (1.716 ns)
 
  <State 11>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_3', top.cpp:69) [750]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 12>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_5', top.cpp:69) [1070]  (1.716 ns)
 
  <State 13>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_2', top.cpp:69) [590]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 14>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_4', top.cpp:69) [910]  (1.716 ns)
 
  <State 15>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_3', top.cpp:69) [750]  (1.716 ns)
 
  <State 16>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_3', top.cpp:69) [750]  (1.716 ns)
 
  <State 17>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_2', top.cpp:69) [590]  (1.716 ns)
 
  <State 18>: 1.716ns
 The critical path consists of the following:
@@ -1885,11 +1885,11 @@ The critical path consists of the following:
 
  <State 21>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_5', top.cpp:69) [1070]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 22>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_5', top.cpp:69) [1070]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_7', top.cpp:69) [1390]  (1.716 ns)
 
  <State 23>: 1.716ns
 The critical path consists of the following:
@@ -1897,11 +1897,11 @@ The critical path consists of the following:
 
  <State 24>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_6', top.cpp:69) [1230]  (1.716 ns)
 
  <State 25>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_2', top.cpp:69) [590]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 26>: 1.716ns
 The critical path consists of the following:
@@ -1909,7 +1909,7 @@ The critical path consists of the following:
 
  <State 27>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_3', top.cpp:69) [750]  (1.716 ns)
 
  <State 28>: 1.716ns
 The critical path consists of the following:
@@ -1925,11 +1925,11 @@ The critical path consists of the following:
 
  <State 31>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_5', top.cpp:69) [1070]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 32>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_6', top.cpp:69) [1230]  (1.716 ns)
 
  <State 33>: 1.716ns
 The critical path consists of the following:
@@ -1937,7 +1937,7 @@ The critical path consists of the following:
 
  <State 34>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_6', top.cpp:69) [1230]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 35>: 1.716ns
 The critical path consists of the following:
@@ -1949,15 +1949,15 @@ The critical path consists of the following:
 
  <State 37>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_6', top.cpp:69) [1230]  (1.716 ns)
 
  <State 38>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_6', top.cpp:69) [1230]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 39>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_2', top.cpp:69) [590]  (1.716 ns)
 
  <State 40>: 1.716ns
 The critical path consists of the following:
@@ -1965,11 +1965,11 @@ The critical path consists of the following:
 
  <State 41>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_7', top.cpp:69) [1390]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_1', top.cpp:69) [430]  (1.716 ns)
 
  <State 42>: 1.716ns
 The critical path consists of the following:
-	'sdiv' operation 38 bit ('sdiv_ln69_7', top.cpp:69) [1390]  (1.716 ns)
+	'sdiv' operation 38 bit ('sdiv_ln69_4', top.cpp:69) [910]  (1.716 ns)
 
  <State 43>: 6.307ns
 The critical path consists of the following:

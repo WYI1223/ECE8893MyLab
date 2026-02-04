@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_76_6'
 ================================================================
-* Date:           Sat Jan 31 21:46:19 2026
+* Date:           Tue Feb  3 15:39:25 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -530,7 +530,7 @@ The critical path consists of the following:
 	'sub' operation 38 bit ('sub_ln81_14', top.cpp:81) [349]  (1.227 ns)
 	'sub' operation 17 bit ('sub_ln81_15', top.cpp:81) [352]  (1.016 ns)
 	'select' operation 17 bit ('scale', top.cpp:81) [355]  (0.425 ns)
-	'store' operation 0 bit ('store_ln30', top.cpp:30) of variable 'sext_ln81_7', top.cpp:81 on local variable 'scale', top.cpp:30 [389]  (0.000 ns)
+	'store' operation 0 bit ('store_ln30', top.cpp:30) of variable 'sext_ln81_7', top.cpp:81 on local variable 'scale', top.cpp:30 [369]  (0.000 ns)
 
 
 ============================================================

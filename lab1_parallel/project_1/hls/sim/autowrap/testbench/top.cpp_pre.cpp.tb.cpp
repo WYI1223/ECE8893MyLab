@@ -59261,76 +59261,97 @@ typedef ap_fixed<24, 10, AP_RND, AP_SAT> data_t;
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/top.cpp" 2
-# 31 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/top.cpp"
-void top_kernel(data_t A[256][64],
-                data_t C[256][64]) {
-#pragma HLS interface m_axi port=A offset=slave bundle=A
-#pragma HLS interface m_axi port=C offset=slave bundle=C
+
+
+
+
+
+
+
+static const int UF_NORM = 8;
+
+void top_kernel(data_t A_DRAM[256][64],
+                data_t C_DRAM[256][64]) {
+#pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
+#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
 #pragma HLS interface s_axilite port=return
-#pragma HLS INLINE off
 
-    data_t row_buf[64];
-#pragma HLS ARRAY_PARTITION variable=row_buf cyclic factor=UF_NORM dim=1
-
+    static data_t A[256][64];
     static data_t tmp[256][64];
+    static data_t denom_row[256];
+
+#pragma HLS BIND_STORAGE variable=A type=ram_t2p impl=bram
 #pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
-#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_PART dim=2
+#pragma HLS BIND_STORAGE variable=denom_row type=ram_1p impl=bram
 
-    data_t col_sum[64];
-    data_t scale[64];
-#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale complete dim=1
+#pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF_NORM dim=2
+#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
+
+    const int BLKS_N = 64 / UF_NORM;
 
 
-    for (int j = 0; j < 64; j++) {
+    data_t col_sum_lane[UF_NORM][BLKS_N];
+    data_t scale_lane[UF_NORM][BLKS_N];
+#pragma HLS ARRAY_PARTITION variable=col_sum_lane complete dim=1
+#pragma HLS ARRAY_PARTITION variable=col_sum_lane complete dim=2
+#pragma HLS ARRAY_PARTITION variable=scale_lane complete dim=1
+#pragma HLS ARRAY_PARTITION variable=scale_lane complete dim=2
+
+
+    for (int k = 0; k < UF_NORM; k++) {
+        for (int b = 0; b < BLKS_N; b++) {
 #pragma HLS PIPELINE II=1
-        col_sum[j] = (data_t)0.0;
+            col_sum_lane[k][b] = (data_t)0.0;
+        }
     }
 
 
     for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
-
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-            data_t a = A[i][j];
-            row_buf[j] = a;
+            data_t a = A_DRAM[i][j];
+            A[i][j] = a;
             row_sum += a;
         }
+        denom_row[i] = row_sum + (data_t)1.0;
+    }
 
-        data_t denom = row_sum + (data_t)1.0;
 
-        for (int jb = 0; jb < 64; jb += 8) {
+    for (int i = 0; i < 256; i++) {
+        data_t denom_reg = denom_row[i];
+        for (int b = 0; b < BLKS_N; b++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS DEPENDENCE variable=col_sum inter false
-            for (int k = 0; k < 8; k++) {
+            int jb = b * UF_NORM;
+
+#pragma HLS DEPENDENCE variable=col_sum_lane inter false
+            for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
                 int j = jb + k;
-                data_t t = row_buf[j] / denom;
+                data_t t = A[i][j] / denom_reg;
                 tmp[i][j] = t;
-                col_sum[j] += t;
+                col_sum_lane[k][b] += t;
             }
         }
     }
 
 
-    for (int jb = 0; jb < 64; jb += 8) {
+    for (int b = 0; b < BLKS_N; b++) {
 #pragma HLS PIPELINE II=1
-        for (int k = 0; k < 8; k++) {
+        for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
-            int j = jb + k;
-            scale[j] = col_sum[j] / (data_t)256;
+            scale_lane[k][b] = col_sum_lane[k][b] / (data_t)256;
         }
     }
 
 
     for (int i = 0; i < 256; i++) {
-        for (int jb = 0; jb < 64; jb += 2) {
+        for (int b = 0; b < BLKS_N; b++) {
+            int jb = b * UF_NORM;
+            for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS PIPELINE II=1
-            for (int k = 0; k < 2; k++) {
-#pragma HLS UNROLL
                 int j = jb + k;
-                C[i][j] = tmp[i][j] * scale[j];
+                C_DRAM[i][j] = tmp[i][j] * scale_lane[k][b];
             }
         }
     }
@@ -59343,8 +59364,8 @@ void apatb_top_kernel_ir(ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*)[64], ap_fixed<2
 #ifdef __cplusplus
 extern "C"
 #endif
-void top_kernel_hw_stub(ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*A)[64], ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*C)[64]){
-top_kernel(A, C);
+void top_kernel_hw_stub(ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*A_DRAM)[64], ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*C_DRAM)[64]){
+top_kernel(A_DRAM, C_DRAM);
 return ;
 }
 #ifdef __cplusplus
@@ -59354,11 +59375,11 @@ void refine_signal_handler();
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_top_kernel_sw(ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*A)[64], ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*C)[64]){
+void apatb_top_kernel_sw(ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*A_DRAM)[64], ap_fixed<24, 10, AP_RND, AP_SAT, 0> (*C_DRAM)[64]){
 refine_signal_handler();
-apatb_top_kernel_ir(A, C);
+apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 103 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/top.cpp"
+# 96 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/top.cpp"
 

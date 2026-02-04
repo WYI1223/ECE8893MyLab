@@ -99,10 +99,10 @@ u32 XTop_kernel_IsReady(XTop_kernel *InstancePtr);
 void XTop_kernel_EnableAutoRestart(XTop_kernel *InstancePtr);
 void XTop_kernel_DisableAutoRestart(XTop_kernel *InstancePtr);
 
-void XTop_kernel_Set_A_r(XTop_kernel *InstancePtr, u64 Data);
-u64 XTop_kernel_Get_A_r(XTop_kernel *InstancePtr);
-void XTop_kernel_Set_C_r(XTop_kernel *InstancePtr, u64 Data);
-u64 XTop_kernel_Get_C_r(XTop_kernel *InstancePtr);
+void XTop_kernel_Set_A_DRAM(XTop_kernel *InstancePtr, u64 Data);
+u64 XTop_kernel_Get_A_DRAM(XTop_kernel *InstancePtr);
+void XTop_kernel_Set_C_DRAM(XTop_kernel *InstancePtr, u64 Data);
+u64 XTop_kernel_Get_C_DRAM(XTop_kernel *InstancePtr);
 
 void XTop_kernel_InterruptGlobalEnable(XTop_kernel *InstancePtr);
 void XTop_kernel_InterruptGlobalDisable(XTop_kernel *InstancePtr);

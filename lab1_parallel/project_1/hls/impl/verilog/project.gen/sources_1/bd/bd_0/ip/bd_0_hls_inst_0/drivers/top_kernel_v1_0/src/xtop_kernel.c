@@ -76,41 +76,41 @@ void XTop_kernel_DisableAutoRestart(XTop_kernel *InstancePtr) {
     XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-void XTop_kernel_Set_A_r(XTop_kernel *InstancePtr, u64 Data) {
+void XTop_kernel_Set_A_DRAM(XTop_kernel *InstancePtr, u64 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_R_DATA, (u32)(Data));
-    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_R_DATA + 4, (u32)(Data >> 32));
+    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_DRAM_DATA, (u32)(Data));
+    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_DRAM_DATA + 4, (u32)(Data >> 32));
 }
 
-u64 XTop_kernel_Get_A_r(XTop_kernel *InstancePtr) {
+u64 XTop_kernel_Get_A_DRAM(XTop_kernel *InstancePtr) {
     u64 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_R_DATA);
-    Data += (u64)XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_R_DATA + 4) << 32;
+    Data = XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_DRAM_DATA);
+    Data += (u64)XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_A_DRAM_DATA + 4) << 32;
     return Data;
 }
 
-void XTop_kernel_Set_C_r(XTop_kernel *InstancePtr, u64 Data) {
+void XTop_kernel_Set_C_DRAM(XTop_kernel *InstancePtr, u64 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_R_DATA, (u32)(Data));
-    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_R_DATA + 4, (u32)(Data >> 32));
+    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_DRAM_DATA, (u32)(Data));
+    XTop_kernel_WriteReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_DRAM_DATA + 4, (u32)(Data >> 32));
 }
 
-u64 XTop_kernel_Get_C_r(XTop_kernel *InstancePtr) {
+u64 XTop_kernel_Get_C_DRAM(XTop_kernel *InstancePtr) {
     u64 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_R_DATA);
-    Data += (u64)XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_R_DATA + 4) << 32;
+    Data = XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_DRAM_DATA);
+    Data += (u64)XTop_kernel_ReadReg(InstancePtr->Control_BaseAddress, XTOP_KERNEL_CONTROL_ADDR_C_DRAM_DATA + 4) << 32;
     return Data;
 }
 

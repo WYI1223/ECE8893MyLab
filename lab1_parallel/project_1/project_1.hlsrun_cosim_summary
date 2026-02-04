@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489887",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790534",
  "buildStep": {
-  "cmdId": "dd8cfe99-7b3d-4428-b566-2ff24509753f",
+  "cmdId": "075f7cc5-d945-4e74-b93e-2788ce8fac35",
   "name": "vitis-run",
   "logFile": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/logs/hls_compile.log",
   "commandLine": "vitis-run --mode hls --tcl /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/script.tcl",
@@ -25,10 +25,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489888",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790534",
  "status": {
-  "cmdId": "dd8cfe99-7b3d-4428-b566-2ff24509753f",
+  "cmdId": "075f7cc5-d945-4e74-b93e-2788ce8fac35",
   "state": "CS_RUNNING"
  }
 }
@@ -36,8 +36,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489888",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790534",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -72,10 +72,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489889",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790535",
  "buildStep": {
-  "cmdId": "f5a94611-4f28-45c2-9c28-0f7afed03cf2",
+  "cmdId": "51d13d02-b45f-41f0-a208-7eae20fa1e9a",
   "name": "cosim_design",
   "logFile": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/hls.log",
   "commandLine": "cosim_design",
@@ -88,10 +88,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489889",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790535",
  "status": {
-  "cmdId": "f5a94611-4f28-45c2-9c28-0f7afed03cf2",
+  "cmdId": "51d13d02-b45f-41f0-a208-7eae20fa1e9a",
   "state": "CS_RUNNING"
  }
 }
@@ -99,8 +99,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489889",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790535",
  "report": {
   "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/report/top_kernel_cosim.rpt",
   "name": "",
@@ -113,8 +113,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489890",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790536",
  "report": {
   "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls",
   "name": "",
@@ -127,8 +127,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489891",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790536",
  "report": {
   "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls",
   "name": "",
@@ -141,8 +141,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489891",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790536",
  "report": {
   "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls",
   "name": "",
@@ -155,8 +155,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 31 19:58:09 2026",
- "timestampMillis": "1769907489891",
+ "dateTimestamp": "Tue Feb  3 21:06:30 2026",
+ "timestampMillis": "1770170790536",
  "report": {
   "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls",
   "name": "",
@@ -169,10 +169,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 31 19:59:43 2026",
- "timestampMillis": "1769907583953",
+ "dateTimestamp": "Tue Feb  3 21:08:01 2026",
+ "timestampMillis": "1770170881506",
  "status": {
-  "cmdId": "f5a94611-4f28-45c2-9c28-0f7afed03cf2",
+  "cmdId": "51d13d02-b45f-41f0-a208-7eae20fa1e9a",
   "state": "CS_PASSED"
  }
 }
@@ -180,10 +180,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 31 19:59:43 2026",
- "timestampMillis": "1769907583998",
+ "dateTimestamp": "Tue Feb  3 21:08:01 2026",
+ "timestampMillis": "1770170881558",
  "status": {
-  "cmdId": "dd8cfe99-7b3d-4428-b566-2ff24509753f",
+  "cmdId": "075f7cc5-d945-4e74-b93e-2788ce8fac35",
   "state": "CS_PASSED"
  }
 }

@@ -4,7 +4,7 @@
     "xci_name": "bd_0_hls_inst_0",
     "cell_name": "hls_inst",
     "component_reference": "xilinx.com:hls:top_kernel:1.0",
-    "ip_revision": "2114460599",
+    "ip_revision": "2114464988",
     "gen_directory": "../../../../../../project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0",
     "parameters": {
       "component_parameters": {
@@ -36,8 +36,8 @@
         "clk_period": [ { "value": "10", "enabled": false, "usage": "all" } ],
         "machine": [ { "value": "64", "enabled": false, "usage": "all" } ],
         "combinational": [ { "value": "0", "enabled": false, "usage": "all" } ],
-        "latency": [ { "value": "48160", "enabled": false, "usage": "all" } ],
-        "II": [ { "value": "48161", "enabled": false, "usage": "all" } ]
+        "latency": [ { "value": "34898", "enabled": false, "usage": "all" } ],
+        "II": [ { "value": "34899", "enabled": false, "usage": "all" } ]
       },
       "model_parameters": {
         "C_S_AXI_CONTROL_ADDR_WIDTH": [ { "value": "6", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -80,7 +80,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114460599" } ],
+        "IPREVISION": [ { "value": "2114464988" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -625,66 +625,66 @@
                     }
                   }
                 },
-                "A_r_1": {
+                "A_DRAM_1": {
                   "address_offset": "16",
                   "size": 32,
-                  "display_name": "A_r_1",
-                  "description": "Data signal of A_r",
+                  "display_name": "A_DRAM_1",
+                  "description": "Data signal of A_DRAM",
                   "access": "write-only",
                   "reset_value": "0",
                   "fields": {
-                    "A_r": {
+                    "A_DRAM": {
                       "bit_offset": 0,
                       "bit_width": 32,
-                      "description": "Bit 31 to 0 of A_r",
+                      "description": "Bit 31 to 0 of A_DRAM",
                       "access": "write-only"
                     }
                   }
                 },
-                "A_r_2": {
+                "A_DRAM_2": {
                   "address_offset": "20",
                   "size": 32,
-                  "display_name": "A_r_2",
-                  "description": "Data signal of A_r",
+                  "display_name": "A_DRAM_2",
+                  "description": "Data signal of A_DRAM",
                   "access": "write-only",
                   "reset_value": "0",
                   "fields": {
-                    "A_r": {
+                    "A_DRAM": {
                       "bit_offset": 0,
                       "bit_width": 32,
-                      "description": "Bit 63 to 32 of A_r",
+                      "description": "Bit 63 to 32 of A_DRAM",
                       "access": "write-only"
                     }
                   }
                 },
-                "C_r_1": {
+                "C_DRAM_1": {
                   "address_offset": "28",
                   "size": 32,
-                  "display_name": "C_r_1",
-                  "description": "Data signal of C_r",
+                  "display_name": "C_DRAM_1",
+                  "description": "Data signal of C_DRAM",
                   "access": "write-only",
                   "reset_value": "0",
                   "fields": {
-                    "C_r": {
+                    "C_DRAM": {
                       "bit_offset": 0,
                       "bit_width": 32,
-                      "description": "Bit 31 to 0 of C_r",
+                      "description": "Bit 31 to 0 of C_DRAM",
                       "access": "write-only"
                     }
                   }
                 },
-                "C_r_2": {
+                "C_DRAM_2": {
                   "address_offset": "32",
                   "size": 32,
-                  "display_name": "C_r_2",
-                  "description": "Data signal of C_r",
+                  "display_name": "C_DRAM_2",
+                  "description": "Data signal of C_DRAM",
                   "access": "write-only",
                   "reset_value": "0",
                   "fields": {
-                    "C_r": {
+                    "C_DRAM": {
                       "bit_offset": 0,
                       "bit_width": 32,
-                      "description": "Bit 63 to 32 of C_r",
+                      "description": "Bit 63 to 32 of C_DRAM",
                       "access": "write-only"
                     }
                   }

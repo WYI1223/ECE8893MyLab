@@ -25,24 +25,24 @@
 //        bit 0 - ap_done (Read/TOW)
 //        bit 1 - ap_ready (Read/TOW)
 //        others - reserved
-// 0x10 : Data signal of A_r
-//        bit 31~0 - A_r[31:0] (Read/Write)
-// 0x14 : Data signal of A_r
-//        bit 31~0 - A_r[63:32] (Read/Write)
+// 0x10 : Data signal of A_DRAM
+//        bit 31~0 - A_DRAM[31:0] (Read/Write)
+// 0x14 : Data signal of A_DRAM
+//        bit 31~0 - A_DRAM[63:32] (Read/Write)
 // 0x18 : reserved
-// 0x1c : Data signal of C_r
-//        bit 31~0 - C_r[31:0] (Read/Write)
-// 0x20 : Data signal of C_r
-//        bit 31~0 - C_r[63:32] (Read/Write)
+// 0x1c : Data signal of C_DRAM
+//        bit 31~0 - C_DRAM[31:0] (Read/Write)
+// 0x20 : Data signal of C_DRAM
+//        bit 31~0 - C_DRAM[63:32] (Read/Write)
 // 0x24 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XTOP_KERNEL_CONTROL_ADDR_AP_CTRL  0x00
-#define XTOP_KERNEL_CONTROL_ADDR_GIE      0x04
-#define XTOP_KERNEL_CONTROL_ADDR_IER      0x08
-#define XTOP_KERNEL_CONTROL_ADDR_ISR      0x0c
-#define XTOP_KERNEL_CONTROL_ADDR_A_R_DATA 0x10
-#define XTOP_KERNEL_CONTROL_BITS_A_R_DATA 64
-#define XTOP_KERNEL_CONTROL_ADDR_C_R_DATA 0x1c
-#define XTOP_KERNEL_CONTROL_BITS_C_R_DATA 64
+#define XTOP_KERNEL_CONTROL_ADDR_AP_CTRL     0x00
+#define XTOP_KERNEL_CONTROL_ADDR_GIE         0x04
+#define XTOP_KERNEL_CONTROL_ADDR_IER         0x08
+#define XTOP_KERNEL_CONTROL_ADDR_ISR         0x0c
+#define XTOP_KERNEL_CONTROL_ADDR_A_DRAM_DATA 0x10
+#define XTOP_KERNEL_CONTROL_BITS_A_DRAM_DATA 64
+#define XTOP_KERNEL_CONTROL_ADDR_C_DRAM_DATA 0x1c
+#define XTOP_KERNEL_CONTROL_BITS_C_DRAM_DATA 64
 

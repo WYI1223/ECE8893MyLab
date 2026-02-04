@@ -32,8 +32,8 @@ module top_kernel_control_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [63:0]                   A_r,
-    output wire [63:0]                   C_r,
+    output wire [63:0]                   A_DRAM,
+    output wire [63:0]                   C_DRAM,
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
@@ -61,37 +61,37 @@ module top_kernel_control_s_axi
 //        bit 0 - ap_done (Read/TOW)
 //        bit 1 - ap_ready (Read/TOW)
 //        others - reserved
-// 0x10 : Data signal of A_r
-//        bit 31~0 - A_r[31:0] (Read/Write)
-// 0x14 : Data signal of A_r
-//        bit 31~0 - A_r[63:32] (Read/Write)
+// 0x10 : Data signal of A_DRAM
+//        bit 31~0 - A_DRAM[31:0] (Read/Write)
+// 0x14 : Data signal of A_DRAM
+//        bit 31~0 - A_DRAM[63:32] (Read/Write)
 // 0x18 : reserved
-// 0x1c : Data signal of C_r
-//        bit 31~0 - C_r[31:0] (Read/Write)
-// 0x20 : Data signal of C_r
-//        bit 31~0 - C_r[63:32] (Read/Write)
+// 0x1c : Data signal of C_DRAM
+//        bit 31~0 - C_DRAM[31:0] (Read/Write)
+// 0x20 : Data signal of C_DRAM
+//        bit 31~0 - C_DRAM[63:32] (Read/Write)
 // 0x24 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL    = 6'h00,
-    ADDR_GIE        = 6'h04,
-    ADDR_IER        = 6'h08,
-    ADDR_ISR        = 6'h0c,
-    ADDR_A_R_DATA_0 = 6'h10,
-    ADDR_A_R_DATA_1 = 6'h14,
-    ADDR_A_R_CTRL   = 6'h18,
-    ADDR_C_R_DATA_0 = 6'h1c,
-    ADDR_C_R_DATA_1 = 6'h20,
-    ADDR_C_R_CTRL   = 6'h24,
-    WRIDLE          = 2'd0,
-    WRDATA          = 2'd1,
-    WRRESP          = 2'd2,
-    WRRESET         = 2'd3,
-    RDIDLE          = 2'd0,
-    RDDATA          = 2'd1,
-    RDRESET         = 2'd2,
+    ADDR_AP_CTRL       = 6'h00,
+    ADDR_GIE           = 6'h04,
+    ADDR_IER           = 6'h08,
+    ADDR_ISR           = 6'h0c,
+    ADDR_A_DRAM_DATA_0 = 6'h10,
+    ADDR_A_DRAM_DATA_1 = 6'h14,
+    ADDR_A_DRAM_CTRL   = 6'h18,
+    ADDR_C_DRAM_DATA_0 = 6'h1c,
+    ADDR_C_DRAM_DATA_1 = 6'h20,
+    ADDR_C_DRAM_CTRL   = 6'h24,
+    WRIDLE             = 2'd0,
+    WRDATA             = 2'd1,
+    WRRESP             = 2'd2,
+    WRRESET            = 2'd3,
+    RDIDLE             = 2'd0,
+    RDDATA             = 2'd1,
+    RDRESET            = 2'd2,
     ADDR_BITS                = 6;
 
 //------------------------Local signal-------------------
@@ -121,8 +121,8 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
-    reg  [63:0]                   int_A_r = 'b0;
-    reg  [63:0]                   int_C_r = 'b0;
+    reg  [63:0]                   int_A_DRAM = 'b0;
+    reg  [63:0]                   int_C_DRAM = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -232,17 +232,17 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
-                ADDR_A_R_DATA_0: begin
-                    rdata <= int_A_r[31:0];
+                ADDR_A_DRAM_DATA_0: begin
+                    rdata <= int_A_DRAM[31:0];
                 end
-                ADDR_A_R_DATA_1: begin
-                    rdata <= int_A_r[63:32];
+                ADDR_A_DRAM_DATA_1: begin
+                    rdata <= int_A_DRAM[63:32];
                 end
-                ADDR_C_R_DATA_0: begin
-                    rdata <= int_C_r[31:0];
+                ADDR_C_DRAM_DATA_0: begin
+                    rdata <= int_C_DRAM[31:0];
                 end
-                ADDR_C_R_DATA_1: begin
-                    rdata <= int_C_r[63:32];
+                ADDR_C_DRAM_DATA_1: begin
+                    rdata <= int_C_DRAM[63:32];
                 end
             endcase
         end
@@ -256,8 +256,8 @@ assign ap_start          = int_ap_start;
 assign task_ap_done      = (ap_done && !auto_restart_status) || auto_restart_done;
 assign task_ap_ready     = ap_ready && !int_auto_restart;
 assign auto_restart_done = auto_restart_status && (ap_idle && !int_ap_idle);
-assign A_r               = int_A_r;
-assign C_r               = int_C_r;
+assign A_DRAM            = int_A_DRAM;
+assign C_DRAM            = int_C_DRAM;
 // int_interrupt
 always @(posedge ACLK) begin
     if (ARESET)
@@ -390,43 +390,43 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_A_r[31:0]
+// int_A_DRAM[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_A_r[31:0] <= 0;
+        int_A_DRAM[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_A_R_DATA_0)
-            int_A_r[31:0] <= (WDATA[31:0] & wmask) | (int_A_r[31:0] & ~wmask);
+        if (w_hs && waddr == ADDR_A_DRAM_DATA_0)
+            int_A_DRAM[31:0] <= (WDATA[31:0] & wmask) | (int_A_DRAM[31:0] & ~wmask);
     end
 end
 
-// int_A_r[63:32]
+// int_A_DRAM[63:32]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_A_r[63:32] <= 0;
+        int_A_DRAM[63:32] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_A_R_DATA_1)
-            int_A_r[63:32] <= (WDATA[31:0] & wmask) | (int_A_r[63:32] & ~wmask);
+        if (w_hs && waddr == ADDR_A_DRAM_DATA_1)
+            int_A_DRAM[63:32] <= (WDATA[31:0] & wmask) | (int_A_DRAM[63:32] & ~wmask);
     end
 end
 
-// int_C_r[31:0]
+// int_C_DRAM[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_C_r[31:0] <= 0;
+        int_C_DRAM[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_C_R_DATA_0)
-            int_C_r[31:0] <= (WDATA[31:0] & wmask) | (int_C_r[31:0] & ~wmask);
+        if (w_hs && waddr == ADDR_C_DRAM_DATA_0)
+            int_C_DRAM[31:0] <= (WDATA[31:0] & wmask) | (int_C_DRAM[31:0] & ~wmask);
     end
 end
 
-// int_C_r[63:32]
+// int_C_DRAM[63:32]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_C_r[63:32] <= 0;
+        int_C_DRAM[63:32] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_C_R_DATA_1)
-            int_C_r[63:32] <= (WDATA[31:0] & wmask) | (int_C_r[63:32] & ~wmask);
+        if (w_hs && waddr == ADDR_C_DRAM_DATA_1)
+            int_C_DRAM[63:32] <= (WDATA[31:0] & wmask) | (int_C_DRAM[63:32] & ~wmask);
     end
 end
 

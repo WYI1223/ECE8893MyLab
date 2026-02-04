@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:top_kernel:1.0
-// IP Revision: 2114460599
+// IP Revision: 2114464988
 
 `timescale 1ns/1ps
 

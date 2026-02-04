@@ -59275,6 +59275,8 @@ void top_kernel(data_t A_DRAM[256][64],
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A num_read_outstanding=16 max_read_burst_length=64
 #pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C num_write_outstanding=16 max_write_burst_length=64 max_widen_bitwidth=512
 #pragma HLS interface s_axilite port=return
+#pragma HLS ARRAY_RESHAPE variable=A_DRAM block factor=2 dim=2
+#pragma HLS ARRAY_RESHAPE variable=C_DRAM block factor=2 dim=2
 
 
     static data_t A[256][64];
@@ -59383,5 +59385,5 @@ apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 98 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/top.cpp"
+# 100 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/top.cpp"
 

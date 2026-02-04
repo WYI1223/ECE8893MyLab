@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel'
 ================================================================
-* Date:           Tue Feb  3 21:14:35 2026
+* Date:           Tue Feb  3 23:32:34 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -38,10 +38,10 @@
         |                                                                |                                                     |  Latency (cycles) |   Latency (absolute)  |    Interval   |                    Pipeline                    |
         |                            Instance                            |                        Module                       |   min   |   max   |    min    |    max    |  min  |  max  |                      Type                      |
         +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+-------+-------+------------------------------------------------+
-        |grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3  |    16387|    16387|   0.164 ms|   0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_57_4                  |     2091|     2091|  20.910 us|  20.910 us|   2049|   2049|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_76_6                  |       10|       10|   0.100 us|   0.100 us|      9|      9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9  |    16388|    16388|   0.164 ms|   0.164 ms|  16386|  16386|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3  |    16387|    16387|   0.164 ms|   0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_59_4                  |     2091|     2091|  20.910 us|  20.910 us|   2049|   2049|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_78_6                  |       10|       10|   0.100 us|   0.100 us|      9|      9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9  |    16388|    16388|   0.164 ms|   0.164 ms|  16386|  16386|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+-------+-------+------------------------------------------------+
 
         * Loop: 
@@ -79,10 +79,10 @@
     |A_m_axi_U                                                       |A_m_axi                                              |        2|   0|    675|    643|    0|
     |C_m_axi_U                                                       |C_m_axi                                              |        2|   0|    669|    632|    0|
     |control_s_axi_U                                                 |control_s_axi                                        |        0|   0|    176|    296|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3  |        0|   0|     85|    423|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_57_4                  |        0|   0|  27376|  22984|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_76_6                  |        0|   0|   1545|   1073|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9  |        0|   2|    192|    904|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3  |        0|   0|     85|    423|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_59_4                  |        0|   0|  27376|  22984|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_78_6                  |        0|   0|   1545|   1073|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9  |        0|   2|    192|    904|    0|
     +----------------------------------------------------------------+-----------------------------------------------------+---------+----+-------+-------+-----+
     |Total                                                           |                                                     |        4|   2|  30718|  26955|    0|
     +----------------------------------------------------------------+-----------------------------------------------------+---------+----+-------+-------+-----+
@@ -198,10 +198,10 @@
     |                                     Name                                    | FF | LUT| Bits| Const Bits|
     +-----------------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                                    |  23|   0|   23|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659_ap_start_reg  |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684_ap_start_reg                  |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786_ap_start_reg                  |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918_ap_start_reg  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659_ap_start_reg  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684_ap_start_reg                  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786_ap_start_reg                  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918_ap_start_reg  |   1|   0|    1|          0|
     |trunc_ln3_reg_2331                                                           |  62|   0|   62|          0|
     |trunc_ln_reg_2325                                                            |  62|   0|   62|          0|
     +-----------------------------------------------------------------------------+----+----+-----+-----------+
@@ -517,46 +517,46 @@ ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%col_sum_3_load_loc = alloca i64 1
 ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%col_sum_2_load_loc = alloca i64 1"   --->   Operation 151 'alloca' 'col_sum_2_load_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 152 [1/1] (0.00ns)   --->   "%col_sum_1_load_loc = alloca i64 1"   --->   Operation 152 'alloca' 'col_sum_1_load_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%col_sum_load_loc = alloca i64 1"   --->   Operation 153 'alloca' 'col_sum_load_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %A_DRAM_read, i32 2, i32 63" [top.cpp:41]   --->   Operation 154 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %C_DRAM_read, i32 2, i32 63" [top.cpp:88]   --->   Operation 155 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %A_DRAM_read, i32 2, i32 63" [top.cpp:43]   --->   Operation 154 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %C_DRAM_read, i32 2, i32 63" [top.cpp:90]   --->   Operation 155 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 7.30>
-ST_2 : Operation 156 [1/1] (0.00ns)   --->   "%sext_ln41 = sext i62 %trunc_ln" [top.cpp:41]   --->   Operation 156 'sext' 'sext_ln41' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 157 [1/1] (0.00ns)   --->   "%A_addr = getelementptr i32 %A, i64 %sext_ln41" [top.cpp:41]   --->   Operation 157 'getelementptr' 'A_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 158 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 158 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 156 [1/1] (0.00ns)   --->   "%sext_ln43 = sext i62 %trunc_ln" [top.cpp:43]   --->   Operation 156 'sext' 'sext_ln43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 157 [1/1] (0.00ns)   --->   "%A_addr = getelementptr i32 %A, i64 %sext_ln43" [top.cpp:43]   --->   Operation 157 'getelementptr' 'A_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 158 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 158 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 3 <SV = 2> <Delay = 7.30>
-ST_3 : Operation 159 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 159 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 159 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 159 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 4 <SV = 3> <Delay = 7.30>
-ST_4 : Operation 160 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 160 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 160 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 160 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 5 <SV = 4> <Delay = 7.30>
-ST_5 : Operation 161 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 161 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 161 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 161 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 6 <SV = 5> <Delay = 7.30>
-ST_6 : Operation 162 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 162 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 162 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 162 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 7 <SV = 6> <Delay = 7.30>
-ST_7 : Operation 163 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 163 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 163 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 163 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 8 <SV = 7> <Delay = 7.30>
-ST_8 : Operation 164 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 164 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 164 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 164 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 9 <SV = 8> <Delay = 7.30>
-ST_9 : Operation 165 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:41]   --->   Operation 165 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 165 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i64 %A_addr, i64 16384" [top.cpp:43]   --->   Operation 165 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 166 [2/2] (0.00ns)   --->   "%call_ln41 = call void @top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A" [top.cpp:41]   --->   Operation 166 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 166 [2/2] (0.00ns)   --->   "%call_ln43 = call void @top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A" [top.cpp:43]   --->   Operation 166 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 167 [1/2] (0.00ns)   --->   "%call_ln41 = call void @top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A" [top.cpp:41]   --->   Operation 167 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 167 [1/2] (0.00ns)   --->   "%call_ln43 = call void @top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A" [top.cpp:43]   --->   Operation 167 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 168 [2/2] (0.00ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_57_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7"   --->   Operation 168 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 168 [2/2] (0.00ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_59_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7"   --->   Operation 168 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 0.00>
-ST_13 : Operation 169 [1/2] (0.00ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_57_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7"   --->   Operation 169 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 169 [1/2] (0.00ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_59_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7"   --->   Operation 169 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 14 <SV = 13> <Delay = 3.50>
 ST_14 : Operation 170 [1/1] (0.00ns)   --->   "%col_sum_load = load i24 %col_sum_load_loc"   --->   Operation 170 'load' 'col_sum_load' <Predicate = true> <Delay = 0.00>
@@ -623,15 +623,15 @@ ST_14 : Operation 230 [1/1] (0.00ns)   --->   "%col_sum_60_load = load i24 %col_
 ST_14 : Operation 231 [1/1] (0.00ns)   --->   "%col_sum_61_load = load i24 %col_sum_61_load_loc"   --->   Operation 231 'load' 'col_sum_61_load' <Predicate = true> <Delay = 0.00>
 ST_14 : Operation 232 [1/1] (0.00ns)   --->   "%col_sum_62_load = load i24 %col_sum_62_load_loc"   --->   Operation 232 'load' 'col_sum_62_load' <Predicate = true> <Delay = 0.00>
 ST_14 : Operation 233 [1/1] (0.00ns)   --->   "%col_sum_63_load = load i24 %col_sum_63_load_loc"   --->   Operation 233 'load' 'col_sum_63_load' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 234 [2/2] (3.50ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_76_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc"   --->   Operation 234 'call' 'call_ln0' <Predicate = true> <Delay = 3.50> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 234 [2/2] (3.50ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_78_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc"   --->   Operation 234 'call' 'call_ln0' <Predicate = true> <Delay = 3.50> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 14> <Delay = 0.97>
-ST_15 : Operation 235 [1/2] (0.97ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_76_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc"   --->   Operation 235 'call' 'call_ln0' <Predicate = true> <Delay = 0.97> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 235 [1/2] (0.97ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_78_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc"   --->   Operation 235 'call' 'call_ln0' <Predicate = true> <Delay = 0.97> <CoreType = "Generic">   --->   Generic Core
 
 State 16 <SV = 15> <Delay = 7.30>
-ST_16 : Operation 236 [1/1] (0.00ns)   --->   "%sext_ln88 = sext i62 %trunc_ln3" [top.cpp:88]   --->   Operation 236 'sext' 'sext_ln88' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 237 [1/1] (0.00ns)   --->   "%C_addr = getelementptr i32 %C, i64 %sext_ln88" [top.cpp:88]   --->   Operation 237 'getelementptr' 'C_addr' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 238 [1/1] (7.30ns)   --->   "%empty_30 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i64 %C_addr, i64 16384" [top.cpp:88]   --->   Operation 238 'writereq' 'empty_30' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_16 : Operation 236 [1/1] (0.00ns)   --->   "%sext_ln90 = sext i62 %trunc_ln3" [top.cpp:90]   --->   Operation 236 'sext' 'sext_ln90' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 237 [1/1] (0.00ns)   --->   "%C_addr = getelementptr i32 %C, i64 %sext_ln90" [top.cpp:90]   --->   Operation 237 'getelementptr' 'C_addr' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 238 [1/1] (7.30ns)   --->   "%empty_30 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i64 %C_addr, i64 16384" [top.cpp:90]   --->   Operation 238 'writereq' 'empty_30' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 17 <SV = 16> <Delay = 0.93>
 ST_17 : Operation 239 [1/1] (0.00ns)   --->   "%scale_63_loc_load = load i24 %scale_63_loc"   --->   Operation 239 'load' 'scale_63_loc_load' <Predicate = true> <Delay = 0.00>
@@ -698,22 +698,22 @@ ST_17 : Operation 299 [1/1] (0.00ns)   --->   "%scale_3_loc_load = load i24 %sca
 ST_17 : Operation 300 [1/1] (0.00ns)   --->   "%scale_2_loc_load = load i24 %scale_2_loc"   --->   Operation 300 'load' 'scale_2_loc_load' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 301 [1/1] (0.00ns)   --->   "%scale_1_loc_load = load i24 %scale_1_loc"   --->   Operation 301 'load' 'scale_1_loc_load' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 302 [1/1] (0.00ns)   --->   "%scale_loc_load = load i24 %scale_loc"   --->   Operation 302 'load' 'scale_loc_load' <Predicate = true> <Delay = 0.00>
-ST_17 : Operation 303 [2/2] (0.93ns)   --->   "%call_ln88 = call void @top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2" [top.cpp:88]   --->   Operation 303 'call' 'call_ln88' <Predicate = true> <Delay = 0.93> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 303 [2/2] (0.93ns)   --->   "%call_ln90 = call void @top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2" [top.cpp:90]   --->   Operation 303 'call' 'call_ln90' <Predicate = true> <Delay = 0.93> <CoreType = "Generic">   --->   Generic Core
 
 State 18 <SV = 17> <Delay = 0.00>
-ST_18 : Operation 304 [1/2] (0.00ns)   --->   "%call_ln88 = call void @top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2" [top.cpp:88]   --->   Operation 304 'call' 'call_ln88' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_18 : Operation 304 [1/2] (0.00ns)   --->   "%call_ln90 = call void @top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2" [top.cpp:90]   --->   Operation 304 'call' 'call_ln90' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 19 <SV = 18> <Delay = 7.30>
-ST_19 : Operation 305 [5/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:98]   --->   Operation 305 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_19 : Operation 305 [5/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:100]   --->   Operation 305 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 20 <SV = 19> <Delay = 7.30>
-ST_20 : Operation 306 [4/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:98]   --->   Operation 306 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_20 : Operation 306 [4/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:100]   --->   Operation 306 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 21 <SV = 20> <Delay = 7.30>
-ST_21 : Operation 307 [3/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:98]   --->   Operation 307 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_21 : Operation 307 [3/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:100]   --->   Operation 307 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 22 <SV = 21> <Delay = 7.30>
-ST_22 : Operation 308 [2/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:98]   --->   Operation 308 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_22 : Operation 308 [2/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:100]   --->   Operation 308 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 23 <SV = 22> <Delay = 7.30>
 ST_23 : Operation 309 [1/1] (0.00ns)   --->   "%spectopmodule_ln11 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_8" [top.cpp:11]   --->   Operation 309 'spectopmodule' 'spectopmodule_ln11' <Predicate = true> <Delay = 0.00>
@@ -726,25 +726,25 @@ ST_23 : Operation 315 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterfac
 ST_23 : Operation 316 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C_DRAM, void @empty_3, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_4, void @empty_0, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_11, i32 4294967295, i32 0, i32 0"   --->   Operation 316 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_23 : Operation 317 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C_DRAM, void @empty_5, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_11, i32 4294967295, i32 0, i32 0"   --->   Operation 317 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_23 : Operation 318 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_4, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0, i32 0"   --->   Operation 318 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 319 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 319 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 320 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 320 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 321 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 321 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 322 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 322 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 323 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 323 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 324 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 324 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 325 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 325 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 326 [1/1] (0.00ns)   --->   "%specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i64 666, i64 30, i64 18446744073709551615" [top.cpp:22]   --->   Operation 326 'specmemcore' 'specmemcore_ln22' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 327 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 327 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 328 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 328 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 329 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 329 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 330 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 330 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 331 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 331 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 332 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 332 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 333 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 333 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 334 [1/1] (0.00ns)   --->   "%specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i64 666, i64 30, i64 18446744073709551615" [top.cpp:23]   --->   Operation 334 'specmemcore' 'specmemcore_ln23' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 335 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %denom_row, i64 666, i64 18, i64 18446744073709551615" [top.cpp:24]   --->   Operation 335 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 336 [1/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:98]   --->   Operation 336 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_23 : Operation 337 [1/1] (0.00ns)   --->   "%ret_ln98 = ret" [top.cpp:98]   --->   Operation 337 'ret' 'ret_ln98' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 319 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 319 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 320 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 320 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 321 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 321 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 322 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 322 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 323 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 323 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 324 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 324 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 325 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 325 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 326 [1/1] (0.00ns)   --->   "%specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i64 666, i64 30, i64 18446744073709551615" [top.cpp:24]   --->   Operation 326 'specmemcore' 'specmemcore_ln24' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 327 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 327 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 328 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 328 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 329 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 329 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 330 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 330 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 331 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 331 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 332 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 332 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 333 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 333 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 334 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 334 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 335 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %denom_row, i64 666, i64 18, i64 18446744073709551615" [top.cpp:26]   --->   Operation 335 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 336 [1/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i64 %C_addr" [top.cpp:100]   --->   Operation 336 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_23 : Operation 337 [1/1] (0.00ns)   --->   "%ret_ln100 = ret" [top.cpp:100]   --->   Operation 337 'ret' 'ret_ln100' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -917,10 +917,10 @@ col_sum_1_load_loc  (alloca       ) [ 001111111111111000000000]
 col_sum_load_loc    (alloca       ) [ 001111111111111000000000]
 trunc_ln            (partselect   ) [ 001111111111000000000000]
 trunc_ln3           (partselect   ) [ 001111111111111111100000]
-sext_ln41           (sext         ) [ 000000000000000000000000]
+sext_ln43           (sext         ) [ 000000000000000000000000]
 A_addr              (getelementptr) [ 000111111100000000000000]
 empty               (readreq      ) [ 000000000000000000000000]
-call_ln41           (call         ) [ 000000000000000000000000]
+call_ln43           (call         ) [ 000000000000000000000000]
 call_ln0            (call         ) [ 000000000000000000000000]
 col_sum_load        (load         ) [ 000000000000000100000000]
 col_sum_1_load      (load         ) [ 000000000000000100000000]
@@ -987,7 +987,7 @@ col_sum_61_load     (load         ) [ 000000000000000100000000]
 col_sum_62_load     (load         ) [ 000000000000000100000000]
 col_sum_63_load     (load         ) [ 000000000000000100000000]
 call_ln0            (call         ) [ 000000000000000000000000]
-sext_ln88           (sext         ) [ 000000000000000000000000]
+sext_ln90           (sext         ) [ 000000000000000000000000]
 C_addr              (getelementptr) [ 000000000000000001111111]
 empty_30            (writereq     ) [ 000000000000000000000000]
 scale_63_loc_load   (load         ) [ 000000000000000000100000]
@@ -1054,7 +1054,7 @@ scale_3_loc_load    (load         ) [ 000000000000000000100000]
 scale_2_loc_load    (load         ) [ 000000000000000000100000]
 scale_1_loc_load    (load         ) [ 000000000000000000100000]
 scale_loc_load      (load         ) [ 000000000000000000100000]
-call_ln88           (call         ) [ 000000000000000000000000]
+call_ln90           (call         ) [ 000000000000000000000000]
 spectopmodule_ln11  (spectopmodule) [ 000000000000000000000000]
 specinterface_ln0   (specinterface) [ 000000000000000000000000]
 specbitsmap_ln0     (specbitsmap  ) [ 000000000000000000000000]
@@ -1065,25 +1065,25 @@ specinterface_ln0   (specinterface) [ 000000000000000000000000]
 specinterface_ln0   (specinterface) [ 000000000000000000000000]
 specinterface_ln0   (specinterface) [ 000000000000000000000000]
 specinterface_ln0   (specinterface) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln22    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
-specmemcore_ln23    (specmemcore  ) [ 000000000000000000000000]
 specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln24    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln25    (specmemcore  ) [ 000000000000000000000000]
+specmemcore_ln26    (specmemcore  ) [ 000000000000000000000000]
 empty_31            (writeresp    ) [ 000000000000000000000000]
-ret_ln98            (ret          ) [ 000000000000000000000000]
+ret_ln100           (ret          ) [ 000000000000000000000000]
 </LifeTime>
 
 <model>
@@ -1365,7 +1365,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 <pin id="57" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3"/></StgValue>
+<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3"/></StgValue>
 </bind>
 </comp>
 
@@ -1374,7 +1374,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 <pin id="59" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_57_4"/></StgValue>
+<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_59_4"/></StgValue>
 </bind>
 </comp>
 
@@ -1383,7 +1383,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 <pin id="61" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_76_6"/></StgValue>
+<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_78_6"/></StgValue>
 </bind>
 </comp>
 
@@ -1401,7 +1401,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 <pin id="65" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9"/></StgValue>
+<StgValue><ssdm name="top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9"/></StgValue>
 </bind>
 </comp>
 
@@ -3100,7 +3100,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="659" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659">
+<comp id="659" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659">
 <pin_list>
 <pin id="660" dir="0" index="0" bw="0" slack="0"/>
 <pin id="661" dir="0" index="1" bw="32" slack="0"/>
@@ -3118,11 +3118,11 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln41/10 "/>
+<opset="call_ln43/10 "/>
 </bind>
 </comp>
 
-<comp id="684" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684">
+<comp id="684" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684">
 <pin_list>
 <pin id="685" dir="0" index="0" bw="0" slack="0"/>
 <pin id="686" dir="0" index="1" bw="24" slack="11"/>
@@ -3214,7 +3214,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="786" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786">
+<comp id="786" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786">
 <pin_list>
 <pin id="787" dir="0" index="0" bw="0" slack="0"/>
 <pin id="788" dir="0" index="1" bw="24" slack="0"/>
@@ -3353,7 +3353,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="918" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918">
+<comp id="918" class="1004" name="grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918">
 <pin_list>
 <pin id="919" dir="0" index="0" bw="0" slack="0"/>
 <pin id="920" dir="0" index="1" bw="32" slack="0"/>
@@ -3434,7 +3434,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln88/17 "/>
+<opset="call_ln90/17 "/>
 </bind>
 </comp>
 
@@ -3466,14 +3466,14 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="1025" class="1004" name="sext_ln41_fu_1025">
+<comp id="1025" class="1004" name="sext_ln43_fu_1025">
 <pin_list>
 <pin id="1026" dir="0" index="0" bw="62" slack="1"/>
 <pin id="1027" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln41/2 "/>
+<opset="sext_ln43/2 "/>
 </bind>
 </comp>
 
@@ -4193,14 +4193,14 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="1291" class="1004" name="sext_ln88_fu_1291">
+<comp id="1291" class="1004" name="sext_ln90_fu_1291">
 <pin_list>
 <pin id="1292" dir="0" index="0" bw="62" slack="15"/>
 <pin id="1293" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln88/16 "/>
+<opset="sext_ln90/16 "/>
 </bind>
 </comp>
 
@@ -7738,7 +7738,7 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 		C_addr : 1
 		empty_30 : 2
 	State 17
-		call_ln88 : 1
+		call_ln90 : 1
 	State 18
 	State 19
 	State 20
@@ -7755,10 +7755,10 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|
 | Operation|                         Functional Unit                        |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|
-|          | grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659 |    0    |    0    |   144   |   342   |
-|   call   |         grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684         |    0    |  12.225 |  27590  |  21777  |
-|          |         grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786         |    0    |    0    |   1543  |   1038  |
-|          | grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918 |    2    |  5.868  |   367   |   840   |
+|          | grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659 |    0    |    0    |   144   |   342   |
+|   call   |         grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684         |    0    |  12.225 |  27590  |  21777  |
+|          |         grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786         |    0    |    0    |   1543  |   1038  |
+|          | grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918 |    2    |  5.868  |   367   |   840   |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|
 |   read   |                     C_DRAM_read_read_fu_628                    |    0    |    0    |    0    |    0    |
 |          |                     A_DRAM_read_read_fu_634                    |    0    |    0    |    0    |    0    |
@@ -7772,8 +7772,8 @@ ret_ln98            (ret          ) [ 000000000000000000000000]
 |partselect|                        trunc_ln_fu_1005                        |    0    |    0    |    0    |    0    |
 |          |                        trunc_ln3_fu_1015                       |    0    |    0    |    0    |    0    |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|
-|   sext   |                        sext_ln41_fu_1025                       |    0    |    0    |    0    |    0    |
-|          |                        sext_ln88_fu_1291                       |    0    |    0    |    0    |    0    |
+|   sext   |                        sext_ln43_fu_1025                       |    0    |    0    |    0    |    0    |
+|          |                        sext_ln90_fu_1291                       |    0    |    0    |    0    |    0    |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|
 |   Total  |                                                                |    2    |  18.093 |  29644  |  23997  |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|

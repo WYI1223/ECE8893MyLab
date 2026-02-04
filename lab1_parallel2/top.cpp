@@ -1,21 +1,23 @@
 #include "dcl.h"
-#include <cstring> // memcpy
 
-// Optimized (top13-style) + direct write-back to C_DRAM:
-// - Loop-level only (PIPELINE/UNROLL/PARTITION/FLATTEN), no DATAFLOW/stream.
-// - Keeps baseline accumulation order (bit-exact w.r.t. top.cpp baseline under same data_t).
-// - Writes results directly to C_DRAM (no extra on-chip C + copy-back loop).
+// UF=8 direct-write baseline, plus operator binding to improve CP.
+// Idea: Your memcpy run improved CP but destroyed cycles. Here we try to get the CP win
+// by forcing key multiplies to use pipelined DSP implementations (no algorithm change).
+//
+// Notes:
+// - Only pragmas + tiny local temps added; math and loop order unchanged.
+// - No dataflow/streams.
+// - If it doesn't help CP, it likely means the critical path is elsewhere (often divide/control).
 
-// Unroll factor (must divide N_COLS)
 static const int UF_NORM = 8; // divider parallelism
+static const int MUL_LAT = 4; // 0..4 for mul+dsp
 
 void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
                 data_t C_DRAM[N_ROWS][N_COLS]) {
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
-#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C num_write_outstanding=16 max_write_burst_length=64 max_widen_bitwidth=512
+#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
 #pragma HLS interface s_axilite port=return
 
-    // On-chip buffers for A and normalized tmp (tmp is needed because scale depends on full col_sum)
     static data_t A[N_ROWS][N_COLS];
     static data_t tmp[N_ROWS][N_COLS];
     static data_t denom_row[N_ROWS];
@@ -83,19 +85,15 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
         }
     }
 
-    // Pass 4 (experiment): compute one row into a local buffer, then memcpy to DRAM
-    // Goal: let HLS infer a burst store (and possibly widen) more easily.
+    // Pass 4: direct write-back to C_DRAM
     for (int i = 0; i < N_ROWS; i++) {
-        data_t rowC[N_COLS];
-#pragma HLS ARRAY_PARTITION variable=rowC cyclic factor=UF_NORM dim=1
-
         for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-            rowC[j] = tmp[i][j] * scale[j];
+            data_t prod;
+#pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
+            prod = tmp[i][j] * scale[j];
+            C_DRAM[i][j] = prod;
         }
-
-        // burst write (still limited by AXI data width if it stays at 32)
-        std::memcpy((void*)&C_DRAM[i][0], (const void*)rowC, N_COLS * sizeof(data_t));
     }
 }
 

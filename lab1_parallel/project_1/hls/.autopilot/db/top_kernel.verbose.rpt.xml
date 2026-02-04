@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Tue Feb  3 21:06:20 2026
+<item name = "Date">Tue Feb  3 23:29:36 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">34898, 34898, 0.349 ms, 0.349 ms, 34899, 34899, no</column>
+<column name="">34899, 34899, 0.349 ms, 0.349 ms, 34900, 34900, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_657">top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4, 16387, 16387, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6_fu_682">top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6, 2091, 2091, 20.910 us, 20.910 us, 2049, 2049, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_77_8_fu_784">top_kernel_Pipeline_VITIS_LOOP_77_8, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12_fu_916">top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12, 16388, 16388, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_657">top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3, 16387, 16387, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682">top_kernel_Pipeline_VITIS_LOOP_60_4, 2091, 2091, 20.910 us, 20.910 us, 2049, 2049, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784">top_kernel_Pipeline_VITIS_LOOP_79_6, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916">top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9, 16389, 16389, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -53,7 +53,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, 2, 30769, 27058, 0</column>
+<column name="Instance">2, 2, 30555, 26769, 0</column>
 <column name="Memory">49, -, 0, 0, -</column>
 <column name="Multiplexer">-, -, 0, 892, -</column>
 <column name="Register">-, -, 151, -, -</column>
@@ -68,10 +68,10 @@
 <column name="A_m_axi_U">A_m_axi, 2, 0, 671, 637, 0</column>
 <column name="C_m_axi_U">C_m_axi, 0, 0, 611, 666, 0</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 176, 296, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_657">top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4, 0, 0, 85, 423, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6_fu_682">top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6, 0, 0, 27365, 23047, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_77_8_fu_784">top_kernel_Pipeline_VITIS_LOOP_77_8, 0, 0, 1542, 1083, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12_fu_916">top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12, 0, 2, 319, 906, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_657">top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3, 0, 0, 85, 423, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682">top_kernel_Pipeline_VITIS_LOOP_60_4, 0, 0, 27376, 22984, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784">top_kernel_Pipeline_VITIS_LOOP_79_6, 0, 0, 1545, 1073, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916">top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9, 0, 2, 91, 690, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -178,10 +178,10 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">23, 0, 23, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_657_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6_fu_682_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_77_8_fu_784_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12_fu_916_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_657_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916_ap_start_reg">1, 0, 1, 0</column>
 <column name="trunc_ln3_reg_2329">62, 0, 62, 0</column>
 <column name="trunc_ln_reg_2323">62, 0, 62, 0</column>
 </table>

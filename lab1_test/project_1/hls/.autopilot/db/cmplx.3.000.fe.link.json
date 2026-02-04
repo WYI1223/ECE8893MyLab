@@ -6,7 +6,7 @@
     "def_use_depth": 4,
     "file": "top.cpp",
     "fileloc": 11,
-    "instructions": 277,
+    "instructions": 279,
     "loads": {
       "G": 1,
       "L": 6,
@@ -19,6 +19,6 @@
       "L": 4,
       "T": 1
     },
-    "total_instructions": 5662
+    "total_instructions": 5664
   }
 }

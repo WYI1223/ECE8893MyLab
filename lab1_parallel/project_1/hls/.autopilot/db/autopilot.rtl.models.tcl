@@ -1,19 +1,24 @@
 set SynModuleInfo {
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4 MODELNAME top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3 MODELNAME top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3
     SUBMODULES {
       {MODELNAME top_kernel_flow_control_loop_pipe_sequential_init RTLNAME top_kernel_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME top_kernel_flow_control_loop_pipe_sequential_init_U}
     }
   }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6 MODELNAME top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_59_5_VITIS_LOOP_61_6
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_60_4 MODELNAME top_kernel_Pipeline_VITIS_LOOP_60_4 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_60_4
     SUBMODULES {
       {MODELNAME top_kernel_sdiv_38ns_24s_38_42_1 RTLNAME top_kernel_sdiv_38ns_24s_38_42_1 BINDTYPE op TYPE sdiv IMPL auto LATENCY 41 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_sparsemux_17_3_24_1_1 RTLNAME top_kernel_sparsemux_17_3_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
   }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_77_8 MODELNAME top_kernel_Pipeline_VITIS_LOOP_77_8 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_77_8}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12 MODELNAME top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_86_10_VITIS_LOOP_87_11_VITIS_LOOP_89_12
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_79_6 MODELNAME top_kernel_Pipeline_VITIS_LOOP_79_6 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_79_6
     SUBMODULES {
-      {MODELNAME top_kernel_mul_24s_24s_48_1_1 RTLNAME top_kernel_mul_24s_24s_48_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_sparsemux_17_6_24_1_1 RTLNAME top_kernel_sparsemux_17_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+    }
+  }
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9 MODELNAME top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9
+    SUBMODULES {
+      {MODELNAME top_kernel_mul_24s_24s_48_3_1 RTLNAME top_kernel_mul_24s_24s_48_3_1 BINDTYPE op TYPE mul IMPL dsp LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_sparsemux_129_6_24_1_1 RTLNAME top_kernel_sparsemux_129_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
   }
   {SRCNAME top_kernel MODELNAME top_kernel RTLNAME top_kernel IS_TOP 1

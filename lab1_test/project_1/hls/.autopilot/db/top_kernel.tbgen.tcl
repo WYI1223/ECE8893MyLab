@@ -281,9 +281,9 @@ set ArgLastReadFirstWriteLatency {
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type IO LastRead -1 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3 {
+	top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3 {
 		A {Type I LastRead 1 FirstWrite -1}
-		sext_ln41 {Type I LastRead 0 FirstWrite -1}
+		sext_ln43 {Type I LastRead 0 FirstWrite -1}
 		denom_row {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 {Type O LastRead -1 FirstWrite 2}
@@ -293,7 +293,7 @@ set ArgLastReadFirstWriteLatency {
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A {Type O LastRead -1 FirstWrite 2}}
-	top_kernel_Pipeline_VITIS_LOOP_57_4 {
+	top_kernel_Pipeline_VITIS_LOOP_59_4 {
 		col_sum_load_out {Type O LastRead -1 FirstWrite 41}
 		col_sum_1_load_out {Type O LastRead -1 FirstWrite 41}
 		col_sum_2_load_out {Type O LastRead -1 FirstWrite 41}
@@ -375,7 +375,7 @@ set ArgLastReadFirstWriteLatency {
 		denom_row {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type O LastRead -1 FirstWrite 42}}
-	top_kernel_Pipeline_VITIS_LOOP_76_6 {
+	top_kernel_Pipeline_VITIS_LOOP_78_6 {
 		col_sum_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_8_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_16_load_reload {Type I LastRead 0 FirstWrite -1}
@@ -504,9 +504,9 @@ set ArgLastReadFirstWriteLatency {
 		scale_2_out {Type O LastRead -1 FirstWrite 0}
 		scale_1_out {Type O LastRead -1 FirstWrite 0}
 		scale_out {Type O LastRead -1 FirstWrite 0}}
-	top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9 {
+	top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9 {
 		C {Type O LastRead -1 FirstWrite 3}
-		sext_ln88 {Type I LastRead 0 FirstWrite -1}
+		sext_ln90 {Type I LastRead 0 FirstWrite -1}
 		scale_reload {Type I LastRead 0 FirstWrite -1}
 		scale_2_reload {Type I LastRead 0 FirstWrite -1}
 		scale_4_reload {Type I LastRead 0 FirstWrite -1}

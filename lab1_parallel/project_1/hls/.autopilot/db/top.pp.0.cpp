@@ -6507,20 +6507,15 @@ typedef ap_fixed<24, 10, AP_RND, AP_SAT> data_t;
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "top.cpp" 2
-
-
-
-
-
-
-
+# 12 "top.cpp"
 static const int UF_NORM = 8;
+static const int MUL_LAT = 2;
 
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
 #line 22 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/script.tcl"
 #pragma HLSDIRECTIVE TOP name=top_kernel
-# 12 "top.cpp"
+# 16 "top.cpp"
 
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
 #pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
@@ -6537,28 +6532,21 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
 #pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF_NORM dim=2
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
 
- const int BLKS_N = 64 / UF_NORM;
+ data_t col_sum[64];
+    data_t scale[64];
+#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
+#pragma HLS ARRAY_PARTITION variable=scale complete dim=1
 
 
-    data_t col_sum_lane[UF_NORM][BLKS_N];
-    data_t scale_lane[UF_NORM][BLKS_N];
-#pragma HLS ARRAY_PARTITION variable=col_sum_lane complete dim=1
-#pragma HLS ARRAY_PARTITION variable=col_sum_lane complete dim=2
-#pragma HLS ARRAY_PARTITION variable=scale_lane complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale_lane complete dim=2
-
-
- VITIS_LOOP_39_1: for (int k = 0; k < UF_NORM; k++) {
-        VITIS_LOOP_40_2: for (int b = 0; b < BLKS_N; b++) {
+ VITIS_LOOP_38_1: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
- col_sum_lane[k][b] = (data_t)0.0;
-        }
+ col_sum[j] = (data_t)0.0;
     }
 
 
-    VITIS_LOOP_47_3: for (int i = 0; i < 256; i++) {
+    VITIS_LOOP_44_2: for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
-        VITIS_LOOP_49_4: for (int j = 0; j < 64; j++) {
+        VITIS_LOOP_46_3: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  data_t a = A_DRAM[i][j];
             A[i][j] = a;
@@ -6568,41 +6556,46 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
     }
 
 
-    VITIS_LOOP_59_5: for (int i = 0; i < 256; i++) {
-        data_t denom_reg = denom_row[i];
-        VITIS_LOOP_61_6: for (int b = 0; b < BLKS_N; b++) {
-#pragma HLS PIPELINE II=1
- int jb = b * UF_NORM;
+    const int BLKS_N = 64 / UF_NORM;
+    const int TOT_N = 256 * BLKS_N;
 
-#pragma HLS DEPENDENCE variable=col_sum_lane inter false
- VITIS_LOOP_66_7: for (int k = 0; k < UF_NORM; k++) {
+    data_t denom_reg = (data_t)1.0;
+    VITIS_LOOP_60_4: for (int idx = 0; idx < TOT_N; idx++) {
+#pragma HLS PIPELINE II=1
+ int i = idx / BLKS_N;
+        int b = idx - i * BLKS_N;
+        int jb = b * UF_NORM;
+
+        if (b == 0) denom_reg = denom_row[i];
+
+#pragma HLS DEPENDENCE variable=col_sum inter false
+ VITIS_LOOP_69_5: for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
  int j = jb + k;
-                data_t t = A[i][j] / denom_reg;
-                tmp[i][j] = t;
-                col_sum_lane[k][b] += t;
-            }
+            data_t t = A[i][j] / denom_reg;
+            tmp[i][j] = t;
+            col_sum[j] += t;
         }
     }
 
 
-    VITIS_LOOP_77_8: for (int b = 0; b < BLKS_N; b++) {
+    VITIS_LOOP_79_6: for (int jb = 0; jb < 64; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
- VITIS_LOOP_79_9: for (int k = 0; k < UF_NORM; k++) {
+ VITIS_LOOP_81_7: for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
- scale_lane[k][b] = col_sum_lane[k][b] / (data_t)256;
+ int j = jb + k;
+            scale[j] = col_sum[j] / (data_t)256;
         }
     }
 
 
-    VITIS_LOOP_86_10: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_87_11: for (int b = 0; b < BLKS_N; b++) {
-            int jb = b * UF_NORM;
-            VITIS_LOOP_89_12: for (int k = 0; k < UF_NORM; k++) {
+    VITIS_LOOP_89_8: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_90_9: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
- int j = jb + k;
-                C_DRAM[i][j] = tmp[i][j] * scale_lane[k][b];
-            }
+ data_t prod;
+#pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
+ prod = tmp[i][j] * scale[j];
+            C_DRAM[i][j] = prod;
         }
     }
 }

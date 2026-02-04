@@ -261,7 +261,7 @@ set NewPortList {[
 set ArgLastReadFirstWriteLatency {
 	top_kernel {
 		A {Type I LastRead 1 FirstWrite -1}
-		C {Type O LastRead 17 FirstWrite 20}
+		C {Type O LastRead 18 FirstWrite 6}
 		A_DRAM {Type I LastRead 0 FirstWrite -1}
 		C_DRAM {Type I LastRead 0 FirstWrite -1}
 		denom_row {Type IO LastRead -1 FirstWrite -1}
@@ -281,9 +281,9 @@ set ArgLastReadFirstWriteLatency {
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type IO LastRead -1 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_44_3 {
+	top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3 {
 		A {Type I LastRead 1 FirstWrite -1}
-		sext_ln42 {Type I LastRead 0 FirstWrite -1}
+		sext_ln44 {Type I LastRead 0 FirstWrite -1}
 		denom_row {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 {Type O LastRead -1 FirstWrite 2}
@@ -293,7 +293,7 @@ set ArgLastReadFirstWriteLatency {
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A {Type O LastRead -1 FirstWrite 2}}
-	top_kernel_Pipeline_VITIS_LOOP_58_4 {
+	top_kernel_Pipeline_VITIS_LOOP_60_4 {
 		col_sum_load_out {Type O LastRead -1 FirstWrite 41}
 		col_sum_1_load_out {Type O LastRead -1 FirstWrite 41}
 		col_sum_2_load_out {Type O LastRead -1 FirstWrite 41}
@@ -375,7 +375,7 @@ set ArgLastReadFirstWriteLatency {
 		denom_row {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type O LastRead -1 FirstWrite 42}}
-	top_kernel_Pipeline_VITIS_LOOP_77_6 {
+	top_kernel_Pipeline_VITIS_LOOP_79_6 {
 		col_sum_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_8_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_16_load_reload {Type I LastRead 0 FirstWrite -1}
@@ -504,16 +504,9 @@ set ArgLastReadFirstWriteLatency {
 		scale_2_out {Type O LastRead -1 FirstWrite 0}
 		scale_1_out {Type O LastRead -1 FirstWrite 0}
 		scale_out {Type O LastRead -1 FirstWrite 0}}
-	top_kernel_Pipeline_VITIS_LOOP_92_9 {
-		i_2 {Type I LastRead 0 FirstWrite -1}
-		rowC_7 {Type O LastRead -1 FirstWrite 2}
-		rowC_6 {Type O LastRead -1 FirstWrite 2}
-		rowC_5 {Type O LastRead -1 FirstWrite 2}
-		rowC_4 {Type O LastRead -1 FirstWrite 2}
-		rowC_3 {Type O LastRead -1 FirstWrite 2}
-		rowC_2 {Type O LastRead -1 FirstWrite 2}
-		rowC_1 {Type O LastRead -1 FirstWrite 2}
-		rowC {Type O LastRead -1 FirstWrite 2}
+	top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9 {
+		C {Type O LastRead -1 FirstWrite 6}
+		sext_ln89 {Type I LastRead 0 FirstWrite -1}
 		scale_reload {Type I LastRead 0 FirstWrite -1}
 		scale_1_reload {Type I LastRead 0 FirstWrite -1}
 		scale_2_reload {Type I LastRead 0 FirstWrite -1}
@@ -590,8 +583,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "85581", "Max" : "85581"}
-	, {"Name" : "Interval", "Min" : "85582", "Max" : "85582"}
+	{"Name" : "Latency", "Min" : "34901", "Max" : "34901"}
+	, {"Name" : "Interval", "Min" : "34902", "Max" : "34902"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -604,7 +597,7 @@ set Spec2ImplPortList {
 
 set maxi_interface_dict [dict create]
 dict set maxi_interface_dict A { CHANNEL_NUM 0 BUNDLE A NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE READ_ONLY}
-dict set maxi_interface_dict C { CHANNEL_NUM 0 BUNDLE C NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 64 READ_WRITE_MODE WRITE_ONLY}
+dict set maxi_interface_dict C { CHANNEL_NUM 0 BUNDLE C NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE WRITE_ONLY}
 
 # RTL port scheduling information:
 set fifoSchedulingInfoList { 

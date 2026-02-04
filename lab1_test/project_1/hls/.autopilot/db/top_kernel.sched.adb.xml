@@ -2134,10 +2134,10 @@ entry:292 %trunc_ln3 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 
 
 <Node id="180" bw="64" op_0_bw="62">
 <![CDATA[
-entry:158 %sext_ln41 = sext i62 %trunc_ln
+entry:158 %sext_ln43 = sext i62 %trunc_ln
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln41"/></StgValue>
+<StgValue><ssdm name="sext_ln43"/></StgValue>
 </operation>
 
 <operation id="157" st_id="2" stage="1" lat="1">
@@ -2149,7 +2149,7 @@ entry:158 %sext_ln41 = sext i62 %trunc_ln
 
 <Node id="181" bw="32" op_0_bw="32" op_1_bw="64">
 <![CDATA[
-entry:159 %A_addr = getelementptr i32 %A, i64 %sext_ln41
+entry:159 %A_addr = getelementptr i32 %A, i64 %sext_ln43
 
 ]]></Node>
 <StgValue><ssdm name="A_addr"/></StgValue>
@@ -2308,10 +2308,10 @@ entry:160 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16
 
 <Node id="183" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="62" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="0">
 <![CDATA[
-entry:161 %call_ln41 = call void @top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A
+entry:161 %call_ln43 = call void @top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A
 
 ]]></Node>
-<StgValue><ssdm name="call_ln41"/></StgValue>
+<StgValue><ssdm name="call_ln43"/></StgValue>
 </operation>
 </state>
 
@@ -2326,10 +2326,10 @@ entry:161 %call_ln41 = call void @top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP
 
 <Node id="183" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="62" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="0">
 <![CDATA[
-entry:161 %call_ln41 = call void @top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A
+entry:161 %call_ln43 = call void @top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A
 
 ]]></Node>
-<StgValue><ssdm name="call_ln41"/></StgValue>
+<StgValue><ssdm name="call_ln43"/></StgValue>
 </operation>
 </state>
 
@@ -2344,7 +2344,7 @@ entry:161 %call_ln41 = call void @top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP
 
 <Node id="184" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24" op_51_bw="24" op_52_bw="24" op_53_bw="24" op_54_bw="24" op_55_bw="24" op_56_bw="24" op_57_bw="24" op_58_bw="24" op_59_bw="24" op_60_bw="24" op_61_bw="24" op_62_bw="24" op_63_bw="24" op_64_bw="24" op_65_bw="24" op_66_bw="24" op_67_bw="24" op_68_bw="24" op_69_bw="24" op_70_bw="24" op_71_bw="24" op_72_bw="24" op_73_bw="24" op_74_bw="24" op_75_bw="24" op_76_bw="24" op_77_bw="24" op_78_bw="24" op_79_bw="24" op_80_bw="24" op_81_bw="24" op_82_bw="0" op_83_bw="0">
 <![CDATA[
-entry:162 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_57_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7
+entry:162 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_59_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -2362,7 +2362,7 @@ entry:162 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_57_4, i24 %col_s
 
 <Node id="184" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24" op_51_bw="24" op_52_bw="24" op_53_bw="24" op_54_bw="24" op_55_bw="24" op_56_bw="24" op_57_bw="24" op_58_bw="24" op_59_bw="24" op_60_bw="24" op_61_bw="24" op_62_bw="24" op_63_bw="24" op_64_bw="24" op_65_bw="24" op_66_bw="24" op_67_bw="24" op_68_bw="24" op_69_bw="24" op_70_bw="24" op_71_bw="24" op_72_bw="24" op_73_bw="24" op_74_bw="24" op_75_bw="24" op_76_bw="24" op_77_bw="24" op_78_bw="24" op_79_bw="24" op_80_bw="24" op_81_bw="24" op_82_bw="0" op_83_bw="0">
 <![CDATA[
-entry:162 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_57_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7
+entry:162 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_59_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -3340,7 +3340,7 @@ entry:226 %col_sum_63_load = load i24 %col_sum_63_load_loc
 
 <Node id="249" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24" op_51_bw="24" op_52_bw="24" op_53_bw="24" op_54_bw="24" op_55_bw="24" op_56_bw="24" op_57_bw="24" op_58_bw="24" op_59_bw="24" op_60_bw="24" op_61_bw="24" op_62_bw="24" op_63_bw="24" op_64_bw="24" op_65_bw="24" op_66_bw="24" op_67_bw="24" op_68_bw="24" op_69_bw="24" op_70_bw="24" op_71_bw="24" op_72_bw="24" op_73_bw="24" op_74_bw="24" op_75_bw="24" op_76_bw="24" op_77_bw="24" op_78_bw="24" op_79_bw="24" op_80_bw="24" op_81_bw="24" op_82_bw="24" op_83_bw="24" op_84_bw="24" op_85_bw="24" op_86_bw="24" op_87_bw="24" op_88_bw="24" op_89_bw="24" op_90_bw="24" op_91_bw="24" op_92_bw="24" op_93_bw="24" op_94_bw="24" op_95_bw="24" op_96_bw="24" op_97_bw="24" op_98_bw="24" op_99_bw="24" op_100_bw="24" op_101_bw="24" op_102_bw="24" op_103_bw="24" op_104_bw="24" op_105_bw="24" op_106_bw="24" op_107_bw="24" op_108_bw="24" op_109_bw="24" op_110_bw="24" op_111_bw="24" op_112_bw="24" op_113_bw="24" op_114_bw="24" op_115_bw="24" op_116_bw="24" op_117_bw="24" op_118_bw="24" op_119_bw="24" op_120_bw="24" op_121_bw="24" op_122_bw="24" op_123_bw="24" op_124_bw="24" op_125_bw="24" op_126_bw="24" op_127_bw="24" op_128_bw="24">
 <![CDATA[
-entry:227 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_76_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc
+entry:227 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_78_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -3358,7 +3358,7 @@ entry:227 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_76_6, i24 %col_s
 
 <Node id="249" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24" op_51_bw="24" op_52_bw="24" op_53_bw="24" op_54_bw="24" op_55_bw="24" op_56_bw="24" op_57_bw="24" op_58_bw="24" op_59_bw="24" op_60_bw="24" op_61_bw="24" op_62_bw="24" op_63_bw="24" op_64_bw="24" op_65_bw="24" op_66_bw="24" op_67_bw="24" op_68_bw="24" op_69_bw="24" op_70_bw="24" op_71_bw="24" op_72_bw="24" op_73_bw="24" op_74_bw="24" op_75_bw="24" op_76_bw="24" op_77_bw="24" op_78_bw="24" op_79_bw="24" op_80_bw="24" op_81_bw="24" op_82_bw="24" op_83_bw="24" op_84_bw="24" op_85_bw="24" op_86_bw="24" op_87_bw="24" op_88_bw="24" op_89_bw="24" op_90_bw="24" op_91_bw="24" op_92_bw="24" op_93_bw="24" op_94_bw="24" op_95_bw="24" op_96_bw="24" op_97_bw="24" op_98_bw="24" op_99_bw="24" op_100_bw="24" op_101_bw="24" op_102_bw="24" op_103_bw="24" op_104_bw="24" op_105_bw="24" op_106_bw="24" op_107_bw="24" op_108_bw="24" op_109_bw="24" op_110_bw="24" op_111_bw="24" op_112_bw="24" op_113_bw="24" op_114_bw="24" op_115_bw="24" op_116_bw="24" op_117_bw="24" op_118_bw="24" op_119_bw="24" op_120_bw="24" op_121_bw="24" op_122_bw="24" op_123_bw="24" op_124_bw="24" op_125_bw="24" op_126_bw="24" op_127_bw="24" op_128_bw="24">
 <![CDATA[
-entry:227 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_76_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc
+entry:227 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_78_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i24 %scale_63_loc, i24 %scale_62_loc, i24 %scale_61_loc, i24 %scale_60_loc, i24 %scale_59_loc, i24 %scale_58_loc, i24 %scale_57_loc, i24 %scale_56_loc, i24 %scale_55_loc, i24 %scale_54_loc, i24 %scale_53_loc, i24 %scale_52_loc, i24 %scale_51_loc, i24 %scale_50_loc, i24 %scale_49_loc, i24 %scale_48_loc, i24 %scale_47_loc, i24 %scale_46_loc, i24 %scale_45_loc, i24 %scale_44_loc, i24 %scale_43_loc, i24 %scale_42_loc, i24 %scale_41_loc, i24 %scale_40_loc, i24 %scale_39_loc, i24 %scale_38_loc, i24 %scale_37_loc, i24 %scale_36_loc, i24 %scale_35_loc, i24 %scale_34_loc, i24 %scale_33_loc, i24 %scale_32_loc, i24 %scale_31_loc, i24 %scale_30_loc, i24 %scale_29_loc, i24 %scale_28_loc, i24 %scale_27_loc, i24 %scale_26_loc, i24 %scale_25_loc, i24 %scale_24_loc, i24 %scale_23_loc, i24 %scale_22_loc, i24 %scale_21_loc, i24 %scale_20_loc, i24 %scale_19_loc, i24 %scale_18_loc, i24 %scale_17_loc, i24 %scale_16_loc, i24 %scale_15_loc, i24 %scale_14_loc, i24 %scale_13_loc, i24 %scale_12_loc, i24 %scale_11_loc, i24 %scale_10_loc, i24 %scale_9_loc, i24 %scale_8_loc, i24 %scale_7_loc, i24 %scale_6_loc, i24 %scale_5_loc, i24 %scale_4_loc, i24 %scale_3_loc, i24 %scale_2_loc, i24 %scale_1_loc, i24 %scale_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -3376,10 +3376,10 @@ entry:227 %call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_76_6, i24 %col_s
 
 <Node id="315" bw="64" op_0_bw="62">
 <![CDATA[
-entry:293 %sext_ln88 = sext i62 %trunc_ln3
+entry:293 %sext_ln90 = sext i62 %trunc_ln3
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln88"/></StgValue>
+<StgValue><ssdm name="sext_ln90"/></StgValue>
 </operation>
 
 <operation id="237" st_id="16" stage="1" lat="1">
@@ -3391,7 +3391,7 @@ entry:293 %sext_ln88 = sext i62 %trunc_ln3
 
 <Node id="316" bw="32" op_0_bw="32" op_1_bw="64">
 <![CDATA[
-entry:294 %C_addr = getelementptr i32 %C, i64 %sext_ln88
+entry:294 %C_addr = getelementptr i32 %C, i64 %sext_ln90
 
 ]]></Node>
 <StgValue><ssdm name="C_addr"/></StgValue>
@@ -4384,10 +4384,10 @@ entry:291 %scale_loc_load = load i24 %scale_loc
 
 <Node id="318" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="62" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24" op_51_bw="24" op_52_bw="24" op_53_bw="24" op_54_bw="24" op_55_bw="24" op_56_bw="24" op_57_bw="24" op_58_bw="24" op_59_bw="24" op_60_bw="24" op_61_bw="24" op_62_bw="24" op_63_bw="24" op_64_bw="24" op_65_bw="24" op_66_bw="24" op_67_bw="24" op_68_bw="24" op_69_bw="24" op_70_bw="24" op_71_bw="24" op_72_bw="24" op_73_bw="24" op_74_bw="24" op_75_bw="0" op_76_bw="0" op_77_bw="0">
 <![CDATA[
-entry:296 %call_ln88 = call void @top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2
+entry:296 %call_ln90 = call void @top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln88"/></StgValue>
+<StgValue><ssdm name="call_ln90"/></StgValue>
 </operation>
 </state>
 
@@ -4402,10 +4402,10 @@ entry:296 %call_ln88 = call void @top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP
 
 <Node id="318" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="62" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24" op_51_bw="24" op_52_bw="24" op_53_bw="24" op_54_bw="24" op_55_bw="24" op_56_bw="24" op_57_bw="24" op_58_bw="24" op_59_bw="24" op_60_bw="24" op_61_bw="24" op_62_bw="24" op_63_bw="24" op_64_bw="24" op_65_bw="24" op_66_bw="24" op_67_bw="24" op_68_bw="24" op_69_bw="24" op_70_bw="24" op_71_bw="24" op_72_bw="24" op_73_bw="24" op_74_bw="24" op_75_bw="0" op_76_bw="0" op_77_bw="0">
 <![CDATA[
-entry:296 %call_ln88 = call void @top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2
+entry:296 %call_ln90 = call void @top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9, i32 %C, i62 %trunc_ln3, i24 %scale_loc_load, i24 %scale_2_loc_load, i24 %scale_4_loc_load, i24 %scale_6_loc_load, i24 %scale_8_loc_load, i24 %scale_10_loc_load, i24 %scale_12_loc_load, i24 %scale_14_loc_load, i24 %scale_16_loc_load, i24 %scale_18_loc_load, i24 %scale_20_loc_load, i24 %scale_22_loc_load, i24 %scale_24_loc_load, i24 %scale_26_loc_load, i24 %scale_28_loc_load, i24 %scale_30_loc_load, i24 %scale_32_loc_load, i24 %scale_34_loc_load, i24 %scale_36_loc_load, i24 %scale_38_loc_load, i24 %scale_40_loc_load, i24 %scale_42_loc_load, i24 %scale_44_loc_load, i24 %scale_46_loc_load, i24 %scale_48_loc_load, i24 %scale_50_loc_load, i24 %scale_52_loc_load, i24 %scale_54_loc_load, i24 %scale_56_loc_load, i24 %scale_58_loc_load, i24 %scale_60_loc_load, i24 %scale_62_loc_load, i24 %scale_1_loc_load, i24 %scale_3_loc_load, i24 %scale_5_loc_load, i24 %scale_7_loc_load, i24 %scale_9_loc_load, i24 %scale_11_loc_load, i24 %scale_13_loc_load, i24 %scale_15_loc_load, i24 %scale_17_loc_load, i24 %scale_19_loc_load, i24 %scale_21_loc_load, i24 %scale_23_loc_load, i24 %scale_25_loc_load, i24 %scale_27_loc_load, i24 %scale_29_loc_load, i24 %scale_31_loc_load, i24 %scale_33_loc_load, i24 %scale_35_loc_load, i24 %scale_37_loc_load, i24 %scale_39_loc_load, i24 %scale_41_loc_load, i24 %scale_43_loc_load, i24 %scale_45_loc_load, i24 %scale_47_loc_load, i24 %scale_49_loc_load, i24 %scale_51_loc_load, i24 %scale_53_loc_load, i24 %scale_55_loc_load, i24 %scale_57_loc_load, i24 %scale_59_loc_load, i24 %scale_61_loc_load, i24 %scale_63_loc_load, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln88"/></StgValue>
+<StgValue><ssdm name="call_ln90"/></StgValue>
 </operation>
 </state>
 
@@ -4642,10 +4642,10 @@ entry:139 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0
 
 <Node id="162" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:140 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i64 666, i64 30, i64 18446744073709551615
+entry:140 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="320" st_id="23" stage="1" lat="1">
@@ -4657,10 +4657,10 @@ entry:140 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="163" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:141 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i64 666, i64 30, i64 18446744073709551615
+entry:141 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="321" st_id="23" stage="1" lat="1">
@@ -4672,10 +4672,10 @@ entry:141 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="164" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:142 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i64 666, i64 30, i64 18446744073709551615
+entry:142 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="322" st_id="23" stage="1" lat="1">
@@ -4687,10 +4687,10 @@ entry:142 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="165" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:143 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i64 666, i64 30, i64 18446744073709551615
+entry:143 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="323" st_id="23" stage="1" lat="1">
@@ -4702,10 +4702,10 @@ entry:143 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="166" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:144 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i64 666, i64 30, i64 18446744073709551615
+entry:144 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="324" st_id="23" stage="1" lat="1">
@@ -4717,10 +4717,10 @@ entry:144 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="167" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:145 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i64 666, i64 30, i64 18446744073709551615
+entry:145 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="325" st_id="23" stage="1" lat="1">
@@ -4732,10 +4732,10 @@ entry:145 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="168" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:146 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i64 666, i64 30, i64 18446744073709551615
+entry:146 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="326" st_id="23" stage="1" lat="1">
@@ -4747,10 +4747,10 @@ entry:146 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="169" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:147 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i64 666, i64 30, i64 18446744073709551615
+entry:147 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln22"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
 </operation>
 
 <operation id="327" st_id="23" stage="1" lat="1">
@@ -4762,10 +4762,10 @@ entry:147 %specmemcore_ln22 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="170" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:148 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i64 666, i64 30, i64 18446744073709551615
+entry:148 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="328" st_id="23" stage="1" lat="1">
@@ -4777,10 +4777,10 @@ entry:148 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="171" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:149 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i64 666, i64 30, i64 18446744073709551615
+entry:149 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="329" st_id="23" stage="1" lat="1">
@@ -4792,10 +4792,10 @@ entry:149 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="172" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:150 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i64 666, i64 30, i64 18446744073709551615
+entry:150 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="330" st_id="23" stage="1" lat="1">
@@ -4807,10 +4807,10 @@ entry:150 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="173" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:151 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i64 666, i64 30, i64 18446744073709551615
+entry:151 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="331" st_id="23" stage="1" lat="1">
@@ -4822,10 +4822,10 @@ entry:151 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="174" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:152 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i64 666, i64 30, i64 18446744073709551615
+entry:152 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="332" st_id="23" stage="1" lat="1">
@@ -4837,10 +4837,10 @@ entry:152 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="175" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:153 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i64 666, i64 30, i64 18446744073709551615
+entry:153 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="333" st_id="23" stage="1" lat="1">
@@ -4852,10 +4852,10 @@ entry:153 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="176" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:154 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i64 666, i64 30, i64 18446744073709551615
+entry:154 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="334" st_id="23" stage="1" lat="1">
@@ -4867,10 +4867,10 @@ entry:154 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="177" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:155 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i64 666, i64 30, i64 18446744073709551615
+entry:155 %specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln23"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln25"/></StgValue>
 </operation>
 
 <operation id="335" st_id="23" stage="1" lat="1">
@@ -4882,10 +4882,10 @@ entry:155 %specmemcore_ln23 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_k
 
 <Node id="178" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:156 %specmemcore_ln24 = specmemcore void @_ssdm_op_SpecMemCore, i24 %denom_row, i64 666, i64 18, i64 18446744073709551615
+entry:156 %specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %denom_row, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln24"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln26"/></StgValue>
 </operation>
 
 <operation id="336" st_id="23" stage="1" lat="5">
@@ -4912,10 +4912,10 @@ entry:297 %empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %C_addr
 
 <Node id="320" bw="0">
 <![CDATA[
-entry:298 %ret_ln98 = ret
+entry:298 %ret_ln100 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln98"/></StgValue>
+<StgValue><ssdm name="ret_ln100"/></StgValue>
 </operation>
 </state>
 </state_list>

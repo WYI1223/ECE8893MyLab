@@ -1,12 +1,16 @@
 #include "dcl.h"
 
-// UF=8 baseline algorithm, but avoids idx div/mod and removes the "if (b==0)" inside
-// the pipelined loop by switching Pass 2/4 to (i,b,k) loop structure.
-// This keeps the same processing order (row-major blocks) and should be bit-exact.
-// Goal: reduce control logic / routing pressure and potentially improve post-impl CP.
-// No dataflow / no streams. No signature/type/size changes.
+// UF=8 direct-write baseline, plus operator binding to improve CP.
+// Idea: Your memcpy run improved CP but destroyed cycles. Here we try to get the CP win
+// by forcing key multiplies to use pipelined DSP implementations (no algorithm change).
+//
+// Notes:
+// - Only pragmas + tiny local temps added; math and loop order unchanged.
+// - No dataflow/streams.
+// - If it doesn't help CP, it likely means the critical path is elsewhere (often divide/control).
 
-static const int UF_NORM = 8; // must divide N_COLS
+static const int UF_NORM = 8; // divider parallelism
+static const int MUL_LAT = 2; // 0..4 for mul+dsp
 
 void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
                 data_t C_DRAM[N_ROWS][N_COLS]) {
@@ -25,22 +29,15 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
 #pragma HLS ARRAY_PARTITION variable=A   cyclic factor=UF_NORM dim=2
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
 
-    const int BLKS_N = N_COLS / UF_NORM;
+    data_t col_sum[N_COLS];
+    data_t scale[N_COLS];
+#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
+#pragma HLS ARRAY_PARTITION variable=scale   complete dim=1
 
-    // 2D lane layout: col_sum_lane[k][b] corresponds to column j = b*UF_NORM + k
-    data_t col_sum_lane[UF_NORM][BLKS_N];
-    data_t scale_lane[UF_NORM][BLKS_N];
-#pragma HLS ARRAY_PARTITION variable=col_sum_lane complete dim=1
-#pragma HLS ARRAY_PARTITION variable=col_sum_lane complete dim=2
-#pragma HLS ARRAY_PARTITION variable=scale_lane   complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale_lane   complete dim=2
-
-    // init col_sum_lane
-    for (int k = 0; k < UF_NORM; k++) {
-        for (int b = 0; b < BLKS_N; b++) {
+    // init col_sum
+    for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-            col_sum_lane[k][b] = (data_t)0.0;
-        }
+        col_sum[j] = (data_t)0.0;
     }
 
     // Pass 1: copy A + denom_row (bit-exact row_sum order)
@@ -55,42 +52,47 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
         denom_row[i] = row_sum + (data_t)1.0;
     }
 
-    // Pass 2: normalize + col_sum, organized as (row i) x (block b), pipelined over b
-    for (int i = 0; i < N_ROWS; i++) {
-        data_t denom_reg = denom_row[i];
-        for (int b = 0; b < BLKS_N; b++) {
-#pragma HLS PIPELINE II=1
-            int jb = b * UF_NORM;
+    // Pass 2: normalize + col_sum (flattened, II=1)
+    const int BLKS_N = N_COLS / UF_NORM;
+    const int TOT_N  = N_ROWS * BLKS_N;
 
-#pragma HLS DEPENDENCE variable=col_sum_lane inter false
-            for (int k = 0; k < UF_NORM; k++) {
+    data_t denom_reg = (data_t)1.0;
+    for (int idx = 0; idx < TOT_N; idx++) {
+#pragma HLS PIPELINE II=1
+        int i  = idx / BLKS_N;
+        int b  = idx - i * BLKS_N;
+        int jb = b * UF_NORM;
+
+        if (b == 0) denom_reg = denom_row[i];
+
+#pragma HLS DEPENDENCE variable=col_sum inter false
+        for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
-                int j = jb + k;
-                data_t t = A[i][j] / denom_reg;
-                tmp[i][j] = t;
-                col_sum_lane[k][b] += t;
-            }
+            int j = jb + k;
+            data_t t = A[i][j] / denom_reg;
+            tmp[i][j] = t;
+            col_sum[j] += t;
         }
     }
 
-    // Pass 3: scale per column (stored in the same (k,b) lane layout)
-    for (int b = 0; b < BLKS_N; b++) {
+    // Pass 3: scale per column
+    for (int jb = 0; jb < N_COLS; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
         for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
-            scale_lane[k][b] = col_sum_lane[k][b] / (data_t)N_ROWS;
+            int j = jb + k;
+            scale[j] = col_sum[j] / (data_t)N_ROWS;
         }
     }
 
-    // Pass 4: direct write-back, use the same (i,b,k) traversal (still 16384 writes)
+    // Pass 4: direct write-back to C_DRAM
     for (int i = 0; i < N_ROWS; i++) {
-        for (int b = 0; b < BLKS_N; b++) {
-            int jb = b * UF_NORM;
-            for (int k = 0; k < UF_NORM; k++) {
+        for (int j = 0; j < N_COLS; j++) {
 #pragma HLS PIPELINE II=1
-                int j = jb + k;
-                C_DRAM[i][j] = tmp[i][j] * scale_lane[k][b];
-            }
+            data_t prod;
+#pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
+            prod = tmp[i][j] * scale[j];
+            C_DRAM[i][j] = prod;
         }
     }
 }

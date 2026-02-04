@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel'
 ================================================================
-* Date:           Tue Feb  3 21:14:35 2026
+* Date:           Tue Feb  3 23:32:34 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -38,10 +38,10 @@
         |                                                                |                                                     |  Latency (cycles) |   Latency (absolute)  |    Interval   |                    Pipeline                    |
         |                            Instance                            |                        Module                       |   min   |   max   |    min    |    max    |  min  |  max  |                      Type                      |
         +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+-------+-------+------------------------------------------------+
-        |grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3  |    16387|    16387|   0.164 ms|   0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_57_4                  |     2091|     2091|  20.910 us|  20.910 us|   2049|   2049|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_76_6                  |       10|       10|   0.100 us|   0.100 us|      9|      9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9  |    16388|    16388|   0.164 ms|   0.164 ms|  16386|  16386|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3  |    16387|    16387|   0.164 ms|   0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_59_4                  |     2091|     2091|  20.910 us|  20.910 us|   2049|   2049|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_78_6                  |       10|       10|   0.100 us|   0.100 us|      9|      9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9  |    16388|    16388|   0.164 ms|   0.164 ms|  16386|  16386|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+-------+-------+------------------------------------------------+
 
         * Loop: 
@@ -79,10 +79,10 @@
     |A_m_axi_U                                                       |A_m_axi                                              |        2|   0|    675|    643|    0|
     |C_m_axi_U                                                       |C_m_axi                                              |        2|   0|    669|    632|    0|
     |control_s_axi_U                                                 |control_s_axi                                        |        0|   0|    176|    296|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3  |        0|   0|     85|    423|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_57_4                  |        0|   0|  27376|  22984|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_76_6                  |        0|   0|   1545|   1073|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9  |        0|   2|    192|    904|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659  |top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3  |        0|   0|     85|    423|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684                  |top_kernel_Pipeline_VITIS_LOOP_59_4                  |        0|   0|  27376|  22984|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786                  |top_kernel_Pipeline_VITIS_LOOP_78_6                  |        0|   0|   1545|   1073|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918  |top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9  |        0|   2|    192|    904|    0|
     +----------------------------------------------------------------+-----------------------------------------------------+---------+----+-------+-------+-----+
     |Total                                                           |                                                     |        4|   2|  30718|  26955|    0|
     +----------------------------------------------------------------+-----------------------------------------------------+---------+----+-------+-------+-----+
@@ -198,10 +198,10 @@
     |                                     Name                                    | FF | LUT| Bits| Const Bits|
     +-----------------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                                    |  23|   0|   23|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_41_2_VITIS_LOOP_43_3_fu_659_ap_start_reg  |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_57_4_fu_684_ap_start_reg                  |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_76_6_fu_786_ap_start_reg                  |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_88_8_VITIS_LOOP_89_9_fu_918_ap_start_reg  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3_fu_659_ap_start_reg  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_59_4_fu_684_ap_start_reg                  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_78_6_fu_786_ap_start_reg                  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9_fu_918_ap_start_reg  |   1|   0|    1|          0|
     |trunc_ln3_reg_2331                                                           |  62|   0|   62|          0|
     |trunc_ln_reg_2325                                                            |  62|   0|   62|          0|
     +-----------------------------------------------------------------------------+----+----+-----+-----------+

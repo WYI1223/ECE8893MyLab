@@ -59261,24 +59261,15 @@ typedef ap_fixed<24, 10, AP_RND, AP_SAT> data_t;
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp" 2
-# 1 "/tools/software/xilinx/2025.1.1/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstring" 1 3
-# 40 "/tools/software/xilinx/2025.1.1/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstring" 3
-# 3 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp" 2
-
-
-
-
-
-
-
+# 12 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp"
 static const int UF_NORM = 8;
+static const int MUL_LAT = 4;
 
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
-#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C num_write_outstanding=16 max_write_burst_length=64 max_widen_bitwidth=512
+#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
 #pragma HLS interface s_axilite port=return
-
 
     static data_t A[256][64];
     static data_t tmp[256][64];
@@ -59348,18 +59339,14 @@ void top_kernel(data_t A_DRAM[256][64],
     }
 
 
-
     for (int i = 0; i < 256; i++) {
-        data_t rowC[64];
-#pragma HLS ARRAY_PARTITION variable=rowC cyclic factor=UF_NORM dim=1
-
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-            rowC[j] = tmp[i][j] * scale[j];
+            data_t prod;
+#pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
+            prod = tmp[i][j] * scale[j];
+            C_DRAM[i][j] = prod;
         }
-
-
-        std::memcpy((void*)&C_DRAM[i][0], (const void*)rowC, 64 * sizeof(data_t));
     }
 }
 #ifndef HLS_FASTSIM
@@ -59387,5 +59374,5 @@ apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 100 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp"
+# 98 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp"
 

@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'top_kernel'
 ================================================================
 + General Information: 
-    * Date:           Tue Feb  3 23:29:36 2026
+    * Date:           Wed Feb  4 01:22:41 2026
     * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
     * Project:        project_1
     * Solution:       hls (Vivado IP Flow Target)
@@ -19,15 +19,15 @@
     |                         Modules                        | Issue|      |       Latency       | Iteration|         |  Trip |          |          |         |             |             |     |
     |                         & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|   BRAM   |   DSP   |      FF     |     LUT     | URAM|
     +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+----------+---------+-------------+-------------+-----+
-    |+ top_kernel                                            |     -|  0.00|    34899|  3.490e+05|         -|    34900|      -|        no|  51 (11%)|  2 (~0%)|  30706 (21%)|  27661 (39%)|    -|
+    |+ top_kernel                                            |     -|  0.00|    34901|  3.490e+05|         -|    34902|      -|        no|  51 (11%)|  2 (~0%)|  30710 (21%)|  27661 (39%)|    -|
     | + top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3  |     -|  0.00|    16387|  1.639e+05|         -|    16385|      -|    rewind|         -|        -|     85 (~0%)|    423 (~0%)|    -|
     |  o VITIS_LOOP_44_2_VITIS_LOOP_46_3                     |     -|  7.30|    16385|  1.638e+05|         3|        1|  16384|       yes|         -|        -|            -|            -|    -|
     | + top_kernel_Pipeline_VITIS_LOOP_60_4                  |     -|  0.99|     2091|  2.091e+04|         -|     2049|      -|    rewind|         -|        -|  27376 (19%)|  22984 (32%)|    -|
     |  o VITIS_LOOP_60_4                                     |     -|  7.30|     2089|  2.089e+04|        43|        1|   2048|       yes|         -|        -|            -|            -|    -|
     | + top_kernel_Pipeline_VITIS_LOOP_79_6                  |     -|  3.31|       10|    100.000|         -|        9|      -|    rewind|         -|        -|    1545 (1%)|    1073 (1%)|    -|
     |  o VITIS_LOOP_79_6                                     |     -|  7.30|        8|     80.000|         1|        1|      8|       yes|         -|        -|            -|            -|    -|
-    | + top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9  |     -|  0.00|    16389|  1.639e+05|         -|    16385|      -|    rewind|         -|  2 (~0%)|     91 (~0%)|    690 (~0%)|    -|
-    |  o VITIS_LOOP_89_8_VITIS_LOOP_90_9                     |     -|  7.30|    16387|  1.639e+05|         5|        1|  16384|       yes|         -|        -|            -|            -|    -|
+    | + top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9  |     -|  0.00|    16391|  1.639e+05|         -|    16385|      -|    rewind|         -|  2 (~0%)|     95 (~0%)|    690 (~0%)|    -|
+    |  o VITIS_LOOP_89_8_VITIS_LOOP_90_9                     |     -|  7.30|    16389|  1.639e+05|         7|        1|  16384|       yes|         -|        -|            -|            -|    -|
     +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+----------+---------+-------------+-------------+-----+
 
 
@@ -370,7 +370,7 @@
 |    select_ln89_1_fu_998_p3                             |     |        | select_ln89_1  | select    | auto_sel                 | 0       |
 |    sparsemux_17_3_24_1_1_U250                          |     |        | tmp_1          | sparsemux | compactencoding_dontcare | 0       |
 |    sparsemux_129_6_24_1_1_U249                         |     |        | tmp_2          | sparsemux | compactencoding_dontcare | 0       |
-|    mul_24s_24s_48_3_1_U248                             | 2   | yes    | mul_ln94       | mul       | dsp                      | 0       |
+|    mul_24s_24s_48_5_1_U248                             | 2   | yes    | mul_ln94       | mul       | dsp                      | 0       |
 |    add_ln94_fu_1419_p2                                 |     |        | add_ln94       | add       | fabric                   | 0       |
 |    xor_ln94_fu_1433_p2                                 |     |        | xor_ln94       | xor       | auto                     | 0       |
 |    and_ln94_fu_1439_p2                                 |     |        | and_ln94       | and       | auto                     | 0       |

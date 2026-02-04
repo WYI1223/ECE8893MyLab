@@ -19,14 +19,14 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>34899</Best-caseLatency>
-            <Average-caseLatency>34899</Average-caseLatency>
-            <Worst-caseLatency>34899</Worst-caseLatency>
+            <Best-caseLatency>34901</Best-caseLatency>
+            <Average-caseLatency>34901</Average-caseLatency>
+            <Worst-caseLatency>34901</Worst-caseLatency>
             <Best-caseRealTimeLatency>0.349 ms</Best-caseRealTimeLatency>
             <Average-caseRealTimeLatency>0.349 ms</Average-caseRealTimeLatency>
             <Worst-caseRealTimeLatency>0.349 ms</Worst-caseRealTimeLatency>
-            <Interval-min>34900</Interval-min>
-            <Interval-max>34900</Interval-max>
+            <Interval-min>34902</Interval-min>
+            <Interval-max>34902</Interval-max>
             <PerformancePragma>-</PerformancePragma>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
@@ -39,7 +39,7 @@
         <Resources>
             <BRAM_18K>51</BRAM_18K>
             <DSP>2</DSP>
-            <FF>30706</FF>
+            <FF>30710</FF>
             <LUT>27661</LUT>
             <URAM>0</URAM>
         </Resources>
@@ -1383,7 +1383,7 @@
                     <ModuleName>top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>916</ID>
-                    <BindInstances>icmp_ln89_fu_960_p2 add_ln89_1_fu_966_p2 add_ln89_fu_978_p2 icmp_ln90_fu_984_p2 select_ln89_fu_990_p3 select_ln89_1_fu_998_p3 sparsemux_17_3_24_1_1_U250 sparsemux_129_6_24_1_1_U249 mul_24s_24s_48_3_1_U248 add_ln94_fu_1419_p2 xor_ln94_fu_1433_p2 and_ln94_fu_1439_p2 icmp_ln94_fu_1461_p2 icmp_ln94_1_fu_1475_p2 icmp_ln94_2_fu_1481_p2 select_ln94_fu_1487_p3 xor_ln94_1_fu_1495_p2 and_ln94_1_fu_1501_p2 select_ln94_1_fu_1507_p3 and_ln94_2_fu_1515_p2 xor_ln94_2_fu_1521_p2 or_ln94_fu_1527_p2 xor_ln94_3_fu_1533_p2 and_ln94_3_fu_1539_p2 and_ln94_4_fu_1545_p2 or_ln94_2_fu_1551_p2 xor_ln94_4_fu_1557_p2 and_ln94_5_fu_1563_p2 select_ln94_2_fu_1569_p3 or_ln94_1_fu_1577_p2 select_ln94_3_fu_1583_p3 add_ln90_fu_1312_p2</BindInstances>
+                    <BindInstances>icmp_ln89_fu_960_p2 add_ln89_1_fu_966_p2 add_ln89_fu_978_p2 icmp_ln90_fu_984_p2 select_ln89_fu_990_p3 select_ln89_1_fu_998_p3 sparsemux_17_3_24_1_1_U250 sparsemux_129_6_24_1_1_U249 mul_24s_24s_48_5_1_U248 add_ln94_fu_1419_p2 xor_ln94_fu_1433_p2 and_ln94_fu_1439_p2 icmp_ln94_fu_1461_p2 icmp_ln94_1_fu_1475_p2 icmp_ln94_2_fu_1481_p2 select_ln94_fu_1487_p3 xor_ln94_1_fu_1495_p2 and_ln94_1_fu_1501_p2 select_ln94_1_fu_1507_p3 and_ln94_2_fu_1515_p2 xor_ln94_2_fu_1521_p2 or_ln94_fu_1527_p2 xor_ln94_3_fu_1533_p2 and_ln94_3_fu_1539_p2 and_ln94_4_fu_1545_p2 or_ln94_2_fu_1551_p2 xor_ln94_4_fu_1557_p2 and_ln94_5_fu_1563_p2 select_ln94_2_fu_1569_p3 or_ln94_1_fu_1577_p2 select_ln94_3_fu_1583_p3 add_ln90_fu_1312_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>denom_row_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7_U control_s_axi_U A_m_axi_U C_m_axi_U</BindInstances>
@@ -1848,9 +1848,9 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>16389</Best-caseLatency>
-                    <Average-caseLatency>16389</Average-caseLatency>
-                    <Worst-caseLatency>16389</Worst-caseLatency>
+                    <Best-caseLatency>16391</Best-caseLatency>
+                    <Average-caseLatency>16391</Average-caseLatency>
+                    <Worst-caseLatency>16391</Worst-caseLatency>
                     <Best-caseRealTimeLatency>0.164 ms</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>0.164 ms</Average-caseRealTimeLatency>
                     <Worst-caseRealTimeLatency>0.164 ms</Worst-caseRealTimeLatency>
@@ -1864,10 +1864,10 @@
                         <Slack>7.30</Slack>
                         <TripCount>16384</TripCount>
                         <isPerfectNested>0</isPerfectNested>
-                        <Latency>16387</Latency>
+                        <Latency>16389</Latency>
                         <AbsoluteTimeLatency>0.164 ms</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>5</PipelineDepth>
+                        <PipelineDepth>7</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <PerformancePragma>-</PerformancePragma>
                         <InstanceList/>
@@ -1892,7 +1892,7 @@
                     <DSP>2</DSP>
                     <AVAIL_DSP>360</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>91</FF>
+                    <FF>95</FF>
                     <AVAIL_FF>141120</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
                     <LUT>690</LUT>
@@ -1915,7 +1915,7 @@
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="select" PRAGMA="" RTLNAME="select_ln89_1_fu_998_p3" SOURCE="top.cpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln89_1" VISIBLE="false"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_24_1_1_U250" SOURCE="top.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_1" VISIBLE="false"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_129_6_24_1_1_U249" SOURCE="top.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="dsp" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_24s_24s_48_3_1_U248" SOURCE="top.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln94" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="dsp" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_24s_24s_48_5_1_U248" SOURCE="top.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln94" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="add" PRAGMA="" RTLNAME="add_ln94_fu_1419_p2" SOURCE="top.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln94" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln94_fu_1433_p2" SOURCE="top.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln94" VISIBLE="false"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_89_8_VITIS_LOOP_90_9" OPTYPE="and" PRAGMA="" RTLNAME="and_ln94_fu_1439_p2" SOURCE="top.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln94" VISIBLE="false"/>
@@ -1950,13 +1950,13 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>34899</Best-caseLatency>
-                    <Average-caseLatency>34899</Average-caseLatency>
-                    <Worst-caseLatency>34899</Worst-caseLatency>
+                    <Best-caseLatency>34901</Best-caseLatency>
+                    <Average-caseLatency>34901</Average-caseLatency>
+                    <Worst-caseLatency>34901</Worst-caseLatency>
                     <Best-caseRealTimeLatency>0.349 ms</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>0.349 ms</Average-caseRealTimeLatency>
                     <Worst-caseRealTimeLatency>0.349 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>34900</PipelineInitiationInterval>
+                    <PipelineInitiationInterval>34902</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                     <PerformancePragma>-</PerformancePragma>
                 </SummaryOfOverallLatency>
@@ -1974,7 +1974,7 @@
                     <DSP>2</DSP>
                     <AVAIL_DSP>360</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>30706</FF>
+                    <FF>30710</FF>
                     <AVAIL_FF>141120</AVAIL_FF>
                     <UTIL_FF>21</UTIL_FF>
                     <LUT>27661</LUT>
@@ -2012,7 +2012,6 @@
     <FIFOInformation/>
     <UserConfigCommands>
         <config_compile pipeline_loops="0"/>
-        <config_export flow="impl"/>
     </UserConfigCommands>
     <Args>
         <Arg ArgName="A_DRAM" index="0" direction="in" srcType="ap_fixed&lt;24, 10, AP_RND, AP_SAT, 0&gt;*" srcSize="32">

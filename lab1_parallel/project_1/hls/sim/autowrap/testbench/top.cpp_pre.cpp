@@ -59256,7 +59256,7 @@ void top_kernel(data_t A[256][64],
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/top.cpp" 2
 # 12 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/top.cpp"
 static const int UF_NORM = 8;
-static const int MUL_LAT = 2;
+static const int MUL_LAT = 4;
 
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {

@@ -470,7 +470,7 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9 {
-		C {Type O LastRead -1 FirstWrite 4}
+		C {Type O LastRead -1 FirstWrite 6}
 		sext_ln89 {Type I LastRead 0 FirstWrite -1}
 		scale_reload {Type I LastRead 0 FirstWrite -1}
 		scale_1_reload {Type I LastRead 0 FirstWrite -1}
@@ -548,8 +548,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "16389", "Max" : "16389"}
-	, {"Name" : "Interval", "Min" : "16389", "Max" : "16389"}
+	{"Name" : "Latency", "Min" : "16391", "Max" : "16391"}
+	, {"Name" : "Interval", "Min" : "16391", "Max" : "16391"}
 ]}
 
 set PipelineEnableSignalInfo {[

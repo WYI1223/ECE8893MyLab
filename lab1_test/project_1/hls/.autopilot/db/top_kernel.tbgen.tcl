@@ -261,7 +261,7 @@ set NewPortList {[
 set ArgLastReadFirstWriteLatency {
 	top_kernel {
 		A {Type I LastRead 1 FirstWrite -1}
-		C {Type O LastRead 18 FirstWrite 3}
+		C {Type O LastRead 18 FirstWrite 6}
 		A_DRAM {Type I LastRead 0 FirstWrite -1}
 		C_DRAM {Type I LastRead 0 FirstWrite -1}
 		denom_row {Type IO LastRead -1 FirstWrite -1}
@@ -281,9 +281,9 @@ set ArgLastReadFirstWriteLatency {
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type IO LastRead -1 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_43_2_VITIS_LOOP_45_3 {
+	top_kernel_Pipeline_VITIS_LOOP_47_2_VITIS_LOOP_49_3 {
 		A {Type I LastRead 1 FirstWrite -1}
-		sext_ln43 {Type I LastRead 0 FirstWrite -1}
+		sext_ln47 {Type I LastRead 0 FirstWrite -1}
 		denom_row {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 {Type O LastRead -1 FirstWrite 2}
@@ -293,7 +293,7 @@ set ArgLastReadFirstWriteLatency {
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A {Type O LastRead -1 FirstWrite 2}}
-	top_kernel_Pipeline_VITIS_LOOP_59_4 {
+	top_kernel_Pipeline_VITIS_LOOP_63_4 {
 		col_sum_load_out {Type O LastRead -1 FirstWrite 41}
 		col_sum_1_load_out {Type O LastRead -1 FirstWrite 41}
 		col_sum_2_load_out {Type O LastRead -1 FirstWrite 41}
@@ -375,7 +375,7 @@ set ArgLastReadFirstWriteLatency {
 		denom_row {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type O LastRead -1 FirstWrite 42}}
-	top_kernel_Pipeline_VITIS_LOOP_78_6 {
+	top_kernel_Pipeline_VITIS_LOOP_82_6 {
 		col_sum_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_8_load_reload {Type I LastRead 0 FirstWrite -1}
 		col_sum_16_load_reload {Type I LastRead 0 FirstWrite -1}
@@ -504,87 +504,87 @@ set ArgLastReadFirstWriteLatency {
 		scale_2_out {Type O LastRead -1 FirstWrite 0}
 		scale_1_out {Type O LastRead -1 FirstWrite 0}
 		scale_out {Type O LastRead -1 FirstWrite 0}}
-	top_kernel_Pipeline_VITIS_LOOP_90_8_VITIS_LOOP_91_9 {
-		C {Type O LastRead -1 FirstWrite 3}
-		sext_ln90 {Type I LastRead 0 FirstWrite -1}
+	top_kernel_Pipeline_VITIS_LOOP_92_8_VITIS_LOOP_93_9 {
+		C {Type O LastRead -1 FirstWrite 6}
+		sext_ln92 {Type I LastRead 0 FirstWrite -1}
 		scale_reload {Type I LastRead 0 FirstWrite -1}
-		scale_2_reload {Type I LastRead 0 FirstWrite -1}
-		scale_4_reload {Type I LastRead 0 FirstWrite -1}
-		scale_6_reload {Type I LastRead 0 FirstWrite -1}
-		scale_8_reload {Type I LastRead 0 FirstWrite -1}
-		scale_10_reload {Type I LastRead 0 FirstWrite -1}
-		scale_12_reload {Type I LastRead 0 FirstWrite -1}
-		scale_14_reload {Type I LastRead 0 FirstWrite -1}
-		scale_16_reload {Type I LastRead 0 FirstWrite -1}
-		scale_18_reload {Type I LastRead 0 FirstWrite -1}
-		scale_20_reload {Type I LastRead 0 FirstWrite -1}
-		scale_22_reload {Type I LastRead 0 FirstWrite -1}
-		scale_24_reload {Type I LastRead 0 FirstWrite -1}
-		scale_26_reload {Type I LastRead 0 FirstWrite -1}
-		scale_28_reload {Type I LastRead 0 FirstWrite -1}
-		scale_30_reload {Type I LastRead 0 FirstWrite -1}
-		scale_32_reload {Type I LastRead 0 FirstWrite -1}
-		scale_34_reload {Type I LastRead 0 FirstWrite -1}
-		scale_36_reload {Type I LastRead 0 FirstWrite -1}
-		scale_38_reload {Type I LastRead 0 FirstWrite -1}
-		scale_40_reload {Type I LastRead 0 FirstWrite -1}
-		scale_42_reload {Type I LastRead 0 FirstWrite -1}
-		scale_44_reload {Type I LastRead 0 FirstWrite -1}
-		scale_46_reload {Type I LastRead 0 FirstWrite -1}
-		scale_48_reload {Type I LastRead 0 FirstWrite -1}
-		scale_50_reload {Type I LastRead 0 FirstWrite -1}
-		scale_52_reload {Type I LastRead 0 FirstWrite -1}
-		scale_54_reload {Type I LastRead 0 FirstWrite -1}
-		scale_56_reload {Type I LastRead 0 FirstWrite -1}
-		scale_58_reload {Type I LastRead 0 FirstWrite -1}
-		scale_60_reload {Type I LastRead 0 FirstWrite -1}
-		scale_62_reload {Type I LastRead 0 FirstWrite -1}
 		scale_1_reload {Type I LastRead 0 FirstWrite -1}
+		scale_2_reload {Type I LastRead 0 FirstWrite -1}
 		scale_3_reload {Type I LastRead 0 FirstWrite -1}
+		scale_4_reload {Type I LastRead 0 FirstWrite -1}
 		scale_5_reload {Type I LastRead 0 FirstWrite -1}
+		scale_6_reload {Type I LastRead 0 FirstWrite -1}
 		scale_7_reload {Type I LastRead 0 FirstWrite -1}
+		scale_8_reload {Type I LastRead 0 FirstWrite -1}
 		scale_9_reload {Type I LastRead 0 FirstWrite -1}
+		scale_10_reload {Type I LastRead 0 FirstWrite -1}
 		scale_11_reload {Type I LastRead 0 FirstWrite -1}
+		scale_12_reload {Type I LastRead 0 FirstWrite -1}
 		scale_13_reload {Type I LastRead 0 FirstWrite -1}
+		scale_14_reload {Type I LastRead 0 FirstWrite -1}
 		scale_15_reload {Type I LastRead 0 FirstWrite -1}
+		scale_16_reload {Type I LastRead 0 FirstWrite -1}
 		scale_17_reload {Type I LastRead 0 FirstWrite -1}
+		scale_18_reload {Type I LastRead 0 FirstWrite -1}
 		scale_19_reload {Type I LastRead 0 FirstWrite -1}
+		scale_20_reload {Type I LastRead 0 FirstWrite -1}
 		scale_21_reload {Type I LastRead 0 FirstWrite -1}
+		scale_22_reload {Type I LastRead 0 FirstWrite -1}
 		scale_23_reload {Type I LastRead 0 FirstWrite -1}
+		scale_24_reload {Type I LastRead 0 FirstWrite -1}
 		scale_25_reload {Type I LastRead 0 FirstWrite -1}
+		scale_26_reload {Type I LastRead 0 FirstWrite -1}
 		scale_27_reload {Type I LastRead 0 FirstWrite -1}
+		scale_28_reload {Type I LastRead 0 FirstWrite -1}
 		scale_29_reload {Type I LastRead 0 FirstWrite -1}
+		scale_30_reload {Type I LastRead 0 FirstWrite -1}
 		scale_31_reload {Type I LastRead 0 FirstWrite -1}
+		scale_32_reload {Type I LastRead 0 FirstWrite -1}
 		scale_33_reload {Type I LastRead 0 FirstWrite -1}
+		scale_34_reload {Type I LastRead 0 FirstWrite -1}
 		scale_35_reload {Type I LastRead 0 FirstWrite -1}
+		scale_36_reload {Type I LastRead 0 FirstWrite -1}
 		scale_37_reload {Type I LastRead 0 FirstWrite -1}
+		scale_38_reload {Type I LastRead 0 FirstWrite -1}
 		scale_39_reload {Type I LastRead 0 FirstWrite -1}
+		scale_40_reload {Type I LastRead 0 FirstWrite -1}
 		scale_41_reload {Type I LastRead 0 FirstWrite -1}
+		scale_42_reload {Type I LastRead 0 FirstWrite -1}
 		scale_43_reload {Type I LastRead 0 FirstWrite -1}
+		scale_44_reload {Type I LastRead 0 FirstWrite -1}
 		scale_45_reload {Type I LastRead 0 FirstWrite -1}
+		scale_46_reload {Type I LastRead 0 FirstWrite -1}
 		scale_47_reload {Type I LastRead 0 FirstWrite -1}
+		scale_48_reload {Type I LastRead 0 FirstWrite -1}
 		scale_49_reload {Type I LastRead 0 FirstWrite -1}
+		scale_50_reload {Type I LastRead 0 FirstWrite -1}
 		scale_51_reload {Type I LastRead 0 FirstWrite -1}
+		scale_52_reload {Type I LastRead 0 FirstWrite -1}
 		scale_53_reload {Type I LastRead 0 FirstWrite -1}
+		scale_54_reload {Type I LastRead 0 FirstWrite -1}
 		scale_55_reload {Type I LastRead 0 FirstWrite -1}
+		scale_56_reload {Type I LastRead 0 FirstWrite -1}
 		scale_57_reload {Type I LastRead 0 FirstWrite -1}
+		scale_58_reload {Type I LastRead 0 FirstWrite -1}
 		scale_59_reload {Type I LastRead 0 FirstWrite -1}
+		scale_60_reload {Type I LastRead 0 FirstWrite -1}
 		scale_61_reload {Type I LastRead 0 FirstWrite -1}
+		scale_62_reload {Type I LastRead 0 FirstWrite -1}
 		scale_63_reload {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5 {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "34898", "Max" : "34898"}
-	, {"Name" : "Interval", "Min" : "34899", "Max" : "34899"}
+	{"Name" : "Latency", "Min" : "34901", "Max" : "34901"}
+	, {"Name" : "Interval", "Min" : "34902", "Max" : "34902"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -596,8 +596,8 @@ set Spec2ImplPortList {
 }
 
 set maxi_interface_dict [dict create]
-dict set maxi_interface_dict A { CHANNEL_NUM 0 BUNDLE A NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 64 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE READ_ONLY}
-dict set maxi_interface_dict C { CHANNEL_NUM 0 BUNDLE C NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 64 READ_WRITE_MODE WRITE_ONLY}
+dict set maxi_interface_dict A { CHANNEL_NUM 0 BUNDLE A NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE READ_ONLY}
+dict set maxi_interface_dict C { CHANNEL_NUM 0 BUNDLE C NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE WRITE_ONLY}
 
 # RTL port scheduling information:
 set fifoSchedulingInfoList { 

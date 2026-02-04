@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3'
 ================================================================
-* Date:           Tue Feb  3 23:29:31 2026
+* Date:           Wed Feb  4 01:22:35 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -205,7 +205,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten' [28]  (0.489 ns)
 	'load' operation 15 bit ('indvar_flatten_load', top.cpp:44) on local variable 'indvar_flatten' [34]  (0.000 ns)
-	'add' operation 15 bit ('add_ln44_1', top.cpp:44) [37]  (1.002 ns)
+	'icmp' operation 1 bit ('icmp_ln44', top.cpp:44) [36]  (1.002 ns)
 	'store' operation 0 bit ('store_ln44', top.cpp:44) of variable 'add_ln44_1', top.cpp:44 on local variable 'indvar_flatten' [123]  (0.489 ns)
 
  <State 2>: 7.300ns
@@ -221,7 +221,6 @@ The critical path consists of the following:
 	'add' operation 24 bit ('add_ln50', top.cpp:50) [96]  (1.110 ns)
 	'select' operation 24 bit ('select_ln50_1', top.cpp:50) [104]  (0.435 ns)
 	'add' operation 25 bit ('add_ln52', top.cpp:52) [108]  (1.110 ns)
-	'xor' operation 1 bit ('xor_ln52_1', top.cpp:52) [114]  (0.000 ns)
 	'select' operation 24 bit ('select_ln52_1', top.cpp:52) [116]  (0.435 ns)
 	'store' operation 0 bit ('store_ln52', top.cpp:52) of variable 'select_ln52_1', top.cpp:52 on array 'denom_row' [120]  (1.352 ns)
 

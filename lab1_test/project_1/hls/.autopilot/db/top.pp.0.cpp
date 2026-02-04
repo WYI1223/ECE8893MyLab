@@ -6507,27 +6507,19 @@ typedef ap_fixed<24, 10, AP_RND, AP_SAT> data_t;
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "top.cpp" 2
-
-
-
-
-
-
-
+# 12 "top.cpp"
 static const int UF_NORM = 8;
+static const int MUL_LAT = 4;
 
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
 #line 22 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/script.tcl"
 #pragma HLSDIRECTIVE TOP name=top_kernel
-# 12 "top.cpp"
+# 16 "top.cpp"
 
-#pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A num_read_outstanding=16 max_read_burst_length=64
-#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C num_write_outstanding=16 max_write_burst_length=64 max_widen_bitwidth=512
+#pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
+#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
 #pragma HLS interface s_axilite port=return
-#pragma HLS ARRAY_RESHAPE variable=A_DRAM block factor=2 dim=2
-#pragma HLS ARRAY_RESHAPE variable=C_DRAM block factor=2 dim=2
-
 
  static data_t A[256][64];
     static data_t tmp[256][64];
@@ -6545,16 +6537,19 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
 #pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
 #pragma HLS ARRAY_PARTITION variable=scale complete dim=1
 
+#pragma HLS RESET variable=col_sum off
+#pragma HLS RESET variable=scale off
 
- VITIS_LOOP_37_1: for (int j = 0; j < 64; j++) {
+
+ VITIS_LOOP_41_1: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  col_sum[j] = (data_t)0.0;
     }
 
 
-    VITIS_LOOP_43_2: for (int i = 0; i < 256; i++) {
+    VITIS_LOOP_47_2: for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
-        VITIS_LOOP_45_3: for (int j = 0; j < 64; j++) {
+        VITIS_LOOP_49_3: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  data_t a = A_DRAM[i][j];
             A[i][j] = a;
@@ -6568,7 +6563,7 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
     const int TOT_N = 256 * BLKS_N;
 
     data_t denom_reg = (data_t)1.0;
-    VITIS_LOOP_59_4: for (int idx = 0; idx < TOT_N; idx++) {
+    VITIS_LOOP_63_4: for (int idx = 0; idx < TOT_N; idx++) {
 #pragma HLS PIPELINE II=1
  int i = idx / BLKS_N;
         int b = idx - i * BLKS_N;
@@ -6577,7 +6572,7 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
         if (b == 0) denom_reg = denom_row[i];
 
 #pragma HLS DEPENDENCE variable=col_sum inter false
- VITIS_LOOP_68_5: for (int k = 0; k < UF_NORM; k++) {
+ VITIS_LOOP_72_5: for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
  int j = jb + k;
             data_t t = A[i][j] / denom_reg;
@@ -6587,9 +6582,9 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
     }
 
 
-    VITIS_LOOP_78_6: for (int jb = 0; jb < 64; jb += UF_NORM) {
+    VITIS_LOOP_82_6: for (int jb = 0; jb < 64; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
- VITIS_LOOP_80_7: for (int k = 0; k < UF_NORM; k++) {
+ VITIS_LOOP_84_7: for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
  int j = jb + k;
             scale[j] = col_sum[j] / (data_t)256;
@@ -6597,16 +6592,13 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
     }
 
 
-
-    static const int UF_WRITE = 2;
-    VITIS_LOOP_90_8: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_91_9: for (int jb = 0; jb < 64; jb += UF_WRITE) {
+    VITIS_LOOP_92_8: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_93_9: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
- VITIS_LOOP_93_10: for (int k = 0; k < UF_WRITE; k++) {
-#pragma HLS UNROLL
- int j = jb + k;
-                C_DRAM[i][j] = tmp[i][j] * scale[j];
-            }
+ data_t prod;
+#pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
+ prod = tmp[i][j] * scale[j];
+            C_DRAM[i][j] = prod;
         }
     }
 }

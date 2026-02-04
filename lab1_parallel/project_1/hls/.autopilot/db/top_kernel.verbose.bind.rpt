@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel'
 ================================================================
-* Date:           Tue Feb  3 23:29:33 2026
+* Date:           Wed Feb  4 01:22:38 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
     +---------+---------+----------+----------+-------+-------+---------+
-    |    34899|    34899|  0.349 ms|  0.349 ms|  34900|  34900|       no|
+    |    34901|    34901|  0.349 ms|  0.349 ms|  34902|  34902|       no|
     +---------+---------+----------+----------+-------+-------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_657  |top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3  |    16387|    16387|   0.164 ms|   0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682                  |top_kernel_Pipeline_VITIS_LOOP_60_4                  |     2091|     2091|  20.910 us|  20.910 us|   2049|   2049|  loop auto-rewind stp (delay=0 clock cycles(s))|
         |grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784                  |top_kernel_Pipeline_VITIS_LOOP_79_6                  |       10|       10|   0.100 us|   0.100 us|      9|      9|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916  |top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9  |    16389|    16389|   0.164 ms|   0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916  |top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9  |    16391|    16391|   0.164 ms|   0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+-------+-------+------------------------------------------------+
 
         * Loop: 

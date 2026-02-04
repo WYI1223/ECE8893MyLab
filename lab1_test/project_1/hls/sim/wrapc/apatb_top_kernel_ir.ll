@@ -107,14 +107,8 @@ declare i8* @malloc(i64) local_unnamed_addr
 
 declare void @free(i8*) local_unnamed_addr
 
-; Function Attrs: alwaysinline nounwind readnone willreturn
-define internal i24 @_llvm.fpga.unpack.none.i24.i32(i32 %A) #4 {
-  %A.cast = trunc i32 %A to i24
-  ret i24 %A.cast
-}
-
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @"onebyonecpy_hls.p0a256a64struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"([256 x [64 x %"struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"]]* %dst, [256 x [64 x i32]]* readonly %src) unnamed_addr #5 {
+define internal fastcc void @"onebyonecpy_hls.p0a256a64struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"([256 x [64 x %"struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"]]* %dst, [256 x [64 x i32]]* readonly %src) unnamed_addr #4 {
 entry:
   %0 = icmp eq [256 x [64 x %"struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"]]* %dst, null
   %1 = icmp eq [256 x [64 x i32]]* %src, null
@@ -193,8 +187,14 @@ ret:                                              ; preds = %copy.split, %entry
   ret void
 }
 
+; Function Attrs: alwaysinline nounwind readnone willreturn
+define internal i24 @_llvm.fpga.unpack.none.i24.i32(i32 %A) #5 {
+  %A.cast = trunc i32 %A to i24
+  ret i24 %A.cast
+}
+
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @"onebyonecpy_hls.p0a256a64struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>.23"([256 x [64 x i32]]* %dst, [256 x [64 x %"struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"]]* readonly %src) unnamed_addr #5 {
+define internal fastcc void @"onebyonecpy_hls.p0a256a64struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>.23"([256 x [64 x i32]]* %dst, [256 x [64 x %"struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"]]* readonly %src) unnamed_addr #4 {
 entry:
   %0 = icmp eq [256 x [64 x i32]]* %dst, null
   %1 = icmp eq [256 x [64 x %"struct.ap_fixed<24, 10, AP_RND, AP_SAT, 0>"]]* %src, null
@@ -304,8 +304,8 @@ attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="copyin" }
 attributes #2 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="arraycpy_hls" }
 attributes #3 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="copyout" }
-attributes #4 = { alwaysinline nounwind readnone willreturn }
-attributes #5 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
+attributes #4 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
+attributes #5 = { alwaysinline nounwind readnone willreturn }
 attributes #6 = { "fpga.wrapper.func"="stub" }
 
 !llvm.dbg.cu = !{}

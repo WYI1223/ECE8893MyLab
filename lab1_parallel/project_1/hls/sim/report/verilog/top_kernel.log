@@ -38,18 +38,18 @@ INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_pipe_sequentia
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sdiv_38ns_24s_38_42_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_38ns_24s_38_42_1_divider
 INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_38ns_24s_38_42_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_17_3_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_17_3_24_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_17_6_24_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_17_6_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_mul_24s_24s_48_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_24s_24s_48_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_65_6_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_65_6_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_9_3_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_9_3_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_RAM_T2P_BRAM_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_row_buf_RAM_AUTO_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_row_buf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_mul_24s_24s_48_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_24s_24s_48_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_129_6_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_129_6_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_denom_row_RAM_1P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_denom_row_RAM_1P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_RAM_T2P_BRAM_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_A_m_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi
 INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_load
@@ -73,32 +73,6 @@ INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_reg_slice
 INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_fifo
 INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_srl
 INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_mem
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_17_3_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_17_3_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_33_6_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_33_6_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_denom_row_RAM_1P_BRAM_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_denom_row_RAM_1P_BRAM_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_RAM_T2P_BRAM_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_129_6_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_129_6_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_9_2_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_9_2_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_9_6_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_9_6_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_33_4_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_33_4_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_9_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_9_RAM_T2P_BRAM_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_RAM_T2P_BRAM_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_sparsemux_129_7_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_129_7_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_RAM_T2P_BRAM_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_mul_24s_24s_48_3_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_24s_24s_48_3_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/top_kernel_control_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_control_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
@@ -136,7 +110,7 @@ Compiling module xil_defaultlib.top_kernel_sparsemux_17_3_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_sparsemux_17_6_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
-Compiling module xil_defaultlib.top_kernel_mul_24s_24s_48_3_1(NU...
+Compiling module xil_defaultlib.top_kernel_mul_24s_24s_48_5_1(NU...
 Compiling module xil_defaultlib.top_kernel_sparsemux_129_6_24_1_...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_control_s_axi
@@ -189,7 +163,7 @@ Built simulation snapshot top_kernel
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Tue Feb  3 23:30:52 2026
+  **** Start of session at: Wed Feb  4 01:23:52 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -613,13 +587,13 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "349445000"
+// RTL Simulation : 1 / 1 [100.00%] @ "349465000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 349515 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:17 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 78855 ; free virtual = 161123
+$finish called at time : 349535 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:17 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 86197 ; free virtual = 179105
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 979004 KB (Peak: 1003560 KB), Simulation CPU Usage: 18580 ms
-INFO: [Common 17-206] Exiting xsim at Tue Feb  3 23:31:13 2026...
+INFO: xsimkernel Simulation Memory Usage: 1044544 KB (Peak: 1044544 KB), Simulation CPU Usage: 19100 ms
+INFO: [Common 17-206] Exiting xsim at Wed Feb  4 01:24:15 2026...
 TEST PASSED!!
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

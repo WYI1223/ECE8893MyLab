@@ -127,8 +127,8 @@ input logic finish
     assign upc_loop_intf_4.iter_end_block = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_4.quit_block = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_4.iter_start_enable = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_enable_reg_pp0_iter0;
-    assign upc_loop_intf_4.iter_end_enable = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_enable_reg_pp0_iter4;
-    assign upc_loop_intf_4.quit_enable = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_enable_reg_pp0_iter4;
+    assign upc_loop_intf_4.iter_end_enable = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_enable_reg_pp0_iter6;
+    assign upc_loop_intf_4.quit_enable = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_enable_reg_pp0_iter6;
     assign upc_loop_intf_4.loop_start = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_start;
     assign upc_loop_intf_4.loop_ready = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_ready;
     assign upc_loop_intf_4.loop_done = AESL_inst_top_kernel.grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9_fu_916.ap_done_int;

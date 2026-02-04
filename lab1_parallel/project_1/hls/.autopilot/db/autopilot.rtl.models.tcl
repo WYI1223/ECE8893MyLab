@@ -17,7 +17,7 @@ set SynModuleInfo {
   }
   {SRCNAME top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9 MODELNAME top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9
     SUBMODULES {
-      {MODELNAME top_kernel_mul_24s_24s_48_3_1 RTLNAME top_kernel_mul_24s_24s_48_3_1 BINDTYPE op TYPE mul IMPL dsp LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_mul_24s_24s_48_5_1 RTLNAME top_kernel_mul_24s_24s_48_5_1 BINDTYPE op TYPE mul IMPL dsp LATENCY 4 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_sparsemux_129_6_24_1_1 RTLNAME top_kernel_sparsemux_129_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
   }

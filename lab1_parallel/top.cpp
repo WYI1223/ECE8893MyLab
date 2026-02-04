@@ -10,7 +10,7 @@
 // - If it doesn't help CP, it likely means the critical path is elsewhere (often divide/control).
 
 static const int UF_NORM = 8; // divider parallelism
-static const int MUL_LAT = 2; // 0..4 for mul+dsp
+static const int MUL_LAT = 4; // 0..4 for mul+dsp
 
 void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
                 data_t C_DRAM[N_ROWS][N_COLS]) {

@@ -5547,9 +5547,9 @@
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>16389</Best-caseLatency>
-<Average-caseLatency>16389</Average-caseLatency>
-<Worst-caseLatency>16389</Worst-caseLatency>
+<Best-caseLatency>16391</Best-caseLatency>
+<Average-caseLatency>16391</Average-caseLatency>
+<Worst-caseLatency>16391</Worst-caseLatency>
 <Best-caseRealTimeLatency>0.164 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>0.164 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>0.164 ms</Worst-caseRealTimeLatency>
@@ -5563,10 +5563,10 @@
 <Slack>7.30</Slack>
 <TripCount>16384</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>16387</Latency>
+<Latency>16389</Latency>
 <AbsoluteTimeLatency>0.164 ms</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>5</PipelineDepth>
+<PipelineDepth>7</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
@@ -5592,7 +5592,7 @@
 <DSP>2</DSP>
 <AVAIL_DSP>360</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>91</FF>
+<FF>95</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
 <LUT>690</LUT>
@@ -7169,13 +7169,13 @@
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>34899</Best-caseLatency>
-<Average-caseLatency>34899</Average-caseLatency>
-<Worst-caseLatency>34899</Worst-caseLatency>
+<Best-caseLatency>34901</Best-caseLatency>
+<Average-caseLatency>34901</Average-caseLatency>
+<Worst-caseLatency>34901</Worst-caseLatency>
 <Best-caseRealTimeLatency>0.349 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>0.349 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>0.349 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>34900</PipelineInitiationInterval>
+<PipelineInitiationInterval>34902</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -7193,7 +7193,7 @@
 <DSP>2</DSP>
 <AVAIL_DSP>360</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>30706</FF>
+<FF>30710</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>21</UTIL_FF>
 <LUT>27661</LUT>

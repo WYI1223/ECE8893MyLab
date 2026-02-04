@@ -5,18 +5,18 @@
     "control_depth": 6,
     "def_use_depth": 23,
     "file": "top.cpp",
-    "fileloc": 11,
-    "instructions": 1975,
+    "fileloc": 15,
+    "instructions": 1932,
     "loads": {
       "G": 17,
       "L": 128
     },
-    "memory_accesses": 359,
+    "memory_accesses": 360,
     "name": "top_kernel",
     "stores": {
       "G": 17,
       "L": 320
     },
-    "total_instructions": 1977
+    "total_instructions": 1934
   }
 }

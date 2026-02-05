@@ -27,6 +27,9 @@
 /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6530:50: error: Invalid Directive: for current device, ram_1p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=denom_row type=ram_1p impl=bram
                                                  ^
+/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6538:50: error: Invalid Directive: for current device, ram_1p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=scale_mem type=ram_1p impl=bram
+                                                 ^
 /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6541:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
  for (int j = 0; j < 64; j++) {
  ^~~
@@ -67,11 +70,11 @@
     ^~~
     VITIS_LOOP_89_8: 
 /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6592:5: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6593:9: warning: Added loop label VITIS_LOOP_90_9:   [xilinx-label-all-loops]
-        for (int j = 0; j < 64; j++) {
+/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6597:9: warning: Added loop label VITIS_LOOP_94_9:   [xilinx-label-all-loops]
+        for (int j = 0; j < 64 + 2; j++) {
         ^~~
-        VITIS_LOOP_90_9: 
-/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6593:9: note: FIX-IT applied suggested code changes
-/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6596:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+        VITIS_LOOP_94_9: 
+/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6597:9: note: FIX-IT applied suggested code changes
+/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls/.autopilot/db/top.pp.0.cpp:6612:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
 #pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
         ^

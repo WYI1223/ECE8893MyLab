@@ -1,86 +1,28 @@
 {
     "1": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_47_2_VITIS_LOOP_49_3",
+        "name": "top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_94_9",
         "file": "top.cpp",
-        "fileloc": "47",
-        "instructions": "104",
-        "total_instructions": "104",
+        "fileloc": "89",
+        "instructions": "155",
+        "total_instructions": "155",
         "calls": "",
-        "basicblocks": "15",
-        "memory_accesses": "18",
+        "basicblocks": "6",
+        "memory_accesses": "29",
         "control_depth": "2",
-        "def_use_depth": "2",
+        "def_use_depth": "1",
         "loads": {
-            "L": "4"
+            "G": "16",
+            "L": "6"
         },
         "stores": {
-            "G": "9",
-            "L": "8"
+            "L": "12"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_82_6",
-        "file": "top.cpp",
-        "fileloc": "33",
-        "instructions": "431",
-        "total_instructions": "431",
-        "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "66",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "65"
-        },
-        "stores": {
-            "L": "66"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "0": {
-        "name": "top_kernel",
-        "file": "top.cpp",
-        "fileloc": "15",
-        "instructions": "299",
-        "total_instructions": "2244",
-        "calls": "1 4 2 3",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "128"
-        }
-    },
-    "3": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_92_8_VITIS_LOOP_93_9",
-        "file": "top.cpp",
-        "fileloc": "92",
-        "instructions": "166",
-        "total_instructions": "166",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "15",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "G": "8",
-            "L": "3"
-        },
-        "stores": {
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "4": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_63_4",
+        "name": "top_kernel_Pipeline_VITIS_LOOP_60_4",
         "file": "top.cpp",
         "fileloc": "32",
         "instructions": "1244",
@@ -100,6 +42,65 @@
         },
         "loops": {
             "L": "1"
+        }
+    },
+    "3": {
+        "name": "top_kernel_Pipeline_VITIS_LOOP_79_6",
+        "file": "top.cpp",
+        "fileloc": "79",
+        "instructions": "184",
+        "total_instructions": "184",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "10",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "8",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3",
+        "file": "top.cpp",
+        "fileloc": "44",
+        "instructions": "104",
+        "total_instructions": "104",
+        "calls": "",
+        "basicblocks": "15",
+        "memory_accesses": "18",
+        "control_depth": "2",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "G": "9",
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "top_kernel",
+        "file": "top.cpp",
+        "fileloc": "15",
+        "instructions": "179",
+        "total_instructions": "1866",
+        "calls": "4 2 3 1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "64"
         }
     }
 }

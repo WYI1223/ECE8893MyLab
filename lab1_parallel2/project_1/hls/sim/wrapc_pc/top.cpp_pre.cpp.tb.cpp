@@ -59262,7 +59262,7 @@ void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
 # 2 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp" 2
 # 12 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp"
-static const int UF_NORM = 8;
+static const int UF_NORM = 4;
 static const int MUL_LAT = 4;
 
 void top_kernel(data_t A_DRAM[256][64],
@@ -59283,9 +59283,9 @@ void top_kernel(data_t A_DRAM[256][64],
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
 
     data_t col_sum[64];
-    data_t scale[64];
+    static data_t scale_mem[64];
 #pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale complete dim=1
+#pragma HLS BIND_STORAGE variable=scale_mem type=ram_1p impl=bram
 
 
     for (int j = 0; j < 64; j++) {
@@ -59334,18 +59334,44 @@ void top_kernel(data_t A_DRAM[256][64],
         for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
             int j = jb + k;
-            scale[j] = col_sum[j] / (data_t)256;
+            scale_mem[j] = col_sum[j] / (data_t)256;
         }
     }
 
 
     for (int i = 0; i < 256; i++) {
-        for (int j = 0; j < 64; j++) {
+        data_t t_d1 = (data_t)0.0;
+        data_t s_d1 = (data_t)0.0;
+        data_t p_d1 = (data_t)0.0;
+
+        for (int j = 0; j < 64 + 2; j++) {
 #pragma HLS PIPELINE II=1
-            data_t prod;
+            data_t t_cur = (data_t)0.0;
+            data_t s_cur = (data_t)0.0;
+            data_t p_cur = (data_t)0.0;
+
+
+            if (j < 64) {
+                t_cur = tmp[i][j];
+                s_cur = scale_mem[j];
+            }
+
+
+            if (j > 0 && j <= 64) {
+                data_t prod;
 #pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
-            prod = tmp[i][j] * scale[j];
-            C_DRAM[i][j] = prod;
+                prod = t_d1 * s_d1;
+                p_cur = prod;
+            }
+
+
+            if (j > 1) {
+                C_DRAM[i][j - 2] = p_d1;
+            }
+
+            t_d1 = t_cur;
+            s_d1 = s_cur;
+            p_d1 = p_cur;
         }
     }
 }
@@ -59374,5 +59400,5 @@ apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 98 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp"
+# 124 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/top.cpp"
 

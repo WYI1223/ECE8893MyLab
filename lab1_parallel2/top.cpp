@@ -9,7 +9,7 @@
 // - No dataflow/streams.
 // - If it doesn't help CP, it likely means the critical path is elsewhere (often divide/control).
 
-static const int UF_NORM = 8; // divider parallelism
+static const int UF_NORM = 4; // divider parallelism // divider parallelism
 static const int MUL_LAT = 4; // 0..4 for mul+dsp
 
 void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
@@ -30,9 +30,9 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
 
     data_t col_sum[N_COLS];
-    data_t scale[N_COLS];
+    static data_t scale_mem[N_COLS];
 #pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
-#pragma HLS ARRAY_PARTITION variable=scale   complete dim=1
+#pragma HLS BIND_STORAGE variable=scale_mem type=ram_1p impl=bram
 
     // init col_sum
     for (int j = 0; j < N_COLS; j++) {
@@ -81,18 +81,44 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
         for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
             int j = jb + k;
-            scale[j] = col_sum[j] / (data_t)N_ROWS;
+            scale_mem[j] = col_sum[j] / (data_t)N_ROWS;
         }
     }
-
-    // Pass 4: direct write-back to C_DRAM
+    // Pass 4: write-back with scale BRAM prefetch + extra register stage for AXI write (trades +2 cycles/row for CP)
+    // Motivation: break the (mul -> AXI WDATA/handshake) path by registering the product before the store.
     for (int i = 0; i < N_ROWS; i++) {
-        for (int j = 0; j < N_COLS; j++) {
+        data_t t_d1 = (data_t)0.0;
+        data_t s_d1 = (data_t)0.0;
+        data_t p_d1 = (data_t)0.0;
+
+        for (int j = 0; j < N_COLS + 2; j++) {
 #pragma HLS PIPELINE II=1
-            data_t prod;
+            data_t t_cur = (data_t)0.0;
+            data_t s_cur = (data_t)0.0;
+            data_t p_cur = (data_t)0.0;
+
+            // stage 0: fetch next operands
+            if (j < N_COLS) {
+                t_cur = tmp[i][j];
+                s_cur = scale_mem[j]; // BRAM 1-cycle read
+            }
+
+            // stage 1: compute product for previous element
+            if (j > 0 && j <= N_COLS) {
+                data_t prod;
 #pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
-            prod = tmp[i][j] * scale[j];
-            C_DRAM[i][j] = prod;
+                prod = t_d1 * s_d1;
+                p_cur = prod;
+            }
+
+            // stage 2: write product computed in previous cycle
+            if (j > 1) {
+                C_DRAM[i][j - 2] = p_d1;
+            }
+
+            t_d1 = t_cur;
+            s_d1 = s_cur;
+            p_d1 = p_cur;
         }
     }
 }

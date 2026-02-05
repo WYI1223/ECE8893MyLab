@@ -1,0 +1,471 @@
+
+
+================================================================
+== Vitis HLS Report for 'top_kernel'
+================================================================
+* Date:           Thu Feb  5 02:40:57 2026
+
+* Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+* Project:        project_1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    35157|    35157|  0.352 ms|  0.352 ms|  35158|  35158|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 23
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 24 [1/1] (1.00ns)   --->   "%C_DRAM_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %C_DRAM"   --->   Operation 24 'read' 'C_DRAM_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 25 [1/1] (1.00ns)   --->   "%A_DRAM_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %A_DRAM"   --->   Operation 25 'read' 'A_DRAM_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%col_sum_63_load_loc = alloca i64 1"   --->   Operation 26 'alloca' 'col_sum_63_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%col_sum_62_load_loc = alloca i64 1"   --->   Operation 27 'alloca' 'col_sum_62_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%col_sum_61_load_loc = alloca i64 1"   --->   Operation 28 'alloca' 'col_sum_61_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%col_sum_60_load_loc = alloca i64 1"   --->   Operation 29 'alloca' 'col_sum_60_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%col_sum_59_load_loc = alloca i64 1"   --->   Operation 30 'alloca' 'col_sum_59_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%col_sum_58_load_loc = alloca i64 1"   --->   Operation 31 'alloca' 'col_sum_58_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%col_sum_57_load_loc = alloca i64 1"   --->   Operation 32 'alloca' 'col_sum_57_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%col_sum_56_load_loc = alloca i64 1"   --->   Operation 33 'alloca' 'col_sum_56_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%col_sum_55_load_loc = alloca i64 1"   --->   Operation 34 'alloca' 'col_sum_55_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%col_sum_54_load_loc = alloca i64 1"   --->   Operation 35 'alloca' 'col_sum_54_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%col_sum_53_load_loc = alloca i64 1"   --->   Operation 36 'alloca' 'col_sum_53_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%col_sum_52_load_loc = alloca i64 1"   --->   Operation 37 'alloca' 'col_sum_52_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%col_sum_51_load_loc = alloca i64 1"   --->   Operation 38 'alloca' 'col_sum_51_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%col_sum_50_load_loc = alloca i64 1"   --->   Operation 39 'alloca' 'col_sum_50_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%col_sum_49_load_loc = alloca i64 1"   --->   Operation 40 'alloca' 'col_sum_49_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%col_sum_48_load_loc = alloca i64 1"   --->   Operation 41 'alloca' 'col_sum_48_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%col_sum_47_load_loc = alloca i64 1"   --->   Operation 42 'alloca' 'col_sum_47_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%col_sum_46_load_loc = alloca i64 1"   --->   Operation 43 'alloca' 'col_sum_46_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%col_sum_45_load_loc = alloca i64 1"   --->   Operation 44 'alloca' 'col_sum_45_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%col_sum_44_load_loc = alloca i64 1"   --->   Operation 45 'alloca' 'col_sum_44_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%col_sum_43_load_loc = alloca i64 1"   --->   Operation 46 'alloca' 'col_sum_43_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%col_sum_42_load_loc = alloca i64 1"   --->   Operation 47 'alloca' 'col_sum_42_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%col_sum_41_load_loc = alloca i64 1"   --->   Operation 48 'alloca' 'col_sum_41_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%col_sum_40_load_loc = alloca i64 1"   --->   Operation 49 'alloca' 'col_sum_40_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%col_sum_39_load_loc = alloca i64 1"   --->   Operation 50 'alloca' 'col_sum_39_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%col_sum_38_load_loc = alloca i64 1"   --->   Operation 51 'alloca' 'col_sum_38_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%col_sum_37_load_loc = alloca i64 1"   --->   Operation 52 'alloca' 'col_sum_37_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%col_sum_36_load_loc = alloca i64 1"   --->   Operation 53 'alloca' 'col_sum_36_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%col_sum_35_load_loc = alloca i64 1"   --->   Operation 54 'alloca' 'col_sum_35_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%col_sum_34_load_loc = alloca i64 1"   --->   Operation 55 'alloca' 'col_sum_34_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%col_sum_33_load_loc = alloca i64 1"   --->   Operation 56 'alloca' 'col_sum_33_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%col_sum_32_load_loc = alloca i64 1"   --->   Operation 57 'alloca' 'col_sum_32_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%col_sum_31_load_loc = alloca i64 1"   --->   Operation 58 'alloca' 'col_sum_31_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%col_sum_30_load_loc = alloca i64 1"   --->   Operation 59 'alloca' 'col_sum_30_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%col_sum_29_load_loc = alloca i64 1"   --->   Operation 60 'alloca' 'col_sum_29_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%col_sum_28_load_loc = alloca i64 1"   --->   Operation 61 'alloca' 'col_sum_28_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%col_sum_27_load_loc = alloca i64 1"   --->   Operation 62 'alloca' 'col_sum_27_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%col_sum_26_load_loc = alloca i64 1"   --->   Operation 63 'alloca' 'col_sum_26_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%col_sum_25_load_loc = alloca i64 1"   --->   Operation 64 'alloca' 'col_sum_25_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%col_sum_24_load_loc = alloca i64 1"   --->   Operation 65 'alloca' 'col_sum_24_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%col_sum_23_load_loc = alloca i64 1"   --->   Operation 66 'alloca' 'col_sum_23_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%col_sum_22_load_loc = alloca i64 1"   --->   Operation 67 'alloca' 'col_sum_22_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%col_sum_21_load_loc = alloca i64 1"   --->   Operation 68 'alloca' 'col_sum_21_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%col_sum_20_load_loc = alloca i64 1"   --->   Operation 69 'alloca' 'col_sum_20_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%col_sum_19_load_loc = alloca i64 1"   --->   Operation 70 'alloca' 'col_sum_19_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%col_sum_18_load_loc = alloca i64 1"   --->   Operation 71 'alloca' 'col_sum_18_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%col_sum_17_load_loc = alloca i64 1"   --->   Operation 72 'alloca' 'col_sum_17_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%col_sum_16_load_loc = alloca i64 1"   --->   Operation 73 'alloca' 'col_sum_16_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%col_sum_15_load_loc = alloca i64 1"   --->   Operation 74 'alloca' 'col_sum_15_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%col_sum_14_load_loc = alloca i64 1"   --->   Operation 75 'alloca' 'col_sum_14_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%col_sum_13_load_loc = alloca i64 1"   --->   Operation 76 'alloca' 'col_sum_13_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%col_sum_12_load_loc = alloca i64 1"   --->   Operation 77 'alloca' 'col_sum_12_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%col_sum_11_load_loc = alloca i64 1"   --->   Operation 78 'alloca' 'col_sum_11_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%col_sum_10_load_loc = alloca i64 1"   --->   Operation 79 'alloca' 'col_sum_10_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%col_sum_9_load_loc = alloca i64 1"   --->   Operation 80 'alloca' 'col_sum_9_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%col_sum_8_load_loc = alloca i64 1"   --->   Operation 81 'alloca' 'col_sum_8_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%col_sum_7_load_loc = alloca i64 1"   --->   Operation 82 'alloca' 'col_sum_7_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%col_sum_6_load_loc = alloca i64 1"   --->   Operation 83 'alloca' 'col_sum_6_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%col_sum_5_load_loc = alloca i64 1"   --->   Operation 84 'alloca' 'col_sum_5_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%col_sum_4_load_loc = alloca i64 1"   --->   Operation 85 'alloca' 'col_sum_4_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%col_sum_3_load_loc = alloca i64 1"   --->   Operation 86 'alloca' 'col_sum_3_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%col_sum_2_load_loc = alloca i64 1"   --->   Operation 87 'alloca' 'col_sum_2_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%col_sum_1_load_loc = alloca i64 1"   --->   Operation 88 'alloca' 'col_sum_1_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%col_sum_load_loc = alloca i64 1"   --->   Operation 89 'alloca' 'col_sum_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %A_DRAM_read, i32 2, i32 63" [top.cpp:44]   --->   Operation 90 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %C_DRAM_read, i32 2, i32 63" [top.cpp:91]   --->   Operation 91 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%sext_ln44 = sext i62 %trunc_ln" [top.cpp:44]   --->   Operation 92 'sext' 'sext_ln44' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%A_addr = getelementptr i32 %A, i64 %sext_ln44" [top.cpp:44]   --->   Operation 93 'getelementptr' 'A_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 94 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 94 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 95 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 95 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 96 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 96 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 97 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 97 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 98 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 98 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 99 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 99 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 100 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 100 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 101 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %A_addr, i64 16384" [top.cpp:44]   --->   Operation 101 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 102 [2/2] (0.00ns)   --->   "%call_ln44 = call void @top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A" [top.cpp:44]   --->   Operation 102 'call' 'call_ln44' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 103 [1/2] (0.00ns)   --->   "%call_ln44 = call void @top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3, i32 %A, i62 %trunc_ln, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A" [top.cpp:44]   --->   Operation 103 'call' 'call_ln44' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 104 [2/2] (0.00ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_60_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7"   --->   Operation 104 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 105 [1/2] (0.00ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_60_4, i24 %col_sum_load_loc, i24 %col_sum_1_load_loc, i24 %col_sum_2_load_loc, i24 %col_sum_3_load_loc, i24 %col_sum_4_load_loc, i24 %col_sum_5_load_loc, i24 %col_sum_6_load_loc, i24 %col_sum_7_load_loc, i24 %col_sum_8_load_loc, i24 %col_sum_9_load_loc, i24 %col_sum_10_load_loc, i24 %col_sum_11_load_loc, i24 %col_sum_12_load_loc, i24 %col_sum_13_load_loc, i24 %col_sum_14_load_loc, i24 %col_sum_15_load_loc, i24 %col_sum_16_load_loc, i24 %col_sum_17_load_loc, i24 %col_sum_18_load_loc, i24 %col_sum_19_load_loc, i24 %col_sum_20_load_loc, i24 %col_sum_21_load_loc, i24 %col_sum_22_load_loc, i24 %col_sum_23_load_loc, i24 %col_sum_24_load_loc, i24 %col_sum_25_load_loc, i24 %col_sum_26_load_loc, i24 %col_sum_27_load_loc, i24 %col_sum_28_load_loc, i24 %col_sum_29_load_loc, i24 %col_sum_30_load_loc, i24 %col_sum_31_load_loc, i24 %col_sum_32_load_loc, i24 %col_sum_33_load_loc, i24 %col_sum_34_load_loc, i24 %col_sum_35_load_loc, i24 %col_sum_36_load_loc, i24 %col_sum_37_load_loc, i24 %col_sum_38_load_loc, i24 %col_sum_39_load_loc, i24 %col_sum_40_load_loc, i24 %col_sum_41_load_loc, i24 %col_sum_42_load_loc, i24 %col_sum_43_load_loc, i24 %col_sum_44_load_loc, i24 %col_sum_45_load_loc, i24 %col_sum_46_load_loc, i24 %col_sum_47_load_loc, i24 %col_sum_48_load_loc, i24 %col_sum_49_load_loc, i24 %col_sum_50_load_loc, i24 %col_sum_51_load_loc, i24 %col_sum_52_load_loc, i24 %col_sum_53_load_loc, i24 %col_sum_54_load_loc, i24 %col_sum_55_load_loc, i24 %col_sum_56_load_loc, i24 %col_sum_57_load_loc, i24 %col_sum_58_load_loc, i24 %col_sum_59_load_loc, i24 %col_sum_60_load_loc, i24 %col_sum_61_load_loc, i24 %col_sum_62_load_loc, i24 %col_sum_63_load_loc, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %denom_row, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7"   --->   Operation 105 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 4.85>
+ST_14 : Operation 106 [1/1] (0.00ns)   --->   "%col_sum_load = load i24 %col_sum_load_loc"   --->   Operation 106 'load' 'col_sum_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 107 [1/1] (0.00ns)   --->   "%col_sum_1_load = load i24 %col_sum_1_load_loc"   --->   Operation 107 'load' 'col_sum_1_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 108 [1/1] (0.00ns)   --->   "%col_sum_2_load = load i24 %col_sum_2_load_loc"   --->   Operation 108 'load' 'col_sum_2_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 109 [1/1] (0.00ns)   --->   "%col_sum_3_load = load i24 %col_sum_3_load_loc"   --->   Operation 109 'load' 'col_sum_3_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 110 [1/1] (0.00ns)   --->   "%col_sum_4_load = load i24 %col_sum_4_load_loc"   --->   Operation 110 'load' 'col_sum_4_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 111 [1/1] (0.00ns)   --->   "%col_sum_5_load = load i24 %col_sum_5_load_loc"   --->   Operation 111 'load' 'col_sum_5_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 112 [1/1] (0.00ns)   --->   "%col_sum_6_load = load i24 %col_sum_6_load_loc"   --->   Operation 112 'load' 'col_sum_6_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 113 [1/1] (0.00ns)   --->   "%col_sum_7_load = load i24 %col_sum_7_load_loc"   --->   Operation 113 'load' 'col_sum_7_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 114 [1/1] (0.00ns)   --->   "%col_sum_8_load = load i24 %col_sum_8_load_loc"   --->   Operation 114 'load' 'col_sum_8_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 115 [1/1] (0.00ns)   --->   "%col_sum_9_load = load i24 %col_sum_9_load_loc"   --->   Operation 115 'load' 'col_sum_9_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 116 [1/1] (0.00ns)   --->   "%col_sum_10_load = load i24 %col_sum_10_load_loc"   --->   Operation 116 'load' 'col_sum_10_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 117 [1/1] (0.00ns)   --->   "%col_sum_11_load = load i24 %col_sum_11_load_loc"   --->   Operation 117 'load' 'col_sum_11_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 118 [1/1] (0.00ns)   --->   "%col_sum_12_load = load i24 %col_sum_12_load_loc"   --->   Operation 118 'load' 'col_sum_12_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 119 [1/1] (0.00ns)   --->   "%col_sum_13_load = load i24 %col_sum_13_load_loc"   --->   Operation 119 'load' 'col_sum_13_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 120 [1/1] (0.00ns)   --->   "%col_sum_14_load = load i24 %col_sum_14_load_loc"   --->   Operation 120 'load' 'col_sum_14_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 121 [1/1] (0.00ns)   --->   "%col_sum_15_load = load i24 %col_sum_15_load_loc"   --->   Operation 121 'load' 'col_sum_15_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 122 [1/1] (0.00ns)   --->   "%col_sum_16_load = load i24 %col_sum_16_load_loc"   --->   Operation 122 'load' 'col_sum_16_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 123 [1/1] (0.00ns)   --->   "%col_sum_17_load = load i24 %col_sum_17_load_loc"   --->   Operation 123 'load' 'col_sum_17_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 124 [1/1] (0.00ns)   --->   "%col_sum_18_load = load i24 %col_sum_18_load_loc"   --->   Operation 124 'load' 'col_sum_18_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 125 [1/1] (0.00ns)   --->   "%col_sum_19_load = load i24 %col_sum_19_load_loc"   --->   Operation 125 'load' 'col_sum_19_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 126 [1/1] (0.00ns)   --->   "%col_sum_20_load = load i24 %col_sum_20_load_loc"   --->   Operation 126 'load' 'col_sum_20_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 127 [1/1] (0.00ns)   --->   "%col_sum_21_load = load i24 %col_sum_21_load_loc"   --->   Operation 127 'load' 'col_sum_21_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 128 [1/1] (0.00ns)   --->   "%col_sum_22_load = load i24 %col_sum_22_load_loc"   --->   Operation 128 'load' 'col_sum_22_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 129 [1/1] (0.00ns)   --->   "%col_sum_23_load = load i24 %col_sum_23_load_loc"   --->   Operation 129 'load' 'col_sum_23_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 130 [1/1] (0.00ns)   --->   "%col_sum_24_load = load i24 %col_sum_24_load_loc"   --->   Operation 130 'load' 'col_sum_24_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 131 [1/1] (0.00ns)   --->   "%col_sum_25_load = load i24 %col_sum_25_load_loc"   --->   Operation 131 'load' 'col_sum_25_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 132 [1/1] (0.00ns)   --->   "%col_sum_26_load = load i24 %col_sum_26_load_loc"   --->   Operation 132 'load' 'col_sum_26_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 133 [1/1] (0.00ns)   --->   "%col_sum_27_load = load i24 %col_sum_27_load_loc"   --->   Operation 133 'load' 'col_sum_27_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 134 [1/1] (0.00ns)   --->   "%col_sum_28_load = load i24 %col_sum_28_load_loc"   --->   Operation 134 'load' 'col_sum_28_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 135 [1/1] (0.00ns)   --->   "%col_sum_29_load = load i24 %col_sum_29_load_loc"   --->   Operation 135 'load' 'col_sum_29_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 136 [1/1] (0.00ns)   --->   "%col_sum_30_load = load i24 %col_sum_30_load_loc"   --->   Operation 136 'load' 'col_sum_30_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 137 [1/1] (0.00ns)   --->   "%col_sum_31_load = load i24 %col_sum_31_load_loc"   --->   Operation 137 'load' 'col_sum_31_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 138 [1/1] (0.00ns)   --->   "%col_sum_32_load = load i24 %col_sum_32_load_loc"   --->   Operation 138 'load' 'col_sum_32_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 139 [1/1] (0.00ns)   --->   "%col_sum_33_load = load i24 %col_sum_33_load_loc"   --->   Operation 139 'load' 'col_sum_33_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 140 [1/1] (0.00ns)   --->   "%col_sum_34_load = load i24 %col_sum_34_load_loc"   --->   Operation 140 'load' 'col_sum_34_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 141 [1/1] (0.00ns)   --->   "%col_sum_35_load = load i24 %col_sum_35_load_loc"   --->   Operation 141 'load' 'col_sum_35_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 142 [1/1] (0.00ns)   --->   "%col_sum_36_load = load i24 %col_sum_36_load_loc"   --->   Operation 142 'load' 'col_sum_36_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 143 [1/1] (0.00ns)   --->   "%col_sum_37_load = load i24 %col_sum_37_load_loc"   --->   Operation 143 'load' 'col_sum_37_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 144 [1/1] (0.00ns)   --->   "%col_sum_38_load = load i24 %col_sum_38_load_loc"   --->   Operation 144 'load' 'col_sum_38_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 145 [1/1] (0.00ns)   --->   "%col_sum_39_load = load i24 %col_sum_39_load_loc"   --->   Operation 145 'load' 'col_sum_39_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 146 [1/1] (0.00ns)   --->   "%col_sum_40_load = load i24 %col_sum_40_load_loc"   --->   Operation 146 'load' 'col_sum_40_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 147 [1/1] (0.00ns)   --->   "%col_sum_41_load = load i24 %col_sum_41_load_loc"   --->   Operation 147 'load' 'col_sum_41_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 148 [1/1] (0.00ns)   --->   "%col_sum_42_load = load i24 %col_sum_42_load_loc"   --->   Operation 148 'load' 'col_sum_42_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 149 [1/1] (0.00ns)   --->   "%col_sum_43_load = load i24 %col_sum_43_load_loc"   --->   Operation 149 'load' 'col_sum_43_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 150 [1/1] (0.00ns)   --->   "%col_sum_44_load = load i24 %col_sum_44_load_loc"   --->   Operation 150 'load' 'col_sum_44_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 151 [1/1] (0.00ns)   --->   "%col_sum_45_load = load i24 %col_sum_45_load_loc"   --->   Operation 151 'load' 'col_sum_45_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 152 [1/1] (0.00ns)   --->   "%col_sum_46_load = load i24 %col_sum_46_load_loc"   --->   Operation 152 'load' 'col_sum_46_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 153 [1/1] (0.00ns)   --->   "%col_sum_47_load = load i24 %col_sum_47_load_loc"   --->   Operation 153 'load' 'col_sum_47_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 154 [1/1] (0.00ns)   --->   "%col_sum_48_load = load i24 %col_sum_48_load_loc"   --->   Operation 154 'load' 'col_sum_48_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 155 [1/1] (0.00ns)   --->   "%col_sum_49_load = load i24 %col_sum_49_load_loc"   --->   Operation 155 'load' 'col_sum_49_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 156 [1/1] (0.00ns)   --->   "%col_sum_50_load = load i24 %col_sum_50_load_loc"   --->   Operation 156 'load' 'col_sum_50_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 157 [1/1] (0.00ns)   --->   "%col_sum_51_load = load i24 %col_sum_51_load_loc"   --->   Operation 157 'load' 'col_sum_51_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 158 [1/1] (0.00ns)   --->   "%col_sum_52_load = load i24 %col_sum_52_load_loc"   --->   Operation 158 'load' 'col_sum_52_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 159 [1/1] (0.00ns)   --->   "%col_sum_53_load = load i24 %col_sum_53_load_loc"   --->   Operation 159 'load' 'col_sum_53_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 160 [1/1] (0.00ns)   --->   "%col_sum_54_load = load i24 %col_sum_54_load_loc"   --->   Operation 160 'load' 'col_sum_54_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 161 [1/1] (0.00ns)   --->   "%col_sum_55_load = load i24 %col_sum_55_load_loc"   --->   Operation 161 'load' 'col_sum_55_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 162 [1/1] (0.00ns)   --->   "%col_sum_56_load = load i24 %col_sum_56_load_loc"   --->   Operation 162 'load' 'col_sum_56_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 163 [1/1] (0.00ns)   --->   "%col_sum_57_load = load i24 %col_sum_57_load_loc"   --->   Operation 163 'load' 'col_sum_57_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 164 [1/1] (0.00ns)   --->   "%col_sum_58_load = load i24 %col_sum_58_load_loc"   --->   Operation 164 'load' 'col_sum_58_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 165 [1/1] (0.00ns)   --->   "%col_sum_59_load = load i24 %col_sum_59_load_loc"   --->   Operation 165 'load' 'col_sum_59_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 166 [1/1] (0.00ns)   --->   "%col_sum_60_load = load i24 %col_sum_60_load_loc"   --->   Operation 166 'load' 'col_sum_60_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 167 [1/1] (0.00ns)   --->   "%col_sum_61_load = load i24 %col_sum_61_load_loc"   --->   Operation 167 'load' 'col_sum_61_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 168 [1/1] (0.00ns)   --->   "%col_sum_62_load = load i24 %col_sum_62_load_loc"   --->   Operation 168 'load' 'col_sum_62_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 169 [1/1] (0.00ns)   --->   "%col_sum_63_load = load i24 %col_sum_63_load_loc"   --->   Operation 169 'load' 'col_sum_63_load' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 170 [2/2] (4.85ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_79_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem"   --->   Operation 170 'call' 'call_ln0' <Predicate = true> <Delay = 4.85> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.97>
+ST_15 : Operation 171 [1/2] (0.97ns)   --->   "%call_ln0 = call void @top_kernel_Pipeline_VITIS_LOOP_79_6, i24 %col_sum_load, i24 %col_sum_8_load, i24 %col_sum_16_load, i24 %col_sum_24_load, i24 %col_sum_32_load, i24 %col_sum_40_load, i24 %col_sum_48_load, i24 %col_sum_56_load, i24 %col_sum_1_load, i24 %col_sum_9_load, i24 %col_sum_17_load, i24 %col_sum_25_load, i24 %col_sum_33_load, i24 %col_sum_41_load, i24 %col_sum_49_load, i24 %col_sum_57_load, i24 %col_sum_2_load, i24 %col_sum_10_load, i24 %col_sum_18_load, i24 %col_sum_26_load, i24 %col_sum_34_load, i24 %col_sum_42_load, i24 %col_sum_50_load, i24 %col_sum_58_load, i24 %col_sum_3_load, i24 %col_sum_11_load, i24 %col_sum_19_load, i24 %col_sum_27_load, i24 %col_sum_35_load, i24 %col_sum_43_load, i24 %col_sum_51_load, i24 %col_sum_59_load, i24 %col_sum_4_load, i24 %col_sum_12_load, i24 %col_sum_20_load, i24 %col_sum_28_load, i24 %col_sum_36_load, i24 %col_sum_44_load, i24 %col_sum_52_load, i24 %col_sum_60_load, i24 %col_sum_5_load, i24 %col_sum_13_load, i24 %col_sum_21_load, i24 %col_sum_29_load, i24 %col_sum_37_load, i24 %col_sum_45_load, i24 %col_sum_53_load, i24 %col_sum_61_load, i24 %col_sum_6_load, i24 %col_sum_14_load, i24 %col_sum_22_load, i24 %col_sum_30_load, i24 %col_sum_38_load, i24 %col_sum_46_load, i24 %col_sum_54_load, i24 %col_sum_62_load, i24 %col_sum_7_load, i24 %col_sum_15_load, i24 %col_sum_23_load, i24 %col_sum_31_load, i24 %col_sum_39_load, i24 %col_sum_47_load, i24 %col_sum_55_load, i24 %col_sum_63_load, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem"   --->   Operation 171 'call' 'call_ln0' <Predicate = true> <Delay = 0.97> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 7.30>
+ST_16 : Operation 172 [1/1] (0.00ns)   --->   "%sext_ln91 = sext i62 %trunc_ln3" [top.cpp:91]   --->   Operation 172 'sext' 'sext_ln91' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 173 [1/1] (0.00ns)   --->   "%C_addr = getelementptr i32 %C, i64 %sext_ln91" [top.cpp:91]   --->   Operation 173 'getelementptr' 'C_addr' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 174 [1/1] (7.30ns)   --->   "%empty_30 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %C_addr, i64 16384" [top.cpp:91]   --->   Operation 174 'writereq' 'empty_30' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 175 [2/2] (0.00ns)   --->   "%call_ln91 = call void @top_kernel_Pipeline_VITIS_LOOP_91_8_VITIS_LOOP_94_9, i32 %C, i62 %trunc_ln3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem" [top.cpp:91]   --->   Operation 175 'call' 'call_ln91' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 176 [1/2] (0.00ns)   --->   "%call_ln91 = call void @top_kernel_Pipeline_VITIS_LOOP_91_8_VITIS_LOOP_94_9, i32 %C, i62 %trunc_ln3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem" [top.cpp:91]   --->   Operation 176 'call' 'call_ln91' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 7.30>
+ST_19 : Operation 177 [5/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %C_addr" [top.cpp:115]   --->   Operation 177 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 20 <SV = 19> <Delay = 7.30>
+ST_20 : Operation 178 [4/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %C_addr" [top.cpp:115]   --->   Operation 178 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 21 <SV = 20> <Delay = 7.30>
+ST_21 : Operation 179 [3/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %C_addr" [top.cpp:115]   --->   Operation 179 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 22 <SV = 21> <Delay = 7.30>
+ST_22 : Operation 180 [2/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %C_addr" [top.cpp:115]   --->   Operation 180 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 23 <SV = 22> <Delay = 7.30>
+ST_23 : Operation 181 [1/1] (0.00ns)   --->   "%spectopmodule_ln15 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_12" [top.cpp:15]   --->   Operation 181 'spectopmodule' 'spectopmodule_ln15' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 182 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A, void @empty_13, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_6, void @empty_5, void @empty_7, i32 16, i32 16, i32 16, i32 16, void @empty_7, void @empty_7, i32 4294967295, i32 0, i32 0"   --->   Operation 182 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 183 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %A"   --->   Operation 183 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 184 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %C, void @empty_13, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_4, void @empty_5, void @empty_7, i32 16, i32 16, i32 16, i32 16, void @empty_7, void @empty_7, i32 4294967295, i32 0, i32 0"   --->   Operation 184 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 185 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %C"   --->   Operation 185 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 186 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A_DRAM, void @empty_3, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_2, void @empty_1, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 186 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 187 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A_DRAM, void @empty, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 187 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 188 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C_DRAM, void @empty_3, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_2, void @empty_10, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 188 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 189 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C_DRAM, void @empty, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 189 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 190 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_2, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7, i32 4294967295, i32 0, i32 0"   --->   Operation 190 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 191 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 191 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 192 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 192 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 193 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 193 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 194 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 194 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 195 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 195 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 196 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 196 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 197 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 197 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 198 [1/1] (0.00ns)   --->   "%specmemcore_ln25 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7, i64 666, i64 30, i64 18446744073709551615" [top.cpp:25]   --->   Operation 198 'specmemcore' 'specmemcore_ln25' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 199 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 199 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 200 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 200 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 201 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 201 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 202 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 202 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 203 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 203 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 204 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 204 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 205 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 205 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 206 [1/1] (0.00ns)   --->   "%specmemcore_ln26 = specmemcore void @_ssdm_op_SpecMemCore, i24 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7, i64 666, i64 30, i64 18446744073709551615" [top.cpp:26]   --->   Operation 206 'specmemcore' 'specmemcore_ln26' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 207 [1/1] (0.00ns)   --->   "%specmemcore_ln27 = specmemcore void @_ssdm_op_SpecMemCore, i24 %denom_row, i64 666, i64 18, i64 18446744073709551615" [top.cpp:27]   --->   Operation 207 'specmemcore' 'specmemcore_ln27' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 208 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 208 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 209 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 209 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 210 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 210 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 211 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 211 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 212 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 212 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 213 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 213 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 214 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 214 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 215 [1/1] (0.00ns)   --->   "%specmemcore_ln35 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7, i64 666, i64 18, i64 18446744073709551615" [top.cpp:35]   --->   Operation 215 'specmemcore' 'specmemcore_ln35' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 216 [1/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %C_addr" [top.cpp:115]   --->   Operation 216 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_23 : Operation 217 [1/1] (0.00ns)   --->   "%ret_ln115 = ret" [top.cpp:115]   --->   Operation 217 'ret' 'ret_ln115' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('C_DRAM_read') on port 'C_DRAM' [30]  (1.000 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 32 bit ('A_addr', top.cpp:44) [133]  (0.000 ns)
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', top.cpp:44) on port 'A' (top.cpp:44) [134]  (7.300 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 4.856ns
+The critical path consists of the following:
+	'load' operation 24 bit ('col_sum_load') on local variable 'col_sum_load_loc' [137]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'top_kernel_Pipeline_VITIS_LOOP_79_6' [201]  (4.856 ns)
+
+ <State 15>: 0.978ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'top_kernel_Pipeline_VITIS_LOOP_79_6' [201]  (0.978 ns)
+
+ <State 16>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 32 bit ('C_addr', top.cpp:91) [204]  (0.000 ns)
+	bus request operation ('empty_30', top.cpp:91) on port 'C' (top.cpp:91) [205]  (7.300 ns)
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 0.000ns
+The critical path consists of the following:
+
+ <State 19>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', top.cpp:115) on port 'C' (top.cpp:115) [207]  (7.300 ns)
+
+ <State 20>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', top.cpp:115) on port 'C' (top.cpp:115) [207]  (7.300 ns)
+
+ <State 21>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', top.cpp:115) on port 'C' (top.cpp:115) [207]  (7.300 ns)
+
+ <State 22>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', top.cpp:115) on port 'C' (top.cpp:115) [207]  (7.300 ns)
+
+ <State 23>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', top.cpp:115) on port 'C' (top.cpp:115) [207]  (7.300 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

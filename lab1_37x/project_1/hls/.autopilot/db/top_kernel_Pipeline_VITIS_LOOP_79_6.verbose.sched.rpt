@@ -1,0 +1,303 @@
+
+
+================================================================
+== Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_79_6'
+================================================================
+* Date:           Thu Feb  5 02:40:57 2026
+
+* Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+* Project:        project_1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.345 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_79_6  |        8|        8|         1|          1|          1|     8|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.34>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [top.cpp:83]   --->   Operation 4 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%col_sum_63_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_63_load_reload"   --->   Operation 13 'read' 'col_sum_63_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%col_sum_55_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_55_load_reload"   --->   Operation 14 'read' 'col_sum_55_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%col_sum_47_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_47_load_reload"   --->   Operation 15 'read' 'col_sum_47_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%col_sum_39_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_39_load_reload"   --->   Operation 16 'read' 'col_sum_39_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%col_sum_31_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_31_load_reload"   --->   Operation 17 'read' 'col_sum_31_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%col_sum_23_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_23_load_reload"   --->   Operation 18 'read' 'col_sum_23_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%col_sum_15_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_15_load_reload"   --->   Operation 19 'read' 'col_sum_15_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%col_sum_7_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_7_load_reload"   --->   Operation 20 'read' 'col_sum_7_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%col_sum_62_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_62_load_reload"   --->   Operation 21 'read' 'col_sum_62_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%col_sum_54_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_54_load_reload"   --->   Operation 22 'read' 'col_sum_54_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%col_sum_46_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_46_load_reload"   --->   Operation 23 'read' 'col_sum_46_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%col_sum_38_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_38_load_reload"   --->   Operation 24 'read' 'col_sum_38_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%col_sum_30_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_30_load_reload"   --->   Operation 25 'read' 'col_sum_30_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%col_sum_22_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_22_load_reload"   --->   Operation 26 'read' 'col_sum_22_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%col_sum_14_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_14_load_reload"   --->   Operation 27 'read' 'col_sum_14_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%col_sum_6_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_6_load_reload"   --->   Operation 28 'read' 'col_sum_6_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%col_sum_61_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_61_load_reload"   --->   Operation 29 'read' 'col_sum_61_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%col_sum_53_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_53_load_reload"   --->   Operation 30 'read' 'col_sum_53_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%col_sum_45_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_45_load_reload"   --->   Operation 31 'read' 'col_sum_45_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%col_sum_37_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_37_load_reload"   --->   Operation 32 'read' 'col_sum_37_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%col_sum_29_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_29_load_reload"   --->   Operation 33 'read' 'col_sum_29_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%col_sum_21_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_21_load_reload"   --->   Operation 34 'read' 'col_sum_21_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%col_sum_13_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_13_load_reload"   --->   Operation 35 'read' 'col_sum_13_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%col_sum_5_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_5_load_reload"   --->   Operation 36 'read' 'col_sum_5_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%col_sum_60_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_60_load_reload"   --->   Operation 37 'read' 'col_sum_60_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%col_sum_52_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_52_load_reload"   --->   Operation 38 'read' 'col_sum_52_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%col_sum_44_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_44_load_reload"   --->   Operation 39 'read' 'col_sum_44_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%col_sum_36_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_36_load_reload"   --->   Operation 40 'read' 'col_sum_36_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%col_sum_28_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_28_load_reload"   --->   Operation 41 'read' 'col_sum_28_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%col_sum_20_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_20_load_reload"   --->   Operation 42 'read' 'col_sum_20_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%col_sum_12_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_12_load_reload"   --->   Operation 43 'read' 'col_sum_12_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%col_sum_4_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_4_load_reload"   --->   Operation 44 'read' 'col_sum_4_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%col_sum_59_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_59_load_reload"   --->   Operation 45 'read' 'col_sum_59_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%col_sum_51_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_51_load_reload"   --->   Operation 46 'read' 'col_sum_51_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%col_sum_43_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_43_load_reload"   --->   Operation 47 'read' 'col_sum_43_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%col_sum_35_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_35_load_reload"   --->   Operation 48 'read' 'col_sum_35_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%col_sum_27_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_27_load_reload"   --->   Operation 49 'read' 'col_sum_27_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%col_sum_19_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_19_load_reload"   --->   Operation 50 'read' 'col_sum_19_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%col_sum_11_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_11_load_reload"   --->   Operation 51 'read' 'col_sum_11_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%col_sum_3_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_3_load_reload"   --->   Operation 52 'read' 'col_sum_3_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%col_sum_58_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_58_load_reload"   --->   Operation 53 'read' 'col_sum_58_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%col_sum_50_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_50_load_reload"   --->   Operation 54 'read' 'col_sum_50_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%col_sum_42_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_42_load_reload"   --->   Operation 55 'read' 'col_sum_42_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%col_sum_34_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_34_load_reload"   --->   Operation 56 'read' 'col_sum_34_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%col_sum_26_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_26_load_reload"   --->   Operation 57 'read' 'col_sum_26_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%col_sum_18_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_18_load_reload"   --->   Operation 58 'read' 'col_sum_18_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%col_sum_10_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_10_load_reload"   --->   Operation 59 'read' 'col_sum_10_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%col_sum_2_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_2_load_reload"   --->   Operation 60 'read' 'col_sum_2_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%col_sum_57_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_57_load_reload"   --->   Operation 61 'read' 'col_sum_57_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%col_sum_49_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_49_load_reload"   --->   Operation 62 'read' 'col_sum_49_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%col_sum_41_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_41_load_reload"   --->   Operation 63 'read' 'col_sum_41_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%col_sum_33_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_33_load_reload"   --->   Operation 64 'read' 'col_sum_33_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%col_sum_25_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_25_load_reload"   --->   Operation 65 'read' 'col_sum_25_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%col_sum_17_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_17_load_reload"   --->   Operation 66 'read' 'col_sum_17_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%col_sum_9_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_9_load_reload"   --->   Operation 67 'read' 'col_sum_9_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%col_sum_1_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_1_load_reload"   --->   Operation 68 'read' 'col_sum_1_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%col_sum_56_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_56_load_reload"   --->   Operation 69 'read' 'col_sum_56_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%col_sum_48_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_48_load_reload"   --->   Operation 70 'read' 'col_sum_48_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%col_sum_40_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_40_load_reload"   --->   Operation 71 'read' 'col_sum_40_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%col_sum_32_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_32_load_reload"   --->   Operation 72 'read' 'col_sum_32_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%col_sum_24_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_24_load_reload"   --->   Operation 73 'read' 'col_sum_24_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%col_sum_16_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_16_load_reload"   --->   Operation 74 'read' 'col_sum_16_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%col_sum_8_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_8_load_reload"   --->   Operation 75 'read' 'col_sum_8_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%col_sum_load_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %col_sum_load_reload"   --->   Operation 76 'read' 'col_sum_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.48ns)   --->   "%store_ln83 = store i7 0, i7 %j" [top.cpp:83]   --->   Operation 77 'store' 'store_ln83' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_81_7"   --->   Operation 78 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%jb = load i7 %j" [top.cpp:79]   --->   Operation 79 'load' 'jb' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i7.i32, i7 %jb, i32 6" [top.cpp:79]   --->   Operation 80 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln79 = br i1 %tmp, void %VITIS_LOOP_81_7.split, void %VITIS_LOOP_91_8.exitStub" [top.cpp:79]   --->   Operation 81 'br' 'br_ln79' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%trunc_ln79 = trunc i7 %jb" [top.cpp:79]   --->   Operation 82 'trunc' 'trunc_ln79' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%specpipeline_ln80 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_7" [top.cpp:80]   --->   Operation 83 'specpipeline' 'specpipeline_ln80' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%speclooptripcount_ln79 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [top.cpp:79]   --->   Operation 84 'speclooptripcount' 'speclooptripcount_ln79' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%specloopname_ln79 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [top.cpp:79]   --->   Operation 85 'specloopname' 'specloopname_ln79' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%lshr_ln1 = partselect i3 @_ssdm_op_PartSelect.i3.i7.i32.i32, i7 %jb, i32 3, i32 5" [top.cpp:79]   --->   Operation 86 'partselect' 'lshr_ln1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln79 = zext i3 %lshr_ln1" [top.cpp:79]   --->   Operation 87 'zext' 'zext_ln79' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.83ns)   --->   "%tmp_6 = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_load_reload_read, i6 8, i24 %col_sum_8_load_reload_read, i6 16, i24 %col_sum_16_load_reload_read, i6 24, i24 %col_sum_24_load_reload_read, i6 32, i24 %col_sum_32_load_reload_read, i6 40, i24 %col_sum_40_load_reload_read, i6 48, i24 %col_sum_48_load_reload_read, i6 56, i24 %col_sum_56_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 88 'sparsemux' 'tmp_6' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%shl_ln1 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_6, i14 0" [top.cpp:84]   --->   Operation 89 'bitconcatenate' 'shl_ln1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_6, i32 23" [top.cpp:84]   --->   Operation 90 'bitselect' 'tmp_8' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (1.22ns)   --->   "%sub_ln84 = sub i38 0, i38 %shl_ln1" [top.cpp:84]   --->   Operation 91 'sub' 'sub_ln84' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84, i32 22, i32 37" [top.cpp:84]   --->   Operation 92 'partselect' 'tmp_1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%zext_ln84 = zext i16 %tmp_1" [top.cpp:84]   --->   Operation 93 'zext' 'zext_ln84' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (1.01ns)   --->   "%sub_ln84_1 = sub i17 0, i17 %zext_ln84" [top.cpp:84]   --->   Operation 94 'sub' 'sub_ln84_1' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_2 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_6, i32 8, i32 23" [top.cpp:84]   --->   Operation 95 'partselect' 'tmp_2' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln84_1 = zext i16 %tmp_2" [top.cpp:84]   --->   Operation 96 'zext' 'zext_ln84_1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.42ns)   --->   "%select_ln84 = select i1 %tmp_8, i17 %sub_ln84_1, i17 %zext_ln84_1" [top.cpp:84]   --->   Operation 97 'select' 'select_ln84' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 98 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.83ns)   --->   "%tmp_s = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_1_load_reload_read, i6 8, i24 %col_sum_9_load_reload_read, i6 16, i24 %col_sum_17_load_reload_read, i6 24, i24 %col_sum_25_load_reload_read, i6 32, i24 %col_sum_33_load_reload_read, i6 40, i24 %col_sum_41_load_reload_read, i6 48, i24 %col_sum_49_load_reload_read, i6 56, i24 %col_sum_57_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 99 'sparsemux' 'tmp_s' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%shl_ln84_1 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_s, i14 0" [top.cpp:84]   --->   Operation 100 'bitconcatenate' 'shl_ln84_1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%tmp_9 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_s, i32 23" [top.cpp:84]   --->   Operation 101 'bitselect' 'tmp_9' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (1.22ns)   --->   "%sub_ln84_2 = sub i38 0, i38 %shl_ln84_1" [top.cpp:84]   --->   Operation 102 'sub' 'sub_ln84_2' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84_2, i32 22, i32 37" [top.cpp:84]   --->   Operation 103 'partselect' 'tmp_3' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%zext_ln84_2 = zext i16 %tmp_3" [top.cpp:84]   --->   Operation 104 'zext' 'zext_ln84_2' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (1.01ns)   --->   "%sub_ln84_3 = sub i17 0, i17 %zext_ln84_2" [top.cpp:84]   --->   Operation 105 'sub' 'sub_ln84_3' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_s, i32 8, i32 23" [top.cpp:84]   --->   Operation 106 'partselect' 'tmp_4' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%zext_ln84_3 = zext i16 %tmp_4" [top.cpp:84]   --->   Operation 107 'zext' 'zext_ln84_3' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.42ns)   --->   "%select_ln84_1 = select i1 %tmp_9, i17 %sub_ln84_3, i17 %zext_ln84_3" [top.cpp:84]   --->   Operation 108 'select' 'select_ln84_1' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 109 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.83ns)   --->   "%tmp_5 = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_2_load_reload_read, i6 8, i24 %col_sum_10_load_reload_read, i6 16, i24 %col_sum_18_load_reload_read, i6 24, i24 %col_sum_26_load_reload_read, i6 32, i24 %col_sum_34_load_reload_read, i6 40, i24 %col_sum_42_load_reload_read, i6 48, i24 %col_sum_50_load_reload_read, i6 56, i24 %col_sum_58_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 110 'sparsemux' 'tmp_5' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%shl_ln84_2 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_5, i14 0" [top.cpp:84]   --->   Operation 111 'bitconcatenate' 'shl_ln84_2' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%tmp_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_5, i32 23" [top.cpp:84]   --->   Operation 112 'bitselect' 'tmp_10' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (1.22ns)   --->   "%sub_ln84_4 = sub i38 0, i38 %shl_ln84_2" [top.cpp:84]   --->   Operation 113 'sub' 'sub_ln84_4' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84_4, i32 22, i32 37" [top.cpp:84]   --->   Operation 114 'partselect' 'tmp_7' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%zext_ln84_4 = zext i16 %tmp_7" [top.cpp:84]   --->   Operation 115 'zext' 'zext_ln84_4' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (1.01ns)   --->   "%sub_ln84_5 = sub i17 0, i17 %zext_ln84_4" [top.cpp:84]   --->   Operation 116 'sub' 'sub_ln84_5' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%tmp_11 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_5, i32 8, i32 23" [top.cpp:84]   --->   Operation 117 'partselect' 'tmp_11' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%zext_ln84_5 = zext i16 %tmp_11" [top.cpp:84]   --->   Operation 118 'zext' 'zext_ln84_5' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.42ns)   --->   "%select_ln84_2 = select i1 %tmp_10, i17 %sub_ln84_5, i17 %zext_ln84_5" [top.cpp:84]   --->   Operation 119 'select' 'select_ln84_2' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 120 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.83ns)   --->   "%tmp_12 = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_3_load_reload_read, i6 8, i24 %col_sum_11_load_reload_read, i6 16, i24 %col_sum_19_load_reload_read, i6 24, i24 %col_sum_27_load_reload_read, i6 32, i24 %col_sum_35_load_reload_read, i6 40, i24 %col_sum_43_load_reload_read, i6 48, i24 %col_sum_51_load_reload_read, i6 56, i24 %col_sum_59_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 121 'sparsemux' 'tmp_12' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%shl_ln84_3 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_12, i14 0" [top.cpp:84]   --->   Operation 122 'bitconcatenate' 'shl_ln84_3' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%tmp_13 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_12, i32 23" [top.cpp:84]   --->   Operation 123 'bitselect' 'tmp_13' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (1.22ns)   --->   "%sub_ln84_6 = sub i38 0, i38 %shl_ln84_3" [top.cpp:84]   --->   Operation 124 'sub' 'sub_ln84_6' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_14 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84_6, i32 22, i32 37" [top.cpp:84]   --->   Operation 125 'partselect' 'tmp_14' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%zext_ln84_6 = zext i16 %tmp_14" [top.cpp:84]   --->   Operation 126 'zext' 'zext_ln84_6' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (1.01ns)   --->   "%sub_ln84_7 = sub i17 0, i17 %zext_ln84_6" [top.cpp:84]   --->   Operation 127 'sub' 'sub_ln84_7' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_15 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_12, i32 8, i32 23" [top.cpp:84]   --->   Operation 128 'partselect' 'tmp_15' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%zext_ln84_7 = zext i16 %tmp_15" [top.cpp:84]   --->   Operation 129 'zext' 'zext_ln84_7' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.42ns)   --->   "%select_ln84_3 = select i1 %tmp_13, i17 %sub_ln84_7, i17 %zext_ln84_7" [top.cpp:84]   --->   Operation 130 'select' 'select_ln84_3' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 131 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 132 [1/1] (0.83ns)   --->   "%tmp_16 = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_4_load_reload_read, i6 8, i24 %col_sum_12_load_reload_read, i6 16, i24 %col_sum_20_load_reload_read, i6 24, i24 %col_sum_28_load_reload_read, i6 32, i24 %col_sum_36_load_reload_read, i6 40, i24 %col_sum_44_load_reload_read, i6 48, i24 %col_sum_52_load_reload_read, i6 56, i24 %col_sum_60_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 132 'sparsemux' 'tmp_16' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%shl_ln84_4 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_16, i14 0" [top.cpp:84]   --->   Operation 133 'bitconcatenate' 'shl_ln84_4' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%tmp_17 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_16, i32 23" [top.cpp:84]   --->   Operation 134 'bitselect' 'tmp_17' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 135 [1/1] (1.22ns)   --->   "%sub_ln84_8 = sub i38 0, i38 %shl_ln84_4" [top.cpp:84]   --->   Operation 135 'sub' 'sub_ln84_8' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_18 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84_8, i32 22, i32 37" [top.cpp:84]   --->   Operation 136 'partselect' 'tmp_18' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 137 [1/1] (0.00ns)   --->   "%zext_ln84_8 = zext i16 %tmp_18" [top.cpp:84]   --->   Operation 137 'zext' 'zext_ln84_8' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 138 [1/1] (1.01ns)   --->   "%sub_ln84_9 = sub i17 0, i17 %zext_ln84_8" [top.cpp:84]   --->   Operation 138 'sub' 'sub_ln84_9' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 139 [1/1] (0.00ns)   --->   "%tmp_19 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_16, i32 8, i32 23" [top.cpp:84]   --->   Operation 139 'partselect' 'tmp_19' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 140 [1/1] (0.00ns)   --->   "%zext_ln84_9 = zext i16 %tmp_19" [top.cpp:84]   --->   Operation 140 'zext' 'zext_ln84_9' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 141 [1/1] (0.42ns)   --->   "%select_ln84_4 = select i1 %tmp_17, i17 %sub_ln84_9, i17 %zext_ln84_9" [top.cpp:84]   --->   Operation 141 'select' 'select_ln84_4' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 142 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 143 [1/1] (0.83ns)   --->   "%tmp_20 = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_5_load_reload_read, i6 8, i24 %col_sum_13_load_reload_read, i6 16, i24 %col_sum_21_load_reload_read, i6 24, i24 %col_sum_29_load_reload_read, i6 32, i24 %col_sum_37_load_reload_read, i6 40, i24 %col_sum_45_load_reload_read, i6 48, i24 %col_sum_53_load_reload_read, i6 56, i24 %col_sum_61_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 143 'sparsemux' 'tmp_20' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%shl_ln84_5 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_20, i14 0" [top.cpp:84]   --->   Operation 144 'bitconcatenate' 'shl_ln84_5' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%tmp_21 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_20, i32 23" [top.cpp:84]   --->   Operation 145 'bitselect' 'tmp_21' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (1.22ns)   --->   "%sub_ln84_10 = sub i38 0, i38 %shl_ln84_5" [top.cpp:84]   --->   Operation 146 'sub' 'sub_ln84_10' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%tmp_22 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84_10, i32 22, i32 37" [top.cpp:84]   --->   Operation 147 'partselect' 'tmp_22' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%zext_ln84_10 = zext i16 %tmp_22" [top.cpp:84]   --->   Operation 148 'zext' 'zext_ln84_10' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 149 [1/1] (1.01ns)   --->   "%sub_ln84_11 = sub i17 0, i17 %zext_ln84_10" [top.cpp:84]   --->   Operation 149 'sub' 'sub_ln84_11' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%tmp_23 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_20, i32 8, i32 23" [top.cpp:84]   --->   Operation 150 'partselect' 'tmp_23' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%zext_ln84_11 = zext i16 %tmp_23" [top.cpp:84]   --->   Operation 151 'zext' 'zext_ln84_11' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 152 [1/1] (0.42ns)   --->   "%select_ln84_5 = select i1 %tmp_21, i17 %sub_ln84_11, i17 %zext_ln84_11" [top.cpp:84]   --->   Operation 152 'select' 'select_ln84_5' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 153 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 154 [1/1] (0.83ns)   --->   "%tmp_24 = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_6_load_reload_read, i6 8, i24 %col_sum_14_load_reload_read, i6 16, i24 %col_sum_22_load_reload_read, i6 24, i24 %col_sum_30_load_reload_read, i6 32, i24 %col_sum_38_load_reload_read, i6 40, i24 %col_sum_46_load_reload_read, i6 48, i24 %col_sum_54_load_reload_read, i6 56, i24 %col_sum_62_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 154 'sparsemux' 'tmp_24' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%shl_ln84_6 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_24, i14 0" [top.cpp:84]   --->   Operation 155 'bitconcatenate' 'shl_ln84_6' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 156 [1/1] (0.00ns)   --->   "%tmp_25 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_24, i32 23" [top.cpp:84]   --->   Operation 156 'bitselect' 'tmp_25' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 157 [1/1] (1.22ns)   --->   "%sub_ln84_12 = sub i38 0, i38 %shl_ln84_6" [top.cpp:84]   --->   Operation 157 'sub' 'sub_ln84_12' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 158 [1/1] (0.00ns)   --->   "%tmp_26 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84_12, i32 22, i32 37" [top.cpp:84]   --->   Operation 158 'partselect' 'tmp_26' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 159 [1/1] (0.00ns)   --->   "%zext_ln84_12 = zext i16 %tmp_26" [top.cpp:84]   --->   Operation 159 'zext' 'zext_ln84_12' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 160 [1/1] (1.01ns)   --->   "%sub_ln84_13 = sub i17 0, i17 %zext_ln84_12" [top.cpp:84]   --->   Operation 160 'sub' 'sub_ln84_13' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 161 [1/1] (0.00ns)   --->   "%tmp_27 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_24, i32 8, i32 23" [top.cpp:84]   --->   Operation 161 'partselect' 'tmp_27' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 162 [1/1] (0.00ns)   --->   "%zext_ln84_13 = zext i16 %tmp_27" [top.cpp:84]   --->   Operation 162 'zext' 'zext_ln84_13' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 163 [1/1] (0.42ns)   --->   "%select_ln84_6 = select i1 %tmp_25, i17 %sub_ln84_13, i17 %zext_ln84_13" [top.cpp:84]   --->   Operation 163 'select' 'select_ln84_6' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 164 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 164 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 165 [1/1] (0.83ns)   --->   "%tmp_28 = sparsemux i24 @_ssdm_op_SparseMux.ap_auto.8i24.i24.i6, i6 0, i24 %col_sum_7_load_reload_read, i6 8, i24 %col_sum_15_load_reload_read, i6 16, i24 %col_sum_23_load_reload_read, i6 24, i24 %col_sum_31_load_reload_read, i6 32, i24 %col_sum_39_load_reload_read, i6 40, i24 %col_sum_47_load_reload_read, i6 48, i24 %col_sum_55_load_reload_read, i6 56, i24 %col_sum_63_load_reload_read, i24 0, i6 %trunc_ln79" [top.cpp:84]   --->   Operation 165 'sparsemux' 'tmp_28' <Predicate = (!tmp)> <Delay = 0.83> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 166 [1/1] (0.00ns)   --->   "%shl_ln84_7 = bitconcatenate i38 @_ssdm_op_BitConcatenate.i38.i24.i14, i24 %tmp_28, i14 0" [top.cpp:84]   --->   Operation 166 'bitconcatenate' 'shl_ln84_7' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 167 [1/1] (0.00ns)   --->   "%tmp_29 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %tmp_28, i32 23" [top.cpp:84]   --->   Operation 167 'bitselect' 'tmp_29' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 168 [1/1] (1.22ns)   --->   "%sub_ln84_14 = sub i38 0, i38 %shl_ln84_7" [top.cpp:84]   --->   Operation 168 'sub' 'sub_ln84_14' <Predicate = (!tmp)> <Delay = 1.22> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 169 [1/1] (0.00ns)   --->   "%tmp_30 = partselect i16 @_ssdm_op_PartSelect.i16.i38.i32.i32, i38 %sub_ln84_14, i32 22, i32 37" [top.cpp:84]   --->   Operation 169 'partselect' 'tmp_30' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 170 [1/1] (0.00ns)   --->   "%zext_ln84_14 = zext i16 %tmp_30" [top.cpp:84]   --->   Operation 170 'zext' 'zext_ln84_14' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 171 [1/1] (1.01ns)   --->   "%sub_ln84_15 = sub i17 0, i17 %zext_ln84_14" [top.cpp:84]   --->   Operation 171 'sub' 'sub_ln84_15' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 172 [1/1] (0.00ns)   --->   "%tmp_31 = partselect i16 @_ssdm_op_PartSelect.i16.i24.i32.i32, i24 %tmp_28, i32 8, i32 23" [top.cpp:84]   --->   Operation 172 'partselect' 'tmp_31' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 173 [1/1] (0.00ns)   --->   "%zext_ln84_15 = zext i16 %tmp_31" [top.cpp:84]   --->   Operation 173 'zext' 'zext_ln84_15' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 174 [1/1] (0.42ns)   --->   "%select_ln84_7 = select i1 %tmp_29, i17 %sub_ln84_15, i17 %zext_ln84_15" [top.cpp:84]   --->   Operation 174 'select' 'select_ln84_7' <Predicate = (!tmp)> <Delay = 0.42> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 175 [1/1] (0.00ns)   --->   "%top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_addr = getelementptr i17 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem, i64 0, i64 %zext_ln79" [top.cpp:84]   --->   Operation 175 'getelementptr' 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 176 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_addr" [top.cpp:84]   --->   Operation 176 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 177 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84_1, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_addr" [top.cpp:84]   --->   Operation 177 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 178 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84_2, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5_addr" [top.cpp:84]   --->   Operation 178 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 179 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84_3, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4_addr" [top.cpp:84]   --->   Operation 179 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 180 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84_4, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_addr" [top.cpp:84]   --->   Operation 180 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 181 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84_5, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_addr" [top.cpp:84]   --->   Operation 181 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 182 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84_6, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_addr" [top.cpp:84]   --->   Operation 182 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 183 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln84 = store i17 %select_ln84_7, i3 %top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_addr" [top.cpp:84]   --->   Operation 183 'store' 'store_ln84' <Predicate = (!tmp)> <Delay = 1.35> <CoreInst = "RAM_1P_BRAM">   --->   Core 89 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 17> <Depth = 8> <RAM>
+ST_1 : Operation 184 [1/1] (0.89ns)   --->   "%add_ln79 = add i7 %jb, i7 8" [top.cpp:79]   --->   Operation 184 'add' 'add_ln79' <Predicate = (!tmp)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 185 [1/1] (0.48ns)   --->   "%store_ln83 = store i7 %add_ln79, i7 %j" [top.cpp:83]   --->   Operation 185 'store' 'store_ln83' <Predicate = (!tmp)> <Delay = 0.48>
+ST_1 : Operation 186 [1/1] (0.00ns)   --->   "%br_ln79 = br void %VITIS_LOOP_81_7" [top.cpp:79]   --->   Operation 186 'br' 'br_ln79' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 187 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 187 'ret' 'ret_ln0' <Predicate = (tmp)> <Delay = 0.48>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.345ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln83', top.cpp:83) of constant 0 on local variable 'j', top.cpp:83 [146]  (0.489 ns)
+	'load' operation 7 bit ('jb', top.cpp:79) on local variable 'j', top.cpp:83 [149]  (0.000 ns)
+	'sparsemux' operation 24 bit ('tmp_6', top.cpp:84) [159]  (0.837 ns)
+	'sub' operation 38 bit ('sub_ln84', top.cpp:84) [162]  (1.227 ns)
+	'sub' operation 17 bit ('sub_ln84_1', top.cpp:84) [165]  (1.016 ns)
+	'select' operation 17 bit ('select_ln84', top.cpp:84) [168]  (0.425 ns)
+	'store' operation 0 bit ('store_ln84', top.cpp:84) of variable 'select_ln84', top.cpp:84 on array 'top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7' [247]  (1.352 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

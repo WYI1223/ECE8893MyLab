@@ -59265,8 +59265,6 @@ void top_kernel(data_t A[256][64],
 static const int UF_NORM = 8;
 static const int MUL_LAT = 4;
 
-typedef ap_ufixed<24,10, AP_RND, AP_SAT> udata_t;
-
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
@@ -59283,17 +59281,20 @@ void top_kernel(data_t A_DRAM[256][64],
 
 #pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF_NORM dim=2
 #pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
-
-    data_t col_sum[64];
+    data_t col_sum_bank[UF_NORM][64/UF_NORM];
     static data_t scale_mem[64];
-#pragma HLS ARRAY_PARTITION variable=col_sum cyclic factor=UF_NORM dim=1
+#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=1
+#pragma HLS ARRAY_PARTITION variable=col_sum_bank complete dim=2
 #pragma HLS BIND_STORAGE variable=scale_mem type=ram_1p impl=bram
 
 
-    for (int j = 0; j < 64; j++) {
+    for (int k = 0; k < UF_NORM; k++) {
+        for (int b = 0; b < (64/UF_NORM); b++) {
 #pragma HLS PIPELINE II=1
-        col_sum[j] = (data_t)0.0;
+            col_sum_bank[k][b] = (data_t)0.0;
+        }
     }
+
 
 
     for (int i = 0; i < 256; i++) {
@@ -59314,16 +59315,14 @@ void top_kernel(data_t A_DRAM[256][64],
 
     for (int jb = 0; jb < 64; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
-#pragma HLS DEPENDENCE variable=col_sum inter false
+#pragma HLS DEPENDENCE variable=col_sum_bank inter false
+        int b = jb / UF_NORM;
         for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
             int j = jb + k;
-
-    udata_t au = (udata_t)A[i][j];
-    udata_t du = (udata_t)denom_reg;
-    data_t t = (data_t)(au / du);
+                    data_t t = A[i][j] / denom_reg;
             tmp[i][j] = t;
-            col_sum[j] += t;
+            col_sum_bank[k][b] += t;
         }
     }
     }
@@ -59332,10 +59331,11 @@ void top_kernel(data_t A_DRAM[256][64],
 
     for (int jb = 0; jb < 64; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
+        int b = jb / UF_NORM;
         for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
             int j = jb + k;
-            scale_mem[j] = col_sum[j] / (data_t)256;
+            scale_mem[j] = col_sum_bank[k][b] / (data_t)256;
         }
     }
 

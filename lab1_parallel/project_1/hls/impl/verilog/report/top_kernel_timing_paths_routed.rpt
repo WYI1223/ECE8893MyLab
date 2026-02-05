@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date              : Wed Feb  4 01:38:23 2026
+| Date              : Thu Feb  5 05:55:57 2026
 | Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command           : report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_routed.rpt
 | Design            : bd_0_wrapper
@@ -13,460 +13,16 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanc
 
 Timing Report
 
-Slack (MET) :             4.623ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+Slack (MET) :             4.919ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[2]__0/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_42_fu_498_reg[16]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             ap_clk
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.357ns  (logic 1.383ns (25.815%)  route 3.974ns (74.185%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.037ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ap_clk rise edge)     0.000     0.000 r  
-                                                      0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C5LUT_SLICEL_I2_O)
-                                                      0.083     4.326 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_1/O
-                         net (fo=8, routed)           1.068     5.394    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[16]
-    SLICE_X40Y88         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_42_fu_498_reg[16]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X40Y88         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_42_fu_498_reg[16]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X40Y88         FDRE (Setup_EFF_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_42_fu_498_reg[16]
-  -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.394    
-  -------------------------------------------------------------------
-                         slack                                  4.623    
-
-Slack (MET) :             4.662ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[15]/D
+  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_1_fu_532_reg[6]/R
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.319ns  (logic 1.363ns (25.625%)  route 3.956ns (74.375%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.037ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ap_clk rise edge)     0.000     0.000 r  
-                                                      0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C6LUT_SLICEL_I2_O)
-                                                      0.063     4.306 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[15]_i_1/O
-                         net (fo=8, routed)           1.050     5.356    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[15]
-    SLICE_X40Y90         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[15]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X40Y90         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[15]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X40Y90         FDRE (Setup_GFF2_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[15]
-  -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.356    
-  -------------------------------------------------------------------
-                         slack                                  4.662    
-
-Slack (MET) :             4.690ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[15]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             ap_clk
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.290ns  (logic 1.363ns (25.764%)  route 3.927ns (74.236%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.037ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ap_clk rise edge)     0.000     0.000 r  
-                                                      0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C6LUT_SLICEL_I2_O)
-                                                      0.063     4.306 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[15]_i_1/O
-                         net (fo=8, routed)           1.021     5.327    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[15]
-    SLICE_X42Y89         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[15]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X42Y89         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[15]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X42Y89         FDRE (Setup_EFF_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[15]
-  -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.327    
-  -------------------------------------------------------------------
-                         slack                                  4.690    
-
-Slack (MET) :             4.705ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[15]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             ap_clk
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.275ns  (logic 1.363ns (25.837%)  route 3.912ns (74.163%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.037ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ap_clk rise edge)     0.000     0.000 r  
-                                                      0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C6LUT_SLICEL_I2_O)
-                                                      0.063     4.306 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[15]_i_1/O
-                         net (fo=8, routed)           1.006     5.312    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[15]
-    SLICE_X43Y89         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[15]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X43Y89         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[15]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X43Y89         FDRE (Setup_DFF2_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[15]
-  -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.312    
-  -------------------------------------------------------------------
-                         slack                                  4.705    
-
-Slack (MET) :             4.713ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             ap_clk
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.268ns  (logic 1.383ns (26.253%)  route 3.885ns (73.747%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.037ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ap_clk rise edge)     0.000     0.000 r  
-                                                      0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C5LUT_SLICEL_I2_O)
-                                                      0.083     4.326 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_1/O
-                         net (fo=8, routed)           0.979     5.305    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[16]
-    SLICE_X42Y88         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X42Y88         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X42Y88         FDRE (Setup_CFF2_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]
-  -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.305    
-  -------------------------------------------------------------------
-                         slack                                  4.713    
-
-Slack (MET) :             4.733ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[16]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             ap_clk
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.247ns  (logic 1.383ns (26.356%)  route 3.864ns (73.644%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.037ns
-    Clock Pessimism Removal (CPR):    0.000ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ap_clk rise edge)     0.000     0.000 r  
-                                                      0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C5LUT_SLICEL_I2_O)
-                                                      0.083     4.326 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_1/O
-                         net (fo=8, routed)           0.958     5.284    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[16]
-    SLICE_X40Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[16]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X40Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[16]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X40Y87         FDRE (Setup_FFF_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_58_fu_562_reg[16]
-  -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.284    
-  -------------------------------------------------------------------
-                         slack                                  4.733    
-
-Slack (MET) :             4.749ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_34_fu_466_reg[16]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             ap_clk
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.230ns  (logic 1.383ns (26.442%)  route 3.847ns (73.558%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
+  Data Path Delay:        4.962ns  (logic 0.271ns (5.462%)  route 4.691ns (94.538%))
+  Logic Levels:           1  (LUT6=1)
   Clock Path Skew:        -0.012ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    0.025ns = ( 10.025 - 10.000 ) 
     Source Clock Delay      (SCD):    0.037ns
@@ -481,68 +37,44 @@ Slack (MET) :             4.749ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+                         net (fo=22956, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X24Y81         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[2]__0/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C5LUT_SLICEL_I2_O)
-                                                      0.083     4.326 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_1/O
-                         net (fo=8, routed)           0.941     5.267    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[16]
-    SLICE_X41Y88         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_34_fu_466_reg[16]/D
+    SLICE_X24Y81         FDRE (Prop_AFF2_SLICEM_C_Q)
+                                                      0.097     0.134 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[2]__0/Q
+                         net (fo=121, routed)         0.359     0.493    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/flow_control_loop_pipe_sequential_init_U/col_sum_bank_1_fu_532_reg[23]_1
+    SLICE_X26Y87         LUT6 (Prop_D6LUT_SLICEL_I4_O)
+                                                      0.174     0.667 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/flow_control_loop_pipe_sequential_init_U/col_sum_bank_1_fu_532[23]_i_1/O
+                         net (fo=192, routed)         4.332     4.999    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/flow_control_loop_pipe_sequential_init_U_n_22
+    SLICE_X35Y63         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_1_fu_532_reg[6]/R
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.025    10.025    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X41Y88         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_34_fu_466_reg[16]/C
+                         net (fo=22956, unset)        0.025    10.025    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X35Y63         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_1_fu_532_reg[6]/C
                          clock pessimism              0.000    10.025    
                          clock uncertainty           -0.035     9.990    
-    SLICE_X41Y88         FDRE (Setup_HFF_SLICEL_C_D)
-                                                      0.027    10.017    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_34_fu_466_reg[16]
+    SLICE_X35Y63         FDRE (Setup_EFF2_SLICEL_C_R)
+                                                     -0.072     9.918    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_1_fu_532_reg[6]
   -------------------------------------------------------------------
-                         required time                         10.017    
-                         arrival time                          -5.267    
+                         required time                          9.918    
+                         arrival time                          -4.999    
   -------------------------------------------------------------------
-                         slack                                  4.749    
+                         slack                                  4.919    
 
-Slack (MET) :             4.778ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+Slack (MET) :             4.979ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_18_fu_402_reg[16]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/DINADIN[14]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.203ns  (logic 1.383ns (26.583%)  route 3.820ns (73.417%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+  Data Path Delay:        4.678ns  (logic 1.300ns (27.789%)  route 3.378ns (72.211%))
+  Logic Levels:           9  (CARRY8=2 LUT3=1 LUT4=2 LUT5=1 LUT6=3)
+  Clock Path Skew:        0.005ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.042ns = ( 10.042 - 10.000 ) 
     Source Clock Delay      (SCD):    0.037ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -555,68 +87,68 @@ Slack (MET) :             4.778ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+                         net (fo=22956, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X37Y82         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C5LUT_SLICEL_I2_O)
-                                                      0.083     4.326 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_1/O
-                         net (fo=8, routed)           0.914     5.240    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[16]
-    SLICE_X42Y85         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_18_fu_402_reg[16]/D
+    SLICE_X37Y82         FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.096     0.133 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
+                         net (fo=85, routed)          0.405     0.538    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
+    SLICE_X38Y82         LUT3 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.149     0.687 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/j_fu_228[6]_i_3/O
+                         net (fo=130, routed)         1.030     1.717    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_address0[1]
+    SLICE_X26Y76         LUT6 (Prop_G6LUT_SLICEL_I2_O)
+                                                      0.063     1.780 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_117/O
+                         net (fo=1, routed)           0.226     2.006    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_70_12
+    SLICE_X27Y77         LUT5 (Prop_B6LUT_SLICEL_I3_O)
+                                                      0.177     2.183 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_103__6/O
+                         net (fo=1, routed)           0.010     2.193    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_103__6_n_0
+    SLICE_X27Y77         CARRY8 (Prop_CARRY8_SLICEL_S[1]_CO[7])
+                                                      0.233     2.426 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_70/CO[7]
+                         net (fo=1, routed)           0.028     2.454    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0[0]
+    SLICE_X27Y78         CARRY8 (Prop_CARRY8_SLICEL_CI_O[4])
+                                                      0.109     2.563 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_35/O[4]
+                         net (fo=3, routed)           0.331     2.894    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/sub_ln89_2_fu_919_p2[26]
+    SLICE_X29Y78         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.098     2.992 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_36__1/O
+                         net (fo=6, routed)           0.385     3.378    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_36__1_n_0
+    SLICE_X27Y83         LUT6 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.149     3.527 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__1/O
+                         net (fo=5, routed)           0.178     3.704    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__1_n_0
+    SLICE_X27Y80         LUT4 (Prop_D5LUT_SLICEL_I1_O)
+                                                      0.164     3.868 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_25__14/O
+                         net (fo=1, routed)           0.278     4.146    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_25__14_n_0
+    SLICE_X27Y80         LUT4 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.062     4.208 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_6__2/O
+                         net (fo=1, routed)           0.507     4.715    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0_0[14]
+    RAMB18_X4Y31         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/DINADIN[14]
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X42Y85         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_18_fu_402_reg[16]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X42Y85         FDRE (Setup_GFF2_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_18_fu_402_reg[16]
+                         net (fo=22956, unset)        0.042    10.042    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ap_clk
+    RAMB18_X4Y31         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.042    
+                         clock uncertainty           -0.035    10.007    
+    RAMB18_X4Y31         RAMB18E2 (Setup_RAMB18E2_U_RAMB181_CLKARDCLK_DINADIN[14])
+                                                     -0.312     9.695    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0
   -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.240    
+                         required time                          9.695    
+                         arrival time                          -4.715    
   -------------------------------------------------------------------
-                         slack                                  4.778    
+                         slack                                  4.979    
 
-Slack (MET) :             4.781ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+Slack (MET) :             5.040ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[16]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/DINADIN[15]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.200ns  (logic 1.383ns (26.597%)  route 3.817ns (73.403%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+  Data Path Delay:        4.623ns  (logic 1.303ns (28.184%)  route 3.320ns (71.816%))
+  Logic Levels:           9  (CARRY8=2 LUT3=2 LUT5=2 LUT6=3)
+  Clock Path Skew:        0.005ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.042ns = ( 10.042 - 10.000 ) 
     Source Clock Delay      (SCD):    0.037ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -629,68 +161,68 @@ Slack (MET) :             4.781ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+                         net (fo=22956, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X37Y82         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C5LUT_SLICEL_I2_O)
-                                                      0.083     4.326 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_1/O
-                         net (fo=8, routed)           0.911     5.237    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[16]
-    SLICE_X42Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[16]/D
+    SLICE_X37Y82         FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.096     0.133 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
+                         net (fo=85, routed)          0.405     0.538    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
+    SLICE_X38Y82         LUT3 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.149     0.687 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/j_fu_228[6]_i_3/O
+                         net (fo=130, routed)         1.030     1.717    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_address0[1]
+    SLICE_X26Y76         LUT6 (Prop_G6LUT_SLICEL_I2_O)
+                                                      0.063     1.780 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_117/O
+                         net (fo=1, routed)           0.226     2.006    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_70_12
+    SLICE_X27Y77         LUT5 (Prop_B6LUT_SLICEL_I3_O)
+                                                      0.177     2.183 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_103__6/O
+                         net (fo=1, routed)           0.010     2.193    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_103__6_n_0
+    SLICE_X27Y77         CARRY8 (Prop_CARRY8_SLICEL_S[1]_CO[7])
+                                                      0.233     2.426 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_70/CO[7]
+                         net (fo=1, routed)           0.028     2.454    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0[0]
+    SLICE_X27Y78         CARRY8 (Prop_CARRY8_SLICEL_CI_O[4])
+                                                      0.109     2.563 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_35/O[4]
+                         net (fo=3, routed)           0.331     2.894    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/sub_ln89_2_fu_919_p2[26]
+    SLICE_X29Y78         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.098     2.992 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_36__1/O
+                         net (fo=6, routed)           0.385     3.378    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_36__1_n_0
+    SLICE_X27Y83         LUT6 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.149     3.527 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__1/O
+                         net (fo=5, routed)           0.178     3.704    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__1_n_0
+    SLICE_X27Y80         LUT5 (Prop_D6LUT_SLICEL_I2_O)
+                                                      0.147     3.851 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_24__14/O
+                         net (fo=2, routed)           0.220     4.071    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_24__14_n_0
+    SLICE_X29Y79         LUT3 (Prop_D5LUT_SLICEM_I2_O)
+                                                      0.082     4.153 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_5__2/O
+                         net (fo=1, routed)           0.507     4.660    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0_0[15]
+    RAMB18_X4Y31         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/DINADIN[15]
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X42Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[16]/C
-                         clock pessimism              0.000    10.026    
-                         clock uncertainty           -0.035     9.991    
-    SLICE_X42Y87         FDRE (Setup_HFF2_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_10_fu_370_reg[16]
+                         net (fo=22956, unset)        0.042    10.042    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ap_clk
+    RAMB18_X4Y31         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.042    
+                         clock uncertainty           -0.035    10.007    
+    RAMB18_X4Y31         RAMB18E2 (Setup_RAMB18E2_U_RAMB181_CLKARDCLK_DINADIN[15])
+                                                     -0.306     9.701    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0
   -------------------------------------------------------------------
-                         required time                         10.018    
-                         arrival time                          -5.237    
+                         required time                          9.701    
+                         arrival time                          -4.660    
   -------------------------------------------------------------------
-                         slack                                  4.781    
+                         slack                                  5.040    
 
-Slack (MET) :             4.825ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+Slack (MET) :             5.109ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_50_fu_530_reg[16]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/DINPADINP[0]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.156ns  (logic 1.383ns (26.823%)  route 3.773ns (73.177%))
-  Logic Levels:           9  (CARRY8=1 LUT1=1 LUT3=2 LUT5=1 LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+  Data Path Delay:        4.604ns  (logic 1.283ns (27.866%)  route 3.321ns (72.134%))
+  Logic Levels:           9  (CARRY8=2 LUT3=2 LUT5=2 LUT6=3)
+  Clock Path Skew:        0.005ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.042ns = ( 10.042 - 10.000 ) 
     Source Clock Delay      (SCD):    0.037ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -703,55 +235,451 @@ Slack (MET) :             4.825ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_clk
-    SLICE_X42Y79         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+                         net (fo=22956, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X37Y82         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X42Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
-                                                      0.095     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=24, routed)          0.139     0.271    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X42Y78         LUT3 (Prop_D5LUT_SLICEM_I2_O)
-                                                      0.195     0.466 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/flow_control_loop_pipe_sequential_init_U/j_fu_326[6]_i_3/O
-                         net (fo=395, routed)         1.302     1.768    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_56_fu_554[8]_i_23_0
-    SLICE_X16Y83         LUT6 (Prop_H6LUT_SLICEM_I2_O)
-                                                      0.151     1.919 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3/O
-                         net (fo=1, routed)           0.016     1.935    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[0]_i_3_n_0
-    SLICE_X16Y83         MUXF7 (Prop_F7MUX_GH_SLICEM_I0_O)
-                                                      0.086     2.021 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[0]_i_2/O
-                         net (fo=2, routed)           0.533     2.554    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/shl_ln84_2_fu_1694_p3__0[22]
-    SLICE_X21Y81         LUT1 (Prop_A6LUT_SLICEL_I0_O)
-                                                      0.064     2.618 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13/O
-                         net (fo=1, routed)           0.011     2.629    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_13_n_0
-    SLICE_X21Y81         CARRY8 (Prop_CARRY8_SLICEL_S[0]_O[5])
-                                                      0.295     2.924 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562_reg[8]_i_2/O[5]
-                         net (fo=2, routed)           0.180     3.104    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/sub_ln84_4_fu_1710_p2[27]
-    SLICE_X21Y83         LUT6 (Prop_G6LUT_SLICEL_I5_O)
-                                                      0.178     3.282 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3/O
-                         net (fo=6, routed)           0.242     3.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[8]_i_3_n_0
-    SLICE_X25Y81         LUT6 (Prop_H6LUT_SLICEL_I2_O)
-                                                      0.100     3.624 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2/O
-                         net (fo=5, routed)           0.114     3.738    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[13]_i_2_n_0
-    SLICE_X27Y82         LUT5 (Prop_D5LUT_SLICEL_I2_O)
-                                                      0.136     3.874 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4/O
-                         net (fo=2, routed)           0.369     4.243    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_4_n_0
-    SLICE_X27Y82         LUT3 (Prop_C5LUT_SLICEL_I2_O)
-                                                      0.083     4.326 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_682/scale_58_fu_562[16]_i_1/O
-                         net (fo=8, routed)           0.867     5.193    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_2_fu_338_reg[16]_0[16]
-    SLICE_X40Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_50_fu_530_reg[16]/D
+    SLICE_X37Y82         FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.096     0.133 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
+                         net (fo=85, routed)          0.405     0.538    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
+    SLICE_X38Y82         LUT3 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.149     0.687 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/j_fu_228[6]_i_3/O
+                         net (fo=130, routed)         1.030     1.717    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_address0[1]
+    SLICE_X26Y76         LUT6 (Prop_G6LUT_SLICEL_I2_O)
+                                                      0.063     1.780 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_117/O
+                         net (fo=1, routed)           0.226     2.006    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_70_12
+    SLICE_X27Y77         LUT5 (Prop_B6LUT_SLICEL_I3_O)
+                                                      0.177     2.183 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_103__6/O
+                         net (fo=1, routed)           0.010     2.193    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_103__6_n_0
+    SLICE_X27Y77         CARRY8 (Prop_CARRY8_SLICEL_S[1]_CO[7])
+                                                      0.233     2.426 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_70/CO[7]
+                         net (fo=1, routed)           0.028     2.454    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0[0]
+    SLICE_X27Y78         CARRY8 (Prop_CARRY8_SLICEL_CI_O[4])
+                                                      0.109     2.563 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_35/O[4]
+                         net (fo=3, routed)           0.331     2.894    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/sub_ln89_2_fu_919_p2[26]
+    SLICE_X29Y78         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.098     2.992 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_36__1/O
+                         net (fo=6, routed)           0.385     3.378    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_36__1_n_0
+    SLICE_X27Y83         LUT6 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.149     3.527 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__1/O
+                         net (fo=5, routed)           0.178     3.704    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__1_n_0
+    SLICE_X27Y80         LUT5 (Prop_D6LUT_SLICEL_I2_O)
+                                                      0.147     3.851 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_24__14/O
+                         net (fo=2, routed)           0.220     4.071    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_24__14_n_0
+    SLICE_X29Y79         LUT3 (Prop_D6LUT_SLICEM_I2_O)
+                                                      0.062     4.133 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_21__7/O
+                         net (fo=1, routed)           0.508     4.641    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0_1[0]
+    RAMB18_X4Y31         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/DINPADINP[0]
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=24059, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/ap_clk
-    SLICE_X40Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_50_fu_530_reg[16]/C
+                         net (fo=22956, unset)        0.042    10.042    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ap_clk
+    RAMB18_X4Y31         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.042    
+                         clock uncertainty           -0.035    10.007    
+    RAMB18_X4Y31         RAMB18E2 (Setup_RAMB18E2_U_RAMB181_CLKARDCLK_DINPADINP[0])
+                                                     -0.256     9.751    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.751    
+                         arrival time                          -4.641    
+  -------------------------------------------------------------------
+                         slack                                  5.109    
+
+Slack (MET) :             5.134ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.848ns  (logic 0.711ns (14.666%)  route 4.137ns (85.334%))
+  Logic Levels:           5  (CARRY8=2 LUT3=2 LUT6=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.036ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.036     0.036    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X38Y81         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y81         FDRE (Prop_EFF2_SLICEL_C_Q)
+                                                      0.099     0.135 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/Q
+                         net (fo=100, routed)         1.655     1.790    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0_n_0
+    SLICE_X35Y88         LUT6 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.179     1.969 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_31/O
+                         net (fo=3, routed)           0.244     2.213    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_31_n_0
+    SLICE_X34Y86         LUT3 (Prop_A5LUT_SLICEM_I0_O)
+                                                      0.171     2.384 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_9/O
+                         net (fo=2, routed)           0.567     2.951    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[15][1]
+    SLICE_X32Y86         CARRY8 (Prop_CARRY8_SLICEL_DI[1]_CO[7])
+                                                      0.150     3.101 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_3/CO[7]
+                         net (fo=1, routed)           0.028     3.129    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_3_n_0
+    SLICE_X32Y87         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.030     3.159 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_2/CO[7]
+                         net (fo=24, routed)          0.538     3.697    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_2_n_0
+    SLICE_X34Y86         LUT3 (Prop_H5LUT_SLICEM_I1_O)
+                                                      0.082     3.779 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408[11]_i_1/O
+                         net (fo=8, routed)           1.105     4.884    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16_n_58
+    SLICE_X39Y86         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X39Y86         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408_reg[11]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-    SLICE_X40Y87         FDRE (Setup_CFF2_SLICEM_C_D)
-                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_784/scale_50_fu_530_reg[16]
+    SLICE_X39Y86         FDRE (Setup_EFF2_SLICEM_C_D)
+                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408_reg[11]
   -------------------------------------------------------------------
                          required time                         10.018    
-                         arrival time                          -5.193    
+                         arrival time                          -4.884    
   -------------------------------------------------------------------
-                         slack                                  4.825    
+                         slack                                  5.134    
+
+Slack (MET) :             5.138ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_37_fu_388_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.841ns  (logic 0.729ns (15.058%)  route 4.112ns (84.942%))
+  Logic Levels:           5  (CARRY8=2 LUT3=2 LUT6=1)
+  Clock Path Skew:        -0.012ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.024ns = ( 10.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.036ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.036     0.036    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X38Y81         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y81         FDRE (Prop_EFF2_SLICEL_C_Q)
+                                                      0.099     0.135 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/Q
+                         net (fo=100, routed)         1.655     1.790    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0_n_0
+    SLICE_X35Y88         LUT6 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.179     1.969 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_31/O
+                         net (fo=3, routed)           0.244     2.213    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_31_n_0
+    SLICE_X34Y86         LUT3 (Prop_A5LUT_SLICEM_I0_O)
+                                                      0.171     2.384 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_9/O
+                         net (fo=2, routed)           0.567     2.951    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[15][1]
+    SLICE_X32Y86         CARRY8 (Prop_CARRY8_SLICEL_DI[1]_CO[7])
+                                                      0.150     3.101 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_3/CO[7]
+                         net (fo=1, routed)           0.028     3.129    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_3_n_0
+    SLICE_X32Y87         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.030     3.159 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_2/CO[7]
+                         net (fo=24, routed)          0.411     3.570    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_2_n_0
+    SLICE_X34Y85         LUT3 (Prop_H6LUT_SLICEM_I1_O)
+                                                      0.100     3.670 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408[2]_i_1/O
+                         net (fo=8, routed)           1.207     4.877    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16_n_49
+    SLICE_X38Y83         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_37_fu_388_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.024    10.024    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X38Y83         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_37_fu_388_reg[2]/C
+                         clock pessimism              0.000    10.024    
+                         clock uncertainty           -0.035     9.989    
+    SLICE_X38Y83         FDRE (Setup_AFF_SLICEL_C_D)
+                                                      0.027    10.016    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_37_fu_388_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.016    
+                         arrival time                          -4.877    
+  -------------------------------------------------------------------
+                         slack                                  5.138    
+
+Slack (MET) :             5.152ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0/DINADIN[15]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.512ns  (logic 1.199ns (26.574%)  route 3.313ns (73.426%))
+  Logic Levels:           9  (CARRY8=2 LUT3=2 LUT5=2 LUT6=3)
+  Clock Path Skew:        0.005ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.042ns = ( 10.042 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X37Y82         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y82         FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.096     0.133 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
+                         net (fo=85, routed)          0.405     0.538    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
+    SLICE_X38Y82         LUT3 (Prop_H5LUT_SLICEL_I2_O)
+                                                      0.164     0.702 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/j_fu_228[6]_i_4/O
+                         net (fo=130, routed)         1.416     2.118    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_address0[0]
+    SLICE_X35Y60         LUT6 (Prop_C6LUT_SLICEL_I4_O)
+                                                      0.174     2.292 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_115__3/O
+                         net (fo=1, routed)           0.302     2.594    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_74_10
+    SLICE_X36Y64         LUT5 (Prop_F6LUT_SLICEL_I3_O)
+                                                      0.114     2.708 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_105__6/O
+                         net (fo=1, routed)           0.012     2.720    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_105__6_n_0
+    SLICE_X36Y64         CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.197     2.917 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_74/CO[7]
+                         net (fo=1, routed)           0.028     2.945    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/CO[0]
+    SLICE_X36Y65         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.086     3.031 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_38/O[2]
+                         net (fo=5, routed)           0.354     3.385    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/sub_ln89_fu_814_p2[24]
+    SLICE_X37Y65         LUT6 (Prop_G6LUT_SLICEM_I1_O)
+                                                      0.148     3.533 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_39__7/O
+                         net (fo=6, routed)           0.245     3.778    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_39__7_n_0
+    SLICE_X36Y67         LUT6 (Prop_G6LUT_SLICEL_I2_O)
+                                                      0.038     3.816 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_30__7/O
+                         net (fo=5, routed)           0.107     3.924    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_30__7_n_0
+    SLICE_X37Y67         LUT5 (Prop_C6LUT_SLICEM_I2_O)
+                                                      0.062     3.986 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__0/O
+                         net (fo=2, routed)           0.103     4.089    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_27__0_n_0
+    SLICE_X37Y67         LUT3 (Prop_D5LUT_SLICEM_I2_O)
+                                                      0.120     4.209 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_5__3/O
+                         net (fo=1, routed)           0.340     4.549    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0_0[15]
+    RAMB18_X4Y27         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0/DINADIN[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.042    10.042    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ap_clk
+    RAMB18_X4Y27         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.042    
+                         clock uncertainty           -0.035    10.007    
+    RAMB18_X4Y27         RAMB18E2 (Setup_RAMB18E2_U_RAMB181_CLKARDCLK_DINADIN[15])
+                                                     -0.306     9.701    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.701    
+                         arrival time                          -4.549    
+  -------------------------------------------------------------------
+                         slack                                  5.152    
+
+Slack (MET) :             5.167ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_33_fu_404_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.815ns  (logic 0.711ns (14.767%)  route 4.104ns (85.233%))
+  Logic Levels:           5  (CARRY8=2 LUT3=2 LUT6=1)
+  Clock Path Skew:        -0.010ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.036ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.036     0.036    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X38Y81         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y81         FDRE (Prop_EFF2_SLICEL_C_Q)
+                                                      0.099     0.135 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0/Q
+                         net (fo=100, routed)         1.655     1.790    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/zext_ln75_reg_6381_pp0_iter41_reg_reg[1]__0_rep__0_n_0
+    SLICE_X35Y88         LUT6 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.179     1.969 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_31/O
+                         net (fo=3, routed)           0.244     2.213    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_31_n_0
+    SLICE_X34Y86         LUT3 (Prop_A5LUT_SLICEM_I0_O)
+                                                      0.171     2.384 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_32_fu_408[15]_i_9/O
+                         net (fo=2, routed)           0.567     2.951    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[15][1]
+    SLICE_X32Y86         CARRY8 (Prop_CARRY8_SLICEL_DI[1]_CO[7])
+                                                      0.150     3.101 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_3/CO[7]
+                         net (fo=1, routed)           0.028     3.129    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_3_n_0
+    SLICE_X32Y87         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.030     3.159 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_2/CO[7]
+                         net (fo=24, routed)          0.538     3.697    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408_reg[23]_i_2_n_0
+    SLICE_X34Y86         LUT3 (Prop_H5LUT_SLICEM_I1_O)
+                                                      0.082     3.779 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16/col_sum_bank_32_fu_408[11]_i_1/O
+                         net (fo=8, routed)           1.072     4.851    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/sdiv_38ns_24s_38_42_1_U16_n_58
+    SLICE_X39Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_33_fu_404_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ap_clk
+    SLICE_X39Y87         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_33_fu_404_reg[11]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+    SLICE_X39Y87         FDRE (Setup_AFF_SLICEM_C_D)
+                                                      0.027    10.018    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/col_sum_bank_33_fu_404_reg[11]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.851    
+  -------------------------------------------------------------------
+                         slack                                  5.167    
+
+Slack (MET) :             5.186ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/j_fu_128_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U/ram_reg_bram_0/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.476ns  (logic 0.682ns (15.238%)  route 3.794ns (84.762%))
+  Logic Levels:           5  (LUT2=1 LUT3=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        0.006ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.035     0.035    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/ap_clk
+    SLICE_X18Y89         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/j_fu_128_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y89         FDRE (Prop_CFF_SLICEL_C_Q)
+                                                      0.097     0.132 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/j_fu_128_reg[0]/Q
+                         net (fo=17, routed)          0.535     0.667    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/j_fu_128[0]
+    SLICE_X20Y87         LUT6 (Prop_H6LUT_SLICEM_I3_O)
+                                                      0.182     0.849 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/j_fu_128[6]_i_5/O
+                         net (fo=3, routed)           0.057     0.905    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/j_fu_128[6]_i_5_n_0
+    SLICE_X20Y87         LUT2 (Prop_F6LUT_SLICEM_I0_O)
+                                                      0.098     1.003 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/ram_reg_i_37/O
+                         net (fo=58, routed)          0.176     1.179    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/j_fu_128_reg[6]_0
+    SLICE_X21Y85         LUT5 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.064     1.243 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/ram_reg_i_35/O
+                         net (fo=6, routed)           0.181     1.424    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/ram_reg_i_35_n_0
+    SLICE_X21Y86         LUT5 (Prop_B5LUT_SLICEL_I0_O)
+                                                      0.202     1.626 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4_fu_425/i_fu_132[7]_i_1/O
+                         net (fo=2, routed)           0.207     1.833    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/flow_control_loop_pipe_sequential_init_U/D[0]
+    SLICE_X21Y86         LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.039     1.872 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/flow_control_loop_pipe_sequential_init_U/ram_reg_i_2/O
+                         net (fo=18, routed)          2.639     4.511    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U/address0[10]
+    RAMB36_X1Y6          RAMB36E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U/ram_reg_bram_0/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.041    10.041    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U/ap_clk
+    RAMB36_X1Y6          RAMB36E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+    RAMB36_X1Y6          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.309     9.697    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.697    
+                         arrival time                          -4.511    
+  -------------------------------------------------------------------
+                         slack                                  5.186    
+
+Slack (MET) :             5.228ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0/DINADIN[14]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.430ns  (logic 1.163ns (26.253%)  route 3.267ns (73.747%))
+  Logic Levels:           9  (CARRY8=2 LUT3=1 LUT4=2 LUT5=1 LUT6=3)
+  Clock Path Skew:        0.005ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.042ns = ( 10.042 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X37Y82         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y82         FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.096     0.133 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
+                         net (fo=85, routed)          0.405     0.538    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
+    SLICE_X38Y82         LUT3 (Prop_H5LUT_SLICEL_I2_O)
+                                                      0.164     0.702 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/j_fu_228[6]_i_4/O
+                         net (fo=130, routed)         1.416     2.118    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552_top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_address0[0]
+    SLICE_X35Y60         LUT6 (Prop_C6LUT_SLICEL_I4_O)
+                                                      0.174     2.292 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_115__3/O
+                         net (fo=1, routed)           0.302     2.594    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_74_10
+    SLICE_X36Y64         LUT5 (Prop_F6LUT_SLICEL_I3_O)
+                                                      0.114     2.708 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_105__6/O
+                         net (fo=1, routed)           0.012     2.720    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_105__6_n_0
+    SLICE_X36Y64         CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.197     2.917 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_74/CO[7]
+                         net (fo=1, routed)           0.028     2.945    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/CO[0]
+    SLICE_X36Y65         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.086     3.031 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_38/O[2]
+                         net (fo=5, routed)           0.354     3.385    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/grp_top_kernel_Pipeline_VITIS_LOOP_83_8_fu_552/sub_ln89_fu_814_p2[24]
+    SLICE_X37Y65         LUT6 (Prop_G6LUT_SLICEM_I1_O)
+                                                      0.148     3.533 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_39__7/O
+                         net (fo=6, routed)           0.245     3.778    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_39__7_n_0
+    SLICE_X36Y67         LUT6 (Prop_G6LUT_SLICEL_I2_O)
+                                                      0.038     3.816 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_30__7/O
+                         net (fo=5, routed)           0.107     3.924    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_30__7_n_0
+    SLICE_X37Y67         LUT4 (Prop_C5LUT_SLICEM_I1_O)
+                                                      0.084     4.008 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_28__7/O
+                         net (fo=1, routed)           0.212     4.220    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_28__7_n_0
+    SLICE_X37Y67         LUT4 (Prop_F6LUT_SLICEM_I0_O)
+                                                      0.062     4.282 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6_fu_450/ram_reg_bram_0_i_6__3/O
+                         net (fo=1, routed)           0.185     4.467    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0_0[14]
+    RAMB18_X4Y27         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0/DINADIN[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=22956, unset)        0.042    10.042    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ap_clk
+    RAMB18_X4Y27         RAMB18E2                                     r  bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.042    
+                         clock uncertainty           -0.035    10.007    
+    RAMB18_X4Y27         RAMB18E2 (Setup_RAMB18E2_U_RAMB181_CLKARDCLK_DINADIN[14])
+                                                     -0.312     9.695    bd_0_i/hls_inst/inst/top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.695    
+                         arrival time                          -4.467    
+  -------------------------------------------------------------------
+                         slack                                  5.228    
 
 
 

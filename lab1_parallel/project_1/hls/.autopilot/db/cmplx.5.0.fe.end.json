@@ -1,30 +1,53 @@
 {
     "1": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_90_9",
+        "name": "top_kernel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_66_6",
         "file": "top.cpp",
-        "fileloc": "89",
-        "instructions": "166",
-        "total_instructions": "166",
+        "fileloc": "38",
+        "instructions": "1253",
+        "total_instructions": "1253",
         "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "15",
-        "control_depth": "1",
-        "def_use_depth": "1",
+        "basicblocks": "356",
+        "memory_accesses": "343",
+        "control_depth": "5",
+        "def_use_depth": "3",
         "loads": {
-            "G": "8",
-            "L": "3"
+            "G": "9",
+            "L": "131"
         },
         "stores": {
-            "L": "6"
+            "G": "8",
+            "L": "326"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3",
+        "name": "top_kernel_Pipeline_VITIS_LOOP_94_10_VITIS_LOOP_97_11",
         "file": "top.cpp",
-        "fileloc": "44",
+        "fileloc": "94",
+        "instructions": "136",
+        "total_instructions": "136",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "25",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "16",
+            "L": "4"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "top_kernel_Pipeline_VITIS_LOOP_51_3_VITIS_LOOP_53_4",
+        "file": "top.cpp",
+        "fileloc": "51",
         "instructions": "104",
         "total_instructions": "104",
         "calls": "",
@@ -43,45 +66,23 @@
             "L": "1"
         }
     },
-    "3": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_60_4",
+    "4": {
+        "name": "top_kernel_Pipeline_VITIS_LOOP_83_8",
         "file": "top.cpp",
-        "fileloc": "32",
-        "instructions": "1244",
-        "total_instructions": "1244",
+        "fileloc": "83",
+        "instructions": "183",
+        "total_instructions": "183",
         "calls": "",
-        "basicblocks": "356",
-        "memory_accesses": "341",
-        "control_depth": "5",
-        "def_use_depth": "3",
+        "basicblocks": "4",
+        "memory_accesses": "10",
+        "control_depth": "1",
+        "def_use_depth": "1",
         "loads": {
-            "G": "9",
-            "L": "130"
+            "L": "1"
         },
         "stores": {
             "G": "8",
-            "L": "324"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "4": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_79_6",
-        "file": "top.cpp",
-        "fileloc": "33",
-        "instructions": "431",
-        "total_instructions": "431",
-        "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "66",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "65"
-        },
-        "stores": {
-            "L": "66"
+            "L": "2"
         },
         "loops": {
             "L": "1"
@@ -90,16 +91,17 @@
     "0": {
         "name": "top_kernel",
         "file": "top.cpp",
-        "fileloc": "15",
-        "instructions": "299",
-        "total_instructions": "2244",
-        "calls": "2 3 4 1",
+        "fileloc": "17",
+        "instructions": "180",
+        "total_instructions": "1856",
+        "calls": "3 1 4 2",
         "basicblocks": "1",
         "memory_accesses": "0",
         "control_depth": "0",
         "def_use_depth": "2",
         "loads": {
-            "L": "128"
+            "G": "1",
+            "L": "64"
         }
     }
 }

@@ -27,7 +27,7 @@
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tmp cyclic factor=UF_NORM dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:34:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_sum complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_sum cyclic factor=UF_NORM dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:35:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=scale_mem type=ram_1p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
@@ -41,53 +41,53 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:61:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:68:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:62:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_sum inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:70:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:64:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:80:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:76:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:82:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:78:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:95:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:91:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:109:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:102:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=prod op=mul impl=dsp latency=MUL_LAT" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:81:19" msg_body="Loop 'VITIS_LOOP_81_7' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_81_7"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:77:19" msg_body="Loop 'VITIS_LOOP_77_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_77_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:69:19" msg_body="Loop 'VITIS_LOOP_69_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_69_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:63:19" msg_body="Loop 'VITIS_LOOP_63_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_63_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_81_7' (top.cpp:81:19) in function 'top_kernel' completely with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:81:19" LoopName="VITIS_LOOP_81_7"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_77_8' (top.cpp:77:19) in function 'top_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:77:19" LoopName="VITIS_LOOP_77_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_69_5' (top.cpp:69:19) in function 'top_kernel' completely with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:69:19" LoopName="VITIS_LOOP_69_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_63_6' (top.cpp:63:19) in function 'top_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:63:19" LoopName="VITIS_LOOP_63_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:22:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 4 on dimension 2.">
-        <args Dim="2" Factor="4" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:22:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E3tmp"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:21:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E1A': Cyclic partitioning with factor 4 on dimension 2.">
-        <args Dim="2" Factor="4" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E1A"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:21:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E1A': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E1A"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:32:9" msg_body="Applying array_partition to 'col_sum': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="col_sum"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:32:9" msg_body="Applying array_partition to 'col_sum': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="col_sum"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:33:0" msg_body="array_partition dim=1 type=cyclic factor=4 variable=_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem 1 top_kernel top.cpp:33:0 top.cpp:80:9top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=4 variable=_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem" PragmaSrcLoc="top.cpp:80:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 80 Column 9" PragmaType="array_partition" VarName="top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem" varLoc="top.cpp:33:0"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:33:0" msg_body="array_partition dim=1 type=cyclic factor=8 variable=_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem 1 top_kernel top.cpp:33:0 top.cpp:76:9top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem">
+        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=8 variable=_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem" PragmaSrcLoc="top.cpp:76:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 76 Column 9" PragmaType="array_partition" VarName="top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem" varLoc="top.cpp:33:0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:80:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem' due to pipeline pragma">
-        <args Dim="1" Factor="4" Mode="cyclic" Name="top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:76:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem' due to pipeline pragma">
+        <args Dim="1" Factor="8" Mode="cyclic" Name="top_kernel(ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64], ap_fixed&lt;24, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [64])::scale_mem" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:33:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem': Cyclic partitioning with factor 4 on dimension 1.">
-        <args Dim="1" Factor="4" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:33:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

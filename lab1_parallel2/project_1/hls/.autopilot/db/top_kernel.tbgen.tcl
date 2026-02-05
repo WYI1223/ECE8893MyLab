@@ -14,7 +14,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 7
+set cdfgNum 8
 set C_modelName {top_kernel}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -260,181 +260,114 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	top_kernel {
-		A {Type I LastRead 1 FirstWrite -1}
-		C {Type O LastRead 18 FirstWrite 6}
-		A_DRAM {Type I LastRead 0 FirstWrite -1}
-		C_DRAM {Type I LastRead 0 FirstWrite -1}
+		A {Type I LastRead 2 FirstWrite -1}
+		C {Type O LastRead 19 FirstWrite 6}
+		A_DRAM {Type I LastRead 1 FirstWrite -1}
+		C_DRAM {Type I LastRead 1 FirstWrite -1}
 		denom_row {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A {Type IO LastRead -1 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type IO LastRead -1 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5 {Type IO LastRead -1 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1 {Type IO LastRead -1 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem {Type IO LastRead -1 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_38_1 {
+		col_sum_7 {Type O LastRead -1 FirstWrite 0}
+		col_sum_6 {Type O LastRead -1 FirstWrite 0}
+		col_sum_5 {Type O LastRead -1 FirstWrite 0}
+		col_sum_4 {Type O LastRead -1 FirstWrite 0}
+		col_sum_3 {Type O LastRead -1 FirstWrite 0}
+		col_sum_2 {Type O LastRead -1 FirstWrite 0}
+		col_sum_1 {Type O LastRead -1 FirstWrite 0}
+		col_sum {Type O LastRead -1 FirstWrite 0}}
 	top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3 {
 		A {Type I LastRead 1 FirstWrite -1}
 		sext_ln44 {Type I LastRead 0 FirstWrite -1}
 		denom_row {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5 {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A {Type O LastRead -1 FirstWrite 2}}
-	top_kernel_Pipeline_VITIS_LOOP_60_4 {
-		col_sum_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_1_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_2_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_3_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_4_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_5_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_6_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_7_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_8_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_9_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_10_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_11_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_12_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_13_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_14_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_15_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_16_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_17_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_18_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_19_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_20_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_21_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_22_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_23_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_24_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_25_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_26_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_27_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_28_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_29_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_30_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_31_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_32_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_33_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_34_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_35_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_36_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_37_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_38_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_39_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_40_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_41_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_42_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_43_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_44_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_45_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_46_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_47_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_48_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_49_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_50_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_51_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_52_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_53_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_54_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_55_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_56_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_57_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_58_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_59_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_60_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_61_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_62_load_out {Type O LastRead -1 FirstWrite 41}
-		col_sum_63_load_out {Type O LastRead -1 FirstWrite 41}
+	top_kernel_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_60_5 {
+		col_sum_7 {Type IO LastRead 42 FirstWrite 43}
+		col_sum_6 {Type IO LastRead 42 FirstWrite 43}
+		col_sum_5 {Type IO LastRead 42 FirstWrite 43}
+		col_sum_4 {Type IO LastRead 42 FirstWrite 43}
+		col_sum_3 {Type IO LastRead 40 FirstWrite 42}
+		col_sum_2 {Type IO LastRead 40 FirstWrite 42}
+		col_sum_1 {Type IO LastRead 40 FirstWrite 42}
+		col_sum {Type IO LastRead 40 FirstWrite 42}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type O LastRead -1 FirstWrite 42}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2 {Type O LastRead -1 FirstWrite 43}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type O LastRead -1 FirstWrite 42}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3 {Type O LastRead -1 FirstWrite 43}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2 {Type O LastRead -1 FirstWrite 42}
-		denom_row {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4 {Type O LastRead -1 FirstWrite 43}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3 {Type O LastRead -1 FirstWrite 42}}
-	top_kernel_Pipeline_VITIS_LOOP_79_6 {
-		col_sum_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_4_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_8_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_12_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_16_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_20_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_24_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_28_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_32_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_36_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_40_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_44_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_48_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_52_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_56_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_60_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_1_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_5_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_9_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_13_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_17_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_21_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_25_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_29_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_33_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_37_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_41_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_45_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_49_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_53_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_57_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_61_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_2_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_6_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_10_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_14_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_18_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_22_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_26_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_30_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_34_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_38_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_42_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_46_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_50_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_54_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_58_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_62_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_3_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_7_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_11_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_15_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_19_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_23_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_27_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_31_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_35_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_39_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_43_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_47_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_51_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_55_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_59_load_reload {Type I LastRead 0 FirstWrite -1}
-		col_sum_63_load_reload {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3 {Type O LastRead -1 FirstWrite 0}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2 {Type O LastRead -1 FirstWrite 0}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1 {Type O LastRead -1 FirstWrite 0}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem {Type O LastRead -1 FirstWrite 0}}
-	top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_94_9 {
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5 {Type O LastRead -1 FirstWrite 43}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6 {Type O LastRead -1 FirstWrite 42}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type O LastRead -1 FirstWrite 42}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type O LastRead -1 FirstWrite 42}
+		denom_row {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type O LastRead -1 FirstWrite 42}}
+	top_kernel_Pipeline_VITIS_LOOP_75_7 {
+		col_sum {Type I LastRead 0 FirstWrite -1}
+		col_sum_1 {Type I LastRead 0 FirstWrite -1}
+		col_sum_2 {Type I LastRead 0 FirstWrite -1}
+		col_sum_3 {Type I LastRead 0 FirstWrite -1}
+		col_sum_4 {Type I LastRead 0 FirstWrite -1}
+		col_sum_5 {Type I LastRead 0 FirstWrite -1}
+		col_sum_6 {Type I LastRead 0 FirstWrite -1}
+		col_sum_7 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7 {Type O LastRead -1 FirstWrite 1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6 {Type O LastRead -1 FirstWrite 1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5 {Type O LastRead -1 FirstWrite 1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4 {Type O LastRead -1 FirstWrite 1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3 {Type O LastRead -1 FirstWrite 1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2 {Type O LastRead -1 FirstWrite 1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1 {Type O LastRead -1 FirstWrite 1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem {Type O LastRead -1 FirstWrite 1}}
+	top_kernel_Pipeline_VITIS_LOOP_87_9_VITIS_LOOP_90_10 {
 		C {Type O LastRead -1 FirstWrite 6}
-		sext_ln89 {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3 {Type I LastRead 0 FirstWrite -1}
-		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2 {Type I LastRead 0 FirstWrite -1}
+		sext_ln87 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5 {Type I LastRead 0 FirstWrite -1}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2 {Type I LastRead 0 FirstWrite -1}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1 {Type I LastRead 0 FirstWrite -1}
@@ -443,8 +376,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "37469", "Max" : "37469"}
-	, {"Name" : "Interval", "Min" : "37470", "Max" : "37470"}
+	{"Name" : "Latency", "Min" : "37273", "Max" : "37273"}
+	, {"Name" : "Interval", "Min" : "37274", "Max" : "37274"}
 ]}
 
 set PipelineEnableSignalInfo {[

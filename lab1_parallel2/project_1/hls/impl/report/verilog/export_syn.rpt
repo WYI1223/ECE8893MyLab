@@ -2,7 +2,7 @@
 == Vivado RTL Synthesis Results
 ================================================================
 + General Information:
-    * Date:            Thu Feb 05 03:27:04 EST 2026
+    * Date:            Thu Feb 05 05:12:38 EST 2026
     * Version:         2025.1 (Build 6214317 on Sep 11 2025)
     * Project:         project_1
     * Solution:        hls (Vivado IP Flow Target)
@@ -30,12 +30,12 @@
 ================================================================
 == RTL Synthesis Resource Summary
 ================================================================
-LUT:              12693
-FF:               13119
+LUT:              20395
+FF:               21158
 DSP:              1
-BRAM:             54
+BRAM:             66
 URAM:             0
-SRL:              510
+SRL:              749
 
 
 ================================================================
@@ -46,49 +46,74 @@ SRL:              510
 | Timing         | Period (ns) |
 +----------------+-------------+
 | Target         | 10.000      |
-| Post-Synthesis | 3.173       |
+| Post-Synthesis | 3.468       |
 +----------------+-------------+
 
 
 ================================================================
 == RTL Synthesis Resources
 ================================================================
-+----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
-| Name                                                                 | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
-+----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
-| inst                                                                 | 12693 | 13119 | 1   | 54   |      |     |        |      |         |          |        |
-|   (inst)                                                             | 1     | 151   |     |      |      |     |        |      |         |          |        |
-|   A_m_axi_U                                                          | 559   | 741   |     | 1    |      |     |        |      |         |          |        |
-|   C_m_axi_U                                                          | 770   | 998   |     |      |      |     |        |      |         |          |        |
-|   control_s_axi_U                                                    | 164   | 181   |     |      |      |     |        |      |         |          |        |
-|   denom_row_U                                                        |       |       |     |      |      |     |        |      |         |          |        |
-|   grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393     | 142   | 84    |     |      |      |     |        |      |         |          |        |
-|     (grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393) | 119   | 82    |     |      |      |     |        |      |         |          |        |
-|   grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410                     | 10721 | 10820 |     |      |      |     |        |      |         |          |        |
-|     (grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410)                 | 1077  | 1648  |     |      |      |     |        |      |         |          |        |
-|     sdiv_38ns_24s_38_42_1_U10                                        | 2354  | 2277  |     |      |      |     |        |      |         |          |        |
-|     sdiv_38ns_24s_38_42_1_U11                                        | 2342  | 2277  |     |      |      |     |        |      |         |          |        |
-|     sdiv_38ns_24s_38_42_1_U8                                         | 2342  | 2277  |     |      |      |     |        |      |         |          |        |
-|     sdiv_38ns_24s_38_42_1_U9                                         | 2519  | 2339  |     |      |      |     |        |      |         |          |        |
-|   grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496                     |       |       |     |      |      |     |        |      |         |          |        |
-|     flow_control_loop_pipe_sequential_init_U                         |       |       |     |      |      |     |        |      |         |          |        |
-|   grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_94_9_fu_572     | 172   | 137   | 1   |      |      |     |        |      |         |          |        |
-|     (grp_top_kernel_Pipeline_VITIS_LOOP_89_8_VITIS_LOOP_94_9_fu_572) | 75    | 135   |     |      |      |     |        |      |         |          |        |
-|     flow_control_loop_pipe_sequential_init_U                         | 57    | 2     |     |      |      |     |        |      |         |          |        |
-|     mul_24s_17s_41_5_1_U166                                          |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_U               |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_U               |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_U               |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_U                 |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U       |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U       |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U       |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U         |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U             |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2_U             |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3_U             |       |       |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_U               |       |       |     |      |      |     |        |      |         |          |        |
-+----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
++-----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                  | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                  | 20395 | 21158 | 1   | 66   |      |     |        |      |         |          |        |
+|   (inst)                                                              | 1     | 153   |     |      |      |     |        |      |         |          |        |
+|   A_m_axi_U                                                           | 560   | 741   |     | 1    |      |     |        |      |         |          |        |
+|   C_m_axi_U                                                           | 770   | 998   |     |      |      |     |        |      |         |          |        |
+|   col_sum_1_U                                                         | 92    | 48    |     |      |      |     |        |      |         |          |        |
+|   col_sum_2_U                                                         | 91    | 48    |     |      |      |     |        |      |         |          |        |
+|   col_sum_3_U                                                         | 91    | 48    |     |      |      |     |        |      |         |          |        |
+|   col_sum_4_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|   col_sum_5_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|   col_sum_6_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|   col_sum_7_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|   col_sum_U                                                           | 92    | 48    |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                     | 164   | 181   |     |      |      |     |        |      |         |          |        |
+|   denom_row_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_38_1_fu_195                      |       |       |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_215      | 142   | 84    |     |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_215)  | 119   | 82    |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_60_5_fu_240      | 17825 | 18679 |     |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Pipeline_VITIS_LOOP_57_4_VITIS_LOOP_60_5_fu_240)  | 76    | 241   |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U20                                         | 2166  | 2277  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U21                                         | 2166  | 2277  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U22                                         | 2166  | 2277  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U23                                         | 2319  | 2339  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U24                                         | 2339  | 2363  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U25                                         | 2186  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U26                                         | 2186  | 2301  |     |      |      |     |        |      |         |          |        |
+|     sdiv_38ns_24s_38_42_1_U27                                         | 2186  | 2301  |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_75_7_fu_286                      |       |       |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                          |       |       |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Pipeline_VITIS_LOOP_87_9_VITIS_LOOP_90_10_fu_314     | 207   | 111   | 1   |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Pipeline_VITIS_LOOP_87_9_VITIS_LOOP_90_10_fu_314) | 109   | 109   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                          | 60    | 2     |     |      |      |     |        |      |         |          |        |
+|     mul_24s_17s_41_5_1_U72                                            |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_U                |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_U                |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_U                |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_U                |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_U                |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_U                |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_U                |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U        |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U        |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U        |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_4_U        |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_5_U        |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_6_U        |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_7_U        |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U          |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_1_U              |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_2_U              |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_3_U              |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_4_U              |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_5_U              |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_6_U              |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_7_U              |       |       |     |      |      |     |        |      |         |          |        |
+|   top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_tmp_U                |       |       |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
 
 
 ================================================================
@@ -97,19 +122,19 @@ SRL:              510
 +-----------------------------------------------------------+-----------+--------+--------+
 | Criteria                                                  | Guideline | Actual | Status |
 +-----------------------------------------------------------+-----------+--------+--------+
-| LUT                                                       | 70%       | 17.99% | OK     |
-| FD                                                        | 50%       | 9.30%  | OK     |
-| LUTRAM+SRL                                                | 25%       | 1.77%  | OK     |
-| CARRY8                                                    | 25%       | 9.98%  | OK     |
-| MUXF7                                                     | 15%       | 0.39%  | OK     |
+| LUT                                                       | 70%       | 28.90% | OK     |
+| FD                                                        | 50%       | 14.99% | OK     |
+| LUTRAM+SRL                                                | 25%       | 3.27%  | OK     |
+| CARRY8                                                    | 25%       | 19.09% | OK     |
+| MUXF7                                                     | 15%       | 0.12%  | OK     |
 | DSP                                                       | 80%       | 0.28%  | OK     |
-| RAMB/FIFO                                                 | 80%       | 12.50% | OK     |
-| DSP+RAMB+URAM (Avg)                                       | 70%       | 6.39%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 15.28% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 7.78%  | OK     |
 | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
 | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
 | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
-| Control Sets                                              | 1323      | 168    | OK     |
-| Average Fanout for modules > 100k cells                   | 4         | 2.18   | OK     |
+| Control Sets                                              | 1323      | 120    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.89   | OK     |
 | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
 | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
 +-----------------------------------------------------------+-----------+--------+--------+
@@ -128,331 +153,266 @@ SRL:              510
 == RTL Synthesis Timing Paths
 ================================================================
 * Timing was met
-+-------+-------+----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path  | SLACK | STARTPOINT PIN                                                                                                 | ENDPOINT PIN                                                                            | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
-|       |       |                                                                                                                |                                                                                         |              |            |                |          DELAY |        DELAY |
-+-------+-------+----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path1 | 6.827 | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]/C                               | denom_row_U/ram_reg/DINADIN[0]                                                          |           10 |         58 |          2.810 |          1.201 |        1.609 |
-| Path2 | 6.853 | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]/C                               | denom_row_U/ram_reg/DINBDIN[0]                                                          |           10 |         58 |          2.823 |          1.164 |        1.659 |
-| Path3 | 6.864 | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0/DINPADINP[0]  |            9 |        133 |          2.849 |          1.040 |        1.809 |
-| Path4 | 6.872 | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]/C                               | denom_row_U/ram_reg/DINADIN[7]                                                          |           10 |         58 |          2.807 |          1.201 |        1.606 |
-| Path5 | 6.877 | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0/DINADIN[15] |            9 |        133 |          2.786 |          1.040 |        1.746 |
-+-------+-------+----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
++-------+-------+--------------------------------------+------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                       | ENDPOINT PIN                                                                             | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                      |                                                                                          |              |            |                |          DELAY |        DELAY |
++-------+-------+--------------------------------------+------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 6.532 | col_sum_6_U/ram_reg_bram_0/CLKBWRCLK | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0/DINADIN[15]  |            7 |          6 |          3.087 |          1.743 |        1.344 |
+| Path2 | 6.532 | col_sum_5_U/ram_reg_bram_0/CLKBWRCLK | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U/ram_reg_bram_0/DINADIN[15]  |            7 |          6 |          3.087 |          1.743 |        1.344 |
+| Path3 | 6.532 | col_sum_4_U/ram_reg_bram_0/CLKBWRCLK | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U/ram_reg_bram_0/DINADIN[15]  |            7 |          6 |          3.087 |          1.743 |        1.344 |
+| Path4 | 6.532 | col_sum_7_U/ram_reg_bram_0/CLKBWRCLK | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0/DINADIN[15]    |            7 |          6 |          3.087 |          1.743 |        1.344 |
+| Path5 | 6.564 | col_sum_6_U/ram_reg_bram_0/CLKBWRCLK | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0/DINPADINP[0] |            7 |          6 |          3.105 |          1.698 |        1.407 |
++-------+-------+--------------------------------------+------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
 
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path1 Cells                                                                                                  | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_25                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_31                                  | CLB.LUT.LUT3           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__2                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__3                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__5                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__5                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_17__0                                        | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0                                    | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_18                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__0                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__2                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__4                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__4                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_1__1                                         | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0                                  | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
+    +-----------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------+------------------------+
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_1__22                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_5_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_5_U/ram_reg_bram_0_i_51__4                                          | CLB.LUT.LUT1           |
+    | col_sum_5_U/ram_reg_bram_0_i_36__5                                          | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_24__10                                         | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_25__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_21__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_19__12                                         | CLB.LUT.LUT5           |
+    | col_sum_5_U/ram_reg_bram_0_i_1__21                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_4_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_4_U/ram_reg_bram_0_i_51__3                                          | CLB.LUT.LUT1           |
+    | col_sum_4_U/ram_reg_bram_0_i_36__4                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_24__9                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_25__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_21__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_19__11                                         | CLB.LUT.LUT5           |
+    | col_sum_4_U/ram_reg_bram_0_i_1__20                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_7_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_7_U/ram_reg_bram_0_i_51__6                                          | CLB.LUT.LUT1           |
+    | col_sum_7_U/ram_reg_bram_0_i_36__7                                          | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_24__12                                         | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_25__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_21__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_19__14                                         | CLB.LUT.LUT5           |
+    | col_sum_7_U/ram_reg_bram_0_i_1__23                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0   | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_17__10                                         | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    +-----------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path2 Cells                                                                                                  | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_25                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_31                                  | CLB.LUT.LUT3           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__2                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__3                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__5                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__5                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_17__0                                        | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0                                    | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_18                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__0                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__2                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__4                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__4                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_1__1                                         | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0                                  | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
+    +-----------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------+------------------------+
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_1__22                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_5_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_5_U/ram_reg_bram_0_i_51__4                                          | CLB.LUT.LUT1           |
+    | col_sum_5_U/ram_reg_bram_0_i_36__5                                          | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_24__10                                         | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_25__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_21__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_19__12                                         | CLB.LUT.LUT5           |
+    | col_sum_5_U/ram_reg_bram_0_i_1__21                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_4_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_4_U/ram_reg_bram_0_i_51__3                                          | CLB.LUT.LUT1           |
+    | col_sum_4_U/ram_reg_bram_0_i_36__4                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_24__9                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_25__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_21__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_19__11                                         | CLB.LUT.LUT5           |
+    | col_sum_4_U/ram_reg_bram_0_i_1__20                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_7_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_7_U/ram_reg_bram_0_i_51__6                                          | CLB.LUT.LUT1           |
+    | col_sum_7_U/ram_reg_bram_0_i_36__7                                          | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_24__12                                         | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_25__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_21__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_19__14                                         | CLB.LUT.LUT5           |
+    | col_sum_7_U/ram_reg_bram_0_i_1__23                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0   | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_17__10                                         | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    +-----------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path3 Cells                                                                                                  | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_25                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_31                                  | CLB.LUT.LUT3           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__2                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__3                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__5                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__5                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_17__0                                        | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0                                    | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_18                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__0                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__2                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__4                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__4                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_1__1                                         | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0                                  | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
+    +-----------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------+------------------------+
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_1__22                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_5_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_5_U/ram_reg_bram_0_i_51__4                                          | CLB.LUT.LUT1           |
+    | col_sum_5_U/ram_reg_bram_0_i_36__5                                          | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_24__10                                         | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_25__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_21__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_19__12                                         | CLB.LUT.LUT5           |
+    | col_sum_5_U/ram_reg_bram_0_i_1__21                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_4_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_4_U/ram_reg_bram_0_i_51__3                                          | CLB.LUT.LUT1           |
+    | col_sum_4_U/ram_reg_bram_0_i_36__4                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_24__9                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_25__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_21__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_19__11                                         | CLB.LUT.LUT5           |
+    | col_sum_4_U/ram_reg_bram_0_i_1__20                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_7_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_7_U/ram_reg_bram_0_i_51__6                                          | CLB.LUT.LUT1           |
+    | col_sum_7_U/ram_reg_bram_0_i_36__7                                          | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_24__12                                         | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_25__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_21__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_19__14                                         | CLB.LUT.LUT5           |
+    | col_sum_7_U/ram_reg_bram_0_i_1__23                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0   | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_17__10                                         | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    +-----------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path4 Cells                                                                                                  | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_25                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_31                                  | CLB.LUT.LUT3           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__2                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__3                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__5                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__5                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_17__0                                        | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0                                    | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_18                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__0                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__2                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__4                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__4                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_1__1                                         | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0                                  | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
+    +-----------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------+------------------------+
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_1__22                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_5_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_5_U/ram_reg_bram_0_i_51__4                                          | CLB.LUT.LUT1           |
+    | col_sum_5_U/ram_reg_bram_0_i_36__5                                          | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_24__10                                         | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_25__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_21__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_19__12                                         | CLB.LUT.LUT5           |
+    | col_sum_5_U/ram_reg_bram_0_i_1__21                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_4_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_4_U/ram_reg_bram_0_i_51__3                                          | CLB.LUT.LUT1           |
+    | col_sum_4_U/ram_reg_bram_0_i_36__4                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_24__9                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_25__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_21__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_19__11                                         | CLB.LUT.LUT5           |
+    | col_sum_4_U/ram_reg_bram_0_i_1__20                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_7_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_7_U/ram_reg_bram_0_i_51__6                                          | CLB.LUT.LUT1           |
+    | col_sum_7_U/ram_reg_bram_0_i_36__7                                          | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_24__12                                         | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_25__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_21__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_19__14                                         | CLB.LUT.LUT5           |
+    | col_sum_7_U/ram_reg_bram_0_i_1__23                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0   | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_17__10                                         | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    +-----------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path5 Cells                                                                                                  | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_25                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_31                                  | CLB.LUT.LUT3           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127                                          | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__2                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__3                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__5                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__5                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_17__0                                        | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0                                    | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112_reg[0]                               | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/j_fu_112[6]_i_4                               | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_37                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_89                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_43                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_40                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_42                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_45                                  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_38                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_39                                  | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3_fu_393/ram_reg_i_18                                  | CLB.LUT.LUT5           |
-    | denom_row_U/ram_reg                                                                                          | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_79_6_fu_496/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_27  | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_191__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_127__2                                       | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_66__1                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_31__0                                        | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_32__2                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_23__4                                        | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_20__4                                        | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_60_4_fu_410/ram_reg_bram_0_i_1__1                                         | CLB.LUT.LUT3           |
-    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0                                  | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------+------------------------+
+    +-----------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------+------------------------+
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_1__22                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_5_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_5_U/ram_reg_bram_0_i_51__4                                          | CLB.LUT.LUT1           |
+    | col_sum_5_U/ram_reg_bram_0_i_36__5                                          | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_24__10                                         | CLB.CARRY.CARRY8       |
+    | col_sum_5_U/ram_reg_bram_0_i_25__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_21__11                                         | CLB.LUT.LUT6           |
+    | col_sum_5_U/ram_reg_bram_0_i_19__12                                         | CLB.LUT.LUT5           |
+    | col_sum_5_U/ram_reg_bram_0_i_1__21                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_2_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_4_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_4_U/ram_reg_bram_0_i_51__3                                          | CLB.LUT.LUT1           |
+    | col_sum_4_U/ram_reg_bram_0_i_36__4                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_24__9                                          | CLB.CARRY.CARRY8       |
+    | col_sum_4_U/ram_reg_bram_0_i_25__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_21__10                                         | CLB.LUT.LUT6           |
+    | col_sum_4_U/ram_reg_bram_0_i_19__11                                         | CLB.LUT.LUT5           |
+    | col_sum_4_U/ram_reg_bram_0_i_1__20                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_3_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_7_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_7_U/ram_reg_bram_0_i_51__6                                          | CLB.LUT.LUT1           |
+    | col_sum_7_U/ram_reg_bram_0_i_36__7                                          | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_24__12                                         | CLB.CARRY.CARRY8       |
+    | col_sum_7_U/ram_reg_bram_0_i_25__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_21__13                                         | CLB.LUT.LUT6           |
+    | col_sum_7_U/ram_reg_bram_0_i_19__14                                         | CLB.LUT.LUT5           |
+    | col_sum_7_U/ram_reg_bram_0_i_1__23                                          | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_U/ram_reg_bram_0   | BLOCKRAM.BRAM.RAMB18E2 |
+    | col_sum_6_U/ram_reg_bram_0                                                  | BLOCKRAM.BRAM.RAMB36E2 |
+    | col_sum_6_U/ram_reg_bram_0_i_51__5                                          | CLB.LUT.LUT1           |
+    | col_sum_6_U/ram_reg_bram_0_i_36__6                                          | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_24__11                                         | CLB.CARRY.CARRY8       |
+    | col_sum_6_U/ram_reg_bram_0_i_25__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_21__12                                         | CLB.LUT.LUT6           |
+    | col_sum_6_U/ram_reg_bram_0_i_19__13                                         | CLB.LUT.LUT5           |
+    | col_sum_6_U/ram_reg_bram_0_i_17__10                                         | CLB.LUT.LUT3           |
+    | top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_scale_mem_1_U/ram_reg_bram_0 | BLOCKRAM.BRAM.RAMB18E2 |
+    +-----------------------------------------------------------------------------+------------------------+
 
 
 ================================================================

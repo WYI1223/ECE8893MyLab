@@ -14,23 +14,31 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 7
+set cdfgNum 8
 set C_modelName {top_kernel_Pipeline_VITIS_LOOP_44_2_VITIS_LOOP_46_3}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict denom_row { MEM_WIDTH 24 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A { MEM_WIDTH 24 MEM_SIZE 12288 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5 { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4 { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A { MEM_WIDTH 24 MEM_SIZE 6144 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ A int 32 regular {axi_master 0}  }
 	{ sext_ln44 int 62 regular  }
 	{ denom_row int 24 regular {array 256 { 0 } 0 1 } {global 1}  }
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 int 24 regular {array 4096 { 0 3 } 0 1 } {global 1}  }
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 int 24 regular {array 4096 { 0 3 } 0 1 } {global 1}  }
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 int 24 regular {array 4096 { 0 3 } 0 1 } {global 1}  }
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A int 24 regular {array 4096 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5 int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4 int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A int 24 regular {array 2048 { 0 3 } 0 1 } {global 1}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -39,12 +47,16 @@ set C_modelArgMapList {[
 	{ "Name" : "A", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[ {"cElement": [{"cName": "A_DRAM","offset": { "type": "dynamic","port_name": "A_DRAM","bundle": "control"},"direction": "READONLY"}]}]} , 
  	{ "Name" : "sext_ln44", "interface" : "wire", "bitwidth" : 62, "direction" : "READONLY"} , 
  	{ "Name" : "denom_row", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
+ 	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
+ 	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
+ 	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
+ 	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
  	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
  	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
  	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} , 
  	{ "Name" : "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY", "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 73
+set portNum 89
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -103,22 +115,38 @@ set portList {
 	{ denom_row_ce0 sc_out sc_logic 1 signal 2 } 
 	{ denom_row_we0 sc_out sc_logic 1 signal 2 } 
 	{ denom_row_d0 sc_out sc_lv 24 signal 2 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_address0 sc_out sc_lv 12 signal 3 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_ce0 sc_out sc_logic 1 signal 3 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_we0 sc_out sc_logic 1 signal 3 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_d0 sc_out sc_lv 24 signal 3 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_address0 sc_out sc_lv 12 signal 4 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_ce0 sc_out sc_logic 1 signal 4 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_we0 sc_out sc_logic 1 signal 4 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_d0 sc_out sc_lv 24 signal 4 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_address0 sc_out sc_lv 12 signal 5 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_ce0 sc_out sc_logic 1 signal 5 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_we0 sc_out sc_logic 1 signal 5 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_d0 sc_out sc_lv 24 signal 5 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_address0 sc_out sc_lv 12 signal 6 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_ce0 sc_out sc_logic 1 signal 6 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_we0 sc_out sc_logic 1 signal 6 } 
-	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_d0 sc_out sc_lv 24 signal 6 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_address0 sc_out sc_lv 11 signal 3 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_ce0 sc_out sc_logic 1 signal 3 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_we0 sc_out sc_logic 1 signal 3 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_d0 sc_out sc_lv 24 signal 3 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_address0 sc_out sc_lv 11 signal 4 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_ce0 sc_out sc_logic 1 signal 4 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_we0 sc_out sc_logic 1 signal 4 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_d0 sc_out sc_lv 24 signal 4 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_address0 sc_out sc_lv 11 signal 5 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_ce0 sc_out sc_logic 1 signal 5 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_we0 sc_out sc_logic 1 signal 5 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_d0 sc_out sc_lv 24 signal 5 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_address0 sc_out sc_lv 11 signal 6 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_ce0 sc_out sc_logic 1 signal 6 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_we0 sc_out sc_logic 1 signal 6 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_d0 sc_out sc_lv 24 signal 6 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_address0 sc_out sc_lv 11 signal 7 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_ce0 sc_out sc_logic 1 signal 7 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_we0 sc_out sc_logic 1 signal 7 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_d0 sc_out sc_lv 24 signal 7 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_address0 sc_out sc_lv 11 signal 8 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_ce0 sc_out sc_logic 1 signal 8 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_we0 sc_out sc_logic 1 signal 8 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_d0 sc_out sc_lv 24 signal 8 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_address0 sc_out sc_lv 11 signal 9 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_ce0 sc_out sc_logic 1 signal 9 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_we0 sc_out sc_logic 1 signal 9 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_d0 sc_out sc_lv 24 signal 9 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_address0 sc_out sc_lv 11 signal 10 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_ce0 sc_out sc_logic 1 signal 10 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_we0 sc_out sc_logic 1 signal 10 } 
+	{ top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_d0 sc_out sc_lv 24 signal 10 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -178,19 +206,35 @@ set NewPortList {[
  	{ "name": "denom_row_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "denom_row", "role": "ce0" }} , 
  	{ "name": "denom_row_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "denom_row", "role": "we0" }} , 
  	{ "name": "denom_row_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "denom_row", "role": "d0" }} , 
- 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7", "role": "ce0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7", "role": "we0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7", "role": "d0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6", "role": "ce0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6", "role": "we0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6", "role": "d0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5", "role": "ce0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5", "role": "we0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5", "role": "d0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4", "role": "ce0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4", "role": "we0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4", "role": "d0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3", "role": "address0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3", "role": "ce0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3", "role": "we0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3", "role": "d0" }} , 
- 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2", "role": "address0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2", "role": "ce0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2", "role": "we0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2", "role": "d0" }} , 
- 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1", "role": "address0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1", "role": "ce0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1", "role": "we0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1", "role": "d0" }} , 
- 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A", "role": "address0" }} , 
+ 	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A", "role": "address0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A", "role": "ce0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A", "role": "we0" }} , 
  	{ "name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A", "role": "d0" }}  ]}
@@ -200,6 +244,10 @@ set ArgLastReadFirstWriteLatency {
 		A {Type I LastRead 1 FirstWrite -1}
 		sext_ln44 {Type I LastRead 0 FirstWrite -1}
 		denom_row {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5 {Type O LastRead -1 FirstWrite 2}
+		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 {Type O LastRead -1 FirstWrite 2}
 		top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 {Type O LastRead -1 FirstWrite 2}
@@ -220,8 +268,12 @@ set Spec2ImplPortList {
 	 { m_axi {  { m_axi_A_0_AWVALID VALID 1 1 }  { m_axi_A_0_AWREADY READY 0 1 }  { m_axi_A_0_AWADDR ADDR 1 64 }  { m_axi_A_0_AWID ID 1 1 }  { m_axi_A_0_AWLEN SIZE 1 32 }  { m_axi_A_0_AWSIZE BURST 1 3 }  { m_axi_A_0_AWBURST LOCK 1 2 }  { m_axi_A_0_AWLOCK CACHE 1 2 }  { m_axi_A_0_AWCACHE PROT 1 4 }  { m_axi_A_0_AWPROT QOS 1 3 }  { m_axi_A_0_AWQOS REGION 1 4 }  { m_axi_A_0_AWREGION USER 1 4 }  { m_axi_A_0_AWUSER DATA 1 1 }  { m_axi_A_0_WVALID VALID 1 1 }  { m_axi_A_0_WREADY READY 0 1 }  { m_axi_A_0_WDATA FIFONUM 1 32 }  { m_axi_A_0_WSTRB STRB 1 4 }  { m_axi_A_0_WLAST LAST 1 1 }  { m_axi_A_0_WID ID 1 1 }  { m_axi_A_0_WUSER DATA 1 1 }  { m_axi_A_0_ARVALID VALID 1 1 }  { m_axi_A_0_ARREADY READY 0 1 }  { m_axi_A_0_ARADDR ADDR 1 64 }  { m_axi_A_0_ARID ID 1 1 }  { m_axi_A_0_ARLEN SIZE 1 32 }  { m_axi_A_0_ARSIZE BURST 1 3 }  { m_axi_A_0_ARBURST LOCK 1 2 }  { m_axi_A_0_ARLOCK CACHE 1 2 }  { m_axi_A_0_ARCACHE PROT 1 4 }  { m_axi_A_0_ARPROT QOS 1 3 }  { m_axi_A_0_ARQOS REGION 1 4 }  { m_axi_A_0_ARREGION USER 1 4 }  { m_axi_A_0_ARUSER DATA 1 1 }  { m_axi_A_0_RVALID VALID 0 1 }  { m_axi_A_0_RREADY READY 1 1 }  { m_axi_A_0_RDATA FIFONUM 0 32 }  { m_axi_A_0_RLAST LAST 0 1 }  { m_axi_A_0_RID ID 0 1 }  { m_axi_A_0_RFIFONUM LEN 0 9 }  { m_axi_A_0_RUSER DATA 0 1 }  { m_axi_A_0_RRESP RESP 0 2 }  { m_axi_A_0_BVALID VALID 0 1 }  { m_axi_A_0_BREADY READY 1 1 }  { m_axi_A_0_BRESP RESP 0 2 }  { m_axi_A_0_BID ID 0 1 }  { m_axi_A_0_BUSER DATA 0 1 } } }
 	sext_ln44 { ap_none {  { sext_ln44 in_data 0 62 } } }
 	denom_row { ap_memory {  { denom_row_address0 mem_address 1 8 }  { denom_row_ce0 mem_ce 1 1 }  { denom_row_we0 mem_we 1 1 }  { denom_row_d0 mem_din 1 24 } } }
-	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_address0 mem_address 1 12 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_d0 mem_din 1 24 } } }
-	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_address0 mem_address 1 12 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_d0 mem_din 1 24 } } }
-	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_address0 mem_address 1 12 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_d0 mem_din 1 24 } } }
-	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_address0 mem_address 1 12 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_7_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_6_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_5_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_4_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_3_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_2_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1 { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_1_d0 mem_din 1 24 } } }
+	top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A { ap_memory {  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_address0 mem_address 1 11 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_ce0 mem_ce 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_we0 mem_we 1 1 }  { top_kernel_ap_fixed_64_ap_fixed_24_10_0_0_0_64_A_d0 mem_din 1 24 } } }
 }

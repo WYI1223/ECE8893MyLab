@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Thu Feb  5 03:18:37 2026
+| Date         : Thu Feb  5 04:57:37 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
 | Design       : bd_0_hls_inst_0
@@ -32,16 +32,16 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 21048 |     0 |          0 |     70560 | 29.83 |
-|   LUT as Logic             | 20284 |     0 |          0 |     70560 | 28.75 |
-|   LUT as Memory            |   764 |     0 |          0 |     28800 |  2.65 |
-|     LUT as Distributed RAM |     0 |     0 |            |           |       |
-|     LUT as Shift Register  |   764 |     0 |            |           |       |
-| CLB Registers              | 22222 |     0 |          0 |    141120 | 15.75 |
-|   Register as Flip Flop    | 22222 |     0 |          0 |    141120 | 15.75 |
+| CLB LUTs*                  | 18493 |     0 |          0 |     70560 | 26.21 |
+|   LUT as Logic             | 17568 |     0 |          0 |     70560 | 24.90 |
+|   LUT as Memory            |   925 |     0 |          0 |     28800 |  3.21 |
+|     LUT as Distributed RAM |   192 |     0 |            |           |       |
+|     LUT as Shift Register  |   733 |     0 |            |           |       |
+| CLB Registers              | 14772 |     0 |          0 |    141120 | 10.47 |
+|   Register as Flip Flop    | 14772 |     0 |          0 |    141120 | 10.47 |
 |   Register as Latch        |     0 |     0 |          0 |    141120 |  0.00 |
-| CARRY8                     |  1684 |     0 |          0 |      8820 | 19.09 |
-| F7 Muxes                   |   169 |     0 |          0 |     35280 |  0.48 |
+| CARRY8                     |  1548 |     0 |          0 |      8820 | 17.55 |
+| F7 Muxes                   |    41 |     0 |          0 |     35280 |  0.12 |
 | F8 Muxes                   |     0 |     0 |          0 |     17640 |  0.00 |
 | F9 Muxes                   |     0 |     0 |          0 |      8820 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
@@ -64,8 +64,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 19    |          Yes |         Set |            - |
-| 22203 |          Yes |       Reset |            - |
+| 42    |          Yes |         Set |            - |
+| 14730 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -75,9 +75,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |   29 |     0 |          0 |       216 | 13.43 |
-|   RAMB36/FIFO*    |   16 |     0 |          0 |       216 |  7.41 |
-|     RAMB36E2 only |   16 |       |            |           |       |
+| Block RAM Tile    |   33 |     0 |          0 |       216 | 15.28 |
+|   RAMB36/FIFO*    |   20 |     0 |          0 |       216 |  9.26 |
+|     RAMB36E2 only |   20 |       |            |           |       |
 |   RAMB18          |   26 |     0 |          0 |       432 |  6.02 |
 |     RAMB18E2 only |   26 |       |            |           |       |
 +-------------------+------+-------+------------+-----------+-------+
@@ -166,20 +166,21 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDRE     | 22203 |            Register |
-| LUT3     | 11681 |                 CLB |
-| LUT2     |  7608 |                 CLB |
-| LUT1     |  4202 |                 CLB |
-| CARRY8   |  1684 |                 CLB |
-| LUT6     |  1592 |                 CLB |
-| LUT4     |   637 |                 CLB |
-| SRL16E   |   448 |                 CLB |
-| SRLC32E  |   316 |                 CLB |
-| LUT5     |   261 |                 CLB |
-| MUXF7    |   169 |                 CLB |
+| FDRE     | 14730 |            Register |
+| LUT3     | 10473 |                 CLB |
+| LUT2     |  7168 |                 CLB |
+| LUT1     |  3759 |                 CLB |
+| CARRY8   |  1548 |                 CLB |
+| LUT4     |   635 |                 CLB |
+| LUT6     |   585 |                 CLB |
+| SRL16E   |   445 |                 CLB |
+| SRLC32E  |   288 |                 CLB |
+| LUT5     |   254 |                 CLB |
+| RAMD32   |   192 |                 CLB |
+| FDSE     |    42 |            Register |
+| MUXF7    |    41 |                 CLB |
 | RAMB18E2 |    26 |            BLOCKRAM |
-| FDSE     |    19 |            Register |
-| RAMB36E2 |    16 |            BLOCKRAM |
+| RAMB36E2 |    20 |            BLOCKRAM |
 | DSP48E2  |     1 |          Arithmetic |
 +----------+-------+---------------------+
 

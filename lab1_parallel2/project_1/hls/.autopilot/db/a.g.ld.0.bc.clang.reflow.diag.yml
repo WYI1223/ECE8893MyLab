@@ -1,21 +1,21 @@
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 81, Column: 19 }
+DebugLoc:        { File: top.cpp, Line: 77, Column: 19 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_81_7
+  - LoopName:        VITIS_LOOP_77_8
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 69, Column: 19 }
+DebugLoc:        { File: top.cpp, Line: 63, Column: 19 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_69_5
+  - LoopName:        VITIS_LOOP_63_6
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -25,14 +25,14 @@ DebugLoc:        { File: top.cpp, Line: 16, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_81_7
+  - LoopName:        VITIS_LOOP_77_8
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:81:19'
+  - LoopLoc:         'top.cpp:77:19'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '4'
+  - Factor:          '8'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -41,14 +41,14 @@ DebugLoc:        { File: top.cpp, Line: 16, Column: 0 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_69_5
+  - LoopName:        VITIS_LOOP_63_6
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:69:19'
+  - LoopLoc:         'top.cpp:63:19'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '4'
+  - Factor:          '8'
 ...
 --- !Missed
 Pass:            inline
@@ -76,7 +76,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '4'
+  - Factor:          '8'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
@@ -96,7 +96,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '4'
+  - Factor:          '8'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
@@ -113,8 +113,10 @@ Args:
   - UOName:          col_sum
   - String:          ''':'
   - String:          ' '
-  - Mode:            Complete
+  - Mode:            Cyclic
   - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
   - String:          ' on dimension '
   - Dim:             '1'
   - String:          .
@@ -177,12 +179,12 @@ Args:
   - OrigAccess:      load
     DebugLoc:        { File: top.cpp, Line: 48, Column: 13 }
   - OrigDirection:   read
-  - OrigID:          for.body9.load.12
+  - OrigID:          for.body9.load.16
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 89, Column: 22 }
+DebugLoc:        { File: top.cpp, Line: 87, Column: 22 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Sequential '
@@ -196,18 +198,18 @@ Args:
   - String:          ' '
   - BundleName:      C
   - String:          ' '
-  - LoopName:        VITIS_LOOP_89_8
+  - LoopName:        VITIS_LOOP_87_9
   - String:          ' '
-  - LoopLoc:         'top.cpp:89:22'
+  - LoopLoc:         'top.cpp:87:22'
   - String:          ' '
   - Function:        'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
     DebugLoc:        { File: top.cpp, Line: 16, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: top.cpp, Line: 116, Column: 34 }
+    DebugLoc:        { File: top.cpp, Line: 104, Column: 34 }
   - OrigDirection:   write
-  - OrigID:          if.then112.store.5
+  - OrigID:          if.then109.store.48
 ...
 --- !Missed
 Pass:            reflow-burst-widen
@@ -244,7 +246,7 @@ Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem'
+  - PragmaOptions:   'dim=1 type=cyclic factor=8 variable=_ZZ10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_E9scale_mem'
   - String:          ' '
   - PragmaIsAuto:    '1'
   - String:          ' '
@@ -252,15 +254,15 @@ Args:
   - String:          ' '
   - varLoc:          'top.cpp:33:0'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:80:9'
-    DebugLoc:        { File: top.cpp, Line: 80, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:76:9'
+    DebugLoc:        { File: top.cpp, Line: 76, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])::scale_mem'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 80, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 76, Column: 9 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Inferring pragma '''
@@ -268,7 +270,7 @@ Args:
   - String:          ' type='
   - Mode:            cyclic
   - String:          ' factor='
-  - Factor:          '4'
+  - Factor:          '8'
   - String:          ' dim='
   - Dim:             '1'
   - String:          ''' for array '''
@@ -293,7 +295,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '4'
+  - Factor:          '8'
   - String:          ' on dimension '
   - Dim:             '1'
   - String:          .
@@ -351,7 +353,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: top.cpp, Line: 89, Column: 22 }
+DebugLoc:        { File: top.cpp, Line: 87, Column: 22 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Multiple burst '
@@ -375,7 +377,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: top.cpp, Line: 89, Column: 22 }
+DebugLoc:        { File: top.cpp, Line: 87, Column: 22 }
 Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
 Args:            
   - String:          'Multiple burst '

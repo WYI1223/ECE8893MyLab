@@ -59258,6 +59258,8 @@ void top_kernel(data_t A[256][64],
 static const int UF_NORM = 8;
 static const int MUL_LAT = 4;
 
+typedef ap_ufixed<24,10, AP_RND, AP_SAT> udata_t;
+
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
@@ -59277,7 +59279,7 @@ void top_kernel(data_t A_DRAM[256][64],
 
     data_t col_sum[64];
     static data_t scale_mem[64];
-#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
+#pragma HLS ARRAY_PARTITION variable=col_sum cyclic factor=UF_NORM dim=1
 #pragma HLS BIND_STORAGE variable=scale_mem type=ram_1p impl=bram
 
 
@@ -59299,27 +59301,26 @@ void top_kernel(data_t A_DRAM[256][64],
     }
 
 
-    const int BLKS_N = 64 / UF_NORM;
-    const int TOT_N = 256 * BLKS_N;
 
-    data_t denom_reg = (data_t)1.0;
-    for (int idx = 0; idx < TOT_N; idx++) {
+    for (int i = 0; i < 256; i++) {
+    data_t denom_reg = denom_row[i];
+
+    for (int jb = 0; jb < 64; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
-        int i = idx / BLKS_N;
-        int b = idx - i * BLKS_N;
-        int jb = b * UF_NORM;
-
-        if (b == 0) denom_reg = denom_row[i];
-
 #pragma HLS DEPENDENCE variable=col_sum inter false
         for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
             int j = jb + k;
-            data_t t = A[i][j] / denom_reg;
+
+    udata_t au = (udata_t)A[i][j];
+    udata_t du = (udata_t)denom_reg;
+    data_t t = (data_t)(au / du);
             tmp[i][j] = t;
             col_sum[j] += t;
         }
     }
+    }
+
 
 
     for (int jb = 0; jb < 64; jb += UF_NORM) {
@@ -59332,39 +59333,30 @@ void top_kernel(data_t A_DRAM[256][64],
     }
 
 
+
+
     for (int i = 0; i < 256; i++) {
         data_t t_d1 = (data_t)0.0;
         data_t s_d1 = (data_t)0.0;
-        data_t p_d1 = (data_t)0.0;
-
-        for (int j = 0; j < 64 + 2; j++) {
+        for (int j = 0; j < 64 + 1; j++) {
 #pragma HLS PIPELINE II=1
             data_t t_cur = (data_t)0.0;
             data_t s_cur = (data_t)0.0;
-            data_t p_cur = (data_t)0.0;
-
 
             if (j < 64) {
                 t_cur = tmp[i][j];
                 s_cur = scale_mem[j];
             }
 
-
-            if (j > 0 && j <= 64) {
+            if (j > 0) {
                 data_t prod;
 #pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
                 prod = t_d1 * s_d1;
-                p_cur = prod;
-            }
-
-
-            if (j > 1) {
-                C_DRAM[i][j - 2] = p_d1;
+                C_DRAM[i][j - 1] = prod;
             }
 
             t_d1 = t_cur;
             s_d1 = s_cur;
-            p_d1 = p_cur;
         }
     }
 }

@@ -1,24 +1,24 @@
 {
   "0": {
-    "basicblocks": 421,
+    "basicblocks": 183,
     "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 24,
+    "control_depth": 4,
+    "def_use_depth": 20,
     "file": "top.cpp",
     "fileloc": 15,
-    "instructions": 1627,
+    "instructions": 1698,
     "loads": {
-      "G": 10,
-      "L": 128,
+      "G": 18,
+      "L": 16,
       "T": 1
     },
-    "memory_accesses": 480,
+    "memory_accesses": 143,
     "name": "top_kernel",
     "stores": {
-      "G": 13,
-      "L": 320,
+      "G": 25,
+      "L": 40,
       "T": 1
     },
-    "total_instructions": 1627
+    "total_instructions": 1698
   }
 }

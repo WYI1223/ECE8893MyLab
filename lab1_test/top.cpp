@@ -9,8 +9,10 @@
 // - No dataflow/streams.
 // - If it doesn't help CP, it likely means the critical path is elsewhere (often divide/control).
 
-static const int UF_NORM = 8; // divider parallelism // divider parallelism
+static const int UF_NORM = 8; // divider parallelism
 static const int MUL_LAT = 4; // 0..4 for mul+dsp
+
+typedef ap_ufixed<24,10, AP_RND, AP_SAT> udata_t;
 
 void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
                 data_t C_DRAM[N_ROWS][N_COLS]) {
@@ -31,7 +33,7 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
 
     data_t col_sum[N_COLS];
     static data_t scale_mem[N_COLS];
-#pragma HLS ARRAY_PARTITION variable=col_sum complete dim=1
+#pragma HLS ARRAY_PARTITION variable=col_sum cyclic factor=UF_NORM dim=1
 #pragma HLS BIND_STORAGE variable=scale_mem type=ram_1p impl=bram
 
     // init col_sum
@@ -52,29 +54,28 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
         denom_row[i] = row_sum + (data_t)1.0;
     }
 
-    // Pass 2: normalize + col_sum (flattened, II=1)
-    const int BLKS_N = N_COLS / UF_NORM;
-    const int TOT_N  = N_ROWS * BLKS_N;
-
-    data_t denom_reg = (data_t)1.0;
-    for (int idx = 0; idx < TOT_N; idx++) {
-#pragma HLS PIPELINE II=1
-        int i  = idx / BLKS_N;
-        int b  = idx - i * BLKS_N;
-        int jb = b * UF_NORM;
-
-        if (b == 0) denom_reg = denom_row[i];
-
-#pragma HLS DEPENDENCE variable=col_sum inter false
+    // Pass 2: normalize + col_sum (nested loops for cleaner control / better routing)
+    // Same math/order per row: denom fixed; process columns in UF_NORM-wide blocks.
+    for (int i = 0; i < N_ROWS; i++) {
+    data_t denom_reg = denom_row[i];
+    
+    for (int jb = 0; jb < N_COLS; jb += UF_NORM) {
+    #pragma HLS PIPELINE II=1
+    #pragma HLS DEPENDENCE variable=col_sum inter false
         for (int k = 0; k < UF_NORM; k++) {
-#pragma HLS UNROLL
+    #pragma HLS UNROLL
             int j = jb + k;
-            data_t t = A[i][j] / denom_reg;
+    // Inputs are non-negative in this lab; try unsigned divide to encourage udiv mapping.
+    udata_t au = (udata_t)A[i][j];
+    udata_t du = (udata_t)denom_reg;
+    data_t t = (data_t)(au / du);
             tmp[i][j] = t;
             col_sum[j] += t;
         }
     }
-
+    }
+    
+    
     // Pass 3: scale per column
     for (int jb = 0; jb < N_COLS; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
@@ -84,42 +85,34 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
             scale_mem[j] = col_sum[j] / (data_t)N_ROWS;
         }
     }
-    // Pass 4: write-back with scale BRAM prefetch + extra register stage for AXI write (trades +2 cycles/row for CP)
-    // Motivation: break the (mul -> AXI WDATA/handshake) path by registering the product before the store.
+
+    // Pass 4: direct write-back to C_DRAM (scale BRAM prefetch)
+    // - scale_mem is BRAM (1-cycle). We prefetch (tmp,scale) and write previous element.
+    // - Cost: +1 cycle per row (flush) => +N_ROWS cycles total.
     for (int i = 0; i < N_ROWS; i++) {
         data_t t_d1 = (data_t)0.0;
         data_t s_d1 = (data_t)0.0;
-        data_t p_d1 = (data_t)0.0;
-
-        for (int j = 0; j < N_COLS + 2; j++) {
+        for (int j = 0; j < N_COLS + 1; j++) {
 #pragma HLS PIPELINE II=1
             data_t t_cur = (data_t)0.0;
             data_t s_cur = (data_t)0.0;
-            data_t p_cur = (data_t)0.0;
 
-            // stage 0: fetch next operands
             if (j < N_COLS) {
                 t_cur = tmp[i][j];
-                s_cur = scale_mem[j]; // BRAM 1-cycle read
+                s_cur = scale_mem[j];
             }
 
-            // stage 1: compute product for previous element
-            if (j > 0 && j <= N_COLS) {
+            if (j > 0) {
                 data_t prod;
 #pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=MUL_LAT
                 prod = t_d1 * s_d1;
-                p_cur = prod;
-            }
-
-            // stage 2: write product computed in previous cycle
-            if (j > 1) {
-                C_DRAM[i][j - 2] = p_d1;
+                C_DRAM[i][j - 1] = prod;
             }
 
             t_d1 = t_cur;
             s_d1 = s_cur;
-            p_d1 = p_cur;
         }
     }
 }
+
 

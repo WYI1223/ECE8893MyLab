@@ -1,0 +1,4 @@
+In file included from /nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/top.cpp:1:
+/nethome/wsun377/ece8893/FPGA_ECE8893/2026_Spring/lab1-copy/dcl.h:4:10: fatal error: 'cstdint' file not found
+#include <cstdint>
+         ^~~~~~~~~

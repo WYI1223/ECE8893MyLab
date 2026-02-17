@@ -59264,6 +59264,12 @@ void top_kernel(data_t A[256][64],
 
 
 
+
+
+
+
+static const int UF_NORM = 8;
+
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
@@ -59271,25 +59277,16 @@ void top_kernel(data_t A_DRAM[256][64],
 #pragma HLS interface s_axilite port=return
 
 
-    data_t A[256][64];
-    data_t C[256][64];
-
-    for (int i = 0; i < 256; i++) {
-        for (int j = 0; j < 64; j++) {
-            A[i][j] = A_DRAM[i][j];
-        }
-    }
-
-
-
-    const int UF = 8;
-
-    data_t row_buf[64];
-#pragma HLS ARRAY_PARTITION variable=row_buf cyclic factor=UF dim=1
-
+    static data_t A[256][64];
     static data_t tmp[256][64];
+    static data_t denom_row[256];
+
+#pragma HLS BIND_STORAGE variable=A type=ram_t2p impl=bram
 #pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
-#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
+#pragma HLS BIND_STORAGE variable=denom_row type=ram_1p impl=bram
+
+#pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF_NORM dim=2
+#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
 
     data_t col_sum[64];
     data_t scale[64];
@@ -59305,53 +59302,54 @@ void top_kernel(data_t A_DRAM[256][64],
 
     for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
-
-
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-            data_t a = A[i][j];
-            row_buf[j] = a;
+            data_t a = A_DRAM[i][j];
+            A[i][j] = a;
             row_sum += a;
         }
+        denom_row[i] = row_sum + (data_t)1.0;
+    }
 
 
-        data_t denom = row_sum + (data_t)1.0;
+    const int BLKS_N = 64 / UF_NORM;
+    const int TOT_N = 256 * BLKS_N;
 
-
-        for (int j = 0; j < 64; j += UF) {
+    data_t denom_reg = (data_t)1.0;
+    for (int idx = 0; idx < TOT_N; idx++) {
 #pragma HLS PIPELINE II=1
+        int i = idx / BLKS_N;
+        int b = idx - i * BLKS_N;
+        int jb = b * UF_NORM;
+
+        if (b == 0) denom_reg = denom_row[i];
+
 #pragma HLS DEPENDENCE variable=col_sum inter false
-            for (int k = 0; k < UF; k++) {
+        for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
-                int jj = j + k;
-                data_t t = row_buf[jj] / denom;
-                tmp[i][jj] = t;
-                col_sum[jj] += t;
-            }
+            int j = jb + k;
+            data_t t = A[i][j] / denom_reg;
+            tmp[i][j] = t;
+            col_sum[j] += t;
         }
     }
 
 
-    for (int j = 0; j < 64; j++) {
+    for (int jb = 0; jb < 64; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
-        scale[j] = col_sum[j] / (data_t)256;
-    }
-
-
-    for (int i = 0; i < 256; i++) {
-        for (int j = 0; j < 64; j += UF) {
-#pragma HLS PIPELINE II=1
-            for (int k = 0; k < UF; k++) {
+        for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
-                int jj = j + k;
-                C[i][jj] = tmp[i][jj] * scale[jj];
-            }
+            int j = jb + k;
+            scale[j] = col_sum[j] / (data_t)256;
         }
     }
+
+
 
     for (int i = 0; i < 256; i++) {
         for (int j = 0; j < 64; j++) {
-            C_DRAM[i][j] = C[i][j];
+#pragma HLS PIPELINE II=1
+            C_DRAM[i][j] = tmp[i][j] * scale[j];
         }
     }
 }
@@ -59380,5 +59378,5 @@ apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 95 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_new/top.cpp"
+# 93 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_new/top.cpp"
 

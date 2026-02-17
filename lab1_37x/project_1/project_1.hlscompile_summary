@@ -1,0 +1,204 @@
+<ENTRY>
+{
+ "thisFile": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/project_1.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236099",
+ "buildStep": {
+  "cmdId": "dca290fc-9240-4f6c-be01-80b3450dcabd",
+  "name": "vitis-run",
+  "logFile": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/script.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236099",
+ "status": {
+  "cmdId": "dca290fc-9240-4f6c-be01-80b3450dcabd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236099",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236100",
+ "buildStep": {
+  "cmdId": "2bcf7054-55aa-420b-a111-a5edef7cc9c3",
+  "name": "csynth_design",
+  "logFile": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236100",
+ "status": {
+  "cmdId": "2bcf7054-55aa-420b-a111-a5edef7cc9c3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236100",
+ "report": {
+  "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236101",
+ "report": {
+  "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb  5 02:40:36 2026",
+ "timestampMillis": "1770277236101",
+ "report": {
+  "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb  5 02:41:01 2026",
+ "timestampMillis": "1770277261590",
+ "report": {
+  "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb  5 02:41:01 2026",
+ "timestampMillis": "1770277261590",
+ "report": {
+  "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb  5 02:41:01 2026",
+ "timestampMillis": "1770277261590",
+ "report": {
+  "path": "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_test/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb  5 02:41:01 2026",
+ "timestampMillis": "1770277261591",
+ "status": {
+  "cmdId": "2bcf7054-55aa-420b-a111-a5edef7cc9c3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb  5 02:41:01 2026",
+ "timestampMillis": "1770277261667",
+ "status": {
+  "cmdId": "dca290fc-9240-4f6c-be01-80b3450dcabd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

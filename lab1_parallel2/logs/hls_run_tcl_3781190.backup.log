@@ -1,0 +1,58 @@
+  **** HLS Build v2025.1.1 6214317
+Sourcing Tcl script '/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/script.tcl'
+INFO: [HLS 200-1510] Running: open_component project_1 
+INFO: [HLS 200-10] Creating and opening component '/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1'.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-2174] Applying component config ini file /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg
+WARNING: [HLS 200-2001] file not found 'top.cpp' see [hls] from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=top.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(5)
+WARNING: [HLS 200-40] Cannot find design file 'top.cpp'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'syn.unroll.tripcount_threshold=0' from /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg(9)
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg
+WARNING: [HLS 200-1998] cannot find relative file path 'top.cpp' in directory(s): /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2 /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+WARNING: [HLS 200-40] Cannot find design file 'top.cpp'
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/project_1/hls_config.cfg
+WARNING: [HLS 200-1998] cannot find relative file path 'top.cpp' in directory(s): /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2 /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2
+WARNING: [HLS 200-40] Cannot find source file top.cpp; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.11 seconds. CPU system time: 0.06 seconds. Elapsed time: 7.72 seconds; current allocated memory: 0.000 MB.
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/script.tcl:22)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 0.000 MB.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:07; Allocated memory: 0.000 MB.
+Error in linking the design.
+    while executing
+"source /nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_parallel2/script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 5.15 seconds. Total CPU system time: 2.15 seconds. Total elapsed time: 17.95 seconds; peak allocated memory: 0.000 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

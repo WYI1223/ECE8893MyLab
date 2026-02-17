@@ -6510,36 +6510,33 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
 
 
 
+
+
+
+
+static const int UF_NORM = 8;
+
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
 #line 22 "/nethome/wsun377/ece8893/FPGA_ECE8893_1/2026_Spring/lab1_new/script.tcl"
 #pragma HLSDIRECTIVE TOP name=top_kernel
-# 6 "top.cpp"
+# 12 "top.cpp"
 
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
 #pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
 #pragma HLS interface s_axilite port=return
 
 
- data_t A[256][64];
-    data_t C[256][64];
+ static data_t A[256][64];
+    static data_t tmp[256][64];
+    static data_t denom_row[256];
 
-    VITIS_LOOP_15_1: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_16_2: for (int j = 0; j < 64; j++) {
-            A[i][j] = A_DRAM[i][j];
-        }
-    }
-
-
-
-    const int UF = 8;
-
-    data_t row_buf[64];
-#pragma HLS ARRAY_PARTITION variable=row_buf cyclic factor=UF dim=1
-
- static data_t tmp[256][64];
+#pragma HLS BIND_STORAGE variable=A type=ram_t2p impl=bram
 #pragma HLS BIND_STORAGE variable=tmp type=ram_t2p impl=bram
-#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF dim=2
+#pragma HLS BIND_STORAGE variable=denom_row type=ram_1p impl=bram
+
+#pragma HLS ARRAY_PARTITION variable=A cyclic factor=UF_NORM dim=2
+#pragma HLS ARRAY_PARTITION variable=tmp cyclic factor=UF_NORM dim=2
 
  data_t col_sum[64];
     data_t scale[64];
@@ -6547,61 +6544,62 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A_DRAM[256][
 #pragma HLS ARRAY_PARTITION variable=scale complete dim=1
 
 
- VITIS_LOOP_38_3: for (int j = 0; j < 64; j++) {
+ VITIS_LOOP_35_1: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  col_sum[j] = (data_t)0.0;
     }
 
 
-    VITIS_LOOP_44_4: for (int i = 0; i < 256; i++) {
+    VITIS_LOOP_41_2: for (int i = 0; i < 256; i++) {
         data_t row_sum = (data_t)0.0;
-
-
-        VITIS_LOOP_48_5: for (int j = 0; j < 64; j++) {
+        VITIS_LOOP_43_3: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
- data_t a = A[i][j];
-            row_buf[j] = a;
+ data_t a = A_DRAM[i][j];
+            A[i][j] = a;
             row_sum += a;
         }
+        denom_row[i] = row_sum + (data_t)1.0;
+    }
 
 
-        data_t denom = row_sum + (data_t)1.0;
+    const int BLKS_N = 64 / UF_NORM;
+    const int TOT_N = 256 * BLKS_N;
 
-
-        VITIS_LOOP_59_6: for (int j = 0; j < 64; j += UF) {
+    data_t denom_reg = (data_t)1.0;
+    VITIS_LOOP_57_4: for (int idx = 0; idx < TOT_N; idx++) {
 #pragma HLS PIPELINE II=1
+ int i = idx / BLKS_N;
+        int b = idx - i * BLKS_N;
+        int jb = b * UF_NORM;
+
+        if (b == 0) denom_reg = denom_row[i];
+
 #pragma HLS DEPENDENCE variable=col_sum inter false
- VITIS_LOOP_62_7: for (int k = 0; k < UF; k++) {
+ VITIS_LOOP_66_5: for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
- int jj = j + k;
-                data_t t = row_buf[jj] / denom;
-                tmp[i][jj] = t;
-                col_sum[jj] += t;
-            }
+ int j = jb + k;
+            data_t t = A[i][j] / denom_reg;
+            tmp[i][j] = t;
+            col_sum[j] += t;
         }
     }
 
 
-    VITIS_LOOP_73_8: for (int j = 0; j < 64; j++) {
+    VITIS_LOOP_76_6: for (int jb = 0; jb < 64; jb += UF_NORM) {
 #pragma HLS PIPELINE II=1
- scale[j] = col_sum[j] / (data_t)256;
-    }
-
-
-    VITIS_LOOP_79_9: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_80_10: for (int j = 0; j < 64; j += UF) {
-#pragma HLS PIPELINE II=1
- VITIS_LOOP_82_11: for (int k = 0; k < UF; k++) {
+ VITIS_LOOP_78_7: for (int k = 0; k < UF_NORM; k++) {
 #pragma HLS UNROLL
- int jj = j + k;
-                C[i][jj] = tmp[i][jj] * scale[jj];
-            }
+ int j = jb + k;
+            scale[j] = col_sum[j] / (data_t)256;
         }
     }
 
-    VITIS_LOOP_90_12: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_91_13: for (int j = 0; j < 64; j++) {
-            C_DRAM[i][j] = C[i][j];
+
+
+    VITIS_LOOP_87_8: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_88_9: for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+ C_DRAM[i][j] = tmp[i][j] * scale[j];
         }
     }
 }
